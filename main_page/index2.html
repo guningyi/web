@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<style type="text/css" media="screen">
+  
+  #header{
+  margin:0 auto;
+  width:760px;
+  }
+  #pagefooter{
+  margin:0 auto;
+  width:760px;
+  }
+  div.container{
+    margin:0 auto;
+    width:760px;
+    height:auto;
+  }
+
+  div.navi{
+  width:200px;
+  float:left;
+  height:190px;
+  /*border: 1px solid #ccc;*/
+  }
+
+  div.content{
+  float:left;
+  width:250px;
+  height:200px;
+  /*border: 1px solid #ccc;*/
+  }
+
+  div.side{
+  float:left;
+  width:300px;
+  border: 1px solid #ccc;
+  }
+
+  #pagefooter{
+  clear:both;
+  }
+</style>
+
+
+<body>
+  <div id="header">
+          <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+            <tr>
+                <td>Search</td>
+                <td>friend</td>
+                <td>Game</td>
+                <td>QQ Group</td>
+                <td>Pay member</td>
+                <td>About us</td>
+                <td>More</td>
+            </tr>
+          </table>
+  </div>
+
+  <div class="container">
+      
+      <div class="navi">
+      <form name="image" method="post" action="show_item.php" enctype='multipart/form-data'> 
+      <table width= 10% border="0" cellspacing="1" cellpadding="3" align="center" >
+      <tr>
+            <th clospan="2" ><font size="4">navi </font></th>
+      <tr>
+      </table>
+      </form>
+      </div>
+    
+      <div class="content">
+      <form name="image" method="post" action="show_item.php" enctype='multipart/form-data'> 
+      <table width= 10% border="0" cellspacing="1" cellpadding="3" align="center" >
+      <tr>
+            <th clospan="2" ><font size="4">content </font></th>
+      <tr>
+      </table>
+      </form>
+      </div><!-- end of content -->
+  
+
+      <div class="side">
+        <form name="image" method="post" action="save_image.php" enctype='multipart/form-data'>
+         <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+          <tr>
+            <th clospan="2" ><font size="4">Login </font></th>
+          </tr>
+          <tr> 
+            <td>username</td>
+            <td><input type="text" name="id" maxlength="25"></td>
+          </tr>
+          <tr>
+            <td>password:</td>
+            <td><input type="password" name="password" size='20'></td>
+          </tr>
+          <tr>
+            <td align=center>
+              <input type="submit" name="Submit" value="Log in">
+            </td>
+            <td align=right>
+              <input type="reset" name="Reset" value="reset">
+            </td>
+          </tr>
+         </table>
+        </form>
+     </div>
+  </div> <!--end of container  -->
+  
+  <div id="pagefooter">
+          <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+            <tr>
+                <td align=center>About us</td>
+            </tr>
+            <tr>
+                <td align=center>Copyright:2006-2012 night-group(www.night-group.com) All rights reserved.</td>
+           </tr>
+            <tr>
+                <td align=center>Powered by HTML CSS PHP MYSQL</td>
+           </tr>
+          </table>
+    
+  </div>
+
+</body>
+
+</html>

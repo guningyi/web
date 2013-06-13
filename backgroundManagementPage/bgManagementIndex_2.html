@@ -1,0 +1,66 @@
+<?php 
+    $lifeTime = 60; 
+    session_set_cookie_params($lifeTime); 
+    session_start();
+?>
+<html>
+<title>419group</title>
+<head></head>
+<link href="../css/bg_main.css" rel="stylesheet" type="text/css" media="screen"/>
+
+<head>
+</head>
+<body>
+  <div class="header">
+          <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+            <tr>
+                <td><img src= "headIco.png" style="width:1080px;height:60px;" usemap="#bglogin"></td>
+            </tr>
+            <map name="bglogin" id="bglogin">
+                <area shape="rect" coords="574,6,651,47" href="bgLogin.php" target="_self">
+                <area shape="rect" coords="162,9,245,45" href="bgLogin.php" target="_self">
+            </map>
+          </table>
+  </div>
+
+  <div class="content">
+      <?php 
+          if (isset($_SESSION['logged']) && $_SESSION['logged'] == 1)//admin has logged.
+          {
+              include ("main.php");
+      ?>
+          
+      <?php
+          }
+          else//have not logged
+          {
+      ?>
+            <table align = "center" border = "1" bgcolor = "red">
+            <tr width="200%" height = "60" border="0" cellspacing="1" cellpadding="3">
+            <td>
+              <p> 你不是管理员或者没有登录！<p>
+            </td>
+            </tr>
+            </table>
+      <?php      
+          }
+      ?>
+     
+  </div><!-- end of content -->
+
+    <div class="pagefooter">
+          <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+            <tr>
+                <td align=center>About us</td>
+            </tr>
+            <tr>
+                <td align=center>Copyright:2006-2012 night-group(www.night-group.com) All rights reserved.</td>
+           </tr>
+            <tr>
+                <td align=center>Powered by HTML CSS PHP MYSQL</td>
+           </tr>
+          </table>
+  </div>
+
+</body>
+</html>

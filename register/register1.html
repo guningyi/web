@@ -1,0 +1,167 @@
+<html>
+<style type="text/css" media="screen">
+div.header{
+  margin:0 auto;
+  width:1080px;
+  height:60px;
+  margin-top:10px;
+  border-bottom:1px solid gray;
+  }
+  div.poster{
+  margin:0 auto;
+  width:1080px;
+  height:200px;
+  margin-top:10px;
+  border:1px solid gray;
+  
+  }
+  div.pagefooter{
+  margin:0 auto;
+  width:1080px;
+  margin-top:30px;
+  border-top:1px solid gray;
+  clear:both;
+  }
+  div.container{
+    margin:0 auto;
+    width:1080px;
+    height:auto;
+    margin-top:15px;
+  }
+
+  div.navi{
+  width:300px;
+  float:left;
+  height:600px;
+  border:1px solid gray;
+  }
+
+  div.content{
+  width:450px;
+  height:600px;
+  border:1px solid gray;
+  margin-left:310px;
+  }
+
+  div.side{
+  width:310px; 
+  border:1px solid gray;
+  margin-left: 770px;
+  height:600px;
+  margin-top:-601px;
+  }
+</style>
+<body>
+  <div class="header">
+          <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+            <tr>
+                <td>Search</td>
+                <td>friend</td>
+                <td>Game</td>
+                <td>QQ Group</td>
+                <td>Pay member</td>
+                <td>About us</td>
+                <td>More</td>
+            </tr>
+          </table>
+  </div>
+  
+  <div class="poster">
+          <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+            <tr>
+             Here is poster
+            </tr>
+          </table>
+  </div>
+  <div class="container">
+      
+      <div class="navi">
+        <form name="registeForm" method="post" action="register1.php" enctype='multipart/form-data'> 
+          <table width= 10% border="0" cellspacing="1" cellpadding="3" align="center" >
+            <tr>
+              <th clospan="2" ><font size="4">This is navigater bar  </font></th>
+            <tr>
+          </table>
+        </form>
+      </div>
+    
+      <div class="content">
+        <form name="registeForm" action="register1.php" method="post">
+          <table>
+            <tr>
+              <td><label for="username">用户名:</label></td>
+                <td><input type="text" name="username" id="username" size="20"
+                maxlength="20" value="<?php echo $username; ?>"/></td>
+            </tr>
+            <tr>
+              <td><label for="password">密码:</label></td>
+                <td><input type="password" name="password" id="password" size="20"
+                maxlength="20" value="<?php echo $password; ?>"/></td>
+            </tr>
+            <tr>
+            <td><label for="email">电子邮件:</label></td>
+              <td><input type="text" name="email" id="email" size="20" maxlength="50"
+              value="<?php echo $email; ?>"/></td>
+            </tr>
+            <tr>
+              <td><label for="gender">性别:</label></td>
+                <td><input type="text" name="gender" id="gender" size="20"
+                  maxlength="20" value="<?php echo $gender; ?>"/></td>
+            </tr>
+            <tr>
+              <td><label for="telNum">手机号码:</label></td>
+                <td><input type="text" name="telNum" id="telNum" size="20"
+                maxlength="20" value="<?php echo $telNum; ?>"/></td>
+            </tr>
+            <tr>
+              <td><label for="city">城市:</label></td>
+              <td><input type="text" name="city" id="city" size="20" maxlength="20"
+                value="<?php echo $city; ?>"/></td>
+            </tr>
+            <tr>
+              <td><label for="state">省:</label></td>
+              <td><input type="text" name="state" id="state" size="2" maxlength="2"
+                value="<?php echo $state; ?>"/></td>
+            </tr>
+            <tr>
+              <td><label for="qqNum">QQ:</label></td>
+              <td><input type="text" name="qqNum" id="qqNum" size="10" maxlength="10
+                value="<?php echo $qqNum?>"/></td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td><input type="submit" name="submit" value="Register"/></td>
+            </tr>
+          </table>
+        </form>
+      </div><!-- end of content -->
+  
+
+      <div class="side">
+        <form name="image" method="post" action="save_image.php" enctype='multipart/form-data'>
+         <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+           <tr>
+            <th clospan="2" ><font size="4">this is Adv bar</font></th>
+           <tr>
+         </table>
+        </form>
+     </div>
+  </div> <!--end of container  -->
+  <div class="pagefooter">
+          <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+            <tr>
+                <td align=center>About us</td>
+            </tr>
+            <tr>
+                <td align=center>Copyright:2006-2012 night-group(www.night-group.com) All rights reserved.</td>
+           </tr>
+            <tr>
+                <td align=center>Powered by HTML CSS PHP MYSQL</td>
+           </tr>
+          </table>
+    
+  </div>
+</body>
+</html>
+
+

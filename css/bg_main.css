@@ -1,0 +1,26 @@
+  div.header{
+      margin:0 auto;
+      width:1080px;
+      height:60px;
+      margin-top:10px;
+      border-bottom:1px solid gray;
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;   
+  }
+  div.content{
+      width:800px;
+      height:300px;
+      border:1px solid gray;
+      margin-left:310px;   
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;   
+  }
+  div.pagefooter{
+      margin:0 auto;
+      width:1080px;
+      margin-top:100px;
+      border-top:1px solid gray;
+      clear:both;
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;  
+  }

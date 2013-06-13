@@ -1,0 +1,89 @@
+  div.header{
+      margin:0 auto;
+      width:1080px;
+      height:60px;
+      margin-top:10px;
+      border-bottom:1px solid gray;
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;   
+  }
+  div.pagefooter{
+      margin:0 auto;
+      width:1080px;
+      margin-top:100px;
+      border-top:1px solid gray;
+      clear:both;
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;    
+  }
+  div.container{
+      margin:0 auto;
+      width:1080px;
+      height:auto; 
+      margin-top:15px;
+      border-radius:15px;
+      
+  }
+
+  div.navi{
+      width:300px;
+      float:left;
+      height:200px;
+      border:1px solid gray;
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;    
+  }
+
+  div.content{
+      width:450px;
+      height:200px;
+      border:1px solid gray;
+      margin-left:310px;   
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;   
+  }
+
+  div.side{
+      width:310px; 
+      border:1px solid gray;
+      margin-left: 770px;
+      margin-top:-201px;
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;    
+  }
+
+
+
+  div.centerBox{
+      margin:0 auto;
+      width:1080px;
+      height:auto;
+      margin-top:100px;
+      border-radius:15px;
+         
+  }
+  div.centerBoxLeft{
+      width:400px;
+      float:left;
+      height:350px;
+      border:1px solid gray;
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;    
+  }
+  div.centerBoxMiddle{
+      width:450px;
+      height:400px;
+      border:1px solid gray;
+      margin-left:410px;
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;    
+  }
+  div.centerBoxRight{
+      width:210px;
+      height:400px;
+      border:1px solid gray;
+      margin-left:870px;
+      margin-top:-401px;
+      border-radius:15px;
+      -webkit-box-shadow:-5px 5px 5px #999 inset;    
+  }

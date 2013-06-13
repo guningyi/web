@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<style type="text/css" media="screen">
+  
+  #header,#pagefooter,#container{
+    margin:0 auto;
+    width:760px;
+    clear:both;
+  }
+   
+  #container{
+  }
+
+  #content{
+  position:absolute;
+  float:left;
+  top:0;
+  left:0;
+  width:500px;
+  }
+
+  #content img{
+  float:right;
+  }
+
+  #side{
+  float:right;
+  width:260px;
+  /*border:solid;
+  border-width:1px;
+  */
+  }
+</style>
+
+
+<body>
+  <div id="header">
+    <div class="rounded">
+          <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+            <tr>
+                <td>Search</td>
+                <td>friend</td>
+                <td>Game</td>
+                <td>QQ Group</td>
+                <td>Pay member</td>
+                <td>About us</td>
+                <td>More</td>
+            </tr>
+          </table>
+    </div>
+  </div>
+
+  <div id="container">
+      <div class="content">
+        <div class="rounded">
+        </div>
+      </div><!-- end of content -->
+  
+
+      <div id="side">
+        <div class="rounded">
+            <form name="image" method="post" action="save_image.php" enctype='multipart/form-data'>
+           <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+          <tr>
+            <th clospan="2" ><font size="4">Login </font></th>
+          </tr>
+          <tr> 
+            <td>username</td>
+            <td><input type="text" name="id" maxlength="25"></td>
+          </tr>
+          <tr>
+            <td>password:</td>
+            <td><input type="password" name="password" size='20'></td>
+          </tr>
+          <tr>
+            <td align=center>
+              <input type="submit" name="Submit" value="Log in">
+            </td>
+            <td align=right>
+              <input type="reset" name="Reset" value="reset">
+            </td>
+          </tr>
+    </table>
+</form>
+
+        </div>
+      </div>
+  </div> <!--end of container  -->
+  
+  <div id="pagefooter">
+    <div class="rounded">
+          <table width="80%" border="0" cellspacing="1" cellpadding="3" align="center">
+            <tr>
+                <td align=center>About us</td>
+            </tr>
+            <tr>
+                <td align=center>Copyright:2006-2012 night-group(www.night-group.com) All rights reserved.</td>
+           </tr>
+            <tr>
+                <td align=center>Powered by HTML CSS PHP MYSQL</td>
+           </tr>
+          </table>
+    
+    </div>
+  </div>
+
+</body>
+
+</html>
