@@ -1,0 +1,199 @@
+.textOVC {
+	BORDER-RIGHT: #c1c0c0 1px solid;
+	BORDER-TOP: #c1c0c0 1px solid;
+	FONT-SIZE: 0.9em;
+	MARGIN-BOTTOM: 2px;
+	BORDER-LEFT: #c1c0c0 1px solid;
+	COLOR: #707070;
+	BORDER-BOTTOM: #c1c0c0 1px solid;
+	FONT-FAMILY: Trebuchet MS, verdana, Arial, Helvetica, sans-serif;
+	HEIGHT: 1.4em;
+	background-image: url(../img/fondoInput.gif);
+}
+.textOVC2 {
+	BORDER-RIGHT: #c1c0c0 1px solid;
+	BORDER-TOP: #c1c0c0 1px solid;
+	FONT-SIZE: 0.75em;
+	MARGIN-BOTTOM: 2px;
+	BORDER-LEFT: #c1c0c0 1px solid;
+	COLOR: #707070;
+	BORDER-BOTTOM: #c1c0c0 1px solid;
+	FONT-FAMILY: Trebuchet MS, verdana, Arial, Helvetica, sans-serif;
+	HEIGHT: 0.938em;
+	background-image: url(../img/fondoInputGris.gif);
+}
+.etiquetaOVC {
+	FONT-SIZE: 0.75em;
+	FLOAT: left;
+	WIDTH: 4.688em;
+	COLOR: #707070;
+	FONT-FAMILY: Trebuchet MS, verdana, Arial, Helvetica, sans-serif;
+}
+.altura10OVC {
+	line-height: 0.625em;
+}
+.altura5OVC {
+	padding-top: 7px;
+}
+.linea_puntos_grisOVC {
+	BORDER-BOTTOM: #707070 1px dotted;
+	PADDING-TOP: 7px;
+	MARGIN-BOTTOM: 13px;
+	clear:both;
+}
+.derechaOVC {
+	/*	padding-right:10px;*/
+	padding-top:3px;
+	text-align: right;
+}
+.derechaEntrarOVC {
+	/*	padding-right:10px;*/
+	padding-top:0px;
+	margin: 5px 0 0;
+	text-align: right;
+}
+.derechaOVC2 {
+	TEXT-ALIGN: left;
+	padding-left: 163px;
+}
+*:first-child+html .derechaOVC2 {
+	TEXT-ALIGN: left;
+	padding-left: 157px;
+}
+* html .derechaOVC2 {
+	TEXT-ALIGN: left;
+	padding-left: 157px;
+}
+.izquierdaOVC {
+	float: left;
+	line-height: 1.375em;
+	font-family:Trebuchet MS;
+	color:#DF7720;
+	font-size:0.75em;
+	padding:0 0 15px 0px;
+	width:100%;
+}
+.registroCliente {
+	width:73%;
+}
+.izquierdaLineaOVC {
+	/*float: left;line-height: 22px;padding-right:10px*/
+	float:left;
+	padding-left:10px;
+}
+.izquierdaSupOVC {
+	float: left;
+	line-height: 1.375em;
+	font-family:Trebuchet MS;
+	color:#DF7720;
+	font-size:0.75em;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:7px;
+}
+.izquierdaSupOVC a {
+	text-decoration: none;
+	padding:0px 10px 0px 0px;
+	margin:0px;
+	color:#DF7720;
+}
+.botonderechaOVC {
+	float:right;
+ background-image: url(../img/candado.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	margin:3px 0 0 0;
+	padding:3px 10px 5px 0;
+}
+.contenedorBotonOVC {
+	/*float: left;line-height: 22px;padding-right:10px*/
+	float:left;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:3px;
+}
+.linkOVC {
+	FONT-SIZE: 0.75em;
+	COLOR: #df7720;
+	TEXT-DECORATION: none;
+	FONT-FAMILY: Trebuchet MS, verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.botonOVC {
+	FONT-SIZE: 0.75em;
+	COLOR: #707070;
+	text-decoration:underline;
+	FONT-FAMILY: Trebuchet MS, verdana, Geneva, Arial, Helvetica, sans-serif;
+	float: left;
+	margin:4px 0px 0px 0px;
+}
+.submitOVC {
+	BORDER: 0px;
+	FONT-SIZE: 0.75em;
+	COLOR: #df7720;
+	FONT-FAMILY: Trebuchet MS, verdana, Geneva, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: transparent;
+	cursor:pointer;
+	TEXT-DECORATION: none;
+	padding:0px;
+}
+.enlaceEntrarOVC {
+	float: right;
+	padding: 0px;
+	margin: 0px 3px 0px 0px;
+}
+*:first-child+html .enlaceEntrarOVC {
+	margin: 0px 10px 0px 0px;
+}
+* html .enlaceEntrarOVC {
+	margin: 0px 10px 0px 0px;
+}
+.mayusculasOVC {
+	TEXT-TRANSFORM: uppercase;
+}
+.fondo_registroOVC {
+	HEIGHT: 11em;
+	WIDTH: 14.813em;
+	background-image:url(../img/fondo_registro.jpg);
+	background-repeat: no-repeat;
+}
+.sub_menu_ovOVC {
+	FLOAT: right;
+	width:738px;
+	background-repeat:no-repeat;
+	position: relative;
+background-image: url(../img/cabecera_login_fondo.jpg);
+	padding:0 0 2px 0px;
+}
+.etiquetatextoOVC {
+	FONT-SIZE: 0.75em;
+	COLOR: #707070! important;
+	FONT-FAMILY: Trebuchet MS, verdana, Arial, Helvetica, sans-serif;
+	float: left;
+	padding: 3px 5px 0px 0px;
+	vertical-align:middle;
+}
+.capa_inlineOVC {
+	DISPLAY: inline;
+}
+.transparenteOVC {
+	background-color: transparent;
+}
+div.fondo_registroOVC .etiquetaOVC {
+	FONT-SIZE: 0.75em;
+	FLOAT: left;
+	WIDTH: 6em;
+	COLOR: #707070;
+	FONT-FAMILY: Trebuchet MS, verdana, Arial, Helvetica, sans-serif;
+}
+div.fondo_registroOVC .textOVC2 {
+	BORDER-RIGHT: #c1c0c0 1px solid;
+	BORDER-TOP: #c1c0c0 1px solid;
+	FONT-SIZE: 0.75em;
+	MARGIN-BOTTOM: 2px;
+	BORDER-LEFT: #c1c0c0 1px solid;
+	COLOR: #707070;
+	BORDER-BOTTOM: #c1c0c0 1px solid;
+	FONT-FAMILY: Trebuchet MS, verdana, Arial, Helvetica, sans-serif;
+	HEIGHT: 1.2em;
+	background-image: url(../img/fondoInputGris.gif);
+}

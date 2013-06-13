@@ -1,0 +1,1430 @@
+@import 'reset.css';
+@import 'type.css';
+@import 'navigation.css';
+@import 'clearfix.css';
+.hidden {
+	display: none;
+}
+body {
+	font-family: Verdana, Arial, "Lucida Console";
+	color: #666666;
+	background: #000 url(../images/bg/bg-body-1.jpg) top center no-repeat;
+}
+a {
+	color: #00cc66;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+/* IMAGE REPLACEMENT CLASS */
+.ir {
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.ir a {
+	display: block;
+	overflow: hidden;
+}
+/***/
+
+h1 {
+	font-size: 3em;
+}
+h2 {
+	margin-bottom: 10px;
+	width: 555px;
+	height: 50px;
+}
+h2.explore {
+	width: 335px;
+	height: 24px;
+	background: url(../images/h-explore.gif) top left no-repeat;
+	text-indent: -9999px;
+}
+h2.happenings {
+	width: 555px;
+	height: 50px;
+	background: url(../images/h-happenings.gif) topf left no-repeat;
+	text-indent: -9999px;
+	margin-top: 31px;
+}
+h2.multimedia {
+	width: 555px;
+	height: 50px;
+	background: url(../images/h-multimedia.gif) top left no-repeat;
+	text-indent: -9999px;
+}
+h2.h-contest {
+	width: 555px;
+	height: 50px;
+	background: url(../images/h-contest.gif) top left no-repeat;
+	text-indent: -9999px;
+}
+h4 {
+	font-size: 14px;
+	line-height: 1;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.sharpie500 {
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 222px;
+	height: 130px;
+	margin: 15px 0 0;
+	display: block;
+	background: url(../images/sharpie500.jpg) no-repeat left top;
+	position: absolute;
+}
+.sharpie500:hover {
+	background-position: bottom left;
+}
+.travelgreen {
+	min-height:345px;
+	height:auto !important;
+	height:345px;
+}
+h3 {
+	margin-bottom: 12px;
+}
+p, ol {
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 18px;
+}
+ol {
+	padding-left: 20px;
+}
+.left ol li {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin: 1.5em;
+	list-style: inside decimal;
+}
+p.small {
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+}
+p.month {
+	color: #ff6131;
+	text-transform: uppercase;
+	font-family: Tahoma, 'Lucida Grande', Verdana;
+	font-size: 1.3em;
+	margin: 0 0 0 6px;
+}
+ul.options {
+	list-style: none;
+	margin: 0;
+}
+ul.options li {
+	float: left;
+	text-indent: -9999px;
+	margin-right: 6px;
+}
+ul.options li a {
+	height: 27px;
+	display: block;
+	background: url(../images/bg/bg-options.gif) top left no-repeat;
+	overflow: hidden;
+}
+ul.options li.lm a {
+	width: 89px;
+	background-position: 0 0;
+}
+ul.options li.lm a:hover {
+	background-position: 0 -27px;
+}
+ul.options li.si a {
+	width: 89px;
+	background-position: -95px 0;
+}
+ul.options li.si a:hover {
+	background-position: -95px -27px;
+}
+ul.options li.rta a {
+	width: 121px;
+	background-position: -188px 0;
+}
+ul.options li.rta a:hover {
+	background-position: -188px -35px;
+}
+a.sendinvite {
+	display: block;
+	width: 89px;
+	text-indent: -5000px;
+	height: 27px;
+	background: url(../images/bg/bg-options.gif) no-repeat -95px 0;
+	overflow: hidden;
+}
+a.sendinvite:hover {
+	background-position: -95px -27px;
+}
+.footer-nav a, .credits a {
+	color: #cc0066;
+}
+a.ds {
+	color: #0099cc;
+}
+.left p {
+	font-size: 11px;
+	line-height: 14px;
+	margin: 0 0 14px 22px;
+}
+.travelgreen h3 {
+	background: url(../images/h-travelgreen.gif) top left no-repeat;
+	width: 185px;
+	height: 24px;
+	margin-bottom: 12px;
+}
+p.moretips {
+	margin-left: 0;
+}
+p.moretips a {
+	background: url(../images/bg-moretips.jpg) top left no-repeat;
+	width: 185px;
+	height: 85px;
+	margin-bottom: 12px;
+}
+p.moretips a:hover {
+	background-position: 0 -85px;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: visible;
+}
+.content {
+	clear: both;
+	background: #fff url(../images/bg/bg-content-tile.gif) top left repeat-y;
+	overflow: visible;
+	margin: 0;
+}
+.content .inner {
+	background: url(../images/bg/bg-content.jpg) top left no-repeat;
+	overflow: visible;
+	margin: 0 0 0 0;
+}
+.secondary, .multimedia-wrap {
+	background: #fff url(http://summer.tnvacation.com/images/bg/bg-cont-sec-top.jpg) top left no-repeat;
+	overflow: visible;
+}
+.content-btm {
+	background: url(../images/bg/bg-cont-btm.jpg) bottom left no-repeat;
+	padding: 0 0 0;
+}
+.mast {
+	height: 100px;
+	padding: 0;
+	margin: 24px 0 0 0;
+	position: relative;
+}
+.mast h1.logo {
+	float: left;
+	padding: 0;
+	margin: 0;
+	text-indent: -9999px;
+	position: absolute;
+	top: -24px;
+}
+.mast h1.logo a {
+	display: block;
+	width: 435px;
+	height: 79px;
+	overflow: hidden;
+	background: url(../images/bg/bg-logo-09.gif) top left no-repeat;
+}
+.mast h1.logo a:hover {
+	background-position: bottom left;
+}
+.mast form {
+	float: right;
+	width: 302px;
+	height: 55px;
+	background: url(../images/bg/bg-search-form.gif) top left no-repeat;
+}
+.mast form input.text {
+	margin: 17px 0 0 50px;
+	padding: 2px 2px 3px 2px;
+	border: none;
+	font-size: 12px;
+	background: none;
+	float: left;
+}
+.mast form input.image {
+	margin: 17px 0 0 1px;
+	padding: 0;
+	border: none;
+	font-size: 12px;
+	float: left;
+}
+.aux-nav {
+	float: right;
+	list-style: none;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	position: relative;
+	overflow: visible;
+	display: block;
+	z-index: 300;
+}
+.aux-nav li {
+	float: left;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.aux-nav li a {
+	display: block;
+	height: 55px;
+	background: url(../images/nav-aux.gif) no-repeat;
+}
+.aux-nav li.atn a {
+	width: 68px;
+	background-position: 0 0;
+}
+.aux-nav li.rtl a {
+	width: 80px;
+	background-position: -69px 0;
+}
+.aux-nav li.pts a {
+	width: 100px;
+	background-position: -148px 0;
+}
+.aux-nav li.atn a:hover {
+	background-position: 0 -55px;
+}
+.aux-nav li.rtl a:hover {
+	background-position: -69px -55px;
+}
+.aux-nav li.pts a:hover {
+	background-position: -148px -55px;
+}
+.aux-nav li.atn {
+}
+.aux-nav li.atn ul {
+	position: absolute;
+	top: 40px;
+	z-index: 999;
+	left: -9999px;
+	width: 230px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.aux-nav li.atn:hover ul {
+	left: 0;
+}
+.aux-nav li.atn ul li {
+	float: left;
+	position: static;
+	text-indent: 0;
+}
+.aux-nav li.atn ul li a {
+	width: auto;
+	height: auto;
+	padding: 10px;
+	font-size: 11px;
+	line-height: 1;
+	background: #990077 none;
+	color: #fff;
+}
+ul.aux-nav li.atn>ul {
+	top: 40px;
+	left: -9999px;
+}
+ul.aux-nav li.atn:hover ul, ul.aux-nav li.atn a:hover ul {
+	left: auto;
+}
+.top {
+	height: 323px;
+}
+.multimedia-wrap {
+	width: 512px;
+	height: 300px;
+	padding: 17px 25px 16px 18px;
+	margin: 0 0 12px 0;
+	background: url(../images/bg/bg-media-wrap.gif) top left no-repeat;
+}
+.rotational-wrap {
+	width: 555px;
+	height: 392px;
+	background: #0099cc;
+	position: relative;
+	padding: 0;
+	margin: 0 0 20px;
+	z-index: 100;
+}
+.rotational-wrap a.prev {
+	width: 37px;
+	height: 52px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: absolute;
+	left: 17px;
+	top: 140px;
+	z-index: 999;
+	background: url(../images/cycle-prev.gif) no-repeat left top;
+}
+.rotational-wrap a.next {
+	width: 37px;
+	height: 52px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: absolute;
+	right: 17px;
+	top: 140px;
+	z-index: 999;
+	background: url(../images/cycle-next.gif) no-repeat left top;
+}
+.rotational-wrap a:hover {
+	background-position: bottom left;
+}
+.main-spinner {
+	left: 17px;
+	top: 17px;
+	width: 521px;
+	height: 358px;
+	background: #006587;
+}
+.main-spinner div {
+	height: 358px;
+	width: 521px;
+}
+.main-spinner div p {
+	font-size: 11px;
+	line-height: 16px;
+	color: #fff;
+	padding: 12px 15px 0 15px;
+	margin: 0;
+}
+#thumbnav {
+	list-style: none;
+	margin: 21px 0 0 0;
+	padding: 0;
+}
+#thumbnav li {
+	float: left;
+	margin: 0 6px 6px 0;
+}
+#thumbnav li.third {
+	margin-right: 0;
+}
+#thumbnav li a {
+	width: 41px;
+	height: 41px;
+	display: block;
+	border: 5px solid #c4e1e1;
+}
+#thumbnav li.next a {
+	background: url(../images/bg/bg-next-rotational.gif);
+	width: 41px;
+	height: 41px;
+	display: block;
+	border: 5px solid #c4e1e1;
+	background-position: 0 -41px;
+}
+#thumbnav li.next a:hover {
+	background-position: 0 0;
+	border: 5px solid #c4e1e1;
+}
+#thumbnav li a:hover {
+	border: 5px solid #73fcfc;
+}
+#thumbnav div#tog2, #thumbnav div#tog3 {
+	display: none;
+}
+p.caption {
+	color: #fff;
+	font-size: 11px;
+	line-height: 14px;
+	margin: 0 0 0 0;
+	clear: right;
+}
+p.caption strong {
+	color: #f6f030;
+}
+ul#nav-main {
+	padding: 12px 0 0 0;
+	width: 199px;
+	height: 210px;
+	display: block;
+	list-style: none;
+	position: relative;
+	z-index: 901;
+	margin: -19px 0 16px -20px !important;
+	margin: -19px 0 0 -20px;
+	background: url(../images/main-nav-pink.png) repeat top left;
+}
+ul#nav-main div.inner {
+	padding: 0 0 15px 0;
+	background: transparent;
+}
+ul#nav-main li a.a {
+	background: url(../images/nav-main1.gif) top left no-repeat;
+	width: 199px;
+	height: 30px;
+	display: block;
+	margin-bottom: 0 !important;
+}
+ul#nav-main li.home a.a {
+	background-position: 0 0;
+}
+ul#nav-main li.contest a.a {
+	background-position: 0 -30px;
+}
+ul#nav-main li.getaways a.a {
+	background-position: 0 -60px;
+}
+ul#nav-main li.tastes a.a {
+	background-position: 0 -90px;
+}
+ul#nav-main li.family a.a {
+	background-position: 0 -120px;
+}
+ul#nav-main li.happenings a.a {
+	background-position: 0 -150px;
+}
+ul#nav-main li.multimedia a.a {
+	background-position: 0 -180px;
+}
+/**/
+ul#nav-main li.home a.a:hover {
+	background-position: -199px 0;
+}
+ul#nav-main li.contest a.a:hover {
+	background-position: -199px -30px;
+}
+ul#nav-main li.getaways a.a:hover {
+	background-position: -199px -60px;
+}
+ul#nav-main li.tastes a.a:hover {
+	background-position: -199px -90px;
+}
+ul#nav-main li.family a.a:hover {
+	background-position: -199px -120px;
+}
+ul#nav-main li.happenings a.a:hover {
+	background-position: -199px -150px;
+}
+ul#nav-main li.multimedia a.a:hover {
+	background-position: -199px -180px;
+}
+#selectedEvents-wrap ul {
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 18px;
+	padding-left: 20px;
+}
+.mediawrap {
+	padding: 10px 11px 11px;
+	background: url(http://summer.tnvacation.com/images/bg/bg-media-wrap.jpg) top left no-repeat;
+}
+.media-list .each-reel {
+	float: left;
+	margin: 0 40px 20px 0;
+}
+.media-list .divider {
+	margin: 0 0 20px;
+}
+.getthemusic {
+	padding: 0 0 5px 0;
+	margin: 0 0 10px 0;
+	background: #fff url(http://summer.tnvacation.com/images/bg/bg-getthemusic-btm.gif) bottom left no-repeat;
+}
+.getthemusic2 {
+	padding: 0 0 0 0;
+	margin: 0 0 10px 0;
+}
+.transcripts {
+	list-style-image: url(http://summer.tnvacation.com/images/list-transcripts.gif);
+	list-style-position: outside;
+}
+.transcripts li {
+	font-size: 1.1em;
+	line-height: 1.25em;
+	margin-bottom: 1.5em;
+}
+.transcripts li a {
+	color: #0099cc;
+}
+.centerpad {
+	padding: 0 0 0 27px;
+	clear: both;
+}
+.date-wrap {
+	width: 211px;
+	margin: 0 0 0 0;
+}
+#calendar {
+	margin: 20px 0 0;
+}
+#calendar_tbl th {
+	text-transform: uppercase;
+	font-weight: bold;
+	vertical-align: middle;
+	font-size: 1em;
+	color: #666;
+	width: 21px;
+	height: 24px;
+}
+#calendar_tbl td {
+	color: #0099cc;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	width: 21px;
+	height: 24px;
+}
+#calendar_tbl td.pm, #calendar_tbl td.nm {
+	color: #ccc;
+}
+#calendar_tbl td.today {
+	color: #fff;
+	background: url(../images/bg-cal-today.gif) center center no-repeat;
+}
+#calendar_tbl td a {
+	color: #cc0099;
+}
+.arrowControls {
+	list-style: none;
+	margin: 0 18px 0 0;
+	padding: 0;
+	width: 42px;
+}
+.arrowControls li {
+	float: left;
+	text-indent: -9999px;
+}
+.arrowControls li a {
+	background: url(../images/bg-calarrows.gif) top left no-repeat;
+	width: 21px;
+	height: 15px;
+	display: block;
+	overflow: hidden;
+}
+.arrowControls li.prev a {
+	background-position: 0 0;
+}
+.arrowControls li.next a {
+	background-position: -21px 0;
+}
+p.getvacguide {
+	margin: 0 0 0 0;
+	text-indent: -9999px;
+}
+p.getvacguide a {
+	width: 185px;
+	height: 126px;
+	margin: 0;
+	display: block;
+	background: url(../images/bg-vacguide.jpg) top left no-repeat;
+	background-position: 0 0;
+	overflow: hidden;
+}
+p.getvacguide a:hover {
+	background-position: 0 -126px;
+}
+.secondary p.getvacguide {
+	margin: 0 0 0;
+	text-indent: -9999px;
+}
+.secondary p.getvacguide a {
+	width: 185px;
+	height: 130px;
+	margin: 0;
+	display: block;
+	background: url(http://summer.tnvacation.com/images/bg/bg-getvacguide-sec.jpg) top left no-repeat;
+	background-position: 0 0;
+	overflow: hidden;
+}
+.secondary p.getvacguide a:hover {
+	background-position: 0 -130px;
+}
+.left {
+	width: 185px;
+	margin: 0 20px 0 0;
+	overflow: visible;
+}
+.secondary .left {
+	margin: 30px 0 0 0;
+}
+.multimedia-wrap .left {
+	margin: 35px 0 0 0;
+	padding: 0 0 0 35px;
+	width: 522px;
+}
+.left-left {
+	width: 190px;
+}
+.left-left p.sans, .left-left ul {
+	margin-left: 20px;
+}
+.left-center {
+	width: 343px;
+	margin: 0 0 0 15px !important;
+	margin: 0 0 0 7px;
+	float: left;
+}
+#middle-col {
+	width: 555px;
+	float: left;
+	margin: 0 20px 0 0;
+}
+#left-mid {
+	float: left;
+	width: 335px;
+}
+#right-mid {
+	float: right;
+	width: 200px;
+}
+.mapwrap {
+	width: 300px;
+	height: 300px;
+	float: right;
+}
+div.summergems {
+	width: 522px;
+	padding: 18px 18px 18px 0;
+	margin: 0 0 15px 0;
+	background: url(../images/bg/bg-summergems.gif) top left repeat-y;
+	position: absolute;
+}
+div.summergems .fleft {
+	background: #fff7c6 url(../images/bg-summergems-left.gif) top left repeat-y;
+	padding: 18px 18px 18px 0;
+	width: 186px;
+}
+div.summergems .fleft h3 {
+	margin-bottom: 12px;
+}
+div.summergems .fleft p, div.summergems .fleft ul {
+	margin: 0 0 12px 22px;
+}
+div.summergems p {
+	width: 140px;
+}
+div.summergems ul {
+	margin: 63px 0 0 0;
+	list-style: none;
+}
+div.summergems ul li {
+	margin: 0 0 0 0;
+	text-indent: -9999px;
+	border-bottom: 5px solid #f2e9bf;
+}
+div.summergems ul li a {
+	width: 169px;
+	height: 25px;
+	display: block;
+	background: url(../images/nav-summergems-09b.gif) top left no-repeat;
+	overflow: hidden;
+}
+div.summergems ul li.riv a {
+	background-position: 0 0;
+}
+div.summergems ul li.mot a {
+	background-position: 0 -25px;
+}
+div.summergems ul li.wat a {
+	background-position: 0 -50px;
+}
+div.summergems ul li.dri a {
+	background-position: 0 -75px;
+}
+div.summergems ul li.riv a:hover, div.summergems ul li.riv-on a {
+	background-position: -169px 0;
+}
+div.summergems ul li.mot a:hover, div.summergems ul li.mot-on a {
+	background-position: -169px -25px;
+}
+div.summergems ul li.wat a:hover, div.summergems ul li.wat-on a {
+	background-position: -169px -50px;
+}
+div.summergems ul li.dri a:hover, div.summergems ul li.dri-on a {
+	background-position: -169px -75px;
+}
+.each-reel, .each-media {
+	width: 180px;
+	height: 150px;
+	padding: 10px;
+	background: url(../images/bg/bg-each-reel.gif) top left no-repeat;
+}
+.each-reel p, ..each-media p, p.mediadesc {
+font-size: 11px;
+line-height: 13px;
+margin: 7px 0 0;
+}
+.each-reel a, .each-media a, p.mediadesc a {
+	color: #0099cc;
+}
+.each-reel span, .each-media span, p.mediadesc span {
+	color: #999;
+	font-size: 10px;
+}
+#upcoming-events .ea-event {
+	padding: 0 0 18px;
+	margin: 0 0 8px;
+	background: url(../images/bg/bg-uc-events-border.gif) bottom left no-repeat;
+	border-bottom: none;
+}
+#upcoming-events .ea-event p {
+	font-size: 12px;
+	line-height: 15px;
+	margin: 0 0 8px;
+}
+#upcoming-events .ea-event .inviteForm p.close {
+	font-size: 12px;
+	line-height: 15px;
+	margin: 0 35px 10px 0;
+}
+#upcoming-events .ea-event p strong {
+	color: #666;
+	font-size: 11px;
+}
+#upcoming-events .ea-event p span, .ea-event p em {
+	color: #0099cc;
+	font-size: 11px;
+}
+#upcoming-events .ea-event p a {
+	color: #cc0066;
+}
+#upcoming-events .ea-event .options {
+	margin: 0;
+	float: none;
+}
+#upcoming-events .ea-event .options li {
+	float: left;
+	margin-right: 5px;
+}
+#section-nav h3 {
+	background: url(../images/bg/h-sectionnav.gif) top left no-repeat;
+	width: 185px;
+	height: 24px;
+	text-indent: -9999px;
+}
+#section-nav ul {
+	list-style: none;
+	margin: 0 0 60px;
+}
+#section-nav li {
+	font-size: 12px;
+	line-height: 1;
+}
+#section-nav a {
+	height: 1%;
+	display: block;
+	color: #cc0066;
+	padding: 8px 0 8px 22px;
+	border-bottom: 1px solid #d5d5d5;
+}
+#section-nav a:hover, #section-nav a.selected {
+	color: #0099cc;
+}
+.ea-event {
+	padding: 20px 0 20px;
+	margin: 0 0 12px;
+	border-bottom: 10px solid #f3f3f3;
+}
+.list-hh {
+	background: url(../images/bg/bg-listing-hh.gif) top left no-repeat;
+	padding-left: 150px;
+}
+.list-ta {
+	background: url(../images/bg/bg-listing-ta.gif) top left no-repeat;
+	padding-left: 150px;
+}
+.list-wg {
+	background: url(../images/bg/bg-listing-wg.gif) top left no-repeat;
+	padding-left: 150px;
+}
+.list-ff {
+	background: url(../images/bg/bg-listing-ff.gif) top left no-repeat;
+	padding-left: 150px;
+}
+.ea-event p {
+	font-size: 12px;
+	line-height: 15px;
+	margin: 0 0 8px;
+}
+.ea-event p strong {
+	color: #666;
+	font-size: 11px;
+}
+.ea-event p span, .ea-event p em {
+	color: #0099cc;
+	font-size: 11px;
+	font-style: normal;
+}
+.ea-event p a {
+	color: #cc0066;
+}
+.ea-event .options {
+	float: right;
+	margin-left: 20px;
+}
+.ea-event .options li {
+	float: none;
+	margin-bottom: 5px;
+}
+.pagination {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.pagination li {
+	display: inline;
+	padding: 0 8px 0 0;
+}
+.pagination li a {
+	color: #0099CC;
+}
+#advert {
+	width: 180px;
+	height: 150px;
+	padding: 10px;
+	background: url(../images/bg/bg-advert.gif) top left no-repeat;
+}
+.center {
+	width: 227px;
+	margin: 0 25px 0 0 !important;
+	margin: 0 -4px 0 -8px;
+}
+.right {
+	width: 220px;
+	float: left;
+}
+.right p.more {
+	font-size: 1.1em;
+}
+.right p.more a {
+	color: #0099cc;
+}
+#upcoming-events {
+	width: 200px;
+	margin-top: 160px;
+}
+.shopping-wrap {
+	display: none;
+}
+.wildlife-wrap {
+	display: none;
+}
+.strawberry-wrap {
+	display: none;
+}
+.credits {
+	width: 1000px;
+	margin: 20px auto 40px;
+}
+.credits .credits {
+	float: left;
+	width: 270px;
+}
+.credits .mid {
+	float: left;
+	width: 245px;
+	margin: 0 20px 0 0;
+}
+.credits p.copywrite {
+	float: left;
+}
+.credits p {
+	font-size: 11px;
+	color: #fff;
+}
+.credits p a {
+	color: #fff;
+}
+.credits h1 {
+	text-indent: -9999px;
+	margin: 0 0 -21px;
+}
+.credits h1 a {
+	background: url(../images/bg/bg-logo-footer-09.png) top center no-repeat;
+	width: 235px;
+	height: 56px;
+	display: block;
+}
+.credits img {
+	float: left;
+	margin: 0 30px 0 0;
+}
+form#thingstodoform {
+	margin-bottom: 20px;
+}
+h3.vg {
+	width: 190px;
+	height: 24px;
+	background: url(http://summer.tnvacation.com/images/h-vacguide.jpg) top left no-repeat;
+	text-indent: -9999px;
+}
+h3.sl {
+	width: 190px;
+	height: 65px;
+	background: url(http://summer.tnvacation.com/images/h-southernliving.jpg) top left no-repeat;
+	text-indent: -9999px;
+}
+h3.summergems {
+	width: 184px;
+	height: 24px;
+	background: url(../images/bg/h-summergems.gif) top left no-repeat;
+	text-indent: -9999px;
+}
+h3.summersplash {
+	width: 200px;
+	height: 24px;
+	margin: 0 0 12px;
+	background: url(../images/h-summersplash.gif) top left no-repeat;
+	text-indent: -9999px;
+}
+h3.summersplash2 {
+	width: 200px;
+	height: 24px;
+	margin: 0 0 12px;
+	background: url(../images/h-summersplash2.gif) top left no-repeat;
+	text-indent: -9999px;
+}
+h3.ue {
+	width: 200px;
+	height: 24px;
+	background: url(../images/h-upcomingevents.gif) top left no-repeat;
+	text-indent: -9999px;
+}
+h3.acc {
+	width: 200px;
+	height: 24px;
+	background: url(http://summer.tnvacation.com/images/h-accessibility.gif) top left no-repeat;
+	text-indent: -9999px;
+}
+h3.gtm {
+	text-indent: -9999px;
+	overflow: hidden;
+}
+h3.gtm a {
+	width: 200px;
+	height: 145px;
+	display: block;
+	background: url(http://summer.tnvacation.com/images/h-getthemusic.jpg) top left no-repeat;
+}
+.getthemusic2 h3.gtm a {
+	width: 188px;
+	height: 145px;
+	display: block;
+	background: url(http://summer.tnvacation.com/images/h-getthemusic2.jpg) top left no-repeat;
+}
+h3.contest {
+	text-indent: -9999px;
+	overflow: hidden;
+}
+h3.watchvid {
+	text-indent: -9999px;
+	overflow: hidden;
+}
+h3.contest a {
+	display: block;
+	width: 185px;
+	height: 175px;
+	background: url(http://summer.tnvacation.com/images/bg/bg-entercontest.jpg) top left no-repeat;
+}
+h3.watchvid a {
+	display: block;
+	width: 185px;
+	height: 165px;
+	background: url(http://summer.tnvacation.com/images/bg/bg-watchvideo.jpg) top left no-repeat;
+}
+h3.wallpapers {
+	width: 555px;
+	height: 24px;
+	background: url(http://summer.tnvacation.com/images/h/h-wallpapers.gif) top left no-repeat;
+}
+div#medialist-wrap {
+	width: 480px;
+}
+div#medialist-wrap > div {
+	border-top: 10px solid #f3f3f3;
+	padding: 8px 0 0 0;
+	margin: 0 0 8px 0;
+	display: block;
+	clear: both;
+	background: url(../images/bg-multimedia-stripe.gif) top center no-repeat;
+}
+div#medialist-wrap div.topside {
+	border-top: none;
+	height: auto;
+	padding: 8px 0 0 0;
+	margin: 0 0 8px 0;
+}
+div#medialist-wrap div div.leftside {
+	margin: 0;
+	float: left;
+}
+div#medialist-wrap div div {
+	border-top: none;
+	padding: 10px;
+margin:;
+	float: right;
+	clear: none;
+}
+.wallpaper-wrap {
+	clear: both;
+	width: 478px;
+}
+.wallpaper-wrap img {
+	float: left;
+}
+.wallpaper-wrap ul {
+	float: right;
+	margin: 0 0 0 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 220px;
+	width: 122px;
+background: url(http://summer.tnvacation.com/images/nav/nav-wallpapers.gif) top left: no-repeat;
+}
+.wallpaper-wrap li a {
+	height: 22px;
+	width: 122px;
+	display: block;
+	background: url(http://summer.tnvacation.com/images/nav/nav-wallpapers.gif) top left no-repeat;
+}
+.wallpaper-wrap li.iphone a {
+	height: 34px;
+	background-position: 0 0;
+}
+.wallpaper-wrap li.z800 a {
+	background-position: 0 -34px;
+}
+.wallpaper-wrap li.z1024 a {
+	background-position: 0 -56px;
+}
+.wallpaper-wrap li.z12808 a {
+	background-position: 0 -78px;
+}
+.wallpaper-wrap li.z12801 a {
+	background-position: 0 -100px;
+}
+.wallpaper-wrap li.z1440 a {
+	background-position: 0 -122px;
+}
+.wallpaper-wrap li.z1600 a {
+	background-position: 0 -144px;
+}
+.wallpaper-wrap li.z1680 a {
+	background-position: 0 -166px;
+}
+.wallpaper-wrap li.z1920 a {
+	height: 32px;
+	background-position: 0 -188px;
+}
+.wallpaper-wrap p {
+	clear: both;
+	width: 450px;
+	background: #c8f7ed;
+	font-size: 10px;
+	padding: 12px 0 12px 8px;
+}
+/*	.wallpaper-wrap ul li{ text-indent: -9999px; overflow: hidden; }
+				.wallpaper-wrap ul li.select{ width: 145px; height: 27px; background: url(http://summer.tnvacation.com/images/bg/bg-wallpaper-nav.gif) top left no-repeat; overflow: hidden; }
+				.wallpaper-wrap ul li a{ width: 145px; height: 27px; display: block; background: url(http://summer.tnvacation.com/images/bg/bg-wallpaper-nav.gif) no-repeat; overflow: hidden; }
+			*/	
+				
+				.wallpaper-wrap ul li.x320 a {
+	background-position: 0 -27px;
+}
+.wallpaper-wrap ul li.x800 a {
+	background-position: 0 -54px;
+}
+.wallpaper-wrap ul li.x1024 a {
+	background-position: 0 -81px;
+}
+.wallpaper-wrap ul li.x12808 a {
+	background-position: 0 -108px;
+}
+.wallpaper-wrap ul li.x12801 a {
+	background-position: 0 -135px;
+}
+.wallpaper-wrap ul li.x1440 a {
+	background-position: 0 -162px;
+}
+.wallpaper-wrap ul li.x1600 a {
+	background-position: 0 -189px;
+}
+.wallpaper-wrap ul li.x1680 a {
+	background-position: 0 -216px;
+}
+.wallpaper-wrap ul li.x1920 a {
+	background-position: 0 -243px;
+}
+.wallpaper-wrap ul li.x320 a:hover {
+	background-position: -145px -27px;
+}
+.wallpaper-wrap ul li.x800 a:hover {
+	background-position: -145px -54px;
+}
+.wallpaper-wrap ul li.x1024 a:hover {
+	background-position: -145px -81px;
+}
+.wallpaper-wrap ul li.x12808 a:hover {
+	background-position: -145px -108px;
+}
+.wallpaper-wrap ul li.x12801 a:hover {
+	background-position: -145px -135px;
+}
+.wallpaper-wrap ul li.x1440 a:hover {
+	background-position: -145px -162px;
+}
+.wallpaper-wrap ul li.x1600 a:hover {
+	background-position: -145px -189px;
+}
+.wallpaper-wrap ul li.x1680 a:hover {
+	background-position: -145px -216px;
+}
+.wallpaper-wrap ul li.x1920 a:hover {
+	background-position: -145px -243px;
+}
+label {
+	width: 70px;
+	float: left;
+	display: block;
+}
+#contest textarea {
+	margin: 0 0 4px 0;
+	padding: 8px;
+	width: 204px;
+	height: 180px;
+	background: url(http://summer.tnvacation.com/images/bg/bg-kix-textarea.gif) top left no-repeat;
+	border: none;
+}
+#contest input.text {
+	margin: 0 0 4px 0;
+	padding: 8px 0 0 8px;
+	width: 212px;
+	height: 24px;
+	background: url(http://summer.tnvacation.com/images/bg/bg-contest-input.gif) top left no-repeat;
+	border: none;
+}
+p.entertowin {
+	text-indent: -9999px;
+	background: url(http://summer.tnvacation.com/images/bg/bg-entertowin.gif) top left no-repeat;
+}
+p.storyconfirm {
+	text-indent: -9999px;
+}
+p.storyconfirm a {
+	width: 340px;
+	height: 210px;
+	display: block;
+	background: url(http://summer.tnvacation.com/images/story-confirm-btn.jpg) top left no-repeat;
+}
+p.storyconfirm a:hover {
+	background-position: 0 -210px;
+}
+h3.storythanks {
+	text-indent: -9999px;
+	width: 340px;
+	height: 24px;
+	background: url(http://summer.tnvacation.com/images/h/h-thankyouentry.gif) top left no-repeat;
+}
+/*
+.inviteForm{ width: 520px; height: 334px; padding: 65px 0 0 80px; background: url(http://summer.tnvacation.com/images/bg/bg-sendinvite.png) top left no-repeat !important; background: url(http://summer.tnvacation.com/images/bg/bg-sendinvite.gif) top left no-repeat; position: absolute; top: 50%; left: 50%; margin: -167px 0 0 -260px; } 
+.inviteForm input.text{ border: 1px solid #c3c3c3; background: #fff; padding: 2px; margin-bottom: 6px; width: 260px; color: #666666; }
+.inviteForm label{ display: block; clear: both; padding-top: 3px; }
+.inviteForm a.sendinvite{ text-indent: -5000px; overflow: hidden; display: block; width: 94px; height: 34px; background: url(http://summer.tnvacation.com/images/btn/btn-sendinviteaway.jpg) top left no-repeat; margin-left: 70px; }
+.inviteForm a.sendinvite:hover{ background-position: bottom left; }
+.inviteForm a.sendinvite2{ text-indent: -5000px; overflow: hidden; display: block; width: 96px; height: 19px; background: url(http://summer.tnvacation.com/images/btn-sendinvite2.gif) top left no-repeat; }
+.inviteForm a.sendinvite2:hover{ background: url(http://summer.tnvacation.com/images/btn-sendinvite2-on.gif) top left no-repeat; }
+.inviteForm p.close{ text-align: right; margin: 0 0 0 270px; text-indent: 9999px; overflow: hidden; }
+.inviteForm p.close a{ width: 100px; height: 35px; display: block; }
+.inviteForm p.instruct{ color: #660066; font-size: 11px; }
+*/
+
+
+.inviteForm {
+	width: 389px;
+	height: 245px;
+	padding: 40px 0 0 37px;
+	background: url(http://summer.tnvacation.com/images/bg/bg-sendinvite.png) top left no-repeat;
+	position: absolute;
+	z-index: 999;
+}
+.inviteForm input.text {
+	border: 1px solid #c3c3c3;
+	background: #fff;
+	padding: 2px;
+	margin-bottom: 6px;
+	width: 290px;
+	color: #666666;
+}
+.inviteForm label {
+	display: block;
+	clear: both;
+	padding-top: 3px;
+}
+.inviteForm a.sendinvite {
+	text-indent: -5000px;
+	overflow: hidden;
+	display: block;
+	width: 96px;
+	height: 19px;
+	background: url(http://summer.tnvacation.com/images/btn/btn-sendinvite2.gif) top left no-repeat;
+}
+.inviteForm a.sendinvite:hover {
+	background-position: bottom left;
+}
+.inviteForm a.sendinvite2 {
+	text-indent: -5000px;
+	overflow: hidden;
+	display: block;
+	width: 96px;
+	height: 19px;
+	background: url(http://summer.tnvacation.com/images/btn/btn-sendinvite2.gif) top left no-repeat;
+}
+.inviteForm a.sendinvite2:hover {
+	background: url(http://summer.tnvacation.com/images/btn/btn-sendinvite2-on.gif) top left no-repeat;
+}
+.inviteForm p.close {
+	text-align: right;
+	margin: 0 35px 10px 0;
+}
+#inner-footer {
+	clear: both;
+	margin: 55px 0 0 0;
+	padding: 15px 0 30px 30px;
+}
+#inner-footer li {
+	display: inline;
+}
+#inner-footer li a {
+	color: #666;
+}
+select#thingstolist {
+	padding: 2px;
+	width: 200px;
+}
+#desktopfun {
+	clear: both;
+	width: 540px;
+	position: absolute;
+	margin-top: 380px;
+}
+h3.h-desktopfun {
+	clear: both;
+	width: 540px;
+	height: 24px;
+	background: url(http://summer.tnvacation.com/images/h/h-desktopfun.gif) top left no-repeat;
+}
+#desktopfun ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-left: 17px solid #d31e79;
+}
+#desktopfun li {
+	float: left;
+	margin-left: 7px !important;
+	margin-left: 3px;
+}
+#desktopfun li a {
+	display: block;
+	border: 5px solid #c8c8c8;
+	width: 113px;
+	height: 66px;
+}
+#desktopfun li a:hover, #desktopfun li a.selected {
+	border: 5px solid #d31e79;
+}
+#desktopfun p {
+	margin: 7px 0 0 24px;
+	clear: both;
+}
+#desktopfun p a {
+	padding: 6px 0 6px 10px !important;
+	padding: 4px 0 4px 10px;
+	display: block;
+	background: #efefef url(http://summer.tnvacation.com/images/bg/bg-viewsizes.gif) top right no-repeat;
+}
+.contestformwrap {
+	width: 340px;
+}
+#contestform div {
+	padding: 5px 0;
+}
+#contestform label {
+	line-height: 1;
+	float: left;
+	display: block;
+	width: 75px;
+	color: #ff6600;
+	font-family: Georgia, 'Times New Roman';
+	font-size: 12px;
+	font-weight: bold;
+}
+#contestform label.selectable {
+	float: none;
+	width: auto;
+	line-height: 1;
+	color: #222;
+	font-family: Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+}
+#contestform input.text, #contestform textarea.text {
+	border-top: 1px solid #7c7c7c;
+	border-left: 1px solid #7c7c7c;
+	padding: 2px;
+	width: 250px;
+}
+#contestform input.submit, #contestform p, #contestform label.selectable {
+	margin-left: 75px;
+	margin-bottom: 0;
+}
+p.tnstory a {
+	width: 340px;
+	height: 205px;
+	display: block;
+	background: url(http://summer.tnvacation.com/images/btn/btn-tnstory.jpg) top left no-repeat;
+}
+p.tnstory a:hover {
+	background: url(http://summer.tnvacation.com/images/btn/btn-tnstory-on.jpg) top left no-repeat;
+}
+#partners {
+	width: 200px;
+	float: right;
+}
+#partners a img {
+	border-bottom: 10px solid #f3f3f3;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	display: block;
+}
+h3.partners {
+	height: 24px;
+	background: url(http://summer.tnvacation.com/images/h/h-partners.gif) top left no-repeat;
+}
+.small {
+	font-size: 11px;
+}
+.sans {
+	font-family: Tahoma, 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial;
+}
+.serif {
+	font-family: Georgia, "Times New Roman";
+}
+.fleft {
+	float: left;
+}
+.fright {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.divider {
+	clear: both;
+}

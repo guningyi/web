@@ -1,0 +1,673 @@
+@import url("layout.css");
+@import url("typography.css");
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background:#fff;
+	text-align:center;
+}
+ul li {
+	list-style:none;
+}
+a img {
+	border:0
+}
+.clear {
+	clear:both;
+}
+.assist-text {
+	position:absolute;
+	left:-5000px;
+	top:-1000px
+}
+.print {
+	display: none;
+}
+/*============================ GLOBAL NAVIGATION =========================*/
+
+#global-nav {
+	background:#8F8F8F;
+	border:1px solid #000;
+	text-align:right;
+	padding:3px 5px 1px 0
+}
+#global-nav li, #global-nav form, #global-nav #search-li form p {
+	display:inline;
+}
+#global-nav a {
+	padding:6px 13px 3px 13px;
+	background:url(../img/glob_sep.gif) right bottom no-repeat;
+}
+#global-nav li.last a {
+	background:0;
+	padding-right:8px
+}
+#global-nav #search-li {
+	padding-top:2px;
+}
+#global-nav input {
+	border:1px solid #4C4C4C;
+	font-size:1.3em;
+	padding:0px 0 1px 5px;
+	margin-bottom:1px
+}
+#global-nav button {
+	width:52px;
+	height:18px;
+	background:url(../img/search.gif) center center no-repeat;
+	border:0;
+	cursor:pointer;
+	font-size:10px;
+	text-align:center;
+	vertical-align:top;
+	padding:2px 0 2px 0;
+	line-height:19px
+}
+/*============================ BANNERS =========================*/
+
+#home #header {
+	background:#EBF0D1 url(../img/home_banner.jpg) left center no-repeat
+}
+#the-gardens #header {
+	background:#EBF0D1 url(../img/gardens_banner.jpg) left center no-repeat
+}
+#the-gardens.edinburgh #header {
+	background:#EBF0D1 url(../img/edinburgh_banner.jpg) left center no-repeat
+}
+#the-gardens.inverleith #header {
+	background:#EBF0D1 url(../img/inverleith_banner.jpg) left center no-repeat
+}
+#the-gardens.benmore #header {
+	background:#EBF0D1 url(../img/benmore_banner.jpg) left center no-repeat
+}
+#the-gardens.logan #header {
+	background:#EBF0D1 url(../img/logan_banner.jpg) left center no-repeat
+}
+#the-gardens.dawyck #header {
+	background:#EBF0D1 url(../img/dawyck_banner.jpg) left center no-repeat
+}
+#support-us #header {
+	background:#DDEFFA url(../img/support_banner.jpg) left center no-repeat
+}
+#science #header {
+	background:#F9EFEF url(../img/science_banner.jpg) left center no-repeat
+}
+#education #header {
+	background:#F5EDF6 url(../img/education_banner.jpg) left center no-repeat
+}
+#about-us #header {
+	background:#E6EDE1 url(../img/about_banner.jpg) left center no-repeat
+}
+#whats-on #header {
+	background:#EED5BD url(../img/whatson_banner.jpg) left center no-repeat
+}
+/* Section bottom banner images */
+#the-gardens #main {
+	background:url(../img/gardens_bottom.jpg) left top no-repeat
+}
+#the-gardens.edinburgh #main {
+	background:url(../img/edinburgh_bottom.jpg) left top no-repeat
+}
+#the-gardens.inverleith #main {
+	background:url(../img/inverleith_bottom.jpg) left top no-repeat
+}
+#the-gardens.benmore #main {
+	background:url(../img/benmore_bottom.jpg) left top no-repeat
+}
+#the-gardens.logan #main {
+	background:url(../img/logan_bottom.jpg) left top no-repeat
+}
+#the-gardens.dawyck #main {
+	background:url(../img/dawyck_bottom.jpg) left top no-repeat
+}
+#support-us #main {
+	background:url(../img/support_bottom.jpg) left top no-repeat
+}
+#science #main {
+	background:url(../img/science_bottom.jpg) left top no-repeat
+}
+#education #main {
+	background:url(../img/education_bottom.jpg) left top no-repeat
+}
+#about-us #main {
+	background:url(../img/about_bottom.jpg) left top no-repeat
+}
+#whats-on #main {
+	background:url(../img/whatson_bottom.jpg) left top no-repeat
+}
+body.full-width #container #main {
+	background:0;
+	border-top:1px solid #666
+} /* Remove background images for databases pages */
+/*============================ MAIN NAVIGATION =========================*/
+
+#main-nav {
+	background:#F2F2F2 url(../img/nav_bg.gif) left bottom repeat-x;
+	overflow:hidden
+}
+#main-nav li {
+	float:left;
+	background:url(../img/nav_sep.jpg) right bottom no-repeat;
+	background:url(../img/nav_sep.jpg) right bottom no-repeat;
+	padding-right:1px
+}
+#main-nav a {
+	padding:5px 15px 4px 15px;
+	float:left
+}
+#home #main-nav {
+	border-bottom:1px solid #666
+}
+/*============================ SUB NAVIGATION =========================*/
+
+/* Section cut out images */
+#support-us #sub-nav {
+	background: url(../img/support_cutout.jpg) left bottom no-repeat
+}
+#science #sub-nav {
+	background: url(../img/science_cutout.jpg) left bottom no-repeat
+}
+#education #sub-nav {
+	background: url(../img/education_cutout.jpg) left bottom no-repeat
+}
+#about-us #sub-nav {
+	background: url(../img/about_cutout.jpg) left bottom no-repeat
+}
+#whats-on #sub-nav {
+	background: url(../img/whatson_cutout.jpg) left bottom no-repeat
+}
+#the-gardens #sub-nav, #inverleith #sub-nav {
+	background: url(../img/gardens_cutout.jpg) left bottom no-repeat
+}
+#sub-nav ul {
+	border-top:1px solid #fff
+}
+#sub-nav li {
+	border-bottom:1px solid #fff
+}
+#sub-nav li li {
+	border-top:1px solid #fff;
+	border-bottom:0
+}
+#sub-nav li ul li:first-child {
+	border-top:0
+}
+/*============================ DEEP NAVIGATION =========================*/
+
+.deep-nav {
+	background:#eee;
+}
+.deep-nav .deep-nav {
+	max-height:120px;
+	overflow:auto
+}
+.deep-nav li {
+	border-bottom:1px solid #fff
+}
+.deep-nav li li {
+	border-top:1px solid #fff;
+	border-bottom:0
+}
+/*============================ MAIN CONTENT =========================*/
+
+.midpic {
+	border:1px solid #ccc;
+	display:block;
+	margin:auto
+}
+.rightpic {
+	clear:both;
+	border:1px solid #ccc;
+	float:right;
+	margin:10px 0 10px 15px
+}
+.leftpic {
+	border:1px solid #ccc;
+	float:left;
+	margin:10px 15px 10px 0
+}
+.centertext {
+	text-align:center
+}
+/* Forms */
+fieldset {
+	background:#D4E2CA url(../img/aboutpanel_tl.gif) left top no-repeat;
+	border:0;
+	width:545px;
+	padding:10px 20px 10px 20px;
+	overflow:hidden;
+	margin-top:15px;
+}
+form label {
+	float:left;
+	width:120px;
+}
+form label.checkbox {
+	float:none;
+	width:auto
+}
+form label.radio {
+	float:none;
+	width:auto
+}
+form .checkbox input {
+	margin-left:120px;
+}
+form .checkbox {
+	margin-left:5px;
+}
+form .radio input {
+	margin-left:120px;
+}
+form .radio {
+	margin-left:5px;
+}
+input.button {
+	padding:1px 3px 1px 3px
+}
+#websignupfrm label, #webprofilefrm label {
+	float:left;
+	width:160px;
+}
+#websignupfrm p.formhelp {
+	margin:0 0 0 160px;
+	font-size:1em;
+	font-style:italic;
+}
+#contact-form p.formhelp {
+	margin:0 0 0 120px;
+	font-size:1em;
+	font-style:italic;
+}
+#loginfrm input, #loginreminder input {
+	float:left;
+	margin-bottom:8px
+}
+#main-content form fieldset p {
+	clear:both;
+	margin-bottom:2px
+}
+#loginfrm #checkbox_1 {
+	float:none;
+	margin:3px 10px 0px 10px
+}
+p#formsubmit-p, #contact-form input.button, #mailinglist-form input.button {
+	margin-left:120px;
+}
+#websignupfrm input.button, #webprofilefrm input.button {
+	margin-left:160px;
+}
+#formsubmit-p input, #loginreminder input {
+	margin-right:10px;
+	padding:1px 3px 1px 3px
+}
+#formsubmit-p a {
+	font-size:0.9em;
+	padding-top:5px
+}
+#txtwebemail {
+	margin-right:10px
+}
+#databasefrm input.button {
+	margin-left:180px;
+}
+#databasefrm label {
+	float:left;
+	width:180px;
+}
+#databasefrm label.radio {
+	float:none;
+	width:auto
+}
+#databasefrm .radio input {
+	margin-left:180px;
+}
+#databasefrm {
+	margin-left:70px;
+}
+#databasefrm p.formhelp {
+	margin:0 0 0 180px;
+	font-size:1em;
+	font-style:italic;
+}
+#main-content p.rightquote {
+	border-left:2px solid #ccc;
+	padding:0 0 0 10px;
+	width:170px;
+	float:right;
+	margin:10px 0 10px 10px
+}
+/* MaxiGallery */
+#main-content .thumbs li {
+	margin-left:0
+}
+/* News */
+.post-footer {
+	background:#E4E4E4 url(../img/postfooter_t.gif) left top no-repeat;
+	padding-top:5px;
+	margin:-0.5em 0 0.5em 0
+}
+.post-footer div {
+	background:#E4E4E4 url(../img/postfooter_b.gif) left bottom no-repeat;
+	padding:0 5px 5px 5px;
+	overflow:hidden
+}
+.post-footer .read-more {
+	float:right
+}
+.post-rightpic {
+	border:1px solid #ccc;
+	float:right;
+	margin:21px 0 10px 10px
+}
+#main-content .reflect_archive {
+	margin-top:1em
+}
+/* garden google maps */
+#google-map {
+	border: 1px solid #888888;
+	margin:10px 0 10px 0;
+}
+/* Data Tables*/
+table.data-table {
+	width:100%;
+	border:1px solid #ccc;
+	border-bottom:0
+}
+table.data-table tr.header-row th {
+	background:#333;
+	color:#fff
+}
+table.data-table td, table.data-table th {
+	border-bottom:1px solid #ccc;
+	padding:3px
+}
+table.data-table tr.odd td, table.data-table tr.odd th {
+	background:#eee
+}
+/* Home page */
+#main-panels {
+	background:url(../img/homebg.gif) left top repeat-y;
+}
+#inner-mainp {
+	background:url(../img/home_br.gif) left bottom no-repeat;
+}
+#upcoming-events {
+	overflow:hidden;
+}
+#upcoming-events li {
+	padding:5px 12px 5px 12px;
+	border-bottom:1px solid #fff;
+	background:#D4EBB3;
+	float:left;
+	width:349px;
+}
+#upcoming-events li.odd {
+	background:#E6F6CF
+}
+#upcoming-events li:hover {
+	background:#FBF8D6
+}
+#upcoming-events li a {
+	margin-left:7em;
+	display:block;
+}
+#upcoming-events span.date {
+	float:left;
+	width:7em;
+}
+#home .post-rightpic {
+	margin:0 0 0 15px;
+	border:1px solid #fff;
+	float:right
+}
+#main-news {
+	background:#BFD79E;
+	padding:15px;
+	overflow:hidden
+}
+#sub-panels {
+	background:#E4E4E4 url(../img/footer_t.gif) left top no-repeat;
+	padding-top:5px;
+}
+#sub-panels div {
+	background:#E4E4E4 url(../img/footer_b.gif) left bottom no-repeat;
+	padding:10px 18px 10px 18px;
+	overflow:hidden
+}
+#sub-panels .sub-panel {
+	background:0;
+	padding:0;
+	overflow:auto
+}
+/* Event Listing */
+#main-content dl#event-details {
+	overflow:hidden;
+	margin:10px 0 10px 10px;
+	float:left;
+}
+#main-content dl#event-details dt {
+	clear:both;
+	float:left;
+	margin-right:20px;
+	width:60px;
+	padding-left:13px;
+	background: url(../img/square-bullet.gif) left center no-repeat;
+}
+#main-content dl#event-details dd {
+	float:left;
+	width:285px;
+}
+#whats-on .post-rightpic {
+	border:1px solid #ccc;
+	float:right;
+	margin:10px 0 10px 10px
+}
+.series-footer {
+	border-bottom:1px dotted #cccccc;
+	padding-top:5px;
+}
+/*============================ SUB CONTENT =========================*/
+
+.cont-box {
+	padding-bottom:10px;
+	margin-bottom:20px
+}
+.cont-box img {
+	margin:0;
+	border-bottom:1px solid #fff;
+	padding:0;
+}
+/* Section Side Panels */
+#support-us .cont-box {
+	background:#B1DAF6 url(../img/supportpanel_br.gif) bottom right no-repeat;
+}
+#whats-on .cont-box {
+	background:#E9B788 url(../img/whatsonpanel_br.gif) bottom right no-repeat;
+}
+#education .cont-box {
+	background:#E7BBEE url(../img/educationpanel_br.gif) bottom right no-repeat;
+}
+#science .cont-box {
+	background:#EBC2BE url(../img/sciencepanel_br.gif) bottom right no-repeat;
+}
+#about-us .cont-box {
+	background:#D4E2CA url(../img/aboutpanel_br.gif) bottom right no-repeat;
+}
+#the-gardens .cont-box {
+	background:#DCE5AA url(../img/gardenspanel_br.gif) bottom right no-repeat;
+}
+/*============================ SECTION LANDING PAGES =========================*/
+
+#intropanel img {
+	float:right;
+	border-left:1px solid #fff;
+	margin:0 0 0 10px
+}
+#intropanel #slideshow {
+	width:366px;
+	height:209px;
+	float:right;
+	border-left:1px solid #fff;
+	margin:0 0 0 10px;
+	border-top:0;
+	border-bottom:0;
+}
+#intropanel #slideshow img {
+	margin:0;
+	border-left:0
+}
+#sectionpanel {
+	color:#000
+}
+#sectionpanel #sub-panel p {
+	margin:0
+}
+#sub-panel ul li, #sub-panel p {
+	padding-right:10px;
+}
+.bottompanel img {
+	border:1px solid #ccc
+}
+/*Section Intro Panels */
+#the-gardens #intropanel {
+	background:#638C19 url(../img/gardenspanel_c.gif) left top no-repeat;
+}
+#about-us #intropanel {
+	background:#476532 url(../img/aboutpanel_c.gif) left top no-repeat;
+}
+#support-us #intropanel {
+	background:#0071B8 url(../img/supportpanel_c.gif) left top no-repeat;
+}
+#whats-on #intropanel {
+	background:#D36805 url(../img/whatsonpanel_c.gif) left top no-repeat;
+}
+#science #intropanel {
+	background:#BA2727 url(../img/sciencepanel_c.gif) left top no-repeat;
+}
+#education #intropanel {
+	background:#9F48A3 url(../img/educationpanel_c.gif) left top no-repeat;
+}
+/*Section Panels */
+#support-us #sectionpanel {
+	background:#B1DAF6;
+}
+#whats-on #sectionpanel {
+	background:#E9B788;
+}
+#education #sectionpanel {
+	background:#E7BBEE;
+}
+#science #sectionpanel {
+	background:#EBC2BE;
+}
+#about-us #sectionpanel {
+	background:#B0CE9A;
+}
+#the-gardens #sectionpanel {
+	background:#D3E084;
+}
+/*============================ EVENT CALENDAR =========================*/
+
+#calendar {
+	border-left:1px solid #A2ADBC;
+	margin:0px;
+	border-right:1px solid #fff;
+}
+#calendar td {
+	border-right: 1px solid #A2ADBC;
+	border-bottom: 1px solid #A2ADBC;
+	width: 40px;
+	height: 20px;
+	text-align: center;
+	background: #eee;
+}
+#calendar thead tr th {
+	padding: 3px;
+	background: #A2ADBC;
+	color: #fff;
+	text-align: center;
+	border:0
+}
+#calendar th {
+	color: #616B76;
+	background: #D9E2E1;
+	border-right: 1px solid #A2ADBC;
+	border-bottom: 1px solid #A2ADBC;
+	border-top: 1px solid #A2ADBC;
+	text-align: center;
+}
+#calendar td a {
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+}
+#calendar td a:link, #calendar td a:visited {
+	color: #608194;
+	background: url(../img/bg_calendar.gif) no-repeat;
+}
+#calendar td a:hover, #calendar td a:active {
+	color: #6aa3ae;
+	background: #fff;
+}
+#sectionpanel form#event-options {
+	margin: 20px 0 0 0
+}
+#sectionpanel #event-options p {
+	margin:3px 0 2px 0
+}
+#sectionpanel #event-options select {
+	width:240px;
+	margin-bottom:5px
+}
+#main-content #event-filter {
+	background:#e4e4e4;
+}
+#main-content #event-filter p {
+	padding:4px 10px 4px 10px;
+}
+#main-content #event-filter select {
+	height:20px;
+	width:180px;
+}
+#event-filter button {
+	background:transparent url(../img/search.gif) no-repeat scroll center;
+	border:0pt none;
+	cursor:pointer;
+	font-size:10px;
+	height:18px;
+	text-align:center;
+	width:52px;
+}
+/*============================ SITE INFO =========================*/
+
+#site-info {
+	background:#E4E4E4 url(../img/footer_t.gif) left top no-repeat;
+	padding-top:5px;
+	font-size:12px;
+}
+#site-info div {
+	background:#E4E4E4 url(../img/footer_b.gif) left bottom no-repeat;
+	padding:0 10px 5px 10px;
+	overflow:hidden
+}
+#site-info p {
+	float:left
+}
+#site-info ul {
+	float:right
+}
+#site-info ul li {
+	float:left;
+	margin:0 10px 0 10px
+}
+#company-info {
+	text-align:center;
+}
+
+#site-info a[href="http://twitter.com/thebotanics"] {
+	background: url(../img/twitter-16x16.png) left no-repeat;
+	padding: 4px 4px 4px 20px;
+}

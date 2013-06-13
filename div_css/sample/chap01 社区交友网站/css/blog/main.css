@@ -1,0 +1,269 @@
+.d2 {
+	float:left;
+	width:445px;
+	margin-left:10px;
+}
+.d2-2-1 {
+	float:left;
+	width:445px;
+	height:29px;
+	background:#A769CC url(../../img/c_top.gif) top left no-repeat;
+}
+h3 {
+	margin:0px;
+	padding:0px;
+	position:relative;
+	left:13px;
+	top:3px;
+	width:200px;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-family: "Trebuchet MS", verdana, sans-serif;
+}
+.d2-2-2b {
+	float:left;
+	width:445px;
+}
+.d2-2-2b ul {
+	margin:0px;
+	padding:0px;
+}
+.d2-2-2b li {
+	list-style:none outside;
+	width:435px;
+	height:58px;
+	margin:18px 0px 0px 10px;
+	background:url(../../img/line_dot.gif) 0px 56px repeat-x;
+}
+.d2-2-2b-img {
+	float:left;
+	margin:0px 10px 0px 0px;
+}
+.d2-2-2b-txt1 {
+	float:left;
+	width:370px;
+	margin:0px 0px 6px 0px;
+	overflow:hidden;
+}
+.d2-2-2b-txt2 {
+	float:left;
+	width:370px;
+	height:15px;
+	margin:0px 0px 7px 0px;
+	font:normal 11px verdana;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.d2-2-2b-txt3 {
+	float:left;
+	width:150px;
+	margin:0px;
+	font:normal 11px verdana;
+	overflow:hidden;
+}
+.d2-2-2b-txt3-n {
+	float:left;
+	width:200px;
+	margin:0px;
+	font:normal 11px verdana;
+	overflow:hidden;
+}
+.d2-2-2b-txt4 {
+	float:left;
+	width:224px;
+	margin:0px;
+	font:normal 11px verdana;
+	color:#A769CC;
+	text-align:right;
+}
+.d2-2-2b-txt4-n {
+	float:left;
+	width:174px;
+	margin:0px;
+	font:normal 11px verdana;
+	color:#A769CC;
+	text-align:right;
+}
+.d2-2-3 {
+	float:left;
+	width:212px;
+}
+.d2-2-3-1 {
+	float:left;
+	width:212px;
+	height:29px;
+	background:#A769CC url(../../img/c_top.gif) top left no-repeat;
+}
+.d2-2-3b {
+	float:left;
+	width:212px;
+}
+.d2-2-3b ul {
+	margin:0px;
+	padding:0px;
+}
+.d2-2-3b li {
+	list-style:none outside;
+	width:212px;
+	height:58px;
+	margin:18px 0px 0px 0px;
+	background:url(../../img/line_dot.gif) 0px 56px repeat-x;
+}
+.d2-2-3b-img {
+	float:left;
+	margin:0px 9px 0px 0px;
+}
+.d2-2-3b-txt1 {
+	float:left;
+	width:150px;
+	margin:-3px 0px 2px 0px;
+}
+.d2-2-3b-txt2 {
+	float:left;
+	width:146px;
+	margin:0px 0px 13px 0px;
+	font:normal 10px verdana;
+}
+.d2-2-3b-txt3 {
+	float:left;
+	width:155px;
+	font:normal 10px verdana;
+	color:#A769CC;
+	margin-left:-1px;
+}
+.d2-2-3-2 {
+	float:left;
+	height:22px;
+	width:212px;
+}
+.d2-2-3-2-1 {
+	float:left;
+	width:85px;
+	height:22px;
+	background:#A769CC url(../../img/c_bot_vis.gif) bottom right no-repeat;
+}
+.d2-2-3-2-1-e {
+	float:left;
+	width:85px;
+	height:22px;
+	background:#A769CC url(../../img/c_bot_vis.gif) bottom right no-repeat;
+}
+.d2-2-3-2-1b {
+	float:left;
+	width:85px;
+	height:5px;
+	line-height:5px;
+	background:#A769CC;
+}
+.d2-2-3-2-2 {
+	float:left;
+	width:127px;
+	height:5px;
+	line-height:5px;
+	background:#A769CC;
+}
+.d2-2-3-2-2-e {
+	float:left;
+	width:127px;
+	height:5px;
+	line-height:5px;
+	background:#A769CC;
+}
+.d2-2-3-3 {
+	float:left;
+	width:212px;
+	height:241px;
+	line-height:18px;
+	font-family:verdana;
+	font-size:11px;
+	background:#F3E7F3;
+}
+.d2-2-3-3-1 {
+	position:relative;
+	left:10px;
+	width:185px;
+}
+.d2-2-3-3-txt {
+	font-size:12px;
+	font-weight:bold;
+	color:#583D73;
+}
+.d2-2-3-3 a {
+	color:#583D73;
+}
+.d2-2-4 {
+	float:left;
+	height:27px;
+	width:445px;
+}
+.d2-2-4-1 {
+	float:left;
+	width:85px;
+	height:22px;
+	line-height:12px;
+	background:#A769CC url(../../img/c_bot_vis.gif) bottom right no-repeat;
+}
+.d2-2-4-2 {
+	float:left;
+	width:360px;
+	height:5px;
+	line-height:5px;
+	background:#A769CC;
+}
+.d2-2-4-3 {
+	float:left;
+	width:360px;
+	height:17px;
+	line-height:17px;
+}
+.d-sp-v-20 {
+	float:left;
+	width:21px;
+}
+.d-sp-h-5 {
+	height:5px;
+	line-height:5px;
+	width:207px;
+}
+/** Main page Tags Style **/
+.d2-2-t {
+	float:left;
+	background:#C8DEF5;
+}
+.d2-2-t-1 {
+	height:22px;
+	line-height:22px;
+	font-size:12px;
+	width:445px;
+	font-weight:bold;
+	color:#53386E;
+	background:#FFFFFF url(../../img/c_tags.gif) bottom right no-repeat;
+}
+.d2-2-t-2 {
+	position:relative;
+	left:10px;
+	width:430px;
+	line-height:22px;
+	padding-bottom:5px;
+}
+.d2-2-t-2 br {
+	line-height:7px;
+}
+.d2-2-t-3 {
+	float:left;
+	width:115px;
+	height:17px;
+	line-height:17px;
+	font-size:10px;
+	font-weight:bold;
+	background:#C8DEF5 url(../../img/c_bot_vis.gif) bottom right no-repeat;
+}
+.d2-2-t-3-1 {
+	position:relative;
+	left:10px;
+	top:-5px;
+	font-size:11px;
+}
+/** End Main page Tags Style **/

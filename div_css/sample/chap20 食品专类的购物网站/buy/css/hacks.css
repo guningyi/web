@@ -1,0 +1,75 @@
+/*
+Hacks stylesheet includes:
+	- "ie6" specific styles 
+	- "ie7" specific styles
+*/
+
+/* IE6 Specific CSS */
+* html .class {
+}
+* html #header {
+	height:110px;
+}
+* html #navMain {
+	margin-bottom:-1px;
+}
+* html #navMain ul li, * html #navSupp ul li {
+	display:inline-block;
+}
+* html .promo {
+	height:150px;
+}
+* html #content .promo {
+	height:160px;
+}
+* html #ffk .promo {
+	height:100px;
+	padding-left:0;
+}
+* html .ui-tabs .ui-tabs-panel {
+	float:none;
+	height:200px;
+}
+* html .tab-sort-2.ui-tabs .ui-tabs-panel {
+	height:125px;
+}
+* html .recipe-title {
+	height:4em;
+}
+* html fieldset.shopping-list {
+	padding-right:2px;
+}
+* html #ffk h2.cloud {
+	margin-bottom:-3px;
+}
+/* kids site styles */
+* html .fancy-box ul.nav-recipe li {
+	height:200px;
+}
+/* IE7 Specific CSS */
+*html .class {
+}
+/* both IE6 & IE7 */
+.class {
+}
+.clear-block {
+	height:1px;
+	line-height:1px;
+	width:100%;
+}
+hr {
+	float:left;
+	margin-bottom:0px;
+}
+#content img {
+	padding-left:0px;
+}
+.article-tools {
+	margin-top:0px;
+}
+#inSeason-form .border {
+	padding-bottom:30px;
+}
+#ffk h2.cloud {
+	display:inline-block;
+}

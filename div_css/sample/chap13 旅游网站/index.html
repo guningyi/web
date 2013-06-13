@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="css/ticketgreece.css">
+<script type="text/javascript" src="js/i_javascript.js"></script>
+<script type="text/javascript" src="js/i_ajax.js"></script>
+<script type="text/javascript" src="js/tsm.js"></script>
+</head>
+<body>
+<div id="Wrapper">
+  <!-- header-->
+  <div id="Header">
+    <div class="LogoTicket"><a href="index.html"><img src="img/logoticketgreece.gif" border="0" width="450" height="80" /></a> <a href="#"><img src="img/map1.gif" border="0" /></a><br />
+    </div>
+    <div class="LogoAdrianos"><img src="img/logoadrianos.gif" width="255"  height="65" />
+      <div class="LogoAddress">地址：虹口区逸仙路123号<br />
+        <b>电话 :</b> 021-12345678, 021-12345689<br />
+        <b>传真 :</b> 021-12541254<br />
+        <b>E-mail :</b> <a href="mailto:123@163.com">123@163.com</a><br />
+      </div>
+    </div>
+  </div>
+  <!-- header-->
+  <div id="MainTop">&nbsp;</div>
+  <div id="Menu">
+    <div class='MenuItem'><a href="index.html" class="MenuFont" >首页</a></div>
+    <div class='MenuItem'><a href="taxi.html" class="MenuFont" >国内</a></div>
+    <div class='MenuItem'><a href="content.html" class="MenuFont" >国际</a></div>
+    <div class='MenuItem'><a href="taxi.html" class="MenuFont" target="_blank">旅店</a></div>
+    <div class='MenuItem'><a href="content.html" class="MenuFont">自驾游</a></div>
+    <div class='MenuItem'><a href="taxi.html" class="MenuFont">出租车查询</a></div>
+    <div class='MenuItem'><a href="content.html" class="MenuFont" >旅游动态</a></div>
+    <div class='MenuItem'><a href="taxi.html" class="MenuFont" >票价查询</a></div>
+  </div>
+  <div id="Main">
+    <div class="desc">在这里，您可以随意订购全国10000种景点打折门票！查看超过11000家景点资料，更有超过58万条的网友点评供您参考！ ...</div>
+    <div class="Engines">
+      <div class="flights">
+        <div class="flighttitle">航班查询</div>
+        <div class="flighttable">
+          <table width="270px" cellspacing="3" cellpadding="1" border="0">
+            <tr>
+              <td class="FieldTD">姓 名:</td>
+              <td><input name="fname" class="box" size="20" MAXLENGTH="20"></td>
+            </tr>
+            <tr>
+              <td class="FieldTD">邮 箱:</td>
+              <td><input name="email" class="box" size="20" MAXLENGTH="20"></td>
+            </tr>
+          </table>
+          <br/>
+          <span class="step">第一步:</span>&nbsp;<b>输入地点</b> <br/>
+          <br/>
+          <table width="270px" cellspacing="3" cellpadding="1" border="0">
+            <tr>
+              <td class="FieldTD">出发地:</td>
+              <td><input name="fromcity" class="box" size=13 MAXLENGTH="20"></td>
+            </tr>
+            <tr>
+              <td class="FieldTD">目的地:</td>
+              <td><input name="tocity" class="box" size=13 MAXLENGTH="20"></td>
+              </td>
+            </tr>
+          </table>
+          <div class="line">&nbsp;</div>
+          <br/>
+          <span class="step">第二步 :</span>&nbsp;<b>选择日期</b><br/>
+          <br/>
+          <table>
+            <tr>
+              <td><span class="small">出发日期:</span></td>
+              <td><span class="small">
+                <select name=outmonth class="small">
+                  <option value="1" selected="selected">一月</option>
+                  <option value="2">二月</option>
+                  <option value="3">三月</option>
+                  <option value="4">四月</option>
+                  <option value="5">五月</option>
+                  <option value="6">六月</option>
+                  <option value="7">七月</option>
+                  <option value="9">八月</option>
+                  <option value="9">九月</option>
+                  <option value="10">十月</option>
+                  <option value="11">十一月</option>
+                  <option value="12">十二月</option>
+                </select>
+                <select name=outday class="small">
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                </span></td>
+              <td><a href="#"><img src="img/calendar2.gif" width="21" height="20" border="0"></a></td>
+            </tr>
+            <tr>
+              <td><span class="small">回程日期:</span></td>
+              <td><span class="small">
+                <select name=retmonth class="small">
+                  <option value="1" selected="selected">一月</option>
+                  <option value="2">二月</option>
+                  <option value="3">三月</option>
+                  <option value="4">四月</option>
+                  <option value="5">五月</option>
+                  <option value="6">六月</option>
+                  <option value="7">七月</option>
+                  <option value="9">八月</option>
+                  <option value="9">九月</option>
+                  <option value="10">十月</option>
+                  <option value="11">十一月</option>
+                  <option value="12">十二月</option>
+                </select>
+                <select class="small" name=retday>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                </span></td>
+              <td><a href="#"><img src="img/calendar2.gif" width="21" height="20" border="0"></a></td>
+            </tr>
+          </table>
+          <div class="line">&nbsp;</div>
+          <br/>
+          <span class="step">第三步 :</span>&nbsp;<b>订票数量</b><br/>
+          <br/>
+          <table>
+            <tr>
+              <td><span class="small">
+                <select class="small" name="numptc1" id="numptc1" >
+                  <option value=1 selected>1
+                  <option value=2>2
+                  <option value=3>3
+                  <option value=4>4
+                  <option value=5>5
+                  <option value=6>6
+                  <option value=7>7
+                  <option value=8>8
+                  <option value=9>9</option>
+                </select>
+                张</span> </td>
+            </tr>
+          </table>
+          <div class="line">&nbsp;</div>
+          <div style="float:left;width:90%; text-align:right"> <br />
+            <INPUT class="cmd" type="button" value="确认订票" >
+            &nbsp; <br />
+            <br />
+            <span id="loaderv"><img src="img/loader.gif" align= "absmiddle" /></span>
+            <div id="results">&nbsp;</div>
+          </div>
+          <script language="JavaScript" >
+<!--
+function set_date() {
+var outday=document.afpForm.outday.selectedIndex;
+var outmonth=document.afpForm.outmonth.selectedIndex;
+var calendar=new Date();
+var advpurchase=1+3;
+calendar.setDate(calendar.getDate()+advpurchase);
+document.afpForm.outday.selectedIndex=calendar.getDate()-1;
+document.afpForm.outmonth.selectedIndex=calendar.getMonth();
+calendar.setDate(calendar.getDate()+7);
+document.afpForm.retday.selectedIndex=calendar.getDate()-1;
+document.afpForm.retmonth.selectedIndex=calendar.getMonth();
+}
+setTimeout ('set_date()',100);
+// -->
+</script>
+        </div>
+      </div>
+      <div class="offers">
+        <table width="100%" cellpadding ="0" cellspacing ="0">
+          <tr>
+            <td class="offerheader" colspan="2">热门旅游线路</td>
+          </tr>
+          <tr>
+            <td class="price" align ="center" colspan="2">特别推荐的线路</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>游周庄看表演送蜜月酒店套餐 </a></td>
+            <td width="30%" class="price"> 368元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>恐龙园+如家标准房2人套餐 </a></td>
+            <td width="30%" class="price"> 350元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>大连老虎滩海洋公园</a></td>
+            <td width="30%" class="price"> 130元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>淳安千岛湖涉外豪华邮轮1晚湖景房住宿</a></td>
+            <td width="30%" class="price"> 550元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>世博1日游(交通+世博门票)</a></td>
+            <td width="30%" class="price"> 150元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>普陀山礼佛2日超值品质游(上海出发) </a></td>
+            <td width="30%" class="price">488元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>千岛湖联票</a></td>
+            <td width="30%" class="price"> 175元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>青岛极地海洋世界</a></td>
+            <td width="30%" class="price">90元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>西塘古镇</a></td>
+            <td width="30%" class="price">70元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>西溪湿地联票</a></td>
+            <td width="30%" class="price">105元</td>
+          </tr>
+          <tr>
+            <td class="offercontent"><a href="#" class='InfoFont'>桐庐风光、千岛湖休闲2日游</a></td>
+            <td width="30%" class="price"> 318元</td>
+          </tr>
+          <tr>
+            <td class="offercontent" colspan="2">变与不变交织着这座已经崛起的国际化大都市。昔日的石库门建筑今天已经是流行的元素和品牌</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="ShipsCars"><a href='#' target='_blank'><img src='img/content/hotels.jpg' width='320' height='166'  border='0'></a><a href='#' target='_self'><img src='img/content/ship.jpg' width='320' height='160'  border='0'></a><a href='#' target='_self'><img src='img/content/avis.jpg' width='320' height='160'  border='0'></a></div>
+    <div id="Banners"><br />
+      <a href='#' target='_self'><img src='img/content/tours.jpg' width='215' height='163'  border='0'></a><a href='#' target='_self'><img src='img/content/b2.jpg' width='210' height='163'  border='0'></a><a href='#' target='_self'><img src='img/content/b4.jpg' width='210' height='163'  border='0'></a><a href='#' target='_self'><img src='img/content/b3.jpg' width='212' height='163'  border='0'></a><a href='#' target='_self'><img src='img/content/yachts.jpg' width='215' height='149'  border='0'></a><a href='#' target='_self'><img src='img/content/transfer.jpg' width='210' height='150'  border='0'></a><a href='#' target='_self'><img src='img/content/disney.jpg' width='429' height='150'  border='0'></a></div>
+    <div id="Info">
+      <div class="InfoHeader"><img src="img/infoicon.gif" align="texttop"><span class="InfoHeaderSpan">特别推荐</span></div>
+      <div class="InfoBody">
+        <div class='InfoList'>主题游玩
+          <ul style='list-style-image:url(images/arrow.gif); position:relative;'>
+            <li><a href="#" class='InfoFont' target="_blank">五一特惠线路</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">酒店</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">自由行套餐产品</a></li>
+            <li><a href="#" class='InfoFont' target="_blank"> 赏花</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">主题乐园</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">城市观光</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">古镇</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">演出</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">野外烧烤</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">野营</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">欢乐时光</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">特价游</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">名山名水</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">水乡古镇</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">城市场馆</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">动物园</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">植物园</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">温泉</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">海滩</a></li>
+            <br>
+          </ul>
+        </div>
+        <div class='InfoList'>热销门票<br>
+          <ul style='list-style-image:url(images/arrow.gif); position:relative;'>
+            <li><a href="#" class='InfoFont' target="_self">成都欢乐谷</a></li>
+            <li><a href="#" class='InfoFont' target="_self">宁波雅戈尔动物园</a></li>
+            <li><a href="#" class='InfoFont' target="_self">无锡灵山大佛</a></li>
+            <br>
+          </ul>
+        </div>
+        <div class='InfoList'>热门景区<br>
+          <ul style='list-style-image:url(images/arrow.gif); position:relative;'>
+            <li><a href="#" class='InfoFont' target="_blank">无锡三国城</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">蜈支洲岛</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">宜兴善卷洞</a></li>
+            <br>
+          </ul>
+        </div>
+        <div class='InfoList'>游玩指南<br>
+          <ul style='list-style-image:url(images/arrow.gif); position:relative;'>
+            <li><a href="#" class='InfoFont' target="_blank">上海欢乐谷首日体验归来</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">上海海欢乐谷 除了激情还是激情！</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">感受迟来已久的上海美食小吃</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">南京汤山温泉踩点随笔 </a></li>
+            <li><a href="#" class='InfoFont' target="_self">三天两夜，穿梭在古城南京</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">南京的十大特色小吃</a></li>
+            <br>
+          </ul>
+        </div>
+        <div class='InfoList'>论坛热帖<br>
+          <ul style='list-style-image:url(images/arrow.gif); position:relative;'>
+            <li><a href="#" class='InfoFont' target="_blank">[官方活动] 写游记赢别墅住宿和世博会门票！ </a></li>
+            <li><a href="#" class='InfoFont' target="_blank">[实用攻略] 社区超实用专辑大放送！</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">[网友活动] 网友活动之婺源留念</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">[结伴同行] 4-6月出游 目的地征集</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">[旅游攻略] “足不出沪”上海赏樱攻略</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">[旅游攻略] 爱上普罗旺斯的春天</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">[旅游攻略] 还记得那片竹海吗？</a></li>
+            <li><a href="#" class='InfoFont' target="_blank">[美食天地] 小s美食--夜游苏州</a></li>
+          </ul>
+        </div>
+        <div class="InfoBanners"> <a href="#"><img src="img/insurance.gif" border="0" /></a>&nbsp; <a href="#" target="_blank"><img src="img/skymap3d.gif" border="0"  /></a>&nbsp; <a href="#" target="_blank"><img src="img/arion.gif" border="0" /></a>&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <div id="Footer">&nbsp;</div>
+  <div class="FooterDisclaimer"> <a href="#" >关于我们</a> <a href="#">联系我们</a> &nbsp;</div>
+  <div class="Copyright">旅游网 &copy; 2010 保留一切权利<br />
+    </div>
+  <div class="Logos"><img src="img/Brightkite.png" style="width:32px; height:32px;" />&nbsp;<img src="img/Delicious.png" style="width:32px; height:32px;"/>&nbsp;<img src="img/MacThemes2.png" style="width:32px; height:32px;"/>&nbsp;<img src="img/Mail.png" style="width:32px; height:32px;"/>&nbsp;<img src="img/Mobile Me.png" style="width:32px; height:32px;"/>&nbsp;<img src="img/DesignMoo.png" style="width:32px; height:32px;"/></div>
+</div>
+</div>
+<!-- wrapper-->
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.write('<SCRIPT TYPE="text/javascript" SRC="http://ad.z5x.net/st?ad_type=ad&ad_size=728x90&section=815472"></SCRIPT>\n');

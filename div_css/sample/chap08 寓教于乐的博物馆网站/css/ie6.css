@@ -1,0 +1,159 @@
+/**********************************************************************************************
+
+	Title: Studio7
+	Author: Studio 7 Designs Inc
+	Date: January 2008 
+
+***********************************************************************************************/
+
+#submenu, #portofolio, #services, #we_do, #footer, #header {
+	height:1%;
+	width:100%;
+}
+#services li {
+	height:1%;
+}
+#main_menu a.selected {
+	display:block;
+}
+#submenu .last_element {
+	margin-right:25px;
+	display: inline;
+}
+
+#portfolio_main .proud_of .projects li {
+	float:left;
+	width:100%;
+}
+#portfolio_main .proud_of p.sample img {
+	display:block;
+}
+#portfolio_main	.proud_of a.view_project_details {
+	position:absolute;
+}
+.lonely #main_menu {
+	top:0;
+	left:0;
+	position:absolute;
+}
+#header.lonely {
+	position:relative;
+	height:58px;
+}
+#about .header_image {
+	margin-bottom:0;
+	padding-bottom:14px;
+}
+#environment {
+	margin-bottom:20px;
+}
+a.view_web_design_portfolio {
+	margin-bottom:0;
+}
+#contacts_legal {
+	float:left;
+	padding-right:0;
+}
+#contact .left_column,
+#contact .right_column {
+	display:inline;
+}
+#contact .form_entry label {
+	float:left;
+	width:415px;
+}
+#contact button.submit{
+	float:right;
+}
+#contact .quick_left {
+	background:#EFEFEF;
+	border:0;
+	width:410px;
+	display:inline;
+	clear:none;
+	margin-left:50px;
+	margin-top:0;
+}
+#contact .quick_left h2.quick {
+	background:#EFEFEF;
+	padding:0;
+	margin:0;
+	border:0;
+}
+#contact .quick_right {
+	margin-left:0;
+	display:inline;
+	float:right;
+	margin-top:-437px;
+}
+#portfolio {
+	float:left;
+	width:100%
+}
+#services {
+	padding-bottom:30px;
+}
+#media .other_links {
+	padding-right:0;
+}
+#network_shop {
+	background:#fff url(../img/bg-network_shop.gif) left top repeat-x;
+}
+.no_buttons {
+	padding-bottom:25px;
+}
+#portfolio_web .other_projects li.previous_page {
+	padding-left:20px;
+}
+#portfolio_web .other_projects li.previous_page a.previous_page{
+	margin-left:0;
+}
+#portfolio_web .photography_portfolio ul {
+	padding-bottom:15px;
+}
+#services_page .description {
+	position:absolute;
+}
+#services_page li {
+	position:relative;
+}
+#portfolio_main .proud_of a.view_project_details {
+	margin-top:15px;
+}
+#portfolio_main .proud_of .projects li {
+	height:387px;
+}
+#network_shop .no_bottom {
+	padding-bottom:25px;
+}
+button.btn-submit_comment {
+	margin-left:320px;
+}
+div.header-figure{
+	background: url(../img/figure-header-ie.gif) left top no-repeat;
+}
+#container{
+overflow: hidden;
+}
+#rss button {
+	left:3px;
+	}
+
+#pitch h1 {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/title-pitch.png', sizingMethod='crop');
+}
+#pitch h2 {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/title-services.png', sizingMethod='crop');
+}
+#pitch a.explore{
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/btn-explore-n.png', sizingMethod='crop');
+	cursor: pointer;
+}
+#pitch a.explore:hover{
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/btn-explore-h.png', sizingMethod='crop');
+	cursor: pointer;
+}

@@ -1,0 +1,105 @@
+/* General Veer.Popup styles follow */
+			
+/* Style of the container that represents a generic hover tip with a wait throbber.*/
+.veerHover 
+{
+	position: absolute;
+	border: 1px solid #808080;	
+	background-color: white;
+	font: 10px Verdana;			/* sets the overall font used by the hover */
+	width: auto;				
+	height: auto;				
+	z-Index: 1000;				/* forces popup above the document */
+}
+
+.veerHover .wait 
+{
+	padding: 2px;
+	color: #808080;
+}
+
+/* Style of the container that represents a type hover tip. */
+.veerTypeHover {
+	position: absolute;
+	border: 1px solid #666666;	
+	background-color: white;
+	font: 10px Verdana;			/* sets the overall font used by the hover */
+	width: 294px;				/* required for IE5:mac, otherwise auto would do */				
+	height: auto;				
+	z-Index: 10000;				/* forces popup above the document */
+}
+
+.veerTypeHover .wait 
+{
+	padding: 8px;
+	color: #808080;
+}
+
+/* ------ Fading hover AJAX completion message tip ------- */
+
+/* main style provides padding around the border */
+.veerMessageHover 
+{
+	background-color: #F8F8F8;
+	font: 10px verdana, helvetica, arial, geneva, sans-serif;
+	height: auto;				
+	width: 370px;		
+	padding: 2px;	
+	z-Index: 10001;				/* forces popup above both the document and type hovers */
+}
+
+/* provides a border and padding around the content */
+.veerMessageHover .content
+{
+	background-color: transparent;
+	border: 2px solid #B3B3B3;
+	color: #666;
+	font: 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 16px;
+	height: 100%;	/* required for IE6 - br clear=all doesn't cut it */
+	padding: 15px;	
+}
+
+
+/* provides a holder for the thumbnail */
+.veerMessageHover_left
+{
+	float: left;
+	width: 45px;
+	margin-right: 15px;
+}
+
+/* provides messaging regardless of whether we have a thumbnail */
+.veerMessageHover_right
+{
+	width: 270px;
+	float: left;
+}
+
+.veerMessageHover_right p
+{
+	color: #666;
+	margin: 5px 0 0 0;
+}
+
+
+/* contains a 1/4-sized thumbnail image */
+.veerMessageHover_thumb
+{
+	width: 42px;
+	height: 42px;
+	text-align: center;
+	border: solid 1px #DDD;
+}
+
+/* contains a centerized full-size crop of the typesample */
+.veerMessageHover_typeSample
+{
+	background-color: white;
+	border: solid 1px #DDD;
+	width: 42px;
+	overflow: hidden;
+	text-align: center;
+	height: 42px;
+}
+

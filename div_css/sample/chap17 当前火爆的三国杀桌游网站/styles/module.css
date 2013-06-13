@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#header.grandtop div.gnav{
+	width:760px;
+}
+
+div.flashSubstitute{
+	padding-top:10px;
+}
+
+#mainArea div.letsContents{
+	width:700px;
+}
+#mainArea div.letsContents div.join{
+	width:360px;
+	float:left;
+}
+#mainArea div.letsContents div.join div.index02 .more{
+	*width:340px;
+}
+#mainArea div.letsContents div.shop{
+	width:180px;
+	float:left;
+}
+#mainArea div.letsContents div.streaming{
+	width:160px;
+	float:left;
+}
+#mainArea div.letsContents div.shop div.index02 .more,
+#mainArea div.letsContents div.streaming div.index02 .more{
+	*width:160px;
+}
+#mainArea div.letsContents div.join div.index02 .more a,
+#mainArea div.letsContents div.shop div.index02 .more a,
+#mainArea div.letsContents div.streaming div.index02 .more a{
+	margin-left:0;
+}
+#mainArea div.letsContents div.join div.index02,
+#mainArea div.letsContents div.shop div.index02{
+	padding-right:20px;
+}

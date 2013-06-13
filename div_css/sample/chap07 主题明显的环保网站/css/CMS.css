@@ -1,0 +1,218 @@
+﻿/*----------------------------------*/
+/*-------------CMS.css--------------*/
+/*----------------------------------*/
+
+.adminHover, #main_content .adminHover
+{
+	background-color: #FFFF66;
+	border: solid 1px black;
+	width: 200px;
+	visibility: hidden;
+	color: #000000;
+	z-index:100;
+}
+
+.adminPanel
+{
+	border: solid 0px #444444;
+	background-color: #FFFF66;
+	padding: 10px 15px 5px 0px;
+	color: #303030;
+	font-family:Verdana;
+	font-size:90%;
+	z-index:1000;
+	width:300px;
+	height: 20px;
+	background:url(../img/loginbox.png) left top;
+	position:fixed;
+	top:-8px;
+	right:0px;
+	text-align:center;
+}
+
+.adminPanel a:link
+{
+	color: #303030;
+}
+
+.adminPanel a:active
+{
+	color: navy;
+}
+
+.adminPanel a:visited
+{
+	color: #303030;
+}
+
+.adminPanel a:hover
+{
+	color: #00B2DE;
+	text-decoration: underline;
+	z-index:100;
+}
+
+.adminControl, #main_content .adminControl
+{
+	border: solid 0px #444444;
+    background: url(../img/control_left.png) no-repeat left top; 
+	padding: 0px 15px;
+	height:25px;
+	color: #303030;
+	font-size:90%;
+    z-index:100;
+	width:200px;
+	/*margin-left:-9px;*/
+	position:absolute;
+}
+
+#main_content .adminButton, .adminButton
+{
+	clear:none;
+	height:28px;
+	float:left;
+	padding:6px 6px;
+	margin:0px;
+    background: url(../img/control_back.png) repeat-x;
+}
+
+.adminControlClose
+{
+	float:left;
+    background: url(../img/control_end.png) no-repeat;
+	width:15px;
+	height:28px;
+}
+
+.adminButtonSpacer
+{
+	float:left;
+	height:28px;
+	width:5px;
+    background: url(../img/control_space.png) repeat-x;
+}
+
+.sectionBorder
+{
+    border:1px dashed 	
+}
+
+
+/* Admin link styles - - - - -*/
+.adminButton:link, #main_content .adminButton:link
+{
+    color: #303030;
+    text-decoration: none;
+	border:none;
+}
+
+.adminButton:visited, #main_content .adminButton:visited
+{
+    color: #303030;
+    text-decoration: none;
+	border:none;
+}
+
+.adminButton:hover, #main_content .adminButton:hover
+{
+    border:none;
+    text-decoration: none;
+	color: #00B2DE;
+}
+
+.adminControlGroup
+{
+    background-color: Silver;
+    color: #000000;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    width:100%;
+    z-index:100;
+}
+
+.errorMessage
+{
+	color: red;
+}
+
+
+/* TESTMODE - - - - - */
+.testmode
+{
+	background:transparent url(../img/loginbox.png) repeat scroll right top;
+	border:0px solid #444444;
+	color:#303030;
+	font-family:Verdana;
+	font-size:90%;
+	height:20px;
+	padding:10px 15px 5px 0px;
+	width:450px;
+	z-index:1000;
+	position:fixed;
+	top:-8px;
+	left:0px;
+	text-align:center;
+}
+
+
+.seoLinkPanel{
+	background:transparent url(../img/loginbox.png) right top no-repeat;
+	border:0px solid #444444;
+	color:#303030;
+	font-family:Verdana;
+	font-size:90%;
+	height:20px;
+	padding:10px 15px 5px 0px;
+	width:450px;
+	z-index:1000;
+	position:fixed;
+	bottom:-5px;
+	left:0px;
+	text-align:center;
+}
+
+
+/* IE6 hacks - - - - - 
+* HTML .adminPanel 
+{
+	position:absolute;
+	padding:15px 15px 10px 0px;
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/Portals/Admin/graphics/loginbox.png', sizingMethod='scale');
+}
+
+* HTML .adminControl, * HTML #main_content .adminControl 
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/Portals/Admin/graphics/control_left.png', sizingMethod='scale');
+}
+
+* HTML #main_content .adminButton, * HTML .adminButton 
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/Portals/Admin/graphics/control_back.png', sizingMethod='scale');
+}
+
+* HTML .adminControlClose 
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/Portals/Admin/graphics/control_end.png', sizingMethod='scale');
+}
+
+* HTML .adminButtonSpacer 
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/Portals/Admin/graphics/control_space.png', sizingMethod='scale');
+}
+
+* HTML .testmode
+{
+	padding:15px 15px 10px 0px;
+	position:absolute;
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/Portals/Admin/graphics/loginbox.png', sizingMethod='scale');
+}
+
+*/

@@ -1,0 +1,146 @@
+/*****************************************************************************
+It is adviced to place the sIFR JavaScript calls in this file, keeping it
+separate from the `sifr.js` file. That way, you can easily swap the `sifr.js`
+file for a new version, while keeping the configuration.
+*****************************************************************************/
+
+var myriadSemi = {
+    src: '/wps/woolworths/flash/myriadProSemi.swf'
+    ,ratios: [6, 1.24, 7, 1.21, 8, 1.18, 10, 1.16, 11, 1.13, 12, 1.12, 13, 1.11, 15, 1.1, 17, 1.09, 19, 1.08, 22, 1.07, 26, 1.06, 32, 1.05, 41, 1.04, 58, 1.03, 97, 1.02, 1.01]
+};
+var myriad = {
+    src: '/wps/woolworths/flash/myriadPro.swf'
+    ,ratios: [6, 1.24, 7, 1.21, 8, 1.18, 10, 1.16, 11, 1.13, 12, 1.12, 13, 1.11, 15, 1.1, 17, 1.09, 19, 1.08, 22, 1.07, 26, 1.06, 32, 1.05, 41, 1.04, 58, 1.03, 97, 1.02, 1.01]
+};
+var providence = {
+    src: '/wps/woolworths/flash/providenceSansBold.swf'
+};
+
+// sIFR.useStyleCheck = true;
+
+sIFR.activate(myriadSemi, myriad);
+
+// be red. Read more about styling at <http://wiki.novemberborn.net/sifr3/Styling>.
+sIFR.replace(providence, {
+  selector: '#ffk.learn h1',
+    css: '.sIFR-root { color: #7a117b; leading:0; text-transform:uppercase; }'
+    ,fitExactly: 'true'
+    ,tuneHeight: '-5'
+    ,wmode: 'transparent'
+});
+
+sIFR.replace(providence, {
+  selector: '#ffk.play h1',
+    css: '.sIFR-root { color: #e2232c; leading:0; text-transform:uppercase; }'
+    ,fitExactly: 'true'
+    ,tuneHeight: '-5'
+    ,wmode: 'transparent'
+});
+
+sIFR.replace(providence, {
+  selector: '#ffk.eat h1',
+    css: '.sIFR-root { color: #ed8122; leading:0; text-transform:uppercase; }'
+    ,fitExactly: 'true'
+    ,tuneHeight: '-5'
+    ,wmode: 'transparent'
+});
+
+sIFR.replace(providence, {
+  selector: '#ffk.see h1',
+    css: '.sIFR-root { color: #7dbe37; leading:0; text-transform:uppercase; }'
+    ,fitExactly: 'true'
+    ,tuneHeight: '-5'
+    ,wmode: 'transparent'
+});
+
+sIFR.replace(myriadSemi, {
+  selector: 'h1',
+    css: '.sIFR-root { color: #3b3b3b; font-size:2.1em; line-height:1; leading:10; }'
+    ,fitExactly: 'true'
+    ,tuneHeight: '-5'
+    ,wmode: 'transparent'
+});
+
+sIFR.replace(providence, {
+  selector: '#ffk .promo.red h3',
+    css:[
+        '.sIFR-root { color: #e4232c; font-weight:bold; line-height:0.5em; leading:0; text-transform:uppercase; }'
+        ,'a { text-decoration:none; }'
+        ,'a:link { color:#e4232c; }'
+        ,'a:hover { color:#e4232c; }'
+    ]
+});
+sIFR.replace(providence, {
+  selector: '#ffk .promo.orange h3',
+    css:[
+        '.sIFR-root { color: #f08518; font-weight:bold; line-height:0.5em; leading:0; text-transform:uppercase; }'
+        ,'a { text-decoration:none; }'
+        ,'a:link { color:#f08518; }'
+        ,'a:hover { color:#f08518; }'
+    ]
+});
+sIFR.replace(providence, {
+  selector: '#ffk .promo.purple h3',
+    css:[
+        '.sIFR-root { color: #7A117B; font-weight:bold; line-height:0.5em; leading:0; text-transform:uppercase; }'
+        ,'a { text-decoration:none; }'
+        ,'a:link { color:#7A117B; }'
+        ,'a:hover { color:#7A117B; }'
+    ]
+});
+sIFR.replace(providence, {
+  selector: '#ffk .promo.green h3',
+    css:[
+        '.sIFR-root { color: #6fa004; font-weight:bold; line-height:0.5em; leading:0; text-transform:uppercase; }'
+        ,'a { text-decoration:none; }'
+        ,'a:link { color:#6fa004; }'
+        ,'a:hover { color:#6fa004; }'
+    ]
+});
+
+sIFR.replace(myriad, {
+  selector: '.promo h3, .promotop h3, .related h3, #quickLinks h3, #sidebar h3, h3.standout',
+    css:[
+        '.sIFR-root { color: #3b3b3b; line-height:1em; }'
+        ,'a { text-decoration:none; }'
+        ,'a:link { color:#18954b; }'
+        ,'a:hover { color:#18954b; }'
+    ]
+    ,fitExactly: 'true'
+    ,tuneHeight: '-5'
+    ,wmode: 'transparent'
+});
+
+sIFR.replace(myriadSemi, {
+  selector: '#feature.grey h3, #feature.white h3',
+    css:'.sIFR-root { color: #3b3b3b; }'
+    ,fitExactly: 'true'
+    ,tuneHeight: '-5'
+    ,wmode: 'transparent'
+});
+sIFR.replace(myriadSemi, {
+  selector: '#feature h3',
+    css: '.sIFR-root { color: #ffffff; }'
+    ,fitExactly: 'true'
+    ,tuneHeight: '-5'
+    ,wmode: 'transparent'
+});
+
+
+sIFR.replace(myriad, {
+  selector: '#feature.green p',
+    css: [
+        '.sIFR-root { color:#ffffff; line-height:1em; }'
+    ]
+    ,fitExactly: 'true'
+    ,wmode: 'transparent'
+});
+
+sIFR.replace(myriad, {
+  selector: '#feature p',
+    css: [
+        '.sIFR-root { color:#3b3b3b; line-height:1em; }'
+    ]
+    ,fitExactly: 'true'
+    ,wmode: 'transparent'
+});

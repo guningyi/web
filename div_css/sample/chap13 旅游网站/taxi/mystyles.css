@@ -1,0 +1,377 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+input text{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #E7F5FA;
+	background-color: #345574;
+}
+.next {
+	background-color: #FFFFFF;
+}
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	background-color: #D4E5EF;
+	color: #004080;
+}
+a:link {
+	color: #7D4B5B;
+	text-decoration: none;
+}
+a:hover {
+	color: #7D4B5B;
+	text-decoration: none;
+}
+a:visited {
+	color: #7D4B5B;
+	text-decoration: none;
+
+}
+
+.tablethic {
+	border: 1px solid #e2e3e4;
+}
+
+
+.footerfont{
+font-size: 12px;
+font-family: verdana;
+text-decoration: none;
+color: black;
+}
+.footerfont a:hover{
+font-size: 12px;
+font-family: verdana;
+	color: black;
+	text-decoration: none;
+}
+.footerfont a{
+font-size: 12px;
+font-family: verdana;
+text-decoration: none;
+color: black;
+}
+
+.newsdate {
+	font-size: 12px;
+	font-weight: bold;
+	color: gray;
+}
+.newstext {
+	font-size: 12px;
+	font-weight: normal;
+	color: gray;
+}
+
+.borderdot {
+	border-top-width: thin;
+		border-top-style: dotted;
+		border-top-color: #E4E6ED;
+		border-right-color: #E4E6ED;
+		border-bottom-color: #E4E6ED;
+	border-left-color: #E4E6ED;
+}
+
+.hotelName { font-family: verdana; font-size: 12px; color: #df7226; text-transform: none; line-height: normal; font-weight:bold }
+.hoteldesc { font-family: verdana; font-size: 10px; color: gray; text-transform: none; line-height: normal}
+.featuredDest { font-family: verdana; font-size: 13px; color: #df7226; text-transform: none; line-height: normal; font-weight:bold }
+
+.testimonialtext {
+	font-size: 12px;
+	font-weight: bold;
+	color: gray;
+}
+
+.bordertopgrey {
+	border-top-width: thin;
+		border-top-style: solid;
+		border-top-color: #E4E6ED;
+}
+
+.borderdotred {
+	border-bottom-width: thin;
+		border-bottom-style: groove;
+		border-bottom-color: #990000;
+}
+.borderdotvertred {
+	border-right-width: thin;
+		border-right-style: groove;
+		border-right-color: #990000;
+	border-bottom-width: thin;
+			border-bottom-style: groove;
+		border-bottom-color: #990000;
+}
+.borderdotvertredthick {
+	border-right-width: thin;
+		border-right-style: groove;
+		border-right-color: #990000;
+	
+}
+.borderdotvertredthick2 {
+	border-right-width: thin;
+		border-right-style: groove;
+		border-right-color: #990000;
+	
+}
+
+.tablerightthic {
+
+	border-right-style: solid;
+	border-right-color: #e2e3e4;
+	border-width:1px;
+	
+}
+
+.linkf{
+font-weight: bold;
+text-decoration: none;
+color: #9E0B0E;
+font-size: 20px;
+}
+
+.linkf a:hover{
+font-weight: bold;
+color: #9E0B0E;
+text-decoration: none;
+font-size: 20px;
+}
+
+.linkf a{
+font-weight: bold;
+text-decoration: none;
+color: #9E0B0E;
+font-size: 20px;
+}
+
+.afflinkf{
+font-size: 12px;
+font-weight: normal;
+text-decoration: none;
+color: #7D4B5B;
+}
+.afflinkf a:hover{
+font-size: 12px;
+font-weight: normal;
+	color: #7D4B5B;
+	text-decoration: none;
+}
+.afflinkf a{
+font-size: 12px;
+font-weight: normal;
+text-decoration: none;
+color: #7D4B5B;
+}
+
+.booknowf{
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+color: #7188A7;
+}
+.booknowf a:hover{
+font-size: 20px;
+font-weight: bold;
+	color: #7188A7;
+	text-decoration: none;
+}
+.booknowf a{
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+color: #7188A7;
+}
+
+.menufont {
+	font-family: Arial,Verdana, Times, serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #6F8CAC;
+	text-decoration: none;
+}
+.menufont a{
+	font-family: Arial,Verdana, Times, serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #6F8CAC;
+	text-decoration: none;
+}
+.menufont a:hover{
+	font-family: Arial,Verdana, Times, serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #6F8CAC;
+	text-decoration: none;
+}
+
+.listcaptionfont {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #004080;
+	text-decoration: none;
+}
+
+.pointfont {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #004080;
+	text-decoration: none;
+}
+
+.buttonform {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #004080;
+	background-color: #D4E5EF;
+}
+.infotblfieldcolor {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #004080;
+	background-color: #D4E5EF;
+}
+.buttonform2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #D4E5EF;
+	background-color: #345574;
+}
+
+.cssbutton {
+	background: #e1e4e5;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 2px;
+	font-size:11px;
+	color:#314150;
+	border : 1px solid #aaa;
+}
+.affbook {
+	font-size: 11px;
+	font-weight: normal;
+	color: gray;
+}
+.toptext{
+	font-size: 13.5px;
+	color: #004080;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.toptextemph{
+	font-size: 13.5px;
+	color: #FF0000;
+	font-style:italic;
+	font-weight:bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.infotbltitletext {
+	color: #004080;
+	font-size: 13.5px;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:underline;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.infotbltext {
+	color: #B6DCED;
+	font-size: 12.5px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.infotbltextcolor2 {
+	color: #345574;
+	font-size: 12.5px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.infotextAster {
+	color: #FF0000;
+}
+.infotbltdcolor1{
+background-color: #345574;
+}
+.infotbltdcolor2{
+	background-color:#fdde81;
+}
+.infotbltdcolor3{
+	background-color:#fac454;
+}
+.correctres {
+    background-color : #76ADFF;
+    color : #ffffff;
+    cursor : pointer;
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 14px;
+    text-decoration : none;
+  }
+.correctres a:hover {
+    color: #FCC06A;
+    text-decoration: none;
+    cursor : pointer;
+  }
+.correctres a:link {
+    color:white;
+    text-decoration: none;
+cursor : pointer;
+}
+.conftbltdcolor1{
+background-color: #D4E5EF;
+}
+.conftbltext {
+	color: #004080;
+	font-size: 13px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.conftbltext2 {
+	color: #004080;
+	font-size: 15px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.conftbltextemph {
+	color: #FF0000;
+	font-size: 15px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.resrestart {
+    background-color : #76ADFF;
+    color : #ffffff;
+    cursor : pointer;
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 14px;
+    text-decoration : none;
+  }
+.resrestart a:hover {
+    color: #FCC06A;
+    text-decoration: none;
+    cursor : pointer;
+  }
+.resrestart a:link {
+    color:white;
+    text-decoration: none;
+	cursor : pointer;
+}
+.restbltitletext {
+	color: #004080;
+	font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.restbltext {
+	color: #004080;
+	font-size: 13px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.restbltextemph {
+	color: #FF0000;
+	font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.restbltdcolor1{
+	background-color:white;
+}
+
+.transON  {width: 100%; background-color: silver;
+			opacity:.50;filter: alpha(opacity=50);
+			 -moz-opacity: 0.5;border:1px solid black; 
+}

@@ -1,0 +1,243 @@
+#fbloginbox #fbregister {
+	BORDER-RIGHT: #666 1px solid
+}
+.fbcontainerclose {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 0.6em; FLOAT: right; PADDING-BOTTOM: 0px; OVERFLOW: visible; PADDING-TOP: 1px; HEIGHT: 20px; TEXT-ALIGN: right
+}
+.regcheckbox {
+	FONT-SIZE: 0.7em! important
+}
+.forgotpassword {
+	FONT-SIZE: 0.7em! important
+}
+.forgotpassword {
+	CLEAR: left; MARGIN-BOTTOM: 10px
+}
+#fbregister FORM {
+	PADDING-BOTTOM: 0px! important
+}
+#fblogin TD INPUT {
+	FLOAT: left
+}
+#fbregister TD INPUT {
+	FLOAT: left
+}
+.birthdate {
+	WIDTH: 20px
+}
+.validatedStatus {
+	PADDING-LEFT: 0px; FLOAT: right
+}
+.fbformerror {
+	FONT-SIZE: 0.7em
+}
+.interstitialLoadingMessage {
+	PADDING-LEFT: 40%; PADDING-TOP: 10px
+}
+.watermark {
+	COLOR: gray; FONT-STYLE: italic
+}
+#fbReferral {
+	CLEAR: left
+}
+.fbDisabledForm  {
+	COLOR: #999! important
+}
+.serviceMessage {
+	DISPLAY: none
+}
+#referform .field {
+	WIDTH: 100%! important
+}
+#facebook_connect_link IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; POSITION: relative; TOP: 5px; BORDER-BOTTOM-STYLE: none
+}
+#loginContainer {
+	Z-INDEX: 100; WIDTH: 990px; POSITION: absolute; TOP: 35px
+}
+#loginContainer #fbloginbox {
+	BORDER-RIGHT: #666 2px solid; BORDER-TOP: #666 1px solid; Z-INDEX: 100; FLOAT: right; BORDER-LEFT: #666 1px solid; BORDER-BOTTOM: #666 3px solid; BACKGROUND-COLOR: #fff
+}
+#loginContainer #fbloginboxHorizontal {
+	BORDER-RIGHT: #666 2px solid; PADDING-RIGHT: 0px; BORDER-TOP: #666 1px solid; PADDING-LEFT: 10px; Z-INDEX: 100; FLOAT: right; PADDING-BOTTOM: 0px; BORDER-LEFT: #666 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #666 3px solid; TOP: 35px; BACKGROUND-COLOR: #fff
+}
+#loginContainer #fbEditAccount {
+	BORDER-RIGHT: #666 2px solid; PADDING-RIGHT: 10px; BORDER-TOP: #666 1px solid; PADDING-LEFT: 10px; Z-INDEX: 100; FLOAT: right; PADDING-BOTTOM: 10px; BORDER-LEFT: #666 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #666 3px solid; BACKGROUND-COLOR: #fff
+}
+#loginContainer #fbConnectExisting {
+	BORDER-RIGHT: #666 2px solid; PADDING-RIGHT: 0px; BORDER-TOP: #666 1px solid; PADDING-LEFT: 10px; Z-INDEX: 100; FLOAT: right; PADDING-BOTTOM: 0px; BORDER-LEFT: #666 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #666 3px solid; TOP: 35px; BACKGROUND-COLOR: #fff
+}
+#loginContainer #fbpromo {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: url(/images/gradient-blue.jpg) repeat-x left top; FLOAT: left; PADDING-BOTTOM: 10px; WIDTH: 210px; PADDING-TOP: 10px
+}
+#loginContainer #fbregister {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 10px; WIDTH: 260px; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+#loginContainer #fblogin {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 10px; WIDTH: 215px; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+#loginContainer #fbErrorBox {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#loginContainer #fbcomplete {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#loginContainer #fbWelcome {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#flow_message {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#loginContainer #fblogin TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#fbregister TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#loginContainer #fblogin #facebook_connect_link2 IMG {
+	PADDING-BOTTOM: 10px
+}
+#loginContainer .completeaccount H3 {
+	TEXT-ALIGN: left
+}
+#loginContainer .verify H3 {
+	TEXT-ALIGN: left
+}
+#loginContainer .verify P {
+	TEXT-ALIGN: left
+}
+#loginContainer #fbloginboxHorizontal FORM {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; MARGIN: 0px; PADDING-TOP: 0px! important
+}
+#loginContainer #fbloginboxHorizontal .clear {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; MARGIN: 0px; PADDING-TOP: 0px! important
+}
+#loginContainer #fbloginboxHorizontal P {
+	MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px
+}
+#loginContainer #fbloginboxHorizontal .forgotpassword {
+	CLEAR: both; MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 160px; PADDING-TOP: 0px
+}
+#loginContainer #fbloginboxHorizontal .primarybuttonsubmit {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; MARGIN: 0px; PADDING-TOP: 0px! important; POSITION: relative; TOP: -4px
+}
+#loginContainer #fbloginboxHorizontal DIV.primarybutton {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; MARGIN: 0px; PADDING-TOP: 0px! important; POSITION: relative; TOP: -4px
+}
+#loginContainer #fbConnectExisting .primarybuttonsubmit {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; PADDING-TOP: 0px! important; POSITION: relative; TOP: -4px
+}
+#loginContainer #fbloginboxHorizontal INPUT {
+	FLOAT: left; MARGIN-RIGHT: 5px
+}
+#loginContainer #fbloginboxHorizontal .loginfield {
+	WIDTH: 150px! important
+}
+#loginContainer .mediumtext {
+	WIDTH: 110px
+}
+#loginContainer .submitrow .primarybutton {
+	FLOAT: none; MARGIN: 5px auto; WIDTH: 70px
+}
+#loginContainer .completeaccount#fbloginbox #fbregister {
+	BORDER-RIGHT-STYLE: none
+}
+#loginContainer #fbloginboxHorizontal {
+	WIDTH: 450px
+}
+#loginContainer .fbcfailed {
+	WIDTH: 450px
+}
+#loginContainer .welcome {
+	WIDTH: 450px
+}
+#loginContainer .error {
+	WIDTH: 450px
+}
+#loginContainer .completeaccount {
+	WIDTH: 320px! important
+}
+#loginContainer .verify {
+	WIDTH: 280px! important
+}
+#loginContainer .standardregistration {
+	WIDTH: 790px
+}
+.ui-widget-overlay {
+	BACKGROUND: #000; FILTER: alpha(opacity=75); moz-opacity: 0.75; opacity: 0.75
+}
+#TB_window {
+	BACKGROUND-COLOR: transparent! important
+}
+#lightboxContainer {
+	PADDING-RIGHT: 20px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 20px; BORDER-BOTTOM: #000 1px solid; BACKGROUND-COLOR: #fff
+}
+.ui-dialog-titlebar {
+	DISPLAY: none! important
+}
+.ui-resizable-handle {
+	DISPLAY: none! important
+}
+#TB_window {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; FONT-SIZE: 1em! important; PADDING-BOTTOM: 0px! important; BORDER-TOP-STYLE: none! important; PADDING-TOP: 0px! important; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+.TB_modal#TB_ajaxContent {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; PADDING-TOP: 0px! important
+}
+#TB_ajaxContent {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; PADDING-TOP: 0px! important
+}
+#TB_ajaxContent H2 {
+	TEXT-ALIGN: left! important
+}
+#TB_ajaxContent H3 {
+	TEXT-ALIGN: left! important
+}
+#TB_ajaxContent P {
+	TEXT-ALIGN: left! important
+}
+#TB_ajaxContent P {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; PADDING-TOP: 0px! important
+}
+#TB_ajaxContent H2 {
+	FONT-SIZE: 18px; COLOR: #090; TEXT-DECORATION: underline
+}
+#TB_ajaxContent H3 {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 15px! important
+}
+#TB_ajaxContent H3.or {
+	TEXT-ALIGN: center! important
+}
+#TB_ajaxContent .primarybutton {
+	PADDING-LEFT: 70px! important
+}
+.fullname {
+	TEXT-TRANSFORM: capitalize
+}
+#lightboxContainer #fbpromo {
+	DISPLAY: none! important
+}
+#TB_ajaxContent #fbregister {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 10px; WIDTH: 48%; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+#TB_ajaxContent .completeaccount #fbregister {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; WIDTH: 100%; PADDING-TOP: 10px; BORDER-RIGHT-STYLE: none! important; TEXT-ALIGN: center
+}
+#TB_ajaxContent #fblogin {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 10px! important; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+#TB_ajaxContent #fbregister {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#TB_ajaxContent #fblogin {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#TB_ajaxContent #fbReferral #formbuttons .linkbutton {
+	VERTICAL-ALIGN: middle
+}
+#TB_ajaxContent #fbReferral #formbuttons {
+	PADDING-BOTTOM: 5px! important
+}
+#loginSubContainer2 #np_registration_link {
+	DISPLAY: none
+}

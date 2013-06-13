@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>三国杀</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="styles/basic_import.css" rel="stylesheet" type="text/css" media="all" />
+<link href="styles/local_import.css" rel="stylesheet" type="text/css" media="all" />
+<link href="styles/tabs.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for IE/Win -->
+<!--[if lte IE 7]>
+<link href="common/scripts/tab/tabs_ie.css" rel="stylesheet"type="text/css" media="all">
+<![endif]-->
+</head>
+<body>
+<div id="container" class="grandtop">
+  <div id="header" class="grandtop">
+    <div class="clearfix">
+      <h1 class="logo"><a href="#"><img src="images/header/logo.jpg" " width="198" height="103" /></a></h1>
+      <div class="sub">
+        <ul class="clearfix">
+          <li></li>
+          <li>
+            <p>
+              <input name="kw" type="text" id="searchTxt" onfocus="if(this.value=='请输入搜索内容')this.value='';" onblur="if(this.value=='')this.value='请输入搜索内容';" value="" size="20" /><input type="image" src="images/btn_search_def.gif" id="searchBtn" onmouseover="imgRoll(this,0);" onmouseout="imgRoll(this,0);" />
+            </p>
+          </li>
+        </ul>
+        <!--for search-->
+        <script type="text/javascript" src="js/i_search_assist.js"></script>
+        <script type="text/javascript" src="js/search_tool.js"></script>
+      </div>
+      <!--/sub-->
+      <div class="gnav">
+        <ul class="clearfix">
+          <li><a href="index.html"><img src="images/gnav/game_def.gif"  width="130" height="50"  /></a></li>
+          <li><a href="incheader.html"><img src="images/gnav/card_def.gif" width="130" height="50"  /></a></li>
+          <li><a href="category.htm"><img src="images/gnav/anime_def.gif" width="130" height="50"  /></a></li>
+          <li><a href="incheader.html"><img src="images/gnav/goods_def.gif"   width="130" height="50"   /></a></li>
+          <li><a href="category.htm"><img src="images/gnav/event_def.gif"   width="130" height="50"   /></a></li>
+          <li><a href="#"><img src="images/gnav/keitai_def.gif"  width="78" height="50"   /></a></li>
+        </ul>
+      </div>
+      <!--/gnav-->
+    </div>
+  </div>
+  <!--/header-->
+  <div>
+    <div> <a href="index.html" target="_blank"><img src="images/img4.jpg"  width="950" height="280" /></a> </div>
+  </div>
+  <!--/mainSwf-->
+  <div id="contentsArea" class="clearfix">
+    <div id="mainArea"> ﻿
+      <h2 class="hImg"><img src="images/h2_pickup.gif" width="700" height="33" /></h2>
+      <div class="index05">
+        <ul>
+          <li><a href="#" target="_blank">
+		    <img src="images/pickup/thumb01.jpg" alt="" width="100" height="71" />
+            <div>
+              <p><img src="images/pickup/ttl01.gif" /></p>
+            </div>
+            </a></li>
+          <li><a href="#" target="_blank"> <img src="images/pickup/thumb02.jpg" alt="" width="100" height="71" />
+            <div>
+              <p><img src="images/pickup/ttl02.gif" /></p>
+            </div>
+            </a></li>
+          <li><a href="#" target="_blank"> <img src="images/pickup/thumb03.jpg" alt="" width="100" height="71" />
+            <div>
+              <p><img src="images/pickup/ttl03.gif" /></p>
+            </div>
+            </a></li>
+          <li><a href="#" target="_blank"> <img src="images/pickup/thumb04.jpg" alt="" width="100" height="71" />
+            <div>
+              <p><img src="images/pickup/ttl04.gif" /></p>
+            </div>
+            </a></li>
+          <li><a href="#"> <img src="images/pickup/thumb05.jpg" alt="" width="100" height="71" />
+            <div>
+              <p><img src="images/pickup/ttl05.gif" /></p>
+            </div>
+          </a></li>
+         
+          <li><a href="#"><img src="images/pickup/thumb06.jpg" alt="" width="100" height="71" /></a>
+            <div>
+              <p><img src="images/pickup/ttl06.gif" /></p>
+            </div>
+            </a></li>
+        </ul>
+      </div>
+      <!--/index05-->
+      <div class="letsContents clearfix">
+        <div class="join">
+          <h2 class="hImg"><a href="#/"><img src="images/h2_join.gif"  width="340" height="36" /></a></h2>
+          <div class="index02">
+            <ul>
+              <li>
+                <div>
+                  <div align="center"><a href="#" target="_blank"> <img src="images/thumb_join01.jpg" alt="" width="160" height="113" /> <span>诸葛亮</span> </a> </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div align="center"><a href="#" target="_blank"> <img src="images/thumb_join02.jpg" alt="" width="160" height="113" />周瑜</a> </div>
+                </div>
+              </li>
+            </ul>
+            <p class="more"> <a href="#">更多</a> </p>
+          </div>
+        </div>
+        <!--/join-->
+        <div class="shop">
+          <h2 class="hImg"><a href="#"><img src="images/h2_shop.gif"  width="160" height="36" /></a></h2>
+          <div class="index02">
+            <ul>
+              <li>
+                <div>
+                  <div align="center"><a href="#"> <img src="images/pickup/thumb05.jpg" alt="" width="160" height="113" />三国杀王者之战</a> </div>
+                </div>
+              </li>
+            </ul>
+            <p class="more"> <a href="#">更多</a> </p>
+          </div>
+        </div>
+        <!--/shop-->
+        <div class="streaming">
+          <h2 class="hImg"><a href="#"><img src="images/h2_streaming.gif" width="160" height="36" /></a></h2>
+          <div class="index02">
+            <ul>
+              <li>
+                <div>
+                  <div align="center"><a href="#"> <img src="images/thumb_cf.jpg" alt="" width="160" height="113" /> <span>三国杀宣传MV</span> </a> </div>
+                </div>
+              </li>
+            </ul>
+            <p class="more"> <a href="#">更多</a> </p>
+          </div>
+        </div>
+        <!--/streaming-->
+      </div>
+      <!--/letsContents-->
+      <h2 class="hImg"><img src="images/h2_news.gif" width="650" height="33" class="dispInline" /><a href="#" target="_blank"><img src="images/btn_rss.gif" alt="RSS" width="50" height="33" class="dispInline" /></a></h2>
+      <div class="section">
+        <div class="tabIndex" id="newsTabIndex">
+        	 <ul class="tab tabs-nav">
+
+            <li><a href="#tabCAll" class="tabAll"><span>全部</span></a></li>
+
+            <li><a href="#tabCGame" class="tabGame"><span>新闻</span></a></li>
+
+            <li><a href="#tabCCard" class="tabCard"><span>攻略</span></a></li>
+
+            <li><a href="#tabCAnime" class="tabAnime"><span>比赛</span></a></li>
+
+			<li><a href="#tabCGoods" class="tabGoods"><span>玩家心得</span></a></li>
+
+            <li><a href="#tabCEvent" class="tabEvent"><span>媒体报道</span></a></li>
+
+            <li><a href="#tabCCampaign" class="tabCampaign"><span>活动新闻</span></a></li>
+
+            <li><a href="#tabCImportant" class="tabImportant"><span>游戏公告</span></a></li>
+          </ul>
+          <div class="tabs-container" id="tabCAll">
+            <div class="newsList">
+              <table border="1" cellspacing="0">
+                <tbody>
+                  <tr class="first">
+                    <th>2010/4/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="index.html" target="_blank">平衡世界的二度拓展</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" >三国杀武将之七宗罪</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="index.html">小乔日记之长相思</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="index.html" target="_blank">寻找奸细</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="index.html" target="_blank">貂蝉的野心</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">武林外传番外之XXX回——佟掌柜出题难展堂，凌腾云引众《三国杀》</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">策马啸西风</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">长坂坡的故事</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">拨开故事疑云，还原历史真相——曹操之死</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">三国杀浅析</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="more"><a href="#">更多</a></p>
+          </div>
+          <div id="tabCGame" class="tabs-hide tabs-container">
+            <div class="newsList">
+              <table border="1" cellspacing="0">
+                <tbody>
+                  <tr class="first">
+                    <th>2010/4/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">《三国杀OL》玩家问卷调查，丰厚奖励等你拿！</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/1</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" >清明消费送好礼，超值道具等你拿</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/1</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">杭州三国杀大赛线上初赛今日震撼开启！</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/1</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">“我的都市周报三国杀大赛”牛贴征集活动</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="index.html" target="_blank">2010上海地区官方首战赛海选拉幕</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">独峰论道，《三国杀》设计团队做客清华桌游社</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">游卡桌游三国杀3V3上海地区官方首战赛报名公告</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">游卡桌游携手连盛公司　举办全国经销商大会</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/6</th>
+                    <th>&nbsp;</th>
+                    <td><a href="index.html" target="_blank">“樯橹再起，火神来袭！”《神话再临-火》</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/2/26</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">《三国杀》：把游戏从网络“拉”回桌面</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="more"><a href="#">更多</a></p>
+          </div>
+          <!--/tabCGame-->
+          <div id="tabCCard" class="tabs-hide tabs-container">
+            <div class="newsList">
+              <table  border="1" cellspacing="0">
+                <tbody>
+                  <tr class="first">
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">最完美双人武将组合排行榜</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/26</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">用火武将的一些心得</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/2/26</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">细说刘备用法</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/2/10</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">三国杀女性角色使用的浅见</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/1/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">三国杀进阶篇</a></td>
+                  </tr>
+                  <tr>
+                    <th>2009/12/25</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">三国杀之眉目传情</a></td>
+                  </tr>
+                  <tr>
+                    <th>2009/12/18</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">三国杀武将传之江东陆伯言</a></td>
+                  </tr>
+                  <tr>
+                    <th>2009/12/11</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">三国杀军争篇之老将的逆袭（群雄篇）</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="more"><a href="#">更多</a></p>
+          </div>
+           <!--/tabCCard-->
+           <div id="tabCAnime" class="tabs-hide tabs-container">
+            <div class="newsList">
+              <table  border="1" cellspacing="0">
+                <tbody>
+                  <tr class="first">
+                  <tr>
+                    <th>2010/4/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" >《三国杀》王者之战上海首战圆满结束</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">游卡桌游三国杀3V3上海地区官方首战赛报名公告</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/15</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">2010上海地区官方首战赛海选拉幕</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/12</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">上海地区首届游卡桌游官方《三国杀》正式比赛即将在本月点燃烽火</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/5</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">上海及周边地区《三国杀》专业裁判培训第二期开始报名</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--/tabCAnime-->
+          <div id="tabCGoods" class="tabs-hide tabs-container">
+            <div class="newsList">
+              <table border="1" cellspacing="0">
+                <tbody>
+                  <tr class="first">
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">视频教学</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">平衡世界的二度拓展</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">三国杀武将之七宗罪</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/26</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">小乔日记之长相思</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/19</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">貂蝉的野心</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/12</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">策马啸西风</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/5</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">一起来到三国杀的世界吧</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/5</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">三国杀-----卡片网游的领航者</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/5</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">不一样的三国，一样的精彩！</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/5</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">今天你三国了吗？</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--/tabCGoods-->
+          <div id="tabCEvent" class="tabs-hide tabs-container">
+            <div class="newsList">
+              <table  border="1" cellspacing="0">
+                <tbody>
+                  <tr class="first">
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">《三国杀-标准版》真伪鉴别</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/19</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">九华山庄双雄论剑，王者之战完美收官</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/12</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">WMG-3《三国杀》展台设计，古风与时尚完美结合</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/12</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">《三国杀》：把游戏从网络“拉”回桌面</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/12</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">游卡桌游携手连盛公司　举办全国经销商大会</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--/tabCEvent-->
+           <div id="tabCCampaign" class="tabs-hide tabs-container">
+            <div class="newsList">
+              <table border="1" cellspacing="0">
+                <tbody>
+                  <tr class="first">
+                    <th>2010/4/9</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">杭州三国杀大赛线上初赛今日震撼开启！</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/2</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">“我的都市周报三国杀大赛”牛贴征集活动</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/4/2</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">清明消费送好礼，超值道具等你拿</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/26</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">大奖杯杯三国杀精英赛报名火爆开启</a></td>
+                  </tr>
+                  <tr>
+                    <th>2010/3/19</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">都市周报三国杀大赛线上比赛获奖名单</a></td>
+                  </tr>                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--/tabCCampaign-->
+          <div id="tabCImportant" class="tabs-hide tabs-container">
+            <div class="newsList">
+              <table  border="1" cellspacing="0">
+                <tbody>
+                  <tr class="first">
+                    <th>2007/5/10</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">3区恢复登陆，感谢玩家的耐心等候</a></td>
+                  </tr>
+                  <tr>
+                    <th>2007/4/26</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">可爱无敌!阿摸新画三国杀GOGOGO系列(魏武将</a></td>
+                  </tr>
+                  <tr>
+                    <th>2007/3/29</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#">可爱无敌!阿摸新画三国杀GOGOGO系列(吴武将</a></td>
+                  </tr>
+                  <tr>
+                    <th>2006/12/18</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">三国杀大讲堂之每日一例(4月16日)</a></td>
+                  </tr>
+                  <tr>
+                    <th>2006/12/18</th>
+                    <th>&nbsp;</th>
+                    <td><a href="#" target="_blank">《三国杀OL》玩家问卷调查，丰厚奖励等你拿！</a></td>
+                  </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+          <!--/tabCImportant-->
+        </div>
+        <!--/tabIndex-->
+      </div>
+      <!--/section-->
+    </div>
+    <!--/mainArea-->
+    <div id="rightArea">
+      <!-- <p class="newsBtn"><a href="#"><img src="images/rightarea/btn/news_new_def.gif"  width="210" height="35"  /></a></p> -->
+      <p class="newsBtn"><a href="#"><img src="images/rightarea/btn/news_new_def.gif"  width="210" height="35" /></a></p>
+      <div id="funclubArea">
+        <ul>
+          <li isimg="false"></li>
+          <li isimg="false"><a title="浅谈三国杀战术与技巧二：选择武将" href="#" target="_blank">浅谈三国杀战术与技巧二：选择武将</a></li>
+          <li><a title="浅谈三国杀战术与技巧一：出牌技巧" href="#" target="_blank">浅谈三国杀战术与技巧一：出牌技巧</a></li>
+          <li><a title="《三国杀OL》战术杂谈" href="#" target="_blank">《三国杀OL》战术杂谈</a></li>
+          <li><a title="新人经验——三国杀三字经" href="#" target="_blank">新人经验——三国杀三字经</a></li>
+          <li><a title="锦囊使用的新手教学" href="#" target="_blank">锦囊使用的新手教学</a></li>
+          <li><a title="锦囊使用的新手教学" href="#" target="_blank">【高手之路】能做到这些，你就不是菜鸟了</a></li>
+          <li><a title="锦囊使用的新手教学" href="#" target="_blank">三国杀OL全判定简单图解</a></li>
+          <li><a title="锦囊使用的新手教学" href="#" target="_blank">周瑜新手攻略</a></li>
+          <li><a title="锦囊使用的新手教学" href="#" target="_blank">三国杀武将使用高级小贴士</a></li>
+          <li><a title="锦囊使用的新手教学" href="#" target="_blank">三国杀价值体系理论————只写给三国杀高手的攻略</a></li>
+          <li><a title="锦囊使用的新手教学" href="#" target="_blank">最完美双人武将组合排行榜</a></li>
+          <li><a title="锦囊使用的新手教学" href="#" target="_blank">用火武将的一些心得</a></li>
+          <li><a title="锦囊使用的新手教学" href="#" target="_blank">细说刘备用法</a></li>
+          <li>
+            <div align="right"><a title="锦囊使用的新手教学" href="#" target="_blank">更多</a></div>
+          </li>
+        </ul>
+      </div>
+      <!-- /#funclubArea -->
+      <p><a href="#" target="_blank"><img src="images/rightarea/bnr/123.jpg"  width="226" height="352" /></a></p>
+      <p><a href="#" target="_blank"><img src="images/rightarea/bnr/321.jpg"  width="226" height="374" /></a></p>
+      </a>
+      </p>
+    </div>
+    <!--/rightArea-->
+  </div>
+ <div id="footer">
+    <div class="fPad clearfix">
+      <ul>
+
+        <li><a href="index.html"><img src="images/footer/btn_shop.gif" width="82" height="38" /></a></li>
+
+        <li><a href="#"><img src="images/footer/btn_faq.gif"  width="77" height="38" /></a></li>
+
+        <li><a href="#"><img src="images/footer/btn_sitemap.gif"  width="73" height="38" /></a></li>
+
+        <li><a href="#" target="_blank"><img src="images/footer/btn_inquiry.gif"  width="79" height="38" /></a></li>
+
+        <li><a href="#"><img src="images/footer/btn_howtouse.gif"  width="89" height="38" /></a></li>
+
+        <li><a href="#"><img src="images/footer/btn_privacy.gif"  width="112" height="38" /></a></li>
+
+        <li><a href="#" target="_blank"><img src="images/footer/btn_company.gif"  width="59" height="38" /></a></li>
+
+      </ul>
+      <p><img src="images/footer/copyright.gif" width="326" height="38" /></p>
+    </div>
+  </div>
+  <!--/footer-->
+</div>
+<!--/container-->
+<!--script-->
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="js/basic.js" type="text/javascript"></script>
+<script src="js/tabs_min.js" type="text/javascript"></script>
+<script src="js/tabsEffect.js" type="text/javascript"></script>
+</body>
+</html>

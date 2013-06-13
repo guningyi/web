@@ -1,0 +1,17 @@
+/*
+SlideItMoo styles - - - - */
+#SlideItMoo .addfwd{
+	background:url(../img/right.gif) left top no-repeat;
+}
+
+#SlideItMoo .addbkwd{
+	background:url(../img/left.gif) left top no-repeat;
+}
+
+#SlideItMoo .Overlay{
+	display:none;
+}
+
+/*#SlideItMoo .addbkwd, #SlideItMoo .addfwd{ 
+	behavior:url("http://ode.avian.co.uk/Portals/ODE/css/iepngfix.htc");
+}*/

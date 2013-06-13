@@ -1,0 +1,367 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<TITLE>商品展示</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<SCRIPT src="js/main.js" type=text/javascript></SCRIPT>
+<SCRIPT src="js/ajax.js" type=text/javascript></SCRIPT>
+<SCRIPT src="js/message.js" type=text/javascript></SCRIPT>
+<LINK href="css/default.css" type=text/css rel=stylesheet>
+<LINK href="css/forum.css" type=text/css rel=stylesheet>
+<LINK href="css/designologue.css" type=text/css rel=stylesheet>
+<LINK href="css/comments.css" type=text/css rel=stylesheet>
+<LINK href="css/design.css" type=text/css rel=stylesheet>
+<LINK href="css/pager.css" type=text/css rel=stylesheet>
+<LINK href="css/advertisements.css" type=text/css rel=stylesheet>
+<LINK href="css/template.css" type=text/css rel=stylesheet>
+<LINK href="css/message.css" type=text/css rel=stylesheet>
+<LINK href="/rss/" type=application/rss+xml rel=alternate>
+</HEAD>
+<BODY>
+<DIV id=container>
+  <DIV id=header>
+    <DIV id=logo> </DIV>
+    <DIV id=navigationheader>
+      <H2>Site Navigation</H2>
+      <UL>
+        <LI><A id=navinformation href="aboutus.htm"><img src="image/top_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />关于我们</A>
+        <LI><A id=navsuggestion href="#"><img src="image/top_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />商品展示</A>
+        <LI><A id=navsitemap href="SiteMap.htm"><img src="image/top_03.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />网站地图</A> </LI>
+      </UL>
+    </DIV>
+    <DIV id=introduction>
+      <H2>自由买卖</H2>
+      <img src="image/right_01.jpg" border="0" alt="" />
+      <P>欢迎您光临<strong>自由买卖</strong>！<em>这里有最好的，品种齐全的，数量繁多的商品供您选择。</em></P>
+      <H3>自由买卖<STRONG>2080</STRONG> 自由买卖 ！</H3>
+    </DIV>
+  </DIV>
+  <DIV id="sidebar">
+    <DIV id="navigationmain">
+      <H2>网站导航</H2>
+      <UL>
+        <LI><A id=navhome href="index.htm"><img src="image/nav_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />首页</A></LI>
+        <LI><A id=navfavorites href="#designs/favorites/"><img src="image/nav_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />数码产品</A></LI>
+        <LI><A id=navbrowse href="#designs/browse/"><img src="image/nav_03.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />大件家电</A></LI>
+        <LI><A id=navsearch href="#designs/search/"><img src="image/nav_04.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />小件家电</A></LI>
+        <LI><A id=navbrowse href="#designs/premium/"><img src="image/nav_05.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />台式机/笔记本</A> </LI>
+      </UL>
+    </DIV>
+    <DIV 
+style="PADDING-RIGHT: 0px; BACKGROUND-POSITION: 0px 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(image/left_bg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 198px; PADDING-TOP: 18px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 130px">
+      <DIV style="MARGIN-LEFT: 18px; POSITION: absolute">
+        <p>www.taobao.com 淘宝网</p>
+        <p>www.51bi.com 比购网</p>
+        <p>www.smarter.com.cn 聪明点</p>
+      </DIV>
+    </DIV>
+    <DIV id=navigationfeatures>
+      <H2>收藏排行</H2>
+      <UL>
+        <LI><A id="navdesignologue" 
+  href="#designologue/"><img src="image/nav_07.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />收藏排行榜</A>
+        <LI><A id="navstatistics" href="#designs/statistics/"><img src="image/nav_06.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />购买排行榜</A>
+        <LI><A id="navlinks" href="#links/"><img src="image/nav_07.jpg" border="0" alt="" style="vertical-align:middle; margin-right:20px;" />会员排行旁</A> </LI>
+      </UL>
+    </DIV>
+    <DIV id=userlogin>
+      <H2>用户登录</H2>
+      <FORM id=formlogin onSubmit="return dbcklogin.validate();" action=/user/login/ 
+method=post>
+        <DIV>
+          <INPUT class=hidden type=hidden value=login name=action>
+          <INPUT id=username 
+name=username>
+          <LABEL for=username>用户名</LABEL>
+          <INPUT id=password 
+type=password name=password>
+          <LABEL for=password>密码</LABEL>
+          <A 
+href="#">忘记密码？</A>
+          <INPUT class=submit type=submit value="登 录">
+          <STRONG>or</STRONG> <A 
+href="#">马上注册！</A> </DIV>
+      </FORM>
+      <SCRIPT type=text/javascript>
+					//<!-- <![CDATA[
+
+						var dbcklogin = new doublecheck();
+						dbcklogin.addElement("username", ".+", "You must enter a username.");
+						dbcklogin.addElement("password", ".+", "You must enter a password.");
+
+					// ]]> //-->
+					</SCRIPT>
+    </DIV>
+  </DIV>
+  <DIV id="content"> <img src="image/show_01.jpg" border="0" alt="" />
+    <DIV id="contentsection">
+      <DIV style="FLOAT: left; MARGIN-BOTTOM: 20px">
+        <DIV id="pager">
+          <UL>
+            <LI><A class=currentpage 
+  href="#">1</A> </LI>
+            <LI><A href="#">2</A> </LI>
+            <LI><A href="#">3</A> </LI>
+            <LI><A href="#">4</A> </LI>
+            <LI><A href="#">5</A> </LI>
+            <LI><A href="#">6</A> </LI>
+            <LI><SPAN>...</SPAN> </LI>
+            <LI><A href="#">130</A> </LI>
+            <LI><A href="#">Next »</A> </LI>
+          </UL>
+          <DIV id=results>( 1-6 of 2080 产品 ) </DIV>
+        </DIV>
+      </DIV>
+      <DIV id=design_grid>
+        <DIV class=row>
+          <div class="designpreview"><a class=dpview title=View 
+href="#"><img height=90 
+alt=""
+src="image/item01.jpg" width=120></a>
+            <h3><a title="View Web Design Template" 
+href="#">LG液晶电视</a></h3>
+            <h4><a class=dpavatar title="View User Profile" 
+href="#"><img height=16 
+alt="User Avatar" src="image/avatar_small.gif" width=16></a> <a 
+class=dpprofile title="View User Profile" 
+href="#">查看全图</a> </h4>
+            <ul class=dpdetails>
+              <li class=dpview><a title="Click to View" 
+  href="#"><img src="image/cl_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />浏览数</a> (131281) </li>
+              <li class=dpcomment><a title="View Comments" 
+  href="#s"><img src="image/cl_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />评论数</a> (17) </li>
+              <li class=dpdate>添加时间 2007/07/01</li>
+            </ul>
+            <div class=rating>
+              <div class=rsample>from 15 Ratings</div>
+            </div>
+          </div>
+          <DIV class=designpreview id=id3686><A class=dpview title=View 
+href="#"><IMG height=90 
+alt=""
+src="image/item02.jpg" width=120></A>
+            <H3><A title="View Web Design Template" 
+href="#">TCL液晶电视</A></H3>
+            <H4><A class=dpavatar title="View User Profile" 
+href="#"><IMG height=16 
+alt="User Avatar" src="image/avatar_small.gif" width=16></A> <A 
+class=dpprofile title="View User Profile" 
+href="#">查看全图</A> </H4>
+            <UL class=dpdetails>
+              <LI class=dpview><A title="Click to View" 
+  href="#"><img src="image/cl_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />浏览数</A> (131281) </LI>
+              <LI class=dpcomment><A title="View Comments" 
+  href="#s"><img src="image/cl_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />评论数</A> (17) </LI>
+              <LI class=dpdate>添加时间 2007/07/01</LI>
+            </UL>
+            <DIV class=rating>
+              <DIV class=rsample>from 5 Ratings</DIV>
+            </DIV>
+          </DIV>
+          <DIV class=designpreview id=id3693><a class=dpview title=View 
+href="#"><img height=90 
+alt=""
+src="image/item03.jpg" width=120></a>
+            <H3><A title="View Web Design Template" 
+href="#">夏普液晶电视</A></H3>
+            <H4><A class=dpavatar title="View User Profile" 
+href="#"><IMG height=16 
+alt="User Avatar" src="image/avatar_small.gif" width=16></A> <A 
+class=dpprofile title="View User Profile" 
+href="#">查看全图</A> </H4>
+            <UL class=dpdetails>
+              <LI class=dpview><A title="Click to View" 
+  href="#"><img src="image/cl_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />浏览数</A> (131281) </LI>
+              <LI class=dpcomment><A title="View Comments" 
+  href="#s"><img src="image/cl_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />评论数</A> (17) </LI>
+              <LI class=dpdate>添加时间 2007/07/01</LI>
+            </UL>
+            <DIV class=rating>
+              <DIV class=rsample>from 9 Ratings</DIV>
+            </DIV>
+          </DIV>
+        </DIV>
+        <DIV class=row>
+          <DIV class=designpreview id=id3684><A class=dpview title=View 
+href="#"><IMG height=90 
+alt=""
+src="image/item04.jpg" width=120></A>
+            <H3><A title="View Web Design Template" 
+href="#">SONY液晶电视</A></H3>
+            <H4><A class=dpavatar title="View User Profile" 
+href="#"><IMG height=16 
+alt="User Avatar" src="image/avatar_small.gif" width=16></A> <A 
+class=dpprofile title="View User Profile" 
+href="#">查看全图</A> </H4>
+            <UL class=dpdetails>
+              <LI class=dpview><A title="Click to View" 
+  href="#"><img src="image/cl_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />浏览数</A> (131281) </LI>
+              <LI class=dpcomment><A title="View Comments" 
+  href="#s"><img src="image/cl_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />评论数</A> (17) </LI>
+              <LI class=dpdate>添加时间 2007/07/01</LI>
+            </UL>
+            <DIV class=rating>
+              <DIV class=rsample>from 2 Ratings</DIV>
+            </DIV>
+          </DIV>
+          <DIV class=designpreview id=id3681><A class=dpview title=View 
+href="#"><IMG height=90 
+alt=""
+src="image/item01.jpg" width=120></A>
+            <H3><A title="View Web Design Template" 
+href="#">长虹液晶电视</A></H3>
+            <H4><A class=dpavatar title="View User Profile" 
+href="#"><IMG height=16 
+alt="User Avatar" src="image/avatar_small.gif" width=16></A> <A 
+class=dpprofile title="View User Profile" 
+href="#">查看全图</A> </H4>
+            <UL class=dpdetails>
+              <LI class=dpview><A title="Click to View" 
+  href="#"><img src="image/cl_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />浏览数</A> (131281) </LI>
+              <LI class=dpcomment><A title="View Comments" 
+  href="#s"><img src="image/cl_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />评论数</A> (17) </LI>
+              <LI class=dpdate>添加时间 2007/07/01</LI>
+            </UL>
+            <DIV class=rating>
+              <DIV class=rsample>from 1 Rating</DIV>
+            </DIV>
+          </DIV>
+          <DIV class=designpreview id=id3670> <A class=dpview title=View 
+href="#"><IMG height=90 
+alt=""
+src="image/item01.jpg" width=120></A>
+            <H3><A title="View Web Design Template" 
+href="#">松下液晶电视</A></H3>
+            <H4><A class=dpavatar title="View User Profile" 
+href="#"><IMG height=16 
+alt="User Avatar" src="image/avatar_small.gif" width=16></A> <A 
+class=dpprofile title="View User Profile" 
+href="#">查看全图</A> </H4>
+            <UL class=dpdetails>
+              <LI class=dpview><A title="Click to View" 
+  href="#"><img src="image/cl_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />浏览数</A> (131281) </LI>
+              <LI class=dpcomment><A title="View Comments" 
+  href="#s"><img src="image/cl_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />评论数</A> (17) </LI>
+              <LI class=dpdate>添加时间 2007/07/01</LI>
+            </UL>
+            <DIV class=rating>
+              <DIV class=rsample>from 2 Ratings</DIV>
+            </DIV>
+          </DIV>
+          <DIV class=last_in_row> </DIV>
+        </DIV>
+      </DIV>
+      <DIV id=affiliates_introduction>
+        <H4>特别推荐</H4>
+        <P>很多消费者准备在年底<a href="#">各大卖场</a>疯狂促销时进行家电采购，其实这是一个很不错的主意。<br />
+          今天小编就来推荐一组近期促销力度较大的产品，有需要的朋友不妨看看。</P>
+      </DIV>
+      <DIV id=template_grid>
+        <DIV class=row>
+          <DIV class=designpreview id=id3684><A class=dpview title=View 
+href="#"><IMG height=90 
+alt=""
+src="image/item04.jpg" width=120></A>
+            <H3><A title="View Web Design Template" 
+href="#">LG液晶电视</A></H3>
+            <H4><A class=dpavatar title="View User Profile" 
+href="#"><IMG height=16 
+alt="User Avatar" src="image/avatar_small.gif" width=16></A> <A 
+class=dpprofile title="View User Profile" 
+href="#">查看全图</A> </H4>
+            <UL class=dpdetails>
+              <LI class=dpview><A title="Click to View" 
+  href="#"><img src="image/cl_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />浏览数</A> (131281) </LI>
+              <LI class=dpcomment><A title="View Comments" 
+  href="#s"><img src="image/cl_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />评论数</A> (17) </LI>
+              <LI class=dpdate>添加时间 2007/07/01</LI>
+            </UL>
+            <DIV class=rating>
+              <DIV class=rsample>from 2 Ratings</DIV>
+            </DIV>
+          </DIV>
+          <DIV class=designpreview id=id3684><A class=dpview title=View 
+href="#"><IMG height=90 
+alt=""
+src="image/item03.jpg" width=120></A>
+            <H3><A title="View Web Design Template" 
+href="#">TCL液晶电视</A></H3>
+            <H4><A class=dpavatar title="View User Profile" 
+href="#"><IMG height=16 
+alt="User Avatar" src="image/avatar_small.gif" width=16></A> <A 
+class=dpprofile title="View User Profile" 
+href="#">查看全图</A> </H4>
+            <UL class=dpdetails>
+              <LI class=dpview><A title="Click to View" 
+  href="#"><img src="image/cl_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />浏览数</A> (131281) </LI>
+              <LI class=dpcomment><A title="View Comments" 
+  href="#s"><img src="image/cl_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />评论数</A> (17) </LI>
+              <LI class=dpdate>添加时间 2007/07/01</LI>
+            </UL>
+            <DIV class=rating>
+              <DIV class=rsample>from 2 Ratings</DIV>
+            </DIV>
+          </DIV>
+          <DIV class=last_in_row>
+            <DIV class=designpreview id=id3684><A class=dpview title=View 
+href="#"><IMG height=90 
+alt=""
+src="image/item01.jpg" width=120></A>
+              <H3><A title="View Web Design Template" 
+href="#">SONY液晶电视</A></H3>
+              <H4><A class=dpavatar title="View User Profile" 
+href="#"><IMG height=16 
+alt="User Avatar" src="image/avatar_small.gif" width=16></A> <A 
+class=dpprofile title="View User Profile" 
+href="#">查看全图</A> </H4>
+              <UL class=dpdetails>
+                <LI class=dpview><A title="Click to View" 
+  href="#"><img src="image/cl_01.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />浏览数</A> (131281) </LI>
+                <LI class=dpcomment><A title="View Comments" 
+  href="#s"><img src="image/cl_02.jpg" border="0" alt="" style="vertical-align:middle; margin-right:5px;" />评论数</A> (17) </LI>
+                <LI class=dpdate>添加时间 2007/07/01</LI>
+              </UL>
+              <DIV class=rating>
+                <DIV class=rsample>from 2 Ratings</DIV>
+              </DIV>
+            </DIV>
+          </DIV>
+        </DIV>
+        <DIV class=row></DIV>
+      </DIV>
+      <DIV 
+style="DISPLAY: block; FLOAT: left; MARGIN-BOTTOM: 20px; WIDTH: 100%; TEXT-ALIGN: right"><A 
+href="#">查看所有推荐</A> </DIV>
+      <DIV style="MARGIN-TOP: 20px; FLOAT: left">
+        <DIV id=pager>
+          <UL>
+            <LI><A class=currentpage 
+  href="#">1</A> </LI>
+            <LI><A href="#">2</A> </LI>
+            <LI><A href="#">3</A> </LI>
+            <LI><A href="#">4</A> </LI>
+            <LI><A href="#">5</A> </LI>
+            <LI><A href="#">6</A> </LI>
+            <LI><SPAN>...</SPAN> </LI>
+            <LI><A href="#">130</A> </LI>
+            <LI><A href="#">Next »</A> </LI>
+          </UL>
+          <DIV id=results>( 1-3 of 2080 产品 ) </DIV>
+        </DIV>
+      </DIV>
+    </DIV>
+  </DIV>
+  <DIV id=footer>
+    <DIV id=footertopbg></DIV>
+    <DIV id=copyright>© <A href="">自由买卖</A> 2080 </DIV>
+    <DIV id=navigationfooter>
+      <UL>
+        <LI>免费订阅<A href="#">RSS</A></LI>
+        <LI>相关<a href="#">法律条款</a>，本公司保留应有的一切权利。</LI>
+      </UL>
+    </DIV>
+    <DIV id=footerbottombg></DIV>
+  </DIV>
+</DIV>
+</BODY>
+</HTML>

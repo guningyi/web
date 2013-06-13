@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>Menu Mania</ShortName>
+	<Description>Search Menu Mania</Description>
+	<Url type="text/html" method="get" template="http://www.menumania.co.nz/restaurants/search?s={searchTerms}&amp;utm_source=openSearch&amp;utm_medium=searchBar"></Url>
+	<LongName>Menu Mania Search</LongName>
+	<Image height="16" width="16" type="image/gif">http://www.menumania.co.nz/img/favicon_animated.gif</Image>
+	<Developer>Menu Mania Development Team</Developer>
+
+	<Attribution>Search data &amp;copy; 2007, Menu Mania, All Rights Reserved</Attribution>
+	<SyndicationRight>open</SyndicationRight>
+	<Language>en-us</Language>
+</OpenSearchDescription>

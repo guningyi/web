@@ -1,0 +1,67 @@
+/*
+SlideItMoo styles - - - - */
+#SlideItMoo{
+	margin:0 auto;
+	position:relative;
+	clear:both;
+}
+
+#SlideItMoo #Mask{
+	height:81px;
+	margin:0pt auto;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+	width:734px;
+}
+
+#SlideItMoo #thumbs{
+	white-space:nowrap;
+}
+
+#SlideItMoo #thumbs span{
+	margin:0;
+	overflow:hidden;
+	width:76px;
+	height:75px;
+}
+
+#SlideItMoo #thumbs span img{
+	display:inline;
+	bottom:0;
+	margin:0 !important;
+	position:static;
+	right:auto;
+	z-index:auto;
+}
+
+#SlideItMoo #thumbs span a, #SlideItMoo #thumbs span a:link, #SlideItMoo #thumbs span a:visited, #SlideItMoo #thumbs span a:hover, #SlideItMoo #thumbs span a:active{
+	margin:0;
+	display:inline;
+	float:none;
+	width:76px;
+	height:75px;
+}
+
+#SlideItMoo .addfwd, #SlideItMoo .addbkwd{
+	display:block;
+	position:absolute;
+	cursor:pointer;
+	width:25px;
+	height:25px;
+	bottom:-27px;
+}
+
+#SlideItMoo .addbkwd{
+	background:url(../img/left.png) left top no-repeat;
+	left:0px;
+}
+
+#SlideItMoo .addfwd{
+	background:url(../img/right.png) left top no-repeat;
+	right:0px;
+}
+
+#SlideItMoo .Overlay{
+	z-index:99;
+}

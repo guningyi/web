@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>三国杀</title>
+<meta name="description" content="三国杀" />
+<meta name="keywords" content="三国杀" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="styles/basic_import.css" rel="stylesheet" type="text/css" media="all" />
+<link href="styles/local_import.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <h1 id="cateName"></h1>
+    <div class="clearfix">
+      <p class="logo"><a href="#"><img src="images/header/logo.jpg" alt="" width="180" height="97" /></a></p>
+      <div class="sub">
+        <ul class="clearfix">          
+         <li>
+              <p>
+              
+                <input name="kw" type="text" id="searchTxt" onfocus="if(this.value=='')this.value='';" onblur="if(this.value=='')this.value='请输入搜索内容';" value="请输入搜索内容" size="20" /><input type="image" src="images/btn_search_def.gif" id="searchBtn" alt="" onmouseover="imgRoll(this,0);" onmouseout="imgRoll(this,0);" />
+              </p>
+          </li>
+        </ul>
+        <script type="text/javascript" src="js/i_search_assist.js"></script>
+        <script type="text/javascript" src="js/search_tool.js"></script>
+      </div>
+      <div class="gnav">
+        <ul class="clearfix">
+          <li><a href="index.html"><img src="images/header/gnav/home_def.gif" alt="" width="84" height="50" onmouseover="imgRoll(this,1);" onmouseout="imgRoll(this,0);" /></a></li>
+          <li><a href="incheader.html"><img src="images/header/gnav/card_def.gif" alt="" width="104" height="50" onmouseover="imgRoll(this,1);" onmouseout="imgRoll(this,0);" /></a></li>
+          <li><a href="category.htm"><img src="images/header/gnav/anime_def.gif" alt="" width="104" height="50" onmouseover="imgRoll(this,1);" onmouseout="imgRoll(this,0);" /></a></li>
+          <li><a href="incheader.html"><img src="images/header/gnav/goods_def.gif" alt="" width="104" height="50" onmouseover="imgRoll(this,1);" onmouseout="imgRoll(this,0);" /></a></li>
+          <li><a href="category.htm"><img src="images/header/gnav/event_def.gif" alt="" width="84" height="50" onmouseover="imgRoll(this,1);" onmouseout="imgRoll(this,0);" /></a></li>
+          <li><a href="#"><img src="images/header/gnav/keitai_def.gif" alt="" width="69" height="50" onmouseover="imgRoll(this,1);" onmouseout="imgRoll(this,0);" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="cateNavi">
+    <div class="cnavPad">
+      <ul class="clearfix">
+        <li><a href="#"><img src="images/anime/top_cur.gif" alt="" width="188" height="47" onmouseover="imgRoll(this,0);" onmouseout="imgRoll(this,0);" /></a></li>
+        <li><a href="#"><img src="images/anime/movie_def.gif" alt="" width="187" height="47" onmouseover="imgRoll(this,0);" onmouseout="imgRoll(this,0);" /></a></li>
+        <li><a href="#"><img src="images/anime/tv_def.gif" alt="" width="188" height="47" onmouseover="imgRoll(this,0);" onmouseout="imgRoll(this,0);" /></a></li>
+        <li><a href="#"><img src="images/anime/sunday_def.gif" alt="" width="187" height="47" onmouseover="imgRoll(this,0);" onmouseout="imgRoll(this,0);" /></a></li>
+        <li><a href="#"><img src="images/anime/news_def.gif" alt="" width="188" height="47" onmouseover="imgRoll(this,0);" onmouseout="imgRoll(this,0);" /></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="breadClumb">
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li>&gt;</li>
+      <li><strong>卡牌介绍</strong></li>
+    </ul>
+  </div>
+  <div id="contentsArea" class="clearfix">
+    <div id="mainArea">
+	<div class="mainFla">
+        <div><a href="#" style="text-decoration:none"><img src="images/adv.jpg" style="width:100%;height:150px;"/></a>
+		<!--广告--></div>
+	</div>	  
+	 <div>
+	 <h2 style="padding-left:15px;">基本牌</h2>
+	 <table width="100%" border="0" style="text-align:center;">
+	  <tr>
+		<td><img src="images/sha.jpg" width="160" height="113" /></td>
+		<td><img src="images/tao.jpg" width="160" height="113" /></td>
+		<td><img src="images/shan.jpg" width="160" height="113" /></td>
+		<td><img src="images/shan.jpg" width="160" height="113" /></td>
+	  </tr>
+	  <tr>
+		<td><p style="text-align:center">杀</p></td>
+		<td><p style="text-align:center">桃</p></td>
+		<td><p style="text-align:center">闪</p></td>
+		<td><p style="text-align:center">杀</p></td>
+	  </tr>
+	</table>
+	 </div>
+	 <div>
+	 <h2 style="padding-left:15px;">特殊卡</h2>
+	 <table width="100%" border="0" style="text-align:center;">
+	  <tr>
+		<td><img src="images/shenfen.jpg" width="160" height="113" /></td>
+		<td><img src="images/tili.jpg" width="160" height="113" /></td>
+		<td><img src="images/yangxiu.jpg" width="160" height="113" /></td>
+		<td><img src="images/shenfen.jpg" width="160" height="113" /></td>
+	  </tr>
+	  <tr>
+		<td><p style="text-align:center">身份</p></td>
+		<td><p style="text-align:center">体力</p></td>
+		<td><p style="text-align:center">杨修</p></td>
+		<td><p style="text-align:center">身份</p></td>
+	  </tr>
+	</table>
+	 </div>
+	 <div>
+	 <h2 style="padding-left:15px;">武将牌</h2>
+	 <table width="100%" border="0" style="text-align:center;">
+	  <tr>
+		<td><img src="images/liubei.jpg" width="160" height="113" /></td>
+		<td><img src="images/zhugeliang.jpg" width="160" height="113" /></td>
+		<td><img src="images/guanyu.jpg" width="160" height="113" /></td>
+		<td><img src="images/zhangfei.jpg" width="160" height="113" /></td>
+	  </tr>
+	  <tr>
+		<td><p style="text-align:center">刘备</p></td>
+		<td><p style="text-align:center">诸葛亮</p></td>
+		<td><p style="text-align:center">关羽</p></td>
+		<td><p style="text-align:center">张飞</p></td>
+	  </tr>
+	</table>
+	 </div>
+	 <div>
+	 <h2 style="padding-left:15px;">锦囊牌</h2>
+	 <table width="100%" border="0" style="text-align:center;">
+	  <tr>
+		<td><img src="images/liubei.jpg" width="160" height="113" /></td>
+		<td><img src="images/zhugeliang.jpg" width="160" height="113" /></td>
+		<td><img src="images/guanyu.jpg" width="160" height="113" /></td>
+		<td><img src="images/zhangfei.jpg" width="160" height="113" /></td>
+	  </tr>
+	  <tr>
+		<td><p style="text-align:center">刘备</p></td>
+		<td><p style="text-align:center">诸葛亮</p></td>
+		<td><p style="text-align:center">关羽</p></td>
+		<td><p style="text-align:center">张飞</p></td>
+	  </tr>
+	</table>
+	 </div>
+	 <div>
+	 <h2 style="padding-left:15px;">装备牌</h2>
+	 <table width="100%" border="0" style="text-align:center;">
+	  <tr>
+		<td><img src="images/zhugeliannu.jpg" width="160" height="113" /></td>
+		<td><img src="images/cixiongshuanggujian.jpg" width="160" height="113" /></td>
+		<td><img src="images/zhangbashemao.jpg" width="160" height="113" /></td>
+		<td><img src="images/qinglongyanyuedao.jpg" width="160" height="113" /></td>
+	  </tr>
+	  <tr>
+		<td><p style="text-align:center">诸葛连弩</p></td>
+		<td><p style="text-align:center">雌雄双天剑</p></td>
+		<td><p style="text-align:center">丈八蛇矛</p></td>
+		<td><p style="text-align:center">青龙偃月刀</p></td>
+	  </tr>
+	</table>
+	 </div>
+	<div align="right"><a href="#">更多</a></div>
+    </div>
+    <!--/right-->
+    <div id="rightArea">
+      <div class="otherCateNews">
+        <div class="btm">
+          <h3><img src="images/rightarea/h3_other_news1.gif" alt="" width="200" height="30" />
+		  </h3>
+          <ul>
+            <li><a href="#" target="_blank"> <img src="images/MM1.jpg" alt="" width="100" height="71" class="thumb" /> 
+				<h4>~玲珑心~</h4><span>挑战高手</span></a>
+			</li>
+            <li><a href="#" target="_blank"> <img src="images/gudu.jpg" alt="" width="100" height="71" class="thumb" /> 
+				<h4>孤独者</h4><span>很有意思的游戏</span></a>
+			</li>
+           <li><a href="#" target="_blank"> <img src="images/qiaokeli.jpg" alt="" width="100" height="71" class="thumb" /> 
+				<h4>爱吃巧克力</h4><span>最热门最火爆的游戏，就是三国杀</span></a>
+			</li>
+          </ul>
+        </div>
+      </div>
+      <div class="faqQList">
+        <div class="btm">
+         <h3><img src="images/rightarea/h3_faq.gif" width="200" height="39" /></h3>
+          <ul>
+            <li class="first"><a href="#" target="_blank">三国杀游戏流程图标</a></li>
+            <li><a href="#" target="_blank">3V3比赛选手规范</a></li>
+			<li class="first"><a href="#" target="_blank">三国杀3P3流程示意图</a></li>
+            <li><a href="#" target="_blank">奖励与惩罚</a></li>
+			<li><a href="#" target="_blank">武将死亡</a></li>
+			<li><a href="#" target="_blank">回合流程</a></li>
+			<li><a href="#" target="_blank">挑选武将</a></li>
+			<li><a href="#" target="_blank">游戏目标</a></li>
+			<li><a href="#" target="_blank">身份决定</a></li>
+			<li><a href="#" target="_blank">游戏配件</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+       
+      </div>
+    </div>
+    <!--/rightArea-->
+  </div>
+  <!--contentsArea-->
+  <div id="footer">
+    <div class="fPad clearfix">
+      <ul>
+        <!--
+-->
+        <li><a href="#"><img src="images/footer/btn_shop.gif" alt="" width="82" height="38" /></a></li>
+        <!--
+-->
+        <li><a href="#"><img src="images/footer/btn_faq.gif" alt="" width="77" height="38" /></a></li>
+        <!--
+-->
+        <li><a href="#"><img src="images/footer/btn_sitemap.gif" alt="" width="73" height="38" /></a></li>
+        <!--
+-->
+        <li><a href="#" target="_blank"><img src="images/footer/btn_inquiry.gif" alt="" width="79" height="38" /></a></li>
+        <!--
+-->
+        <li><a href="#"><img src="images/footer/btn_howtouse.gif" alt="" width="89" height="38" /></a></li>
+        <!--
+-->
+        <li><a href="#"><img src="images/footer/btn_privacy.gif" alt="" width="112" height="38" /></a></li>
+        <!--
+-->
+        <li><a href="#" target="_blank"><img src="images/footer/btn_company.gif" alt="" width="59" height="38" /></a></li>
+        <!--
+-->
+      </ul>
+      <p><img src="images/footer/copyright.gif"  width="326" height="38" /></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

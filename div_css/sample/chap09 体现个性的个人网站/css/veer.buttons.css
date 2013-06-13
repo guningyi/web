@@ -1,0 +1,108 @@
+/*
+Styles used by submit and image <a> Buttons
+*/
+
+/* button common styles */
+.button_common 
+{
+	font-family: Lucida Grande,Verdana,Helvetica,Arial,sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	margin:0;
+	padding: 2px 4px;
+	text-decoration: none;
+	width: auto;
+	overflow:visible;
+	text-transform:none;
+	cursor:pointer;
+}
+/* orange button for search only */
+input.button_orange_search
+{
+	color:#FFF;
+	background:#E60;
+	border: 1px solid #C40;
+	margin-right: 3px;
+	padding: 2px 5px;
+}
+/* orange button */
+input.button_orange,
+a.button_orange:link,
+a.button_orange:active,
+a.button_orange:visited
+{
+	color:#FFF;
+	background:#E60;
+	border: 1px solid #C40;
+	margin-right: 3px;
+	padding: 2px 5px;
+}
+/* disabled button */
+input.button_disabled,
+a.button_disabled:link,
+a.button_disabled:active,
+a.button_disabled:visited
+{
+	color:#FFF;
+	background:#ccc;
+	border: 1px solid #aaa;
+	margin-right: 3px;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+
+/* new orange button */
+input.button_orange_new,
+a.button_orange_new:link,
+a.button_orange_new:active,
+a.button_orange_new:visited
+{
+	color:#FFF;
+	background:#E60 url(../img/mp.2009.05.buttonBG.jpg) repeat-x;
+	border: 1px solid #ce6d0c;
+	margin-right: 3px;
+	padding: 0px 7px;
+	height: 28px;
+	font-size: 16px;
+	letter-spacing: -0.5px;
+	vertical-align: top;
+
+}
+
+
+/* grey buttons */
+input.button_grey,
+a.button_grey:link,
+a.button_grey:active,
+a.button_grey:visited
+{
+	color:#666666;
+	background:#EEE;
+	border: 1px solid #CCC;
+	text-decoration:none;
+}
+input.button_grey:hover,
+a.button_grey:hover 
+{
+	color:#fff;
+	background:#E60;
+	border-color:#C40;
+	text-decoration:none;
+}
+/* white buttons for grey background */
+input.button_white,
+a.button_white
+{
+	color:#666666;
+	background:#FFF;
+	border: 1px solid #CCC;
+	text-decoration:none;
+}
+input.button_white:hover,
+a.button_white:hover 
+{
+	color:#fff;
+	background:#E60;
+	border-color:#C40;
+	text-decoration:none;
+}

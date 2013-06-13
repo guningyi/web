@@ -1,0 +1,52 @@
+/* These are standard sIFR styles... do not modify */
+
+.sIFR-flash {
+	visibility: visible !important;
+	margin: 0;
+}
+
+.sIFR-replaced {
+	visibility: visible !important;
+}
+
+span.sIFR-alternate {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+
+.sIFR-flash + div[adblocktab=true] {
+  display: none !important;
+}
+
+
+.sIFR-hasFlash h5.sifr1 {
+	visibility: visible;
+	letter-spacing: -10px;
+	font-size: 13pt;
+	line-height:16pt;
+
+}
+.sIFR-hasFlash h5.sifr2 {
+	visibility: visible;
+	letter-spacing: -1px;
+	font-size: 13pt;
+	line-height:14pt;
+	color:#ffc600;
+}
+.sIFR-hasFlash h5.sifr4 {
+	visibility: visible;
+	letter-spacing: -0px;
+	font-size: 13pt;
+	line-height:15pt;
+	color:#ffc600;
+	height:20px;
+	margin:-2px 2px 3px 2px;
+}
+
+
+

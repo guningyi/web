@@ -1,0 +1,357 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<TITLE>会员详细</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<LINK href="css/global.css" type=text/css rel=stylesheet>
+<LINK href="css/facebook.css" type=text/css rel=stylesheet>
+<LINK href="css/subpage.css" type=text/css rel=stylesheet>
+<STYLE type=text/css>
+.button {
+	BACKGROUND-COLOR: #514edc! important
+}
+.linkbutton {
+	BACKGROUND-COLOR: #514edc! important
+}
+#mainnav A.tabup {
+	COLOR: #0c0982
+}
+#subnav {
+	BORDER-BOTTOM-COLOR: #514edc
+}
+#subnav A {
+	COLOR: #0c0982
+}
+#subnav .tabup {
+	BORDER-BOTTOM-COLOR: #514edc! important; COLOR: #0c0982
+}
+#subcolumnmain H3 {
+	COLOR: #0c0982
+}
+#aboutbox H3 {
+	COLOR: #0c0982
+}
+#subsearchbox H3 {
+	COLOR: #0c0982
+}
+H4 {
+	BORDER-LEFT-COLOR: #514edc
+}
+#subfeatureheader H2 {
+	BACKGROUND-COLOR: #514edc
+}
+#searchheader H2 {
+	BACKGROUND-COLOR: #514edc
+}
+#orgheader H2 {
+	BACKGROUND-COLOR: #514edc
+}
+#oppheader H2 {
+	BACKGROUND-COLOR: #514edc
+}
+#searchbox {
+	BORDER-RIGHT: #514edc 1px solid; BORDER-LEFT: #514edc 1px solid; BORDER-BOTTOM: #514edc 1px solid
+}
+#maininfo #searchresults .lowerinfo .orgid A {
+	COLOR: #514edc
+}
+#subfeatureheaderfull H2 {
+	BACKGROUND-COLOR: #514edc
+}
+.currentpage {
+	COLOR: #514edc
+}
+.review {
+	BORDER-BOTTOM: #999 1px solid
+}
+.flaggedreview {
+	BORDER-BOTTOM: #999 1px solid
+}
+.flaggedreview {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #ebebeb
+}
+.searchitem H3 A {
+	COLOR: #069
+}
+#ratingtable H3 {
+	COLOR: #514edc
+}
+.columnbox LI A {
+	COLOR: #0c0982
+}
+#maininfo {
+	BORDER-TOP-COLOR: #514edc
+}
+#maininforight {
+	BORDER-LEFT-COLOR: #514edc; BORDER-BOTTOM-COLOR: #514edc; BORDER-TOP-COLOR: #514edc; BACKGROUND-COLOR: #e9e8ff; BORDER-RIGHT-COLOR: #514edc
+}
+#tertiarynav {
+	BACKGROUND-COLOR: #e9e8ff
+}
+#tertiarynav H3 {
+	COLOR: #0c0982
+}
+.columnbox H3 {
+	COLOR: #0c0982
+}
+.columnbox {
+	BACKGROUND: url(/images/gradient-blue.jpg) repeat-x center top
+}
+#orginfo {
+	BACKGROUND: url(/images/gradient-blue.jpg) repeat-x center top
+}
+#oppinfo {
+	BACKGROUND: url(/images/gradient-side.jpg) repeat-y left top
+}
+#orginfo {
+	BACKGROUND: url(/images/gradient-side.jpg) repeat-y left top
+}
+#subcolumnmain A {
+	COLOR: #0c0982
+}
+#subcolumnmain A:hover {
+	COLOR: #514edc
+}
+#columnside H3 A {
+	COLOR: #0c0982
+}
+</STYLE>
+<!-- Start CSS Block -->
+<!-- CSS Refs -->
+<LINK media=screen href="css/thickbox.css" type=text/css rel=stylesheet>
+<!-- End CSS Block -->
+<!-- Start Javascript Header -->
+<SCRIPT src="" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/handle_errors.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.cookie.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/fontsize.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/helplink.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.thickbox-compressed.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/flow.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/facebook_util.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+    $(document).ready(function() {
+        renderFacebookElements();
+        updateAccountTab();
+    });
+//]]>
+</SCRIPT>
+<!-- End Javascript Header -->
+</HEAD>
+<BODY style="FONT-SIZE: medium">
+<!-- ClickTale Top part -->
+<SCRIPT type=text/javascript>
+var WRInitTime=(new Date()).getTime();
+</SCRIPT>
+<!-- ClickTale end of Top part -->
+<DIV id=container>
+  <DIV class=flowContainer id=loginContainer></DIV>
+  <DIV id=lightboxContainerContainer style="DISPLAY: none">
+    <DIV class="flowContainer closeable" id=lightboxContainer></DIV>
+  </DIV>
+  <DIV id=header>
+    <DIV id=headertop>
+      <H1><A 
+href="http://www.volunteermatch.org/"><SPAN>VolunteerMatch</SPAN></A></H1>
+      <DIV id=topnav>
+        <DIV id=loginStatus>
+          <UL>
+            <LI><A href="#">登录</A> | </LI>
+            <LI><A href="#">注册</A> | </LI>
+            <LI><A href="#">联系我们</A> | </LI>
+            <LI><A href="#">帮助中心</A> </LI>
+          </UL>
+          <FORM>
+            <INPUT id=__login_status type=hidden value=false>
+          </FORM>
+        </DIV>
+      </DIV>
+      <p><A id=sponsorlink href="#" target=new></A></p>
+      <p><img src="image/banner01.jpg" /></p>
+    </DIV>
+    <DIV id=mainnav>
+      <UL>
+        <LI id=navigation_tab_search> <A class="tab " href="index.htm">首页 </A></LI>
+        <LI id=navigation_tab_volunteers><A class="tab " href="Activity.htm">活动 </A></LI>
+      </UL>
+    </DIV>
+    <!-- end main nav -->
+  </DIV>
+  <!-- end header -->
+  <div id="content">
+    <SCRIPT type=text/javascript>
+  $(document).ready(function() {
+    $('.vm-closealert').click(function() {
+      var p = $(this).parents('.vm-sitealert');
+      var alert_id = p.attr("alert_id");
+      p.hide();
+      var date = new Date();
+		  date.setTime(date.getTime()+(365*24*60*60*1000));
+      document.cookie = "alert" + alert_id + "=false; path=/; expires="+date.toGMTString();
+    });
+  });
+</SCRIPT>
+    <DIV id=subcolumnmain>
+      <DIV id=subfeature> <img class="imgright subboximg" alt="" width="245" height="289" src="image/024.jpg" />
+        <DIV id=subfeatureheader>
+          <H2>会员档案</H2>
+        </DIV>
+        <DIV id=subfeatureinfo>
+          <H3>没有的空白，寂寞的空虚，占据了我的一切</H3>
+          <P>女士，20    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#"> 联络此会员 </a> </P>
+          <p>联系方式：查看</p>
+          <p>婚姻状态：查阅</p>
+          <p>星座：处女  血型：AB</p>
+          <p>身高：160－165公分  体型：苗条</p>
+          <p>地区： 北京，北京</p>
+          <p>我的职业：查阅</p>
+          <p>我的行业：其他行业</p>
+          <p>教育程度：查阅</p>
+          <p>月收入：查阅</p>
+          <p>个性：浪漫/脱俗、简单、随意/随和</p>
+          <p>朋友形容我：自由的思想者、现实主义者</p>
+          <p>我的优势：身材</p>
+          <p>我的兴趣爱好: 情感、休闲、美食</P>
+          <DIV class=ablock><A href="#">点击查看同类会员</A></DIV>
+        </DIV>
+        <DIV id=maininfo>
+          <DIV id=maininfoleft>
+            <H3>交友相关资料：</H3>
+            <P>第一次约会我希望双方能做什么: 不排除更进一步的可能 </P>
+            <P>约会中该谁买单： 当然是男的付</P>
+            <P>我方便活动的时间： 下班</P>
+            <P>我喜欢吃： 山珍、风味小吃</P>
+            <P>我认为浪漫是：一处秘密的约会点、午夜狂欢</P>
+            <P>我便于约会的时间：下班</P>
+            <P>我便于活动的片区：查阅</P>
+            <DIV class=ablock><A href="#">点击查看同类会员</A></DIV>
+            <DIV class=subitem>
+              <H4>婚恋相关资料：</H4>
+              <P>征婚资料: 外貌: 90分    个人财产: 10万以下</P>
+              <p>住房情况: 租房   是否有车: 没有</p>
+              <p>是否吸烟: 查阅    是否喝酒: 滴酒不沾 </p>
+              <p>子女: 无子女   信仰: 伊斯兰教</p>
+              <p>结婚后想要小孩吗： 查阅</p>
+              <p>我愿意为爱情迁居别处吗： 要看搬去哪里，不喜欢的地方不行</p>
+              <p>婚后我会承担多少家务： 90%</p>
+              <p>婚恋中双方的关系应该是： 满足对方需要，同时有独立空间</p>
+              <p>婚恋态度：不在乎天长地久，只在乎曾经拥有</p>
+              <p>我的经济状况 ： </p>
+              <p>对方的家庭重要吗: 只要相爱，什么样都行</p>
+              <p>我的消费观： 用一些，存一些</p>
+              <p>我对现在工作的态度： 上进，有事业心</p>
+              <p>我会打小孩吗： 不赞成，不会打</p>
+              <p>异性密友： 成为共同的朋友</p>
+              <P>希望婚后的家庭关系： 两口子自己住，经常回父母家看看</p>
+              <p>我觉得两人相处最重要的是： 坦诚相待、善待对方、共同的生活爱好</p>
+              <p>我希望的结婚后的生活圈： 两人世界</p>
+              <p>我最看重对方的： 幽默感、 个性、 性能力、 经济能力</p>
+              <p>我感兴趣的婚恋话题： 婚后性生活、</p>
+              <p>择偶条件：地区: 北京   身高: 155-185 </p>
+              <p>收入：1000以上   学历: 高中以上</p>
+              <p>婚姻状态：单身,离异,丧偶   是否有小孩: 没关系，我不在乎</P>
+              <DIV class=ablock><A href="#">点击查看同类会员</A></DIV>
+            </DIV>
+            <H4 id=gv>两性相关资料：</H4>
+            <P>在亲密过程中，我往往是： 你快乐所以我快乐、善于配合</P>
+            <p>我现在住在： 一个人住，很方便 </p>
+            <p>认为自己有魅力吗 ：挺性感的，一定迷住你</p>
+            <p>我的两性经验 ：查阅</p>
+            <p>我认为亲密是： 人生最快乐的事</p>
+            <p>在亲密中乐于尝试吗：传统，保守</p>
+            <p>我认为性和爱的关系是 ：有爱才有性</p>
+            <p>我认为两性吸引主要体现在对方的： 身材</P>
+            <DIV class=ablock><A href="#">点击查看同类会员</A></DIV>
+          </DIV>
+          <!-- maininfoleft -->
+          <DIV id=maininforight> 菲尔139 收到的礼物
+            <H4> <a href="#">我爱的</a> 赠送</H4>
+            <P> <img src="image/014.gif" width="60" height="60"> </P>
+            <DIV class=ablock><A href="#">详细</A></DIV>
+            <H4> <a href="#">好好爱</a> 赠送</H4>
+            <P> <img src="image/015.jpg" width="60" height="60"> </P>
+            <DIV class=ablock><A href="#">详细</A></DIV>
+            <H4> <a href="#">wwim</a> 赠送</H4>
+            <P> <img src="image/016.jpg" width="60" height="60"> </P>
+            <DIV class=ablock><A href="#">详细</A></DIV>
+          </DIV>
+          <!-- maininforight -->
+          <DIV id=maininfobottom></DIV>
+        </DIV>
+        <!-- end maininfo -->
+      </DIV>
+      <!-- end searchbox -->
+    </DIV>
+    <!-- end columnmain -->
+    <DIV id=subcolumnside>
+      <DIV class="columnbox top">
+        <H3>活动专区</H3>
+        <P>
+          <NUI:A href="#"><IMG class=imgleft 
+style="BORDER-RIGHT: #d3c5cf 1px solid; BORDER-TOP: #d3c5cf 1px solid; BORDER-LEFT: #d3c5cf 1px solid; BORDER-BOTTOM: #d3c5cf 1px solid" 
+height=72 alt="Support Us" src="image/piggybank.jpg" 
+width=72 border=0></NUI:A>
+          本活动为会员自发组织的非商业活动， 凡报名参加者均视为具有完全民事行为能力人， 每次活动时请注意保证自己的安全。如在活动中发生交通事故、人身意外伤害等，后果自负， 由此引发的一切民事刑事责任，由责任当事人自行承担，与组织者和本网站无关。 </P>
+        <FORM action=/secure/donate/ method=post>
+          <INPUT type=hidden 
+value=/volunteers/index_sidebar name=dCampiagn>
+          <input type="button" value="加入活动">
+        </FORM>
+      </DIV>
+      <DIV class="columnbox bottom">
+        <H3>高级会员</H3>
+        <P>该会员已经是高级会员,享受超级VIP服务</P>
+        <DIV class=ablock>升级后 我能：</DIV>
+        <P> 无限制收发留言 </P>
+        <p>直接查看详细档案</p>
+        <p> 申请查看会员联系方式。 </p>
+        <p>高级会员标识</p>
+        <p>在线聊天，想和谁聊就和谁聊。</p>
+        <p>搜索结果中突出显示</p>
+      </DIV>
+      <!-- end columnbox -->
+    </DIV>
+    <!-- end columnside -->
+  </DIV>
+  <!-- end content -->
+  <DIV id=footer>
+    <UL>
+      <LI><A title="关于我们" href="#">关于我们</A> |
+      <LI><A title="最新动态" 
+  href="#">最新动态</A> |
+      <LI><A title="招贤纳士" href="#">招贤纳士</A> |
+      <LI><A href="#">会员排行</A> |
+    </UL>
+  </DIV>
+  <!-- end footer -->
+</DIV>
+<!-- end container -->
+<SCRIPT type=text/javascript>
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  var scr = "<" + "script src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'" + ">" + "<" + "/script" + ">";
+  document.write(scr);
+</SCRIPT>
+<SCRIPT type=text/javascript>
+  try{
+    var sTracker = _gat._getTracker("UA-937784-1");
+    sTracker._initData();
+    sTracker._trackPageview();
+
+    var rTracker = _gat._getTracker("UA-937784-79");
+    rTracker._initData();
+    rTracker._trackPageview();
+
+  } catch(err) {}
+</SCRIPT>
+<!-- ClickTale Bottom part -->
+<DIV id=ClickTaleDiv style="DISPLAY: none"></DIV>
+<SCRIPT src="VolunteerMatch - Volunteers.files/WRb.js" 
+type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>
+if(typeof ClickTale=='function') ClickTale(17029,0.0007);
+</SCRIPT>
+<!-- ClickTale end of Bottom part -->
+</BODY>
+</HTML>

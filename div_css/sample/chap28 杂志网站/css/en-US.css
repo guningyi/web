@@ -1,0 +1,247 @@
+.blog-entries a.blog-share{
+	width:29px;
+}
+
+#social-networks h3
+{
+	background:url(../img/share.gif) no-repeat 0 0;
+}
+
+.addyoursite{
+	background:url(../img/addsite.gif) no-repeat;
+	width:82px;
+}
+
+h3.bakatme{
+	/*background:url(../img/bakatme.gif) no-repeat;*/
+}
+
+.middle-big-right-1 h3.contact{
+	background:url(../img/contact.gif) no-repeat;
+}
+
+.middle-big-right-1 h3.advertise{
+	background:url(../img/advertise.gif) no-repeat;
+}
+
+ul#navigation li a {
+	background: url(../img/menu.gif) no-repeat 0 0;
+}
+.download{
+    background:url(../img/download.jpg) no-repeat;
+}
+
+.submit-work
+{
+	background:url(../img/submit-your-work.gif) no-repeat;
+	width:146px;
+}
+
+.search-go{
+	background:url(../img/go.jpg) no-repeat 0 0;
+	width:22px;
+}
+.submit-entry{
+	/*background:url(../img/submit-entry.gif) no-repeat;*/
+	width:81px;
+}
+.ithink-button{
+    background:#000 url(../img/ithink-button.jpg) no-repeat;
+    width:11px !important;
+	height:11px;
+    float:right;
+	border:none;
+	display:inline;
+	overflow:hidden;
+	margin:13px 0 0 0px;
+	padding:0;
+}
+
+.ithink-button-2{
+    background:#000 url(../img/ithink-button.jpg) no-repeat;
+    width:11px !important;
+	height:11px;
+    float:right;
+	border:none;
+	display:inline;
+	overflow:hidden;
+	margin:13px 4px 0 0px;
+	padding:0;
+}
+
+
+.ithink{
+    float:left;
+	width:107px;
+	margin:10px 0 0 6px;
+	height:15px;
+	display:inline;
+	overflow:hidden;
+}
+
+
+
+.work-submit h4{
+    float:left;
+	width:450px;
+	height:18px;
+	/*background-image:url(../img/submit-work.gif);*/
+	background-repeat:no-repeat;
+	margin:0 0 9px 0;
+}
+.middle-big-left h4.addsite{
+	background:url(../img/add-your-site.jpg) no-repeat;
+}
+.submit-entry-img{
+	background:url(../img/submit-entry.gif) no-repeat;
+	width:81px;
+}
+.foot-float{
+    float:left;
+	margin:0 9px 0 0 !important;
+	padding:5px 0 0 0 !important;
+}	
+.foot-last{
+    margin:0 8px 0 27px !important;
+}
+.middle-big-left h4.blog{
+ 	float:left;
+	width:100px;
+	height:20px;
+	/*background:url(../img/blog/blog.gif) no-repeat;*/
+}
+
+
+.middle-big-left h4.latest-issue{ background:url(../img/latest-issue.gif) no-repeat; }
+
+.middle-big-left h4.issue1{ background:url(../img/1.gif) no-repeat; }
+.middle-big-left h4.issue2{ background:url(../img/2.gif) no-repeat; }
+.middle-big-left h4.issue3{ background:url(../img/3.gif) no-repeat; }
+.middle-big-left h4.issue4{ background:url(../img/4.gif) no-repeat; }
+.middle-big-left h4.issue5{ background:url(../img/5.gif) no-repeat; }
+.middle-big-left h4.issue6{ background:url(../img/6.gif) no-repeat; }
+.middle-big-left h4.issue7{ background:url(../img/7.gif) no-repeat; }
+.middle-big-left h4.issue8{ background:url(../img/8.gif) no-repeat; }
+.middle-big-left h4.issue9{ background:url(../img/9.gif) no-repeat; }
+.middle-big-left h4.issue10{ background:url(../img/10.gif) no-repeat; }
+.middle-big-left h4.issue11{ background:url(../img/11.gif) no-repeat; }
+.middle-big-left h4.issue12{ background:url(../img/12.gif) no-repeat; }
+.middle-big-left h4.issue13{ background:url(../img/13.gif) no-repeat; }
+.middle-big-left h4.issue14{ background:url(../img/14.gif) no-repeat; }
+.middle-big-left h4.issue15{ background:url(../img/15.gif) no-repeat; }
+.middle-big-left h4.issue16{ background:url(../img/16.gif) no-repeat; }
+.middle-big-left h4.issue17{ background:url(../img/17.gif) no-repeat; }
+.middle-big-left h4.issue18{ background:url(../img/18.gif) no-repeat; }
+.middle-big-left h4.issue19{ background:url(../img/19.gif) no-repeat; }
+.middle-big-left h4.issue20{ background:url(../img/20.gif) no-repeat; }
+.middle-big-left h4.issue21{ background:url(../img/21.gif) no-repeat; }
+.middle-big-left h4.issue22{ background:url(../img/22.gif) no-repeat; }
+.middle-big-left h4.issue23{ background:url(../img/23.gif) no-repeat; }
+.middle-big-left h4.issue24{ background:url(../img/24.gif) no-repeat; }
+.middle-big-left h4.issue25{ background:url(../img/25.gif) no-repeat; }
+.middle-big-left h4.issue26{ background:url(../img/26.gif) no-repeat; }
+.middle-big-left h4.issue27{ background:url(../img/27.gif) no-repeat; }
+.middle-big-left h4.issue28{ background:url(../img/28.gif) no-repeat; }
+.middle-big-left h4.issue29{ background:url(../img/29.gif) no-repeat; }
+.middle-big-left h4.issue30{ background:url(../img/30.gif) no-repeat; }
+
+.middle-big-right-1 h3.press{
+	background:url(../img/press.gif) no-repeat;
+}
+
+.middle-big-right-1 h3.goodies{
+	background:url(../img/goodies.gif) no-repeat;
+}
+
+.middle-big-right-1 h4.backgrounds{
+	background:url(../img/background-images.gif) no-repeat;
+}
+
+.middle-big-right-1 h3.all-issues{
+	background:url(../img/all-issues.gif) no-repeat;
+}
+
+.foot-last-2{
+    margin:0 8px 0 38px !important;
+}
+
+.foot-last-3{
+    margin:0 0 0 61px !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.foot-last-3{
+    margin:0 0 0 62px !important;
+}
+}
+
+.middle-big-left h4.interviews{
+  	float:left;
+	width:100%;
+	height:20px;
+	/*background:url(../img/interviews.jpg) no-repeat;*/
+	padding:0 0 0px 0;
+}
+.middle-big-right-1 h3.random{
+    text-indent:-9999px;
+	background-image:url(../img/random.gif);
+	background-repeat:no-repeat;
+	float:left;
+	width:79px;
+	height:18px;
+	margin:2px 0 2px 0;
+}
+
+.middle-big-right-1 h3.random{
+	background:url(../img/random.gif) no-repeat;
+}
+
+.middle-big-left h4.search-big{
+	background:url(../img/search.jpg) no-repeat;
+}
+.middle-big-right-1 h3.search-results{
+    text-indent:-9999px;
+	background:url(../img/search-results.gif) no-repeat;
+	float:left;
+	width:124px;
+	height:18px;
+	margin:2px 0 15px 0;
+}
+.submit-pop{
+	background:url(../img/submit-entry.gif) no-repeat;
+}
+
+.find-now{
+	background:url(../img/find.gif) no-repeat;
+	width:55px;
+}
+
+.work-submit-button
+{
+	background:url(../img/submit-img.gif) no-repeat;
+	width:68px;
+}
+
+.issue-show{
+	background:url(../img/show.gif) no-repeat;
+	width:38px;
+	margin:3px 0 0 6px;
+}
+
+.issue-go{
+    background:url(../img/gopink.gif) no-repeat;
+	width:38px;
+}
+
+ul.issue-download a#details 
+{
+	background:url(../img/details.gif) no-repeat 0 -1px;
+}
+
+.pop-down{
+	background:url(../img/download.jpg) no-repeat 10% bottom;
+}
+
+.middle-big-left h4.pop{
+	background:url(../img/blog/blog.gif) no-repeat;
+}

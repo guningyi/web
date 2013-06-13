@@ -1,0 +1,27 @@
+div.wiki {
+    margin: 1em 0;
+}
+
+a#wikiReadMore,
+a.wikiReadMore {
+    padding: 0 5px 0 0;
+    border-right: 1px solid #ccc;
+}
+a.wikiReadMore {
+    border: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
+div#wikiAbstract {
+    margin: 10px 0;
+    line-height: 1.5em;
+}
+
+div#wikiAbstract .wikiOptions {
+    margin: 5px 0;
+    font-size: 11px;
+    line-height: 1.25em;
+}
+span.wiki_continued {
+    display: none;
+}

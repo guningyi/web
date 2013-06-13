@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.footer-top-bar {
+	width:834px;
+	height:19px;
+	background: #ffffff url(../images/_foot-top-home.jpg);
+	background-repeat:repeat-y;
+	background-position:0px 0px;
+	float:left;
+}
+
+/* Override menu transparency on home page due to z-index problems with trasparent flash */
+#header-region ul.nice-menu li ul li{
+	background:#E9F4F7;
+	filter:alpha(opacity=100);
+	-moz-opacity:1;
+	opacity:1;
+}
+
+/***** HOME PAGE REGIONS *****/
+#banner-region{
+	width:100%;
+	padding:0px;
+	margin-top:0px
+	/*background:#CCCC66;*/
+}
+
+#wrapper-1-2-3-Regions, #wrapper-4-5-6-Regions{
+	margin-top:0px;
+	width:100%;
+	clear:both;
+	/*padding-top:10px;*/
+}
+
+#home-page-6-3-region {
+	border: 1px solid #B3B3B3; 
+	background:#ffffff;
+	float:left;
+	overflow:hidden;
+}
+
+#home-page-6-4-region,
+#home-page-6-5-region,
+#home-page-6-6-region {
+	border-top: 1px solid #B3B3B3; 
+	border-left: 1px solid #B3B3B3; 
+	border-right: 1px solid #B3B3B3;
+	border-bottom:none; 
+	background:#ffffff;
+	float:left;
+	overflow:hidden;
+}
+
+#home-page-6-1-2-region{
+	width:650px;
+	height:320px;
+	margin-left:-120px;
+	border:none;
+	background:#ffffff;
+	float:left;
+}
+
+#home-page-6-3-region{
+	width: 257px;
+	height:318px;
+	float:left;
+	margin-left:10px;
+	border-right: 1px solid #B3B3B3;
+}
+
+#home-page-6-4-region, #home-page-6-5-region, #home-page-6-6-region{
+	width: 257px; 
+	height:184px;
+	background:#ffffff;	
+	padding-bottom: 10px;
+}
+
+#home-page-6-1-2-region, #home-page-6-3-region{
+	margin-top:5px;
+	
+}
+
+#home-page-6-4-region, #home-page-6-5-region, #home-page-6-6-region{
+	margin-top:10px;
+}
+
+#home-page-6-3-region a,  
+#home-page-6-4-region a,
+#home-page-6-5-region a,
+#home-page-6-6-region a {
+	color: #1F8FB4;
+	font-size:10px;
+}
+
+#home-page-6-3-region H1,  
+#home-page-6-4-region H1,
+#home-page-6-5-region H1,
+#home-page-6-6-region H1 {
+	display:block;
+	margin:0px;
+	height:24px;
+	padding-left:10px;
+	font-size:11px;
+}
+
+#home-page-6-3-region H1 a,
+#home-page-6-4-region H1 a,
+#home-page-6-5-region H1 a,
+#home-page-6-6-region H1 a {
+	font-size:12px;
+	font-weight:bold;
+	color:#ffffff;
+	padding-top:4px;
+	padding-bottom:4px;
+	display:block;
+}
+
+
+#home-page-6-1-2-region H1{
+	background:#C14205;
+}
+
+#home-page-6-3-region H1{
+	background:#096887;
+} 
+
+#home-page-6-4-region H1{
+	background-image:url(../images/homepage-6-4.jpg);
+	background-repeat:no-repeat;
+}
+
+#home-page-6-5-region H1{
+	background-image:url(../images/homepage-6-5.jpg);
+	background-repeat:no-repeat;
+}
+
+#home-page-6-6-region H1{
+	background-image:url(../images/homepage-6-6.jpg);
+	background-repeat:no-repeat;
+}
+
+#home-page-6-4-region div .content, #home-page-6-5-region div .content, #home-page-6-6-region div .content {
+	padding-left:8px;
+	padding-right:8px;
+}
+
+#home-page-6-4-region h2, #home-page-6-5-region h2, #home-page-6-6-region h2 {
+	font-size:16px;
+	font-weight:normal;
+	padding-top:2px;
+	padding-bottom:2px;
+	margin:0px;
+}
+#home-page-6-4-region h2 {
+	color:#4b7b21;
+}
+#home-page-6-5-region h2 {
+	color:#28782b;
+}
+#home-page-6-6-region h2{
+	color:#114621;
+}
+
+#home-page-6-4-region UL, #home-page-6-5-region UL, #home-page-6-6-region UL{
+	list-style-type:none;
+	padding-top:10px;
+}
+
+#home-page-6-4-region UL LI, #home-page-6-5-region UL LI, #home-page-6-6-region UL LI{
+	padding-left:20px;
+	margin-left:-10px;
+}
+
+#home-page-6-4-region UL LI a, #home-page-6-5-region UL LI a, #home-page-6-6-region UL LI a{
+	color:#777777;
+	font-size:12px;
+}
+
+#home-page-6-4-region UL LI{
+	background:url(../images/right-arrow-bottom-4.png);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+
+#home-page-6-5-region UL LI{
+	background:url(../images/right-arrow-bottom-4.png);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+
+#home-page-6-6-region UL LI{
+	background:url(../images/right-arrow-bottom-6.png);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+
+#home-page-6-5-region{
+	margin-left:11px;
+}
+
+#home-page-6-6-region{
+	margin-left: 12px;
+}
+
+
+/**** END HOME PAGE REGIONS ****/
+
+
+/**************** ACCORDION **********************/
+/*************************************************/
+
+.ArrowExpanded {
+	background:url(../images/VA-ArrowDown.png);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	margin:8px;
+	float:left;
+	height:8px;
+	width:8px;	
+}
+.ArrowCollapsed {
+	background:url(../images/VA-ArrowRight.png);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	margin:8px;
+	float:left;
+	height:8px;
+	width:8px;	
+}
+
+#home-page-6-3-region .AccordionTitle, #home-page-6-3-region .AccordionContent, #home-page-6-3-region .AccordionContainer
+{
+  width:100%;
+}
+
+#home-page-6-3-region .AccordionContainer{
+	font-size:10px;
+}
+
+#home-page-6-3-region #Accordion1Title, #home-page-6-3-region #Accordion2Title, 
+#home-page-6-3-region #Accordion3Title, #home-page-6-3-region #Accordion4Title 
+{
+  color:#FFFFFF;
+  font-size:11px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  
+  vertical-align:middle;
+  text-align:left;
+  height: 24px;
+  
+  overflow:hidden;
+  cursor:pointer;
+  margin-bottom: 2px;
+}
+
+#home-page-6-3-region #Accordion4Title {
+ /* margin-bottom: 0px;*/
+}
+
+#home-page-6-3-region #Accordion1Title span, #home-page-6-3-region #Accordion2Title span, 
+#home-page-6-3-region #Accordion3Title span, #home-page-6-3-region #Accordion4Title span {
+  padding-top:4px;
+  padding-bottom:4px;
+  padding-left:10px;
+  display:block;
+}
+
+#home-page-6-3-region #Accordion1Title a, #home-page-6-3-region #Accordion2Title a, 
+#home-page-6-3-region #Accordion3Title a, #home-page-6-3-region #Accordion4Title a 
+{
+  color:#FFFFFF;
+}
+
+/********** FIRST REGION additional styles *************/
+#home-page-6-3-region #Accordion1Title{
+	background-image:url(../images/homepage-6-3-1.jpg);
+	background-repeat:no-repeat;
+}
+
+#home-page-6-3-region #Accordion2Title{
+	background-image:url(../images/homepage-6-3-2.jpg);
+	background-repeat:no-repeat;
+}
+
+#home-page-6-3-region #Accordion3Title{
+	background-image:url(../images/homepage-6-3-3.jpg);
+	background-repeat:no-repeat;
+}
+
+#home-page-6-3-region #Accordion4Title{
+	background-image:url(../images/homepage-6-3-4.jpg);
+	background-repeat:no-repeat;
+}
+
+#home-page-6-3-region #Accordion4Content UL{
+	list-style-type:none;
+}
+
+#home-page-6-3-region #Accordion4Content UL LI{
+	padding-left:20px;
+	background:url(../images/right-arrow.png);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+
+#home-page-6-3-region .copy {
+	margin:8px;
+}
+
+#home-page-6-3-region .highlight {
+	color: #BA1A12;
+}
+
+#home-page-6-3-region .AccordionContent
+{
+  height:0px;
+  overflow:hidden;
+  display:none;
+}
+#home-page-6-3-region .AccordionDefaultContent
+{
+  height:216px;
+}
+
+/************ END ACCORDION **********************/
+/*************************************************/
+
+
+

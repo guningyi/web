@@ -1,0 +1,48 @@
+.inactive {color: silver}
+
+body {
+text-align: left;
+background-color: #fff;
+}
+
+
+.bodydetail {
+padding: 20px;
+}
+
+.bodydetail td {
+background-color: #fff !important
+}
+
+#eventssuchmaske input, #eventssuchmaske select {
+margin-left: 11px;
+margin-bottom: 4px;
+}
+
+.klein td {
+padding: 2px 4px;
+}
+
+/* ausgabe topevents */
+
+#topevents {
+font-size: 11px;
+margin-left: 58px;
+}
+
+#topevents .datum {
+height: 2px;
+display: block;
+}
+
+* html #topevents .datum {
+margin-bottom: -3px;
+}
+*+html #topevents .datum {
+margin-bottom: -3px;
+}
+
+
+#topevents a {
+font-weight: bold;
+}

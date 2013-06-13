@@ -1,0 +1,143 @@
+/* IE7-specific CSS */
+
+table {
+	border: 1px solid #B3B3B3;
+}
+	tbody th, td {
+		border-bottom:  1px solid #B3B3B3;
+	}
+#content {
+	width:99%;
+}
+
+/* homepage overlay tweaks */
+	.overlaycontent .filled{
+		background-color: #151515;
+		filter: alpha(opacity=85);
+		background-image:none !important;
+	}
+	#overlay_tio .nav ul li .boxcontent {
+		background-color:transparent !important;
+		background-image: url(../img/dgrey_85pc.png);
+	}
+	#overlay_tio .nav ul li .boxcontent .popleft, #overlay_tio .nav ul li .boxcontent .popright{
+		background-color: #151515;
+		filter: alpha(opacity=85) !important;
+		background-image:none !important;
+	}
+#header div.find-it {
+	width: 475px;
+}
+
+#quick-links select {
+	width:180px;
+}
+
+#nav {
+	padding-top: 43px;
+}		
+#nav li ul {
+	top:-1px;
+}
+#primary-nav li a {
+	height: 24px;
+}
+
+#primary-content {
+	width:49%;
+}
+
+#primary-content h1 {
+	letter-spacing:1px;
+}
+
+#primary-content .callout blockquote {
+	background: url('../img/close-quotation.gif') bottom right no-repeat;
+}
+	#primary-content .callout blockquote p {
+		background: transparent url("../img/spacer.gif") bottom right no-repeat !important;
+	}
+
+#primary-content ul.links li, #secondary-content ul.links li, #tertiary-content ul.links li,
+#primary-content ul li.links, #secondary-content ul li.links, #tertiary-content ul li.links {
+	padding-left: 11px;
+}
+	
+#primary-content dl dt {
+	margin: 0em 1em 0 0;
+	padding: 0.25em 0 0.25em 0em;
+	float: left;
+	clear: left;
+	width: 105px;
+}
+#primary-content dl.event-info dt, #primary-content div.college-info dt {
+	width: 125px;
+}
+* html #primary-content dt {
+	margin: 0 1em 0 0em;
+	clear: left;
+}
+#primary-content dl dd {
+	padding: 0.25em 0 0.25em 0em;
+	float:left;
+	display: block;
+	margin-left: 10em;
+}
+
+* html #primary-content dl dd {
+	padding: 0.2em 0 0.25em 0em;
+	float: none;
+	height: 1.2em;
+}
+
+/*dl dd+dd { margin: 0.25em 0 0.25em 19.2em; }*/
+
+#primary-content dl dd {
+	margin: 0 0 0 0em;
+	padding: 0em 0 0.25em 0em;
+	float: left;
+	vertical-align: middle;
+}
+
+#primary-content dl dd {
+	margin: 0.2em 0 0 0;
+	padding: 0;
+	float: none;
+	display: block;
+}
+
+#secondary-content .teaser a, #tertiary-content .teaser a {
+	background-position: right 90%;
+}
+
+.graphicdatebox {
+	margin-top:10px;
+}
+
+#primary-content #advanced_always input {
+	margin-top: 0;
+}
+
+body #recommend-box {
+	margin-bottom:4px;
+}
+body #recommend-box img.boxlabel {
+	position:absolute;
+	bottom:11px;
+	right:21px;
+}
+body #recommend-box input#recipient {
+	margin-bottom:30px;
+}
+body #recommend-box input.submitbutton {
+	bottom:45px;
+}
+
+div.paging ul li.next a{
+	background:url(../img/arrow_solid_right.gif) 90% center no-repeat !important;
+	padding-right: 12px !important;
+}
+
+#features_panel #features_submenu .feature_biographies {
+	width: 71%;
+}

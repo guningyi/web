@@ -1,0 +1,36 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1.23;
+}
+.accessibility, #largenav, #smallnav, .backto, #utilities, #related, .devlin, #footer .links, #leftnav, #paging, .moreinfo {
+	display: none;
+}
+a img {
+	border: 0;
+}
+hr {
+	background-color:#CCCCCC;
+	border:medium none;
+	clear:both;
+	color:#CCCCCC;
+	height:1px;
+}
+h1 {
+	padding-bottom: 2em;
+}
+.listing .item {
+	padding-bottom: .5em;
+	clear: both;
+}
+.listing .item .thumbnail {
+	width: 80px;
+	float: right;
+	padding: 14px 0 9px 18px
+}
+.listing .item .thumbnail img {
+	width: 80px
+}
+#footer {
+	padding-top: 2em;
+}

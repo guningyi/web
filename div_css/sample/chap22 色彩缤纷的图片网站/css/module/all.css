@@ -1,0 +1,7 @@
+@import url(../screen.csss");
+
+body {
+background-image:none;
+background-color: #000;
+text-align: left;
+}

@@ -1,0 +1,365 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline
+}
+ol, ul {
+	list-style:none
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+caption, th, td {
+	text-align:left;
+	font-weight:normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:"";
+}
+blockquote, q {
+	quotes:"" "";
+}
+html, body {
+	height:101%;
+}
+body {
+	background:#fff;
+	height:100%;
+	padding:0;
+	vertical-align:top;
+}
+/* Default HTML Elements
+-------------------------------*/
+
+/* Images */
+img, a img {
+	border:0pt none;
+	vertical-align:bottom;
+}
+/* Reusables */
+
+/* Misc classes */
+
+.right {
+	float:right !important;
+}
+.left {
+	float:left;
+}
+.padd-top {
+	padding-top:10px !important;
+}
+.clear-left {
+	clear:left;
+}
+.img-replace {
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	padding:0;
+	text-indent:-9999px;
+}
+/* Grid Layout */
+.container {
+	margin:0 auto;
+	padding-right:10px;
+	padding-left:10px;
+	width:940px;
+}
+.grid, .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7 {
+	display:inline;
+	float:left;
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:10px;
+}
+.grid_whatsnew {
+	display:inline;
+	float:right;
+	margin-left:0px;
+	margin-right:0px;
+}
+.no-grid {
+	display:block;
+	float:none;
+}
+.grid_whatsnew_IFrame {
+	display:inline;
+	float:left;
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:10px;
+	padding-top:287px;
+}
+.begin {
+	margin-left:0;
+}
+.end {
+	margin-right:0;
+}
+.container .grid_1 {
+	width:145px;
+}
+.container .grid_2 {
+	width:300px;
+}
+.container .grid_whatsnew {
+	width:300px;
+}
+.container .grid_3 {
+	width:455px;
+}
+.container .grid_4 {
+	width:610px;
+}
+.container .grid_5 {
+	width:765px;
+}
+.container .grid_6 {
+	width:920px;
+}
+.container .grid_whatsnew_IFrame {
+	display:inline;
+	float:left;
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:10px;
+	width:300px;
+	padding-top:287px;
+}
+.container .grid_7 {
+	width:770px;
+}
+/* add extra space before */
+.container .ahead_1 {
+	padding-left:155px;
+}
+.container .ahead_2 {
+	padding-left:310px;
+}
+.container .ahead_3 {
+	padding-left:465px;
+}
+.container .ahead_4 {
+	padding-left:620px;
+}
+.container .ahead_5 {
+	padding-left:775px;
+}
+/* add extra space after */
+.container .behind_1 {
+	padding-right:155px;
+}
+.container .behind_2 {
+	padding-right:310px;
+}
+.container .behind_3 {
+	padding-right:465px;
+}
+.container .behind_4 {
+	padding-right:620px;
+}
+.container .behind_5 {
+	padding-right:775px;
+}
+/* move item forward */
+.container .move_1 {
+	left:155px;
+}
+.container .move_2 {
+	left:310px;
+}
+.container .move_3 {
+	left:465px;
+}
+.container .move_4 {
+	left:620px;
+}
+.container .move_5 {
+	left:775px;
+}
+/* move item back */
+.container .remove_1 {
+	left:-155px;
+}
+.container .remove_2 {
+	left:-310px;
+}
+.container .remove_3 {
+	left:-465px;
+}
+.container .remove_4 {
+	left:-620px;
+}
+.container .remove_5 {
+	left:-775px;
+}
+.clear {
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.clearfix:after {
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	line-height:0;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.clearfix {
+	display:inline-block
+}
+* html .clearfix {
+	height:1%
+}
+.clearfix {
+	display:block
+}
+/* fix the outline on firefox focus */
+a:active {
+	outline: none;
+}
+a:focus {
+	-moz-outline-style: none;
+}
+/*
+** Markup free clearing
+** Details: http://www.positioniseverything.net/easyclearing.html
+*/
+.clear-block:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clear-block {
+	display: inline-block;
+}
+.clear {
+	float: none;
+	clear: both;
+}
+/* Hides from IE-mac \*/
+* html .clear-block {
+	height: 1%;
+}
+.clear-block {
+	display: block;
+}
+/* End hide from IE-mac */
+
+
+/* kat's formatting -- facebox overlay for send to friend */
+div#facebox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	text-align: left;
+}
+div#facebox div.popup {
+	position: relative;
+}
+div#facebox div.body {
+}
+div#facebox div#sendtofriend {
+	padding: 11px;
+	background: #fff;
+}
+div#facebox div.content {
+	width: 672px;
+}
+div#facebox .loading { /**/
+	width: 650px;
+	height: 300px;
+	text-align: center;
+	background-color: transparent;
+}
+div#facebox h2#sendtofriend {
+	background-image: url(http://www.woolworths.com.au/wps/woolworths/_images/title-sendtofriend.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 222px;
+	height: 26px;
+	margin: 14px 0px 0px 10px;
+	text-indent: -3001px;
+}
+div#facebox div.note {
+	margin: 13px 0px 60px 0px;
+	height: 300px;
+}
+div#facebox form ul {
+	padding: 6px 0px 0px 0px;
+	margin: 0;
+}
+div#facebox form ul li {
+	float: left;
+	display: inline;
+	width: 373px;
+	padding: 0px 0px 17px 0px;
+}
+div#facebox form ul li input.text {
+	border: 1px solid #b1b1b1;
+	height: 17px;
+	width: 369px;
+}
+div#facebox form ul li.left {
+	width: 247px;
+}
+div#facebox form ul li.left input {
+	width: 227px;
+}
+div#facebox form label {
+	width: 100%;
+	padding: 0px 0px 5px 0px;
+}
+div#facebox form textarea {
+	width: 621px;
+	border: 1px solid #b1b1b1;
+	height: 79px;
+}
+div#facebox input.btn-search {
+	position: absolute;
+	bottom: 36px;
+	right: 105px;
+}
+div#facebox a.close {
+	position: absolute;
+	bottom: 36px;
+	right: 10px;
+}
+div#facebox_overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+}
+.facebox_hide {
+	z-index:-100;
+}
+.facebox_overlayBG {
+	background-color: #000;
+	z-index: 99;
+}
+/* overlay */
+
+* html div#facebox_overlay { /* ie6 hack */
+	position: absolute;
+ height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+/* / kat's formatting -- facebox overlay for send to friend */

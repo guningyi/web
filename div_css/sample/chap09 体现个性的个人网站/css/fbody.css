@@ -1,0 +1,1322 @@
+.forprintonly {
+	display: none;
+	}
+
+/*  generic handlers */
+
+body {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	font: 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 13px;
+	color: #000;
+	}
+
+img {
+	border: 0;
+	}
+		
+form {
+	margin: 0;
+	}
+
+p {
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 14px;
+	color: #000;
+	background-color: transparent;
+	margin: 10px 0;
+	}
+
+ul {
+	margin: 10px 0 15px 20px;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: url(../img/spacer.gif);
+	list-style-position: outside;
+	}
+
+table {
+	border: 0px none;
+	}
+
+blockquote {
+	font: 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 14px;
+	color: #000;
+	margin-left: 0px;
+	border-left: 1px dotted #666;
+	padding-left: 15px;
+	background-color: transparent;
+	}
+
+center {
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 13px;
+	color: #000;
+	padding-bottom: 5px;
+	background: transparent;
+	}
+
+/* the <b> element is deprecated PLEASE use <strong> */
+
+b {
+	font-weight: bold;
+	color: #777;
+	}
+	
+strong {
+	font-weight: bold;
+	color: #777;
+	}
+
+td {
+	font: 10px verdana, helvetica, arial, geneva, sans-serif;
+	color: #666;
+	border-style: none;
+	}
+
+h1 {
+	font: 18px arial, helvetica, geneva, sans-serif;
+	line-height: 22px;
+	color: #777;
+	background: transparent;
+	margin: 0 0 10px 0;
+	}
+
+h2 {
+	font: 12px verdana, arial, geneva, sans-serif;
+	line-height: 16px;
+	margin: 20px 0 -2px 0;
+	padding: 0 0 10px 0;
+	color : #666;
+	border-bottom: 1px solid #DDD;
+	}
+
+h3 {
+	font: 12px verdana, arial, geneva, sans-serif;
+	line-height: 16px;
+	margin: 20px 0 -2px 0;
+	color : #999;
+	}
+
+ol {
+	font: 10px verdana, helvetica, arial, geneva, sans-serif;
+	color: #000;
+	background: transparent;
+	}
+
+li {
+	font: 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 14px;
+	color: #000;
+	background: transparent;
+	}
+	
+.pale {
+	color:#999999;
+}
+
+.nocss {
+	visibility: hidden;
+	}
+
+.announcement {
+	margin: 5px 0 20px 0;
+	padding: 15px;
+	border: 2px solid #CCC;
+	font-size: 11px;
+	line-height: 15px;
+	color: #777;
+	}
+	
+#couponInstructions {
+	margin-top:10px;
+}
+#couponInstructions ol  {
+	margin:10px 0 0 0;
+}
+	
+
+.responsecontainer {
+	margin: 0 0 15px 0;
+	padding: 15px;
+	border: 2px solid #D00;
+	font-size: 11px;
+	line-height: 15px;
+	color: #777;
+	}
+
+.announcement p,
+.responsecontainer p {
+	font-size: 11px;
+	line-height: 15px;
+	color: #777;
+	}
+	
+
+.announcement ol {
+	margin: 20px 0;
+	padding: 0;
+	list-style-position: inside;
+	}
+
+.announcement li {
+	font-size: 11px;
+	line-height: 20px;
+	color: #777;
+	}
+
+.noresults 
+{
+	border-top: double 3px #CCC; padding-bottom: 5px;
+}
+
+.noresults ol
+{
+	list-style-position: outside; margin: 20px 20px;
+}
+
+.noresults li
+{
+	margin-bottom: 5px;
+}
+
+	
+
+/* used for dropdown lists in paging/selector controls */
+.smallSelect {
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	}
+
+/* used for textboxes in paging/selector controls */
+.smallTextbox {
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	margin-right:10px;
+	}
+
+
+/*  start main grid */
+
+/* page container for main landing pages */
+#fbherocontainer {
+	position: relative;
+	width: 710px;
+	/*  -22px left tab below */
+	margin: 0 0 0 33px;
+	text-align: left;
+	border-top: 8px solid #333;
+	}
+
+#fbherocontainer_noline {
+	position: relative;
+	width: 710px;
+	/*  -22px left tab below */
+	margin: 0 0 0 33px;
+	text-align: left;
+	}
+	
+/* page container for all standard content pages */
+#fbcontainer {
+	position: relative;
+	width: 710px;
+	/*  -22px left tab below */
+	margin: 0 0 0 33px;
+	padding-top: 20px;
+	text-align: left;
+	}
+	
+/* page container for account pages and other narrow format pages */
+
+#fbnarrowcontainer {
+	position: relative;
+	width: 472px;
+	/*  -22px left tab below */
+	margin: 0 119px 0 152px;
+	padding-top: 20px;
+	text-align: left;
+	color: #777;
+	}
+	
+#fbcolumn1 {
+	position: relative;
+	background-color: #FFF;
+	padding: 0;
+	float: left;
+	width: 165px;
+	border-right: 1px solid #B3B3B3;
+	}
+
+/*#fbcolumn1 img {margin:10px 0;}*/
+
+#fbmaincolumn1	 {
+	position: relative;
+	background-color: #FFF;
+	width: 530px;
+	float: left;
+	margin: 0;
+	}
+
+#fbmaincolumn2 {
+	position: relative;
+	background-color: #FFF;
+	padding: 0;
+	float: right;
+	width: 165px;
+	}
+
+#fbmaincolumn2 p {
+	margin: 5px 0 15px 0;
+	}
+
+#fbcolumn2	 {
+	position: relative;
+	background-color: #FFF;
+	
+/*	-14px column gutter left */
+	padding: 0 0 0 14px;
+	width: 530px;
+	float: right;
+
+/*	-1 margin below allows single pixel line on column 1 
+	to extend to the bottom of the page regardless of 
+	which column has more content */
+	margin: 0 0 0 -1px;
+	border-left: 1px solid #B3B3B3;
+	}
+
+#fbcolumn2type	 {
+	position: relative;
+	background-color: #FFF;
+	
+/*	-14px column gutter top and left */
+	padding: 9px 0 0 14px;
+	width: 530px;
+	float: right;
+
+/*	-1 margin below allows single pixel line on column 1 
+	to extend to the bottom of the page regardless of 
+	which column has more content */
+	margin: 0 0 0 -1px;
+	border-left: 1px solid #B3B3B3;
+	}
+
+#fbcolumn3 {
+	position: absolute;
+	text-align: left;
+	background-color: #FFF;
+	width: 165px;
+	left: 377px;
+	top: 10px;
+	}
+
+
+/*** DETAIL page styles ***/
+
+/* column 1 on all detail pages */
+#fbDetailColumn1 {
+	position: relative;
+	width: 335px;
+	float: left;
+	}
+
+/* column 2 on all non-image pages */
+#fbDetailColumn2 {
+	position: relative;
+	width: 400px;
+	float: left;
+	top: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	}
+
+/* column 2 on image detail pages (have zoom) */
+#fbDetailColumn2Zoom {
+	position: relative;
+	width: 600px;
+	height: 610px; /* required so that abs-positioned comp/zoom doesn't overlap footer */
+	float: right;
+	top: 10px;
+	}
+
+/* these two styles are used on typedetail page */
+.detailblock_left {
+	float: left;
+	width: 335px;
+	vertical-align: top;	
+	line-height: 14px;
+	color: #777;
+	}
+	
+.detailblock_right {
+	position: relative;
+	float: right;
+	width: 600px;
+	margin: 5px 0 0 0;
+	}
+
+.detailblock_right .callout4 {
+	margin-left:26px;
+}
+/* following detail styles are used on all other detail pages in the detail block controls */
+
+.detailblock {
+	position: relative;
+	width: 335px;
+	vertical-align: top;
+	line-height: 14px;
+	color: #000;
+	}
+
+.detailblock_leftspan {
+	float: left;
+	}
+	
+.detailblock_rightspan {
+	float: right; 
+	text-align:right;
+	}
+		
+
+/* price model block displayed on vendor and detail pages */ 
+#fbPriceModel {
+	margin: 0;
+	padding: 5px;
+	color: #666;
+	background: #EEE;
+	}
+
+/* callouts formatted for detail block */		
+.fbDetailCallout
+{
+    margin-bottom: 20px;
+    padding: 10px;
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+    line-height : 15px;
+    color : #777;
+	}
+ 
+.fbDetailCalloutGray
+{
+    border: 1px solid #CCC;
+	}
+ 
+.fbDetailCalloutOrange
+{
+		border: 1px solid #e60;
+		text-align: center;
+		padding: 10px 0px 10px 0px;
+		margin-bottom: 10px;
+		color: #777;
+		font-size: 12px;
+}
+ 
+ .fbDetailCalloutRed
+{
+    border: 1px solid #C00;
+	}
+	 
+.fbDetailCalloutRelease
+{
+    margin: 10px 0 10px 0;
+    padding: 10px;
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+    line-height : 15px;
+    color : #777;
+	}
+	    	
+/* styles used for supplementary areas of the detail block, including lightbox, gallery, recommend this */	
+.fbDetailBlockArea
+{
+	width: 100%;
+	margin: 10px 0 10px 0;
+	padding-top: 10px;
+	text-align: right;
+	border-top: 1px solid #CCC;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	color: #777;
+}
+	    		
+.fbDetailBlockInnerArea
+{
+	width: 100%;
+	padding-top: 15px;
+	text-align: right;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	color: #777;
+	}	
+
+	
+.fbDetailBlockAreaSelector {
+	margin-bottom: 5px;
+	}		
+
+.fbDetailBlockTaxesArea 
+{
+	color: #777;
+	text-align: right;
+	padding-top: 2px;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+}
+
+
+/* cd upsell block on detail pages */
+
+.fbCDUpsell 
+{
+	width: 100%;
+	margin: 10px 0 10px 0;
+	padding-top: 10px;
+	text-align: right;
+	border-top: 1px solid #CCC;
+	}
+
+.fbCDUpsellTop 
+{
+	padding-bottom: 10px;
+	}
+
+.fbCDUpsellLeft {
+	float: left;
+	width: 110px;
+	margin-bottom: 10px;
+	}
+
+.fbCDUpsellRight {
+	float: right;
+	width: 185px;
+	margin-bottom: 10px;
+	}
+
+/* specs and eula block */
+ 
+.fbDetailSpecs {
+	width: 100%;
+	margin: 10px 0 5px 0;
+	padding-top: 10px;
+	text-align: right;
+	border-top: 1px solid #CCC;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 14px;
+	}
+
+/* keywords block */
+
+.fbKeywordList 
+{
+	text-align: left;
+	}
+
+.fbKeywordList a 
+{
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+}
+
+.fbKeywordList input {
+	vertical-align: middle;
+	}
+
+
+/*** ACCOUNT page styles ***/
+/* functionality header (add new address, etc) used on account pages */
+#fbnarrowheader {
+	margin-bottom: 10px;
+	text-align: right;
+	border-top : 1px solid;
+	border-bottom : 1px solid;
+	border-color : #BBB;
+	background : #EEE;
+	}
+	
+#fbnarrowheader p {
+	margin: 10px;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 13px;
+	color: #777;	
+	}
+
+/* left side of account info pages, such as addressbook. Example: usage name */
+.fbnarrowleft {
+	float: left;
+	margin-left: 10px;
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 13px;
+	color : #777;
+	}
+
+/* right side of account info pages, such as addressbook. example: Edit | Delete */
+.fbnarrowright {
+	float: right;
+	margin-right: 10px;
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 13px;
+	color : #777;
+	}
+
+/* style for table cells on orders and quotes pages */
+.fbTabularDetail
+{
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 15px;
+}
+
+/* style for table cells on orders and quotes pages */
+.fbTabularDetailNowrap
+{
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 15px;
+	white-space: nowrap;
+}
+
+
+/*** classes used on narrow form pages (prefs, edit address, etc) */
+/* gray narrow-width form container */
+.fbnarrowform
+{
+    position: relative;
+    padding-top: 10px;
+    width: 472px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #CCC;
+    font : 10px verdana, helvetica, arial, geneva, sans-serif;
+    color : #777;
+    background: #EEE;
+    line-height: 16px;
+}
+
+/* left side of account edit pages, such as preferences, register, etc. Example: first name */
+.fbnarrowform_left
+{
+    width: 170px;
+    float: left;
+    text-align: right;
+    margin: 0 0 5px 0;
+}
+
+/* right side of account edit pages, such as preferences, register, etc. Example: [textbox] */
+.fbnarrowform_right
+{
+    width: 290px;
+    float: right;
+    text-align: left;
+    margin: 0 0 5px 0;
+}
+
+.fbnarrowform_rightsmall
+{
+    width: 290px;
+    float: right;
+    text-align: left;
+    margin-bottom: 5px;
+    font : 12px verdana, helvetica, arial, geneva, sans-serif;
+    line-height: 16px;
+    margin: 0px;
+}
+
+/* full line that spans left and right "columns" */
+.fbnarrowform_full
+{
+    margin: 0 15px 5px 15px;
+}
+
+/* indented subheads on narrow forms. Example: Search Options: */
+.fbnarrowform_subhead {
+    font-size: 12px;
+    color: #999;
+    margin: 10px 0 14px 20px;
+}
+
+/* centered seperator between form sections */
+.fbnarrowform_seperator {
+    text-align: center;
+}
+
+/* submit/cancel area on narrow forms */
+.fbnarrowform_buttons {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.fbnarrowform_radio {
+    vertical-align: middle;
+ }
+	
+.fbnarrowform_checkbox 
+{
+    vertical-align: bottom;
+}    
+.address_input 
+{
+	width:265px;
+}
+ 
+ /* the container for saved search details */
+.fbsearchdetailcontainer
+{
+	clear: both;
+	width: 710px;
+	margin: 0;
+	padding-top: 10px;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 15px;
+	color : #777;
+}
+
+/* left side of saved search details, holding the header */
+.fbsearchdetailleft
+{
+	clear: both;
+	float: left;
+	margin-left: 10px;
+	width: 80px;
+}
+
+/* right side of saved search details, holding attributes */
+.fbsearchdetailright
+{
+	float: left;
+	margin-left: 10px;
+	width: 480px;
+}
+  
+  
+/*** VENDOR page styles ***/
+#fbVendorColumn1 {
+	width: 290px; 
+	float: left;
+	}
+
+#fbVendorColumn2 {
+	width: 400px; 
+	float: right
+	}
+
+#fbVendorSearch {
+	border-top : 1px solid #CCC; 
+	border-bottom : 1px solid #CCCCCC; 
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	margin-bottom: 20px;
+	}
+
+
+/*** ORDER (shared cart/quote) styles ***/
+/* left side of cart/quote notice, such as pricing or delivery notice */
+.fbOrderNoticeLeft
+{
+	float: left;
+	width: 172px;
+	margin-right: 15px;
+	text-align: right;
+}
+
+/* right side of cart/quote notice, such as pricing or delivery notice */
+.fbOrderNoticeRight
+{
+	float: left;
+	width: 368px;
+}
+
+/* main container for the cart/quote item */
+.fbLineItem
+{
+	width: 710px;
+	padding-top: 10px;
+}
+
+/* common left section of cart/quote item, containing thumbnail, sku/name, and check on cart items */
+.fbLineItemLeft
+{
+	float: left;
+	width: 172px;
+	margin-right: 15px;
+}
+
+/* common sku and name holder, below thumb in left section of cart/quote item */
+.fbLineItemSku
+{
+	width: 172px;
+	margin-top: -3px;
+	text-align: right;
+	padding-top: 5px;
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #777;
+}
+
+/*cart item has a left-floating checkbox under the thumb*/
+.fbLineItemSku input
+{
+	float: left;
+	margin-top: 1px;
+}
+
+/* width override for any callout used in right side of cart/quote item */
+.fbLineItemCalloutContainer
+{
+	width: 340px;
+	font-size: 12px;
+}
+
+/* container for discount info in right side of cart/quote item */
+.fbLineItemDiscount
+{
+	padding-top: 10px;
+}
+
+/* header column of discount info */
+.fbLineItemDiscountLeft
+{
+	float: left;
+	margin-right: 10px;
+}
+
+/* price info column of diuscount info */
+.fbLineItemDiscountRight
+{
+	float: left;
+	text-align: right;
+}
+
+.fbPublicOffersLeft
+{
+	float:left;
+	border: 0px;
+	width: 300px;
+	color: #777;
+}
+
+.fbPublicOffersRight
+{
+	float: left;
+	text-align: right;
+}
+
+.fbTargetedCouponsLeft
+{
+	float:left;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	border: 0px;
+	width: 265px;
+	color: #777;
+}
+
+/* price info column of diuscount info */
+.fbTargetedCouponsRight
+{
+	float: right;
+	text-align: right;
+	margin-top: 3px;
+}
+
+
+/*** CART styles ***/
+/* the container for the links at top of cart page (or any other full width page) */
+.fbPageFunctions 
+{
+	width: 710px; 
+	margin: 10px 0 10px 0; 
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #BBB;
+	background: #EEE;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 13px;
+	color: #777;	
+}
+
+/*left side of container*/
+.fbPageFunctionsLeft
+{
+	float: left;
+	padding: 10px;
+	margin: 0;
+}
+
+/*right side of container*/
+.fbPageFunctionsRight
+{
+	float: right;
+	padding: 10px;
+	margin: 0;
+}
+
+/* center section of cart item */
+.fbCartItemCenter
+{
+	float: left;
+	width: 368px;
+	margin-right: 15px;
+}
+
+/* right section of cart item */
+.fbCartItemRight
+{
+	float: left;
+	width: 140px;
+}
+
+
+/*** QUOTE styles ***/
+/* right section of quote item */
+.fbQuoteItemRight
+{
+	float: left;
+	width: 523px;
+}
+
+
+/*** RECEIPT item styles ***/
+.fbReceiptItem
+{
+	width: 710px;
+	margin: 10px 0 10px 0;
+	color: #777;
+}
+
+.fbReceiptItemColumn1
+{
+	float: left;
+	width: 172px;
+	margin-right: 15px;
+}
+
+.fbReceiptItemColumn2
+{
+	float: left;
+	width: 314px;
+	margin-right: 15px;
+}
+
+.fbReceiptItemColumn3
+{
+	float: right;
+	width: 194px;
+}
+
+.fbReceiptItemColumn3_left
+{
+	float: left;
+	width: 80px;
+	text-align: right;
+	background-color: Transparent;
+}
+
+.fbReceiptItemColumn3_right
+{
+	float: right;
+	width: 110px;
+	text-align: right;
+	background-color: Transparent;
+}
+
+/*** CD ITEM DOWNLOAD styles ***/
+#fbItemsDownloadColumn1 {
+	width: 170px;
+	float: left;
+	}
+
+#fbItemsDownloadColumn2 {
+	width: 540px;
+	float: left;
+	margin-top: 19px;
+	}
+
+#fbItemsDownloadBackTo {
+	margin-top: 10px; 
+	margin-bottom: 20px;
+	}
+
+
+/*** LIGHTBOX styles ***/
+#fbLightboxLeftHeader
+{
+    float: left;
+}
+
+#fbLightboxRightHeader
+{
+    margin-top: 15px;
+    float: right;
+    text-align: right;
+}
+
+#fbLightboxNav /* container for nav/functional link area */
+{
+    margin-bottom: 10px;
+    font: 12px verdana, helvetica, arial, geneva, sans-serif;
+}
+
+#fbLightboxNavLeft
+{
+	float: left;
+}
+
+#fbLightboxNavMiddle
+{
+	float: left;
+	margin: 2px 0 0 10px;
+}
+
+#fbLightboxNavRight
+{
+	float: right;
+	margin-top: 2px;
+}
+
+#fbLightboxInfo /* container for lightbox details */
+{
+    width: 710px;
+    margin-bottom: 10px;
+    font: 12px verdana, helvetica, arial, geneva, sans-serif;
+}
+#fbLightboxInfo p
+{
+    font: 12px verdana, helvetica, arial, geneva, sans-serif;
+    line-height: 15px;
+    color: #777;
+}
+
+
+/*	text treatments */
+
+#fbherocontainer a:visited, #fbcontainer a:visited, #fbnarrowcontainer a:visited, #fbherolink a:visited, 
+#qsnavcontent a:visited, #fbcontainer_grey a:visited, #fbherocontainer_noline a:visited,
+.veerMessageHover a:visited {
+	color: #E60;
+	background: transparent;
+	text-decoration: none;
+	}
+	
+#fbherocontainer a:link, #fbcontainer a:link, #fbnarrowcontainer a:link, #fbherolink a:link, 
+#qsnavcontent a:link, #fbcontainer_grey a:link, #fbherocontainer_noline a:link,
+.veerMessageHover a:link {
+	color: #E60;
+	background: transparent;
+	text-decoration: none;
+	}
+
+#fbherocontainer a:hover, #fbcontainer a:hover, #fbnarrowcontainer a:hover, #fbherolink a:hover, 
+#qsnavcontent a:hover, #fbcontainer_grey a:hover, #fbherocontainer_noline a:hover,
+.veerMessageHover a:hover {
+	color: #777;
+	background: transparent;
+	text-decoration: underline;
+	}
+	
+#fbherocontainer a:active, #fbcontainer a:active, #fbnarrowcontainer a:active, #fbherolink a:active, 
+#qsnavcontent a:active, #fbcontainer_grey a:active, #fbherocontainer_noline a:active,
+.veerMessageHover a:active {
+	color: #777;
+	background: transparent;
+	text-decoration: none;
+	}
+
+#fbherolink {
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	text-align: right;
+	margin: 10px 0 6px 0;
+	padding: 0 2px 0 0;
+	}
+
+li.fblistheader {
+	margin: 10px 0 5px -16px;
+	}
+
+li.exclusive {
+	list-style-type: none;
+	list-style-image: url(../img/bug-exclusive.v2.gif);
+	list-style-position: outside;
+	}
+
+li.splitter {
+	list-style-type: none;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	margin: 10px 0;
+	padding: 5px 0;
+	}
+
+li.new {
+	list-style-type: none;
+	list-style-image: url(../img/bug-new.v2.gif);
+	list-style-position: outside;
+	}
+
+li.here {
+	}
+
+#fbcolumn1 ul {
+	margin: 10px 0 15px 20px;
+	padding: 0;
+	}
+
+.fbfeatured p {
+	text-align: left;
+	margin-top: 0;
+	padding-right: 5px;
+	padding-top: 0;
+	}
+
+
+/*	merch content treatments */
+
+.fbmerch {
+	position: relative;
+	width: 150px;
+	float: left;
+	margin: 0 40px 0 0;
+	padding: 0;
+	}
+
+.fbmerchright {
+	position: relative;
+	width: 150px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	}
+
+.fbmerchfeaturedimg {
+	margin: 5px 0 0 0;
+	}
+
+.fbmerch p {
+	margin: 0 0 10px 0;
+	}
+
+.fbmerchright p {
+	margin: 0 0 10px 0;
+	}
+
+.fbmerch h1 {
+	font: 14px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 18px;
+	color: #666;
+	margin: 10px 0 0 0;
+	}
+
+.fbmerchright h1 {
+	font: 14px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 18px;
+	color: #666;
+	margin: 10px 0 0 0;
+	}
+
+.fbmerchcat {
+	width: 244px;
+	float: left;
+	margin: 0 0 10px 0;
+	/* border-right: 1px solid #CCC;  */
+	/* border-bottom: 1px solid #CCC; */
+	}
+
+.fbmerchcatright {
+	width: 244px;
+	float: right;
+	margin: 0 0 10px 0;
+	/* border-right: 1px solid #CCC;  */
+	/* border-bottom: 1px solid #CCC; */
+	}
+
+.fbmerchcat p {
+	margin: 0;
+	}
+
+.fbmerchcatright p {
+	margin: 0;
+	}
+
+.fbmerchcatimg {
+	float: left;
+	margin: 5px 14px 0 0;
+	}
+
+.fbmerchcathead {
+	margin: 0;
+	}
+/* feature title image */
+
+#fbtypehero {
+	position: relative;
+	width: 710px;
+	padding: 15px 0 10px 0;
+	/* -22px left tab below */
+	margin: 0 0 0 33px;
+	text-align: left;
+	border-top: 8px solid #333;
+	}
+
+/*	The following groups positions must both be considered 
+	as the "fbnewtype" headers postion is relative to the 
+	"fbtypefeatured" style. */
+
+.fbtypefeatured	{	
+	position: relative;
+	border-bottom: 1px solid #CCC; 
+	border-right: 1px solid #CCC; 
+	width: 364px;
+	left: -15px;
+	margin: 0;
+	}
+
+#fbtypehead {
+	position: relative; 
+	border-right: 1px solid #CCC; 
+	width: 364px;
+	left: -15px;
+	margin: 0;
+	text-align: right;	
+	}
+	
+#fbcdcoverblock {
+	margin: 0 0 25px 22px;
+	}
+
+/*	End of area */
+
+.fbtypefeatured	p {
+	margin: 0 20px 20px 20px;
+	}
+
+.fbtypefeatured img {
+	margin: 20px 0 0 20px; 
+	}
+
+
+#fbnewtype {
+	position: relative; 
+	border-right: 1px solid #CCC; 
+	width: 364px;
+	left: -15px;
+	margin: 0;
+	text-align: right;	
+	}
+
+.fbfeaturedmain {
+	float: left;	
+	margin: 0 14px 28px 0;
+	width: 340px;
+	}
+
+.fbfeaturedhead {
+	margin: -5px 0 0 0;
+	}
+
+#fbdividerhead {
+	margin: 10px 0;
+	padding: 0;
+	}
+
+.pref_subhead img {
+	margin: 5px 0 4px 20px;
+	}
+
+.typeextraimg {
+	margin: 0 5px 0 0;
+	vertical-align: bottom;
+	}
+
+.aboutdiv { border-bottom:1px solid #DDD;margin:3px 0; }
+.aboutleftimg { float: left; width: 83px; }
+.aboutrightdetail { float: right; width: 425px; color: #777; }
+.aboutimg { margin: 5px 5px 5px -15px; vertical-align: middle; }
+.pressimg { margin: 5px 5px 5px 0; vertical-align: middle; }
+.pressleftimg { float: left; width: 110px; margin:5px 0; }		
+.pressrightdetail { float: right; width: 390px; color: #777; }
+.pressleftimg_doublewide { float: left; width: 220px; margin:5px 0; }
+.pressrightdetail_doublewide { float: right; width: 280px; color: #777; }
+
+#qs_new_navline {
+	position: relative;
+	width: 710px;
+	
+/*  -22px left tab below */
+
+	margin: 0;
+	text-align: left;
+	padding: 0;
+	border-top: 8px solid #333;
+	clear: both;
+	}
+	
+/* classes for flonted headers */
+.fbHeader /* generic flonted header */
+{
+}
+
+.fbDetailHeader /* for cd and merch detail page */
+{
+	margin: 0 0 -8px 0;
+}
+
+.fbTypeDetailHeader /* type detail page */
+{
+	margin: 0 0 -1px 0;
+}
+
+.fbMerchFeaturedHeader /* featured merch headers on merch default */
+{
+	margin: 0 0 -5px 0;
+}
+
+.fbMerchCategoryHeader /* merch categories on merch default */
+{
+	margin: -5px 0 -4px 0;
+}
+
+.fbAccountHeader /* flonted header on account pages */
+{
+	margin: -10px 0 0 0;
+}
+
+.fbOrderHeader /* flonted header on order pages */
+{
+	margin: -8px 0 0 0;
+}
+
+/* places seperator line below header, for account and other pages that have column data below, but no functional block below the header */
+
+.fbHeaderContainer {
+	border-bottom: 1px solid;
+	border-color: #BBB;
+	margin-bottom: 10px;
+	}
+
+/* semi-transparent add-on for whatever you fancy */
+
+.fbOpaque {
+	opacity: 0.95;
+    -moz-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    filter: alpha(opacity=95);
+}
+
+
+/* sporadic incidentals */
+
+.fbPorny {
+	top: auto;
+	bottom: auto;
+	position: relative;
+	text-decoration: blink;
+}
+/* hover state for text links on contact page for jquery */
+.txtHoverState  {
+	color:#666666;
+	text-decoration:underline;
+}
+.txtLinkState {
+	color:#ee6600;
+	text-decoration:none;
+}
+
+/* Career page styles - run separately by Taleo*/
+#careerPage ul {list-style:disc none inside;}
+
+
+

@@ -1,0 +1,54 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+a {
+	color: #7a7a7a;
+}
+a:hover {
+	color: #000000;
+	text-decoration:none;
+}
+#caselist_table {
+	width: 100%;
+	font-size: 10pt;
+	line-height: 2em;
+	font-family: Verdana, "宋体";
+}
+
+#caselist_table th {
+	background-color: #fdefb3;
+	color: #f8b025;
+	font-size: 9pt;
+	padding: 0px 5px 0px 5px;
+}
+#caselist_table td {
+	padding: 0px 5px 0px 5px;
+}
+#caselist_table .price {
+	font-size: 7pt;
+	text-align: center;
+	color: #655f58;
+}
+
+#memlist_table {
+	width: 100%;
+	font-size: 10pt;
+	line-height: 2em;
+	font-family: Verdana, "宋体";
+}
+
+#memlist_table th {
+	background-color: #d2debd;
+	color: #61852f;
+	font-size: 9pt;
+	padding: 0px 5px 0px 5px;
+}
+#memlist_table td {
+	color:#655f58;
+	text-align:center;
+	padding: 0px 5px 0px 5px;
+}
+#memlist_table .member{
+	text-align:left;
+}

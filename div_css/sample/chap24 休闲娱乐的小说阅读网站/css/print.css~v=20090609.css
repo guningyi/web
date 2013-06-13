@@ -1,0 +1,42 @@
+body {
+	margin:0px;
+	padding:0px;
+	font-family:"Lucida Grande", Verdana, sans-serif;
+	font-size:12pt;
+	color:#282828;
+	background-color:#fff
+}
+h1, h2, h3, h4, h5 {
+	font-family:Georgia, serif;
+	font-weight:bold;
+	color:#000
+}
+a:link, a:visited {
+	color:gray
+}
+#content p a:link:after, #content p a:visited:after {
+	content:"("attr(href) ") "
+}
+#sidebar, #nav, #menu_header, #footer, #backToTop, hr, .back-to-listing, .header_ad, #main-navigation, #mobile_message {
+	display:none;
+	visibility:hidden
+}
+#footer p#copyright {
+	display:block;
+	margin-top:2.5em;
+	padding-top:.5em;
+	border-top:1px solid #ccc
+}
+#footer p img {
+	display:none
+}
+.menuselect {
+	display: block;
+	height: .125in;
+}
+.menuselect * {
+	left: -900em;
+	top: -900em;
+	visibility: hidden;
+	position: absolute;
+}

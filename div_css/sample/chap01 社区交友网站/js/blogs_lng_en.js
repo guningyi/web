@@ -1,0 +1,10 @@
+lang_arr = new Array();
+lang_arr['blogs'] = new Array();
+lang_arr['blogs']['sorry_problem'] = 'Sorry, there\'s been a problem, please try again later';
+lang_arr['blogs']['no_blog_selected'] = 'No blogs selected';
+lang_arr['blogs']['enter_blog_ttl'] = 'Please enter a blog title';
+lang_arr['blogs']['enter_post_ttl'] = 'Please enter a post title';
+lang_arr['blogs']['enter_post_cont'] = 'Please enter post content';
+lang_arr['blogs']['limit_comment_length'] = 'your input has been truncated!';
+lang_arr['blogs']['choose_mood'] = 'Choose your mood...';
+lang_arr['blogs'][''] = '';

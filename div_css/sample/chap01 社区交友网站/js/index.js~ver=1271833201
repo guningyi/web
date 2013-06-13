@@ -1,0 +1,515 @@
+﻿var ppl = new Array();
+var attempt = 1;
+var last_link = '';
+var last_img = '';
+var last_title = '';
+var cc_rnd;
+var used_id;
+var cc_to_name 	= new Array();
+cc_to_name[42]	= "cz";
+cc_to_name[359]	= "bg";
+cc_to_name[49]	= "de";
+cc_to_name[43]	= "de";
+cc_to_name[972]	= "he";
+cc_to_name[7]	= "ru";
+cc_to_name[4201]= "sk";
+cc_to_name[34]	= "es";
+cc_to_name[33]	= "fr";
+cc_to_name[90]	= "tr";
+cc_to_name[39]	= "it";
+cc_to_name[380]	= "ua";
+var cc_to_title 	= new Array();
+cc_to_title[359] 	= "Популярен търсения";
+cc_to_title[49] 	= "Häufige Suchbegriffe";
+cc_to_title[43] 	= "Häufige Suchbegriffe";
+cc_to_title[972] 	= "חיפושים פופולריים";
+cc_to_title[7] 		= "Популярные запросы";
+cc_to_title[42]		= "Obľúbené hľadania";
+cc_to_title[4201]	= "Obľúbené hľadania";
+cc_to_title[34] 	= "Búsquedas populares";
+cc_to_title[33] 	= "Recherches Populaires";
+cc_to_title[90] 	= "Popüler aramalar";
+cc_to_title[39] 	= "Ricerche comuni";
+cc_to_title[380] 	= "Популярні пошуки";
+function get_url(link_url, blank) {
+	if(blank)var wref = window.open(link_url);		
+	else document.location.href = link_url;
+}
+
+/** Navigation menu functions **/
+function mainMenuOn(ellementId) {
+	var curEllement = document.getElementById(ellementId);
+	curEllement.style.backgroundColor = '#75B85A';
+	document.getElementById(ellementId).style.overflow = "visible";
+}
+
+function mainMenuOff(ellementId) {
+	var curEllement = document.getElementById(ellementId);
+	curEllement.style.backgroundColor = '#4CAA26';
+	document.getElementById(ellementId).style.overflow = "hidden";
+}
+/** End Navigation menu functions **/
+
+/** Cookie Library **/
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function deleteCookie(name) {
+	document.cookie = name +
+	'=; expires=Thu, 01-Jan-70 00:00:01 GMT;';
+}
+
+function SetCookie(name, value, expires, path, domain, secure){
+  var curCookie = name + "=" + escape(value); 
+		curCookie += ((expires) ? "; expires=" + expires.toGMTString() : "");
+		curCookie += ((path) ? "; path=" + path : "");
+		curCookie += ((domain) ? "; domain=" + domain : "");
+		curCookie += ((secure) ? "; secure" : "");
+	  document.cookie = curCookie;
+}
+/** End Cookie Library **/
+
+/** For April Fools joke **/
+function call_flash(filePath, id, width, height, wmode, allowScript) {
+	document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" height="'+height+'" width="'+width+'" id="'+id+'">');
+	if(allowScript)
+		document.write('<param name="allowScriptAccess" value="always" />');
+	document.write('<param name="movie" value="'+filePath+'"/>');
+	document.write('<param name="quality" value="high" />');
+	document.write('<param name="bgcolor" value="#FFFFFF" />');
+	if(wmode)
+		document.write('<param name="wmode" value="'+wmode+'">');
+	// For FF
+	var embedStr = '<embed src="'+filePath+'" quality="high" bgcolor="#FFFFFF" height="'+height+'" width="'+width+'" ';
+	if(wmode)
+		embedStr += 'wmode="'+wmode+'" ';
+	if(allowScript)
+		embedStr += 'allowScriptAccess="'+allowScript+'" ';
+	embedStr += 'name="'+id+'" id="'+id+'" align="middle"  type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />';
+	document.write(embedStr);
+	document.write('</object>');
+}
+
+/** End For April Fools joke **/
+
+/** Random section area **/
+var http_request = false;
+var xmldoc = false;
+
+function make_http_request() {
+	http_request = false;
+
+	if (window.XMLHttpRequest)  // Mozilla, Safari,...
+	{
+	    http_request = new XMLHttpRequest();
+	    if (http_request.overrideMimeType) 
+	        http_request.overrideMimeType('text/xml');
+	} 
+	else if (window.ActiveXObject)  // IE
+	{
+	    try {http_request = new ActiveXObject("Msxml2.XMLHTTP");} 
+	    catch (e)
+	    {
+	        try {http_request = new ActiveXObject("Microsoft.XMLHTTP");}
+	        catch (e) {}
+	    }
+	}
+	return http_request;
+}
+
+/**
+function createXMLroot()
+@description Create XML doc root
+@author Igal Liberman
+@param none
+@return connector
+**/
+function create_xml_root() {
+	if (window.ActiveXObject) // code for IE*/
+	{
+	 	xmldoc = new ActiveXObject("Microsoft.XMLDOM");
+		xmldoc.async="false";
+		xmldoc.loadXML(xml);
+	}
+	else if(window.XMLHttpRequest)//for MOZILLA
+	{
+		xml = xml.replace(/<\?(.*)\?>/,'');//delete the xml header
+		var dom  = new DOMParser();
+		xmldoc = dom.parseFromString(xml,'text/xml');
+		
+	}
+}
+
+/**
+ * Randomize the "Random area" section - Array + Ajax
+ * @param save_nums - remembers the elements that were already viewed
+ * @author Katya Kodner
+ */
+function randomize()
+{
+	if (rnd[cc_rnd].length) // still less than 10 items randomized
+	{
+		rnd_num = Math.floor(Math.random()*(rnd[cc_rnd].length-1));
+		document.getElementById('rnd_div1').innerHTML = '<a href="'+rnd[cc_rnd][rnd_num][1]+'" title="To &#34;'+rnd[cc_rnd][rnd_num][0]+'&#34; on ICQ.com">'+rnd[cc_rnd][rnd_num][0]+'</a>';
+		document.getElementById('rnd_div2').innerHTML =  '<a href="'+rnd[cc_rnd][rnd_num][1]+'" title="To &#34;'+rnd[cc_rnd][rnd_num][0]+'&#34; on ICQ.com"><img src="'+rnd[cc_rnd][rnd_num][2]+'" width="158" height="98" border="0"></a>';
+		if (rnd[cc_rnd].length==10) // for the last screen (try this)
+		{
+			last_link = rnd[cc_rnd][rnd_num][1];
+			last_img = rnd[cc_rnd][rnd_num][2];
+			last_title = rnd[cc_rnd][rnd_num][0];
+		}
+		rnd[cc_rnd].splice(rnd_num,1); // for not to get the same item twice
+	}
+	else if(!rnd[cc_rnd].length && attempt != 2)
+	{
+		make_http_request();
+		if (http_request != null) 
+		{
+			url = "http://www.icq.com/homepage/parse_random.php?try=2&country="+cc_rnd+"&ids="+used_id;
+			http_request.onreadystatechange = randomize_section;
+			http_request.open('GET', url, true);
+			http_request.send(null);
+			attempt = 2;
+		}
+		return false;
+	}
+	else
+	{
+		html_out = '<div class="ran-sph-14">&nbsp;</div><div class="ran1-extra"><div class="ran1-1-extra">ICQ Random Area</div>';
+		html_out += '<div class="ran1-2-extra">Haven\'t found what you are looking for? <a href="'+last_link+'" title="To &#34;'+last_title+'&#34; on ICQ.com">Try this:</a></div>';
+		html_out += '<div class="ran1-3"><a href="'+last_link+'" id="img_link"><img src="'+last_img+'" width="158" height="98" border="0" title="To &#34;'+last_title+'&#34; on ICQ.com" alt="To &#34;'+last_title+'&#34; on ICQ.com"></a></div>';
+		html_out += '</div><div class="ran-spv-12-extra">&nbsp;</div><div class="ran-spv-21-extra">&nbsp;</div>';
+		document.getElementById('rnd_area').innerHTML = html_out;
+	}
+}
+
+function randomize_section() {
+	if (http_request.readyState == 4 && http_request.status == 200) 
+	{
+		xml = http_request.responseText;
+		create_xml_root();
+		var results = xmldoc.getElementsByTagName('results');
+		if(results.length > 0) 
+		{
+			var item_nodes = results[0].getElementsByTagName('item');
+			if (item_nodes.length > 0)
+			{
+				rnd = new Array;
+				rnd[cc_rnd] = new Array;
+				len = item_nodes.length;
+				for (var j=0; j<len; j++)
+					rnd[cc_rnd][rnd[cc_rnd].length] = new Array((item_nodes[j].firstChild.text!=undefined)?((item_nodes[j].firstChild.text.length>18)?item_nodes[j].firstChild.text.substring(0,17)+'...':item_nodes[j].firstChild.text):((item_nodes[j].firstChild.textContent.length>18?item_nodes[j].firstChild.textContent.substring(0,17)+'...':item_nodes[j].firstChild.textContent)), (item_nodes[j].getElementsByTagName('url')[0].text!=undefined)?item_nodes[j].getElementsByTagName('url')[0].text:item_nodes[j].getElementsByTagName('url')[0].textContent, item_nodes[j].getElementsByTagName('img')[0].text!=undefined?item_nodes[j].getElementsByTagName('img')[0].text:item_nodes[j].getElementsByTagName('img')[0].textContent); 
+			}
+			randomize();
+		}
+	}
+}
+/** End Random section area **/
+function get_rnd_recent_group(){
+	var rgrp_cc = gl_cc;
+	switch(gl_cc){
+		case '43':
+		case '41': rgrp_cc = '49';break;
+	}
+	var rnd_num = Math.floor(Math.random()*2);
+	var cc = rnd_num?rgrp_cc:0;
+	var rnd_rgrp = rgrp[cc]?rgrp[cc]:rgrp[0];
+	if(cc && rnd_rgrp != rgrp[0]){
+		rgrp_out = '<h3 class="rc-g1"><span id="r_grp_post">Recent Group Posts</span></h3>';
+		rgrp_out +='<div class="rc-g2">';
+		rgrp_out +=	'	<div class="rc-g2-1"><div>';
+		var mo = 2;
+		var rgrp_loop ="";
+		for(i=0;i<3;i++){
+		var id = mo+i;
+		rgrp_loop += '<div class="rc-g2-1-p">';
+		rgrp_loop += '	<div class="rc-g2-1-p1">';
+		rgrp_loop += '		<a href="'+unescape(rgrp[cc][i][0])+'&amp;icid=hp_rec_group/" title="To '+rgrp[cc][i][4]+'\'s group">';
+		rgrp_loop += '		<img src="'+unescape(rgrp[cc][i][1])+'" width="66" height="50" border="0" alt="" title="To '+rgrp[cc][i][4]+'\'s group"></a>';
+		rgrp_loop += '	</div>';
+		rgrp_loop += '	<div class="rc-g2-1-p2">';
+		rgrp_loop += '		<a href="'+unescape(rgrp[cc][i][0])+'" title="To '+unescape(rgrp[cc][i][4])+'\'s group"><u><b>'+unescape(rgrp[cc][i][2])+'</b></u></a><br>';
+		rgrp_loop += '		<a href="'+unescape(rgrp[cc][i][0])+'" title="To '+unescape(rgrp[cc][i][4])+'\'s group">'+ ( unescape(rgrp[cc][i][3]).length > 60 ? unescape(rgrp[cc][i][3]).substr(0,60): unescape(rgrp[cc][i][3]) )+'</a>';
+		rgrp_loop += '		<a href="'+unescape(rgrp[cc][i][0])+'" title="To '+unescape(rgrp[cc][i][4])+'\'s group" class="rc-more"><span id="mo'+id+'">More </span>&raquo;</a>';
+		rgrp_loop += '	</div>';
+		rgrp_loop += '</div>';
+		}
+		rgrp_out += rgrp_loop;
+		rgrp_out += '</div>';
+		rgrp_out += '</div>';
+		rgrp_out += '<div class="rc-g2-2">';
+		rgrp_out += '	<div class="rc-g2-2-1">&nbsp;</div>';
+		rgrp_out += '	<div class="rc-g2-2-2">&nbsp;</div>';
+		rgrp_out += '</div>';
+		rgrp_out += '</div>';		
+		document.getElementById('recent_group').innerHTML = rgrp_out;	
+	}
+}
+/**
+ * Get random group (international or geo-targeted) and Change groups area content
+ * @param 
+ * @author Katya Kodner
+ */
+function get_rnd_gr(){
+	/*if(gl_cc == '49'){
+		club_shop();
+		return;
+	}*/
+	var gr_cc = gl_cc;
+	// geo targeting for country groups, not for one country only
+	switch(gl_cc) {
+		case '43':
+		case '41': gr_cc = '49';break;
+		case '380': gr_cc = '7';break;
+		case '886':
+		case '852': gr_cc = '86';break;
+		case '52':
+		case '51': gr_cc = '34';break;
+		case '965':
+		case '966': gr_cc = '20';break;
+	}
+	var rnd_num = Math.floor(Math.random()*2);
+	var cc = gr_cc; /** to get randomly either international group or group according to country code **/
+	var rnd_gr = gr[cc]?gr[cc]:gr[0];
+	if (cc && rnd_gr != gr[0]){
+		var gr_out ='<div class="gr0">&nbsp;</div><div class="seperator"><h4 class="title"><a href="' + rnd_gr[0] + '" title="'+unescape(rnd_gr[2])+'"><span id="icq_grp">ICQ for you</span></a></h4><div class="picture">';
+		gr_out+='<a href="' + rnd_gr[0] + '" title="'+unescape(rnd_gr[2])+'">';
+		gr_out+='<img width="160" height="100" alt="'+unescape(rnd_gr[2])+'" src="'+rnd_gr[3]+'"/></a></div>';
+		gr_out+='<p class="p_title"><a title="'+unescape(rnd_gr[2])+'" href="'+rnd_gr[0]+'">'+unescape(rnd_gr[1])+'</a></p>';
+		gr_out+='<p class="p_content"><a title="'+unescape(rnd_gr[2])+'" href="' + rnd_gr[0] + '" >'+unescape(rnd_gr[2])+'</a></p>';
+		var grp_more = '<span class="link_more"><a title="'+unescape(rnd_gr[2])+'" href="'+rnd_gr[0]+'"><span id="mo_grp">'+unescape(rnd_gr[1])+'</span>&nbsp;&raquo;</a></span>';
+		document.getElementById('gr_div').innerHTML = gr_out;
+		document.getElementById('group_more').innerHTML = grp_more;		
+	}		
+}
+function club_shop(){
+	var clubshop ='<div class="gr0">&nbsp;</div><div class="seperator"><h4 class="title"><a href="'+promo[5]+'" title="'+promo[2]+'" target="_blank"><span id="icq_grp">'+promo[0]+'</span></a></h4><div class="picture">';
+		clubshop+='<a href="'+promo[5]+'" target="_blank" title="'+promo[2]+'">';
+		clubshop+='<img width="160" height="100" alt="'+promo[2]+'" src="'+promo[1]+'"/></a></div>';
+		clubshop+='<p class="p_title"><a title="'+promo[2]+'" target="_blank" href="'+promo[5]+'">'+promo[2]+'</a></p>';
+		clubshop+='<p class="p_content"><a title="'+promo[2]+'" target="_blank" href="'+promo[5]+'">'+promo[3]+' <span style="color:#FF8214;font-weight:bold;">'+promo[4]+'</span></a></p>';
+	var grp_more = '<span class="link_more"><a title="'+promo[2]+'" href="'+promo[5]+'" target="_blank"><span id="mo_grp">'+promo[6]+'</span>&nbsp;&raquo;</a></span>';
+	
+	document.getElementById('group_more').innerHTML = grp_more;
+	document.getElementById('gr_div').innerHTML = clubshop;
+}
+/**
+ * Get random chat (international or geo-targeted) and Change chats area content
+ * @param 
+ * @author Katya Kodner
+ */
+function get_rnd_ch(){
+	var ch_cc = gl_cc;
+	switch(gl_cc) {
+		case '43':
+		case '41': ch_cc = '49';break;
+		case '380': ch_cc = '7';break;
+		case '886':
+		case '852': ch_cc = '86';break;
+		case '52':
+		case '51': ch_cc = '34';break;
+		case '965':
+		case '966': ch_cc = '20';break;
+	}
+	var rnd_num = Math.floor(Math.random()*2);
+	var cc = rnd_num?ch_cc:0; /** to get randomly either international group or group according to country code **/
+	if (cc && rnd_ch != ch[0]){
+		var rnd_ch = ch[cc]?ch[cc]:ch[0];
+		var ch_out = '<div id="chat_clr"></div><div class="seperator"><span id="ch_div"><h4 class="title"><a href="http://chat.icq.com/?icid=hp_chat_ttl/" title="Go to ICQ Chat Rooms"><span id="icq_cha">Chat Rooms</span></a></h4></span>';
+		ch_out+= '<div class="picture"><a href="http://chat.icq.com/icqchat/chatroom.php?c_id='+rnd_ch[0]+'&icid=hp_chat_'+rnd_ch[0]+'/" title="Go to &quot;'+unescape(rnd_ch[1])+'&quot; Chat Room">';
+		ch_out+= '<img width="158" height="98" border="0" alt="Go to &quot;'+unescape(rnd_ch[1])+'&quot; Chat room" src="'+rnd_ch[3]+'"/></a></div>';
+		ch_out+= '<p class="p_title"><a title="Go to &quot;'+unescape(rnd_ch[1])+'&quot; Chat Room" href="http://chat.icq.com/icqchat/chatroom.php?c_id='+rnd_ch[0]+'&amp;icid=hp_chat_'+rnd_ch[0]+'">'+unescape(rnd_ch[1])+'</a></p>';
+		ch_out+= '<p class="p_content"><a title="Go to &quot;'+unescape(rnd_ch[1])+'&quot; Chat Room" href="http://chat.icq.com/icqchat/chatroom.php?c_id='+rnd_ch[0]+'&amp;icid=hp_chat_'+rnd_ch[0]+'">'+unescape(rnd_ch[2])+'</a></p>';
+		document.getElementById('ch_div_js').innerHTML = ch_out;
+	}	
+}
+
+/**
+ * Get random users (international or geo-targeted) and Change ppl area content
+ * @param 
+ * @author Katya Kodner
+ */
+function get_rnd_ppl(){
+	var cc = ppl[gl_cc]?gl_cc:0;
+	if (cc!=0 || !document.getElementById('ppl_div1').innerHTML){
+		document.getElementById('ppl_div1').innerHTML = '<a href="http://www.icq.com/'+ppl[cc][0][0]+'"><img src="http://c.icq.com/homepage/img/users/'+cc+'_'+ppl[cc][0][0]+'_49x61.jpg" width="49" height="61" alt="Go to '+unescape(ppl[cc][0][1])+'&#39;s Page" title="Go to '+unescape(ppl[cc][0][1])+ '&#39;s Page" border="0" id=""></a>';
+		document.getElementById('ppl_div2').innerHTML = '<a href="http://www.icq.com/'+ppl[cc][1][0]+'"><img src="http://c.icq.com/homepage/img/users/'+cc+'_'+ppl[cc][1][0]+'_69x85.jpg" width="69" height="85" alt="Go to '+unescape(ppl[cc][1][1])+'&#39;s Page" title="Go to '+unescape(ppl[cc][1][1])+ '&#39;s Page" border="0" id=""></a>';
+		document.getElementById('ppl_div3').innerHTML = '<a href="http://www.icq.com/'+ppl[cc][2][0]+'"><img src="http://c.icq.com/homepage/img/users/'+cc+'_'+ppl[cc][2][0]+'_36x45.jpg" width="36" height="45" alt="Go to '+unescape(ppl[cc][2][1])+'&#39;s Page" title="Go to '+unescape(ppl[cc][2][1])+ '&#39;s Page" border="0" id=""></a>';
+		document.getElementById('ppl_div4').innerHTML = '<a href="http://www.icq.com/'+ppl[cc][3][0]+'"><img src="http://c.icq.com/homepage/img/users/'+cc+'_'+ppl[cc][3][0]+'_65x80.jpg" width="65" height="80" alt="Go to '+unescape(ppl[cc][3][1])+'&#39;s Page" title="Go to '+unescape(ppl[cc][3][1])+ '&#39;s Page" border="0" id=""></a>';
+		document.getElementById('ppl_div5').innerHTML = '<a href="http://www.icq.com/'+ppl[cc][4][0]+'"><img src="http://c.icq.com/homepage/img/users/'+cc+'_'+ppl[cc][4][0]+'_82x101.jpg" width="82" height="101" alt="Go to '+unescape(ppl[cc][4][1])+'&#39;s Page" title="Go to '+unescape(ppl[cc][4][1])+ '&#39;s Page" border="0" id=""></a>';
+		document.getElementById('ppl_div6').innerHTML = '<a href="http://www.icq.com/'+ppl[cc][5][0]+'"><img src="http://c.icq.com/homepage/img/users/'+cc+'_'+ppl[cc][5][0]+'_46x62.jpg" width="46" height="62" alt="Go to '+unescape(ppl[cc][5][1])+'&#39;s Page" title="Go to '+unescape(ppl[cc][5][1])+ '&#39;s Page" border="0" id=""></a>';
+		document.getElementById('ppl_div7').innerHTML = '<a href="http://www.icq.com/'+ppl[cc][6][0]+'"><img src="http://c.icq.com/homepage/img/users/'+cc+'_'+ppl[cc][6][0]+'_34x45.jpg" width="34" height="45" alt="Go to '+unescape(ppl[cc][6][1])+'&#39;s Page" title="Go to '+unescape(ppl[cc][6][1])+ '&#39;s Page" border="0" id=""></a>';
+	}
+}
+
+/**
+ * Get random section content(international or geo-targeted) 
+ * @param 
+ * @author Katya Kodner
+ */
+function get_rnd_cont()
+{
+	cc_rnd = rnd[gl_cc]?gl_cc:0;
+	used_id = rnd[cc_rnd][0][3];
+	if (cc_rnd!=0) // if it's not international - change the content to geo-targeted
+	{
+		document.getElementById('rnd_div1').innerHTML = '<a href="'+rnd[cc_rnd][0][1]+'" title="To &#34;'+unescape(rnd[cc_rnd][0][0])+'&#34; on ICQ.com">'+unescape(rnd[cc_rnd][0][0])+'</a>';
+		document.getElementById('rnd_div2').innerHTML =  '<a href="'+rnd[cc_rnd][0][1]+'" title="To &#34;'+unescape(rnd[cc_rnd][0][0])+'&#34; on ICQ.com"><img src="'+rnd[cc_rnd][0][2]+'" width="158" height="98" border="0"></a>';
+	}
+	rnd[cc_rnd].splice(0,1);
+}
+
+function get_geo_ps(){
+	
+	var cc_name = (cc_to_name[gl_cc] ? cc_to_name[gl_cc] : "en"); 
+	if (cc_name != 'en'){
+		var cc_title = (cc_to_title[gl_cc] ? cc_to_title[gl_cc] : "Popular Searches");
+		var i = 1;
+		
+		if (gl_cc == '972'){
+			
+			document.getElementById('ps1_div').style.textAlign = 'right';
+			document.getElementById('ps1_div').style.direction = 'rtl';		
+			document.getElementById('ps1_div').style.fontFamily = 'Arial';		
+		}
+		
+		//set_sbox_styles(css_suf, top_links, cc_name);
+		document.getElementById("ps_title").innerHTML = '<a href="http://search.icq.com/search/?ch_id=mps_hp/" title="'+cc_title+'">'+cc_title+'</a>';
+		var html_str = '';
+		for (i=1; i<10; i++){
+			/*if(mp_div.offsetWidth+max_length < 671)
+			{
+				var tmp_word = mp[cc_name][i]; //most popular top links word
+				if(gl_cc == '972')
+				{
+					len += tmp_word.length*5+14;
+					if(mp_div.offsetWidth<len)
+						tmp_html = "";
+				}
+				mp_div.innerHTML += tmp_html; //most popular top holder
+				tmp_html = '<div class="nsb-3-2'+css_suf+'"><a class="nsb-3-2a" href="http://search.icq.com/search/results.php?q='+encodeURI(tmp_word)+'&ch_id=mps&icid=tb_hp" title="'+tmp_word+'">'+tmp_word+'</a></div>'; //most popular top links
+			}*/
+			var pop_word = mp[cc_name][i].length<13?mp[cc_name][i]:mp[cc_name][i].substr(0,13)+'...'
+			html_str += '<li><a href="http://search.icq.com/search/results.php?q='+encodeURI(mp[cc_name][i])+'&amp;ch_id=mps_hp" title="'+mp[cc_name][i]+'">'+pop_word+'</a></li>';	
+		}
+		document.getElementById("ps_list").innerHTML = html_str;
+	}
+}
+function set_sbox_styles()
+{
+	var cc_name = (cc_to_name[gl_cc] ? cc_to_name[gl_cc] : "en"); 
+	if(cc_name!='en')
+	{
+		var topl_html = "";
+		var css_suf = "";
+		var len = 0;
+		var mp_div = document.getElementById("mp_thp");
+		var tlinks = document.getElementById("top_links");
+		var max_length = 120;
+		var cc_title = "Popular Searches";
+		cc_title = (cc_to_title[gl_cc] ? cc_to_title[gl_cc] : "Popular Searches");
+		if (gl_cc == '972')
+		{
+			max_length = 0;
+			css_suf = "h";
+		}
+		topl_html = generate_toplinks_html(cc_name, css_suf);
+		mp_div.innerHTML = "";		
+		mp_div.className += css_suf;	
+		document.getElementById("nsb").className += css_suf;
+		tlinks.className += css_suf;
+		tlinks.innerHTML = topl_html;
+		document.getElementById("form_holder").className += css_suf;
+		document.getElementById("sub_btn").className = "nsb-2-2-b"+cc_name;
+		document.getElementById("sub_btn").parentNode.className += css_suf;
+		document.getElementById("search").parentNode.className += css_suf;
+		document.getElementById("search_keyword").className += css_suf;
+		var tmp_html = '<div class="nsb-3-1'+css_suf+'">'+cc_title+':</div>'; //most popular top title
+		for (var i=1; i<10; i++)
+		{
+			if(mp_div.offsetWidth+max_length < 671)
+			{
+				var tmp_word = mp[cc_name][i]; //most popular top links word
+				if(gl_cc == '972')
+				{
+					len += tmp_word.length*5+14;
+					if(mp_div.offsetWidth<len)
+						tmp_html = "";
+				}
+				mp_div.innerHTML += tmp_html; //most popular top holder
+				tmp_html = '<div class="nsb-3-2'+css_suf+'"><a class="nsb-3-2a" href="http://search.icq.com/search/results.php?q='+encodeURI(tmp_word)+'&ch_id=mps&icid=tb_hp" title="'+tmp_word+'">'+tmp_word+'</a></div>'; //most popular top links
+			}
+		}
+	}
+}
+function generate_toplinks_html(ccl, csssuf)
+{
+	var top_links = new Array();
+	top_links = sbl[ccl] ? sbl[ccl] : sbl["en"];
+	var html = '<div class="nsb-1-1s'+csssuf+'" onclick="execSearchNb(\'web\');" id="web">'+top_links[0]+'</div>';
+	html += '<div class="nsb-1-1'+csssuf+'" onclick="execSearchNb(\'img\');" id="img">'+top_links[1]+'</div>';
+	html += '<div class="nsb-1-1'+csssuf+'" onclick="execSearchNb(\'video\');" id="video">'+top_links[2]+'</div>';
+	html += '<div class="nsb-1-1'+csssuf+'" onclick="execSearchNb(\'site\');" id="site">'+top_links[3]+'</div>';
+	html += '<div class="nsb-1-1'+csssuf+'" onclick="execSearchNb(\'people\');" id="people">'+top_links[4]+'</div>';
+	html += '<div class="nsb-1-2'+csssuf+'"><img src="http://c.icq.com/img/template/google_n.gif" width="102" height="14" alt="Enhanced by Google" border="0"/></div>';
+	return html;
+}
+function show_box(action,id,target){
+	if(action){
+		document.getElementById(id).style.display="block";
+		var img = document.getElementById(target);
+		img.src = "http://c.icq.com/homepage/img/ger_2go_close.gif";
+		img.id = target; 
+		img.onclick = function(){show_box(false,id,target)};
+		document.getElementById('browser').className='d-top-2e-2';
+	}
+	else {
+		document.getElementById(id).style.display="none";
+		var img = document.getElementById(target);
+		img.src = "http://c.icq.com/homepage/img/ger_2go_open.gif";
+		img.id  = target;
+		img.onclick = function(){show_box(true,id,target)}
+		document.getElementById('browser').className='d-top-2';
+	}
+}
+function ru_promotion(){
+	var ru = document.getElementById('top_row');
+	var promo = '<div class="pro-logo"></div><div class="pro-link"><a href="http://www.icq.com/download/ru/index.html?icid=ru_hp_blk" title="Новые версии ICQ" alt="Новые версии ICQ"><img src="http://c.icq.com/img/e.gif" alt="" title="Новые версии ICQ" galleryimg="no" border="0" width="760" height="234"></a></div><div class="pro-ru"><div class="pro-ru-1"></div><div class="pro-ru-2"><div class="line1">Важное сообщение для пользователей ICQ</div><div class="line2"></div><div class="line3">В эти дни мы завершаем процесс обновления для всех пользователей ICQ на новейшую, самую современную версию, <b>ICQ6.5</b>.<br>С помощью <b>ICQ6.5</b> вы можете отправлять бесплатные СМС, вести бесплатные аудио и видео разговоры и многое другое.<br>У вас ещё нет ICQ? <b>Скачайте сейчас!</b><br><br>Команда ICQ</div></div></div>';
+	ru.innerHTML = promo;
+}
+function execSearchNb(sRange)
+{
+	var keyword = document.getElementById("search_keyword").value;
+	document.getElementById("sbar-range").value = sRange;
+	var swlink_class = document.getElementById("web").className;
+	var class_suf = "";
+	if(swlink_class == "nsb-1-1h" || swlink_class == "nsb-1-1sh")
+		class_suf = "h";
+	document.getElementById("web").className = "nsb-1-1"+class_suf;
+	document.getElementById("img").className = "nsb-1-1"+class_suf;
+	document.getElementById("video").className = "nsb-1-1"+class_suf;
+	document.getElementById("site").className = "nsb-1-1"+class_suf;
+	document.getElementById("people").className = "nsb-1-1"+class_suf;
+	document.getElementById(sRange).className = "nsb-1-1s"+class_suf;
+}
+function submitSrch()
+{
+	var keyword = document.getElementById("search_keyword").value;
+	//document.getElementById("sbar-range").value = page;
+	var search_mode = '';
+	
+	if	(keyword != '')
+		document.getElementById("search").submit();
+	else
+		window.open("http://search.icq.com/","_parent");
+
+	return false;
+}

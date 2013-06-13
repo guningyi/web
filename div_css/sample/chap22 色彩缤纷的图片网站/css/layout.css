@@ -1,0 +1,821 @@
+/* =grundlegendes layout
+--------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+	font-size: 85%;
+	line-height: 1.4em;
+	font-family: Arial, Verdana, sans-serif;
+	color: #4d4d4d;
+	background-image: url(../image/background.jpg);
+	background-repeat: repeat-x;
+	text-align: center; 
+	}
+	
+#accesskeys {
+	position: absolute;
+	top: -500px;
+	}
+
+#shadow {
+	width: 872px;
+	background-image: url(../image/shadow.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	margin: auto;
+}	
+
+#wrapper {
+	width: 861px;
+	text-align: left;
+	background-color: #fff;
+
+	}
+	
+/* = Head
+--------------------------------------------- */
+
+#head {
+	background-image: url(../image/head.jpg);
+	background-repeat: no-repeat;
+	min-height: 17px;
+	height: auto !important;  /* für moderne Browser */
+	height: 17px;  /*für den IE */
+	padding-top: 19px;
+	font-size: 90%;
+	float: left;
+	width: 861px;
+}	
+	
+#nav_language {
+	margin-top: -2px;
+	margin-left: 16px;
+	width: 192px;
+	float: left;
+}	
+
+* html #nav_language {
+	margin-left: 9px;
+}
+
+#nav_language  {
+	font-size: 0.9em;
+}
+
+#nav_language a {
+	color: #4d4d4d;
+	text-decoration: none;
+}
+#nav_language a:hover {
+	text-decoration: underline;
+}
+.accessibility {
+	margin-bottom: -3px
+}
+.trenner2 {
+	margin-right: 18px;
+}
+
+* html .trenner2 {
+	margin-right: 28px;
+}
+*+html .trenner2 {
+	margin-right: 28px;
+}
+
+
+
+/* = Toplinks
+--------------------------------------------- */
+
+#toplinks {
+	margin-left: 19px;
+	width: 492px;
+	float: left;
+}
+
+* html #toplinks {
+	font-size: 0.9em;
+}
+
+*+html #toplinks {
+	font-size: 0.9em;
+}
+
+#toplinks a {
+	color: #4d4d4d;
+	font-family: georgia, arial;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#toplinks a:hover {
+	text-decoration: underline;
+}
+
+.trenner {
+	margin: 0 0.3em;
+}
+
+html:first-child #volltextsuche { /* hack für opera */
+width: 124px;
+	}
+
+#volltextsuche {
+float: right;
+margin-right: 16px;
+display: inline;
+	}
+	
+
+#volltextsuche #suche {
+	border: 1px solid #373737;
+	padding: 1px 1px 2px 3px;
+	color: #fff;
+	background-color: #949494;
+	font-size: 11px;
+	width: 100px;
+	margin: 0;
+	float: left;
+	height: 13px !important;
+	}
+
+#volltextsuche #btnSubmit {
+	height: 18px;
+	width: 17px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent url(../image/search_go.gif) no-repeat center center;
+	text-indent: -5000px;
+	cursor: pointer;
+	float: left;
+	}
+
+
+/* = Unten
+--------------------------------------------- */
+
+#unten {
+	clear: both;
+	background-image: url(../image/ecke_unten.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: #fff;
+	width: 861px;
+}
+
+#links {
+	float: left;
+	width: 224px;
+	font-size: 0.95em;
+}
+
+* html #links {
+	font-size: 0.9em;
+} 
+
+*+html #links {
+	font-size: 0.9em;
+}
+
+#mitte {
+	float: right;
+	width: 620px;
+	margin-top: 15px;
+	margin-right: 16px;
+}
+
+* html #mitte {
+	margin-right: 8px;
+}
+
+/* = Breadcrumb
+--------------------------------------------- */
+
+#standort {
+	font-size: 0.8em;
+	float: left;
+	border-bottom: 1px dashed #4d4d4d;
+	width: 620px;
+}
+
+* html #standort {
+margin-bottom: -10px;
+}
+
+#standort strong {
+	float: left;
+	margin-right: 3px;
+	font-weight: normal;
+}
+
+ul#breadcrumb ul {
+	float: right;
+}
+
+ul#breadcrumb li {
+	padding: 0 7px 0 5px;
+	list-style-type: none;
+	float: left;
+	background-image: url(../image/trenner_breadcrumb.gif);
+	background-repeat: no-repeat;
+	background-position: right 50%;
+}
+
+ul#breadcrumb li a {
+	color: #4e4e4e;
+	text-decoration: none;
+}
+
+ul#breadcrumb li a:hover {
+	text-decoration: underline;
+}
+
+
+#inhalt {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
+ul#top {
+	border-top: 1px dashed #4d4d4d;
+	border-bottom: 1px dashed #4d4d4d;
+	margin: 0.7em 0 1.2em 0;
+	float: left;
+	padding: 0.7em 0;
+	width: 623px;
+}
+
+ul#top a:visited {
+	color: #4c4c4c;
+}
+
+* html ul#top {
+	width: 615px;
+}
+
+*+html ul#top {
+	width: 608px;
+}
+
+ul#top li {
+	display: inline
+}
+
+ul#top li.link1 {
+	float: left;
+}
+ul#top li.link2 {
+	float: left;
+	margin-left: 148px;
+}
+ul#top li.link3 {
+	float: right;
+}
+
+.drucken {
+	padding-right: 24px;
+	background-image: url(../image/printer.gif);
+	background-repeat: no-repeat;
+	background-position: right 50%;
+}
+
+
+
+/* = Footer
+--------------------------------------------- */
+
+#nichts {
+	width: 861px;
+	float: left;
+	padding: 10px 0;
+	background-color: #fff;
+	background-image: url(../image/footer_back.gif);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+
+#footer {
+	clear: both;
+}
+
+#sponsoren {
+	margin-left: 15px;
+	float: left;
+	width: 194px;
+	border-top: 1px dashed #000;
+	margin-right: 16px;
+}
+
+* html #sponsoren {
+	margin-left: 8px;
+}
+
+#sponsoren h3 {
+	color: #000;
+	font-family: georgia, arial;
+	margin: 5px 0;
+	font-size: 0.9em;
+}
+
+#sponsoren p {
+	display: inline;
+	margin-right: 12px;
+}
+
+
+#banner p {
+	display: inline;
+	margin-right: 5px;
+}
+
+* html #banner p {
+margin-right: 3px;
+}
+
+#banner {
+float: left;
+}
+
+#abschluss {
+	clear: both;
+	height: 12px;
+}
+
+
+/* = Startseite
+--------------------------------------------- */
+
+#spalte_aktuelles {
+	padding: 4px 5px 6px 8px;
+	min-height: 285px;
+	height: auto !important;  /* fuer moderne Browser */
+	height: 285px;  /*fuer den IE */
+	margin: 9px 0 0 15px;
+	width: 183px;
+	background-image: url(../image/back_aktuelles.jpg);
+	background-repeat: repeat-x;
+	font-size: 85%;
+	line-height: 160%;
+}
+
+* html #spalte_aktuelles {
+	font-size: 90%;
+}
+
+*+html #spalte_aktuelles {
+	font-size: 90%;
+}
+
+#spalte_aktuelles .topnews {
+line-height: 1.5em;
+}
+#spalte_aktuelles a:visited {
+color: #4c4c4c;
+}
+
+
+* html #spalte_aktuelles h3 {
+	font-size: 110%;
+}
+ *+html #spalte_aktuelles h3 {
+	font-size: 110%;
+}
+
+* html #spalte_aktuelles img {
+	margin-right: -5px !important;
+	padding-right: 0 !important;
+}
+
+#spalte_aktuelles img {
+	margin-bottom: 6px;
+	margin-top: 1px;
+}
+
+#spalte_aktuelles h3 em {
+font-style: normal;
+font-weight: normal;
+text-transform: none;
+}
+
+.startseite h3 {
+	font-size: 115%;
+	margin: 0 0 3px 0;
+	padding: 0;
+	color: #fff;
+	font-family: georgia, arial;
+	background-image: url(../image/h3_pfeil.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	text-transform: uppercase;
+}
+.startseite h3 a {
+	color: #fff !important;
+	display: block;
+	text-decoration: none;
+	height: 1%;
+}
+.startseite h3 a:hover {
+	color: #000 !important;
+	background-image: url(../image/h3_pfeil_hover.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.startseite #sponsoren h3 {
+	background-image: none;
+	text-transform: none;
+}
+
+#inhalt_startseite {
+width: 620px;
+position: relative;
+float: left;
+	margin-top: 9px;
+}
+
+
+
+#rahmen_boxen {
+	float: left;
+	width: 420px;
+}
+
+
+#startbox1, #startbox2, #startbox3, #startbox4 {
+	color: #000;
+	padding: 4px 5px 6px 8px;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	float: left;
+	width: 187px;
+	margin-bottom: 10px;
+}
+
+#startbox2, #startbox4 {
+	margin-left: 12px;
+}
+
+* html #startbox2, * html #startbox4 {
+	margin-left: 10px;
+}
+
+
+#startbox1 img, #startbox2 img, #startbox3 img, #startbox4 img {
+	margin-bottom: 6px;
+}
+* html #startbox1 img, * html #startbox2 img, * html #startbox3 img, * html #startbox4 img {
+	margin-right: -5px !important;
+	padding-right: 0 !important;
+}
+
+.box_pfeil, a.box_pfeil:visited {
+font-weight: bold;
+color: #000;
+text-decoration: none;
+background-image: url(../image/pfeil_box.gif);
+background-repeat: no-repeat;
+background-position: 0 4px;
+padding-left: 12px;
+}
+* html .box_pfeil {
+background-position: 0 5px;
+}
+*+html .box_pfeil {
+background-position: 0 5px;
+}
+a.box_pfeil:hover {
+text-decoration: underline;
+color: #000;
+}
+
+
+
+#inhalt_startseite h3 a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 1px 0;
+}
+* html #inhalt_startseite h3 a {
+	padding: 0 0 2px 0;
+}
+*+html #inhalt_startseite h3 a {
+	padding: 0 0 2px 0;
+}
+
+
+/* -- Hintergrundfarben fuer Startboxen -- */
+.rot {
+	background-color: #e34040;
+	background-image: url(../image/box_rot.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.orange {
+	background-color: #ff8c64;
+	background-image: url(../image/box_orange.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.gruen {
+	background-color: #96aa65;
+	background-image: url(../image/box_gruen.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.blau {
+	background-color: #7cc1ff;
+	background-image: url(../image/box_blau.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.violett {
+	background-color: #c882e6;
+	background-image: url(../image/box_violett.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.purpur {
+	background-color: #c83264;
+	background-image: url(../image/box_purpur.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.box_hover_rot {
+	cursor: pointer;
+	color: #fff !important;
+	background-color: #e34040;
+	background-image: none;
+}
+.box_hover_orange {
+	cursor: pointer;
+	color: #fff !important;
+	background-color: #ff8c64;
+	background-image: none;
+}
+.box_hover_gruen {
+	cursor: pointer;
+	color: #fff !important;
+	background-color: #96aa65;
+	background-image: none;
+}
+.box_hover_blau {
+	cursor: pointer;
+	color: #fff !important;
+	background-color: #7cc1ff;
+	background-image: none;
+}
+.box_hover_violett {
+	cursor: pointer;
+	color: #fff !important;
+	background-color: #c882e6;
+	background-image: none;
+}
+.box_hover_purpur {
+	cursor: pointer;
+	color: #fff !important;
+	background-color: #c83264;
+	background-image: none;
+}
+.box_hover_rot h3 a, .box_hover_orange h3 a, .box_hover_gruen h3 a, .box_hover_blau h3 a, .box_hover_violett h3 a, .box_hover_purpur h3 a {
+	color: #000 !important;
+}
+
+
+/*-- rechte Spalte --*/
+
+#spalte_rechts {
+	float: right;
+	padding: 4px 5px 6px 8px;
+	min-height: 285px;
+	height: auto !important;  /* fuer moderne Browser */
+	height: 285px;  /*fuer den IE */
+	width: 183px;
+	background-image: url(../image/back_rechte_spalte.jpg);
+	background-repeat: repeat-x;
+	font-size: 85%;
+	line-height: 160%;
+	color: #000;
+}
+
+* html #spalte_rechts {
+	width: 187px;
+}
+
+#spalte_rechts_innen {
+	padding: 5px 6px 0px 2px;
+}
+* html #spalte_rechts_innen {
+	padding-right: 4px;
+}
+#spalte_rechts_innen p {
+margin: 9px 0;
+	padding: 3px 0 12px 0;
+	border-bottom: 1px dashed #000;
+}
+
+*+html #spalte_rechts_innen p {
+margin: 6px 0;
+}
+
+.kalender {
+position: absolute;
+}
+
+
+#partner {
+border-top: 1px dashed #000;
+position: absolute;
+bottom: 0px;
+right:635px;
+	width: 194px;
+}
+* html #partner {
+	bottom: -7px;
+}
+*+html #partner {
+	bottom: -3px;
+}
+
+#partner h3 {
+	background-image: none;
+	color: #000;
+	font-family: georgia, arial;
+	margin: 5px 0;
+	font-size: 0.9em;
+	text-transform: none;
+}
+
+#partner p {
+	border-bottom: none;
+	display: inline;
+	margin-right: 15px;
+}
+
+
+
+
+
+/*--- Infoboxen ---*/
+
+.infobox {
+	color: #000;
+	padding: 4px 5px 6px 8px;
+	font-size: 0.85em;
+	line-height: 1.5em;
+	width: 187px;
+	margin-top: 15px;
+	background-color: #96aa65;
+	background-image: url(../image/box_gruen_lang.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+* html .infobox {
+	width: 192px;
+	padding: 4px 0 6px 8px;
+}
+.infobox h3 {
+	margin: 1px 0 0 0;
+	font-size: 115%;
+	font-family: georgia, arial;
+	color: #fff;
+	text-transform: uppercase;
+	background-image: url(../image/h3_pfeil.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+* html .infobox h3 {
+	margin-right: 5px;
+	}
+
+.infobox img {
+	margin-bottom: 6px;
+	margin-left: -3px;
+}
+
+
+table.legende {
+float: right;
+margin-left: 10px;
+font-style: italic;
+}
+
+.bilder_lupe {
+float: right;
+position: relative;
+margin-left: 10px;
+margin-bottom: 10px;
+}
+
+
+.lupe {
+clear: right;
+z-index: 10;
+top: 7px;
+right: 25px;
+position: relative;
+float: right;
+cursor: pointer;
+margin-right: -18px;
+}
+.fett {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	}
+
+
+
+/*--- Registration Form ---*/
+
+#fn_registration, #fn_registrationForm {
+margin: 40px 0;
+}
+
+#fn_registration form {
+padding: 15px 15px 0 15px;
+border: 1px solid #7A7B75;
+background: #F1F0DC;
+}
+
+#fn_registration form p {
+font-weight: bold;
+}
+
+#fn_registration #strCode {
+width: 250px;
+padding: 3px;
+border: 1px solid #7A7B75;
+}
+
+#fn_registration #sendBtn {
+margin-left: 137px;
+padding: 3px;
+border: 1px solid #7A7B75;
+cursor: pointer;
+}
+
+.error {
+margin: 45px 0 -20px 0;
+color: #DF0000;
+}
+
+#fn_registrationForm label {
+float: left;
+width: 130px;
+}
+
+#fn_registrationForm input {
+width: 270px;
+padding: 3px;
+border: 1px solid #7A7B75;
+}
+
+#fn_registrationForm #sendBtn {
+width: 100px;
+margin-left: 130px;
+border: 1px solid #7A7B75;
+cursor: pointer;
+}
+
+.success {
+margin-top: 40px;
+}
+
+/*---FORSCHUNGSNETZ ---*/
+
+#forschungsnetz {
+	margin: 20px 0 auto;
+	width: 1068px;
+}
+
+/* Lightbox f�r Flash Forschungsnetz */
+/* 
+#lb-background {
+
+	background: transparent url(../image/trans_black.png); 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 9;
+	text-align: center;
+	}*/
+
+#openFlash {
+	margin: 50px 0px 20px 0px;
+	width: 100%;
+	text-align: center;
+}

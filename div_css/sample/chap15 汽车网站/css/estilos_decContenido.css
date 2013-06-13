@@ -1,0 +1,152 @@
+/*************** deContenido.jsp **************/
+div#decContenedor
+{
+	width: 997px;
+	margin: auto;
+
+}
+div#decCabecera
+{
+	/*border-top: 2px red dotted;
+	border-bottom: 2px red  dotted;*/
+	float:left;
+	/*width:995px;*/
+	margin: 0px 0px 3px 0px;
+	/*border-top: 20px solid #FFFFFF;*/
+
+}
+div#decMenuSup
+{
+	/*border-top: 2px black dotted;
+	border-bottom: 2px black  dotted;*/
+	float:left;
+	width:995px;
+	margin: 0px 0px 10px 0px;
+	border-bottom: 28px solid #FFFFFF;	
+	
+}
+
+div#decAltura
+{
+	/*border-top: 2px black dotted;
+	border-bottom: 2px black  dotted;*/
+	position: relative;
+	float:left;
+	width: 0px;
+	height: auto;	
+	margin: 0px 0px 0px 0px;	
+}
+.alturaMinima
+{
+	border-color: red;
+	border: 1px;
+	width: 1px;
+	height: 406px;
+}
+*:first-child+html  .alturaMinima
+{	
+	height: 433px;	
+}
+* html .alturaMinima
+{	
+	height: 433px;	
+}
+div#decIzquierda
+{
+	position: relative;
+	/*border-top: 2px green dotted;
+	border-bottom: 2px green  dotted;*/
+	float:left;
+	/*width:236px;*/
+	width: 14.75em;	
+	margin: 0px 0px 20px 0px;	
+}
+div#decTituloNivel
+{
+	position: relative;
+	/*border-top: 2px green dotted;
+	border-bottom: 2px green  dotted;*/
+	float:left;
+	width:236px;
+	height:3.5em;
+	margin: -2px 0px 0px 0px;	
+}
+div#decMenuVer
+{
+	position: relative;
+	/*border-top: 2px red dotted;
+	border-bottom: 2px red  dotted;*/
+	float:left;
+	width:14.75em;
+	margin: -2px 0px 0px 0px;	
+}
+div#decMigas
+{
+	position: relative;
+
+	/*border-top: 2px blue dotted;
+	border-bottom: 2px blue  dotted;*/
+	float:right;
+	width:742px;
+	margin: 0px 0px 0px 0px;
+	padding:0px 5px 0px 0px;	
+
+	
+
+}
+div#decBody
+{
+	position: relative;
+
+	/*border-top: 2px black dotted;
+	border-bottom: 2px black  dotted;*/
+	float:left;
+	/*width:742px;*/
+	width:46.3em;
+	margin: 0px 0px 0px 0px;	
+	padding: 0px 0px 0px 13px;
+
+
+}
+div#decCentro
+{
+	/*border-top: 2px black dotted;
+	border-bottom: 2px black  dotted;*/
+	padding-bottom: 21px;
+	width:995px;
+	margin: 0px 0px 0px 0px;	
+	float: left;
+
+
+}
+
+div#decPie
+{
+	/*border-top: 2px black dotted;
+	border-bottom: 2px black  dotted;*/
+	float:left;
+	width:995px;
+	margin: 0px 0px 0px 0px;	
+	height: 50px;
+
+
+}
+
+div#decFaldon
+{
+	position: relative;
+
+	/*border-top: 2px black dotted;
+	border-bottom: 2px black  dotted;*/
+	float:left;
+	width:995px;
+
+	/*padding-bottom: 50px;*/
+
+}
+
+div#destacadosInt
+{
+	float: left;
+}
+/**************** fin deccontenido.jsp *********/

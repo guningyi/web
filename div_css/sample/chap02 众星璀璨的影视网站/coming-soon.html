@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
+<head>
+<title>电影</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="javascript" type="text/javascript">
+				function loginCallBack(status) {
+					if (status == 1) {
+						document.location = 'https://my.screenname.aol.com/_cqr/login/login.psp?sitedomain=www.moviefone.com&siteState=OrigUrl%3Dhttp%3A%2F%2Fwww.moviefone.com%2Fmovie-trailers%2Fcoming-soon&offerId=moviefone-en-us';
+					}
+				}
+    </script>
+<script language="javascript" type="text/javascript" src="Movies-list/my.screenname.aol.com/_cqr/login/checkStatus.psp~cb=loginCallBack.html"></script>
+<script type="text/javascript">
+
+var bN_cfg = {
+    h : ['www.moviefone.com','movies.aol.com']
+};
+
+(function(){
+var c='http://o.aolcdn.com/',
+a=[c+'js/mg1.js'],
+d=document,h=d.getElementsByTagName('head')[0],s,r,i,l = a.length;
+for (i=0; i<l; i++){
+s=d.createElement('script'); 
+s.type='text/javascript';
+s.src=a[i];
+h.appendChild(s);
+}})();
+    </script>
+<!-- Merge Moviefone CSS -->
+<link href="css/base.css"
+        rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="../../www.aolcdn.com/_media/ch_movies/pp_ie6.css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="http://www.aolcdn.com/_media/ch_movies/pp_ie7.css" /><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://www.aolcdn.com/_media/ch_movies/pp_ie8.css" /><![endif]-->
+<!-- Merge Moviefone JS HUBS -->
+<script src="http://o.aolcdn.com/art/merge/?f=/_media/ch_movies/pp_us.movies.js&f=/_media/ch_movies/mootools-release-1.11.js&f=/onlineopinions3ts/oo_engine.js&f=/_media/channels/ratings_widget.js&f=/_media/channels/widget_config.js&f=/webwidgets/sfsw_v1_1/feeds_subscribe.js&f=/_media/ch_movies/util.js&f=/feedback/feedback1.js&expsec=31536000&ver=1z"
+        type="text/javascript"></script>
+<script type="text/javascript">var bid="";</script>
+<script type="text/javascript">var setSpeedCookie = "1";</script>
+<script type="text/javascript">screen_name = '';</script>
+<script type="text/javascript" src="js/adsWrapper.js"></script>
+<script type="text/javascript">
+	<!--
+		adSetExt('aoladp');
+    	adSetTarget('_blank');
+		adSetAdURL('../_uac/adpage.html');
+	//-->
+    </script>
+<script type="text/javascript"> var sitedomain="channel.aol.com";var siteState="http%3a%2f%2fmovies%2eaol%2ecom%2f";</script>
+<script type="text/javascript">
+				function runOmni(){
+					s_265.mmxgo=true;
+					s_265.server="www.moviefone.com";
+					s_265.pfxID= "mov";
+					s_265.channel="us.movies";
+					
+					s_265.trackExternalLinks="true";
+					s_265.linkInternalFilters="javascript:,aol.com,moviefone.com";
+					
+			s_265.pageName="mov: Trailers for Movies Coming Soon";
+			s_265.trackExternalLinks="true";
+			s_265.prop1="movie-trailers";
+			s_265.prop2="coming-soon";
+			s_265.linkInternalFilters="javascript:, moviefone.com";
+			
+						s_265.prop12 = "http://www.moviefone.com/movie-trailers/coming-soon";
+					
+							s_265.s_prop23="";
+						
+						s_265.t();
+				}
+		
+				s_account = "aolmov,aolsvc";
+				(function(){
+		    		var d = document, s = d.createElement('script');
+		   			 s.type = 'text/javascript';
+		    		 s.src = 'http://o.aolcdn.com/omniunih.js';
+		    		 d.getElementsByTagName('head')[0].appendChild(s);
+				})();
+		
+    </script>
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  var currentPosition = 0;
+  var slideWidth = 560;
+  var slides = $('.slide');
+  var numberOfSlides = slides.length;
+  $('#slidesContainer').css('overflow', 'hidden');
+  slides
+    .wrapAll('<div id="slideInner"></div>')
+	.css({
+      'float' : 'left',
+      'width' : slideWidth
+    });
+  $('#slideInner').css('width', slideWidth * numberOfSlides);
+  $('.slideStatus').html('1 of '+numberOfSlides);
+  $('#slideshow')
+    .prepend('<span class="control" id="leftControl">Left</span>')
+    .append('<span class="control" id="rightControl">Right</span>');
+  $('.control')
+    .bind('click', function(){
+	currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
+    if(currentPosition==-1){
+	manageControls(currentPosition);
+	currentPosition = numberOfSlides-1;
+	}else if(currentPosition==numberOfSlides){
+	manageControls(currentPosition);
+	currentPosition = 0;
+	}else{
+	$('#slideInner').animate({'marginLeft' : slideWidth*(-currentPosition)},200);
+	}
+	$('.slideStatus').html((currentPosition+1)+ ' of '+numberOfSlides);
+  });
+  function manageControls(position){
+	if(position==-1){ $('#slideInner').animate({'marginLeft' : 560},50);$('#slideInner').animate({'marginLeft' : slideWidth*(-(numberOfSlides))},1);$('#slideInner').animate({'marginLeft' : slideWidth*(-(numberOfSlides-1))},150); }
+    if(position==numberOfSlides){ $('#slideInner').animate({'marginLeft' : slideWidth*(-numberOfSlides)},50);$('#slideInner').animate({'marginLeft' : 560},1);$('#slideInner').animate({'marginLeft' : 0},150); }
+  }	
+});
+    </script>
+<style>
+.trailerHub .footerTxt {
+	color: #999;
+	font-size: 11px;
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:3em;
+}
+.trailerHub .movieStates .selected {
+	_width: 197px;
+}
+.trailerHub .slideItem .slideInfo .name a {
+	display:block;
+*padding-right: 16px;
+	background: transparent none;
+}
+.trailerHub .featured {
+	height:auto;
+}
+.trailerHub .slideStatus {
+	margin:10px;
+	font-weight:bold;
+	text-align:center;
+	color:#2864B4;
+}
+</style>
+</head>
+<body class="trailerHub trailerArchive">
+<div id="header">
+  <style>
+.headTop {*z-index:9998;}
+.headMiddle {*z-index:9997;}
+.userZip .headZip {float:right;_width:auto;}
+#printPrev {*z-index:9999;}
+#localnav li{margin-right:9px;}
+#localnav li a {margin:  0 -2px 0 2px;}
+.headersub{z-index:99999;}
+#localnav li.hasSub .headersub{*clear:both;}
+#localnav li.hasSub .header-dropdown ul li {float:none !important;}
+#localnav li a{font-size:13px;}
+.crosspromo {background:#fff;}
+.header-dropdown ul li{*width:125px;}
+.header-dropdown ul li a{*width:95%;}
+.hideresults{display:none !important;}
+#globalnavi a#moreLink {_background:transparent url(image/global_dropdown_arrow-ie6) no-repeat 50% right;}
+.mfToolbar .toolbarContents a {display:block;padding:7px 0 0;color:#fff;}
+#y{border-top:3px solid #000;}
+#moreMoviefone ul li { height:180px;}
+.ent_promo_sidetexttitle .body {padding-left:0;}
+#localnav li.hasSub{background:transparent url(image/mf_header_images_v4) no-repeat right -430px !important;padding-right:6px;}
+#localnav li.hasSub:hover {background:transparent url(image/mf_header_images_v4) no-repeat right -480px !important;}
+#localnav li.hasSub .header-dropdown ul li {float:none !important;}
+#localnav li.selected:hover, #localnav li.selected {background:transparent url(image/mf_header_images_v4) repeat scroll left -318px !important;}
+#localnav li.selected .suba{background:transparent url(image/mf_header_images_v4) no-repeat scroll right -479px !important;*float:left;}
+#localnav li.selected .subnoarr{background:transparent url(image/mf_header_images_v4) no-repeat scroll right -318px;*float:left;}
+.productheader h1 {width:auto;}
+#moviefoneSearch .searchBar form input { width:333px !important;}
+#moviefoneSearch #submit { margin-top :0 !important;}
+#maindiv{min-width:625px;}
+#smartsel li a{font-family:arial;font-size:13px;text-decoration:none;}
+#smartsel li a:hover{text-decoration:none;}
+#smartsel li.srchitem{background-color:#fff;}
+#smartsel li.srchitem a{color:#000;}
+#smartsel li.srchitemhov{background-color:#AB1717;}
+#smartsel li.srchitemhov a{color:#fff;}
+#smartsel li.srchtype{color:#AB1717;font-size:16px;margin-top:5px;cursor:default;}
+.userZip .headZip {*width:180px;}
+.userZipLong .headZip {*width:230px !important;} 
+div.moreSites {border-bottom: solid 1px #C7C7C7;color:#2E2E2E;font-weight:bold;padding-bottom:8px;}
+#localnav .selected span.rightRound {_float:left;_display:block;}
+#localnav li.hasSub .header-dropdown ul, #localnav li.hasSub .header-dropdown ul li {_height:1%;}
+</style>
+  <div id="headWrapper">
+    <style>
+.mfToolbar a.toolText {display:block; padding:7px 0 0 0;}
+</style>
+    <div id="adheader">
+      <table class="ad">
+        <tr>
+          <td><img src="image/72890.jpg"  /> </td>
+        </tr>
+      </table>
+    </div>
+    <div id="headContent">
+      <div class="headTop">
+        <div id="globalnavi">
+          <div id="channels">
+            <div class="channelsLink"> <a href="#">电视</a> | <a href="#"> 音乐</a> | <a href="#">广播</a> | <a id="moreLink" onmouseout="toggleOffMoreChannels();" onmouseover="toggleMoreChannels();"
+                                    href="javascript:void();">电影</a></div>
+            <div onmouseout="toggleOffMoreChannels();" onmouseover="toggleMoreChannels();" style="display: none;"
+                                id="globalnavlist">
+              <div class="moreSites"> 电影类型</div>
+              <ul>
+                <li><a  href="#">科幻片</a></li>
+                <li><a  href="#">悬疑片</a></li>
+                <li><a  href="#">动作片</a></li>
+                <li><a href="#">侦探片</a></li>
+                <li><a  href="#">推理片</a></li>
+                <li><a href="#">爱情片</a></li>
+                <li><a  href="#">文艺片</a></li>
+              </ul>
+              <ul>
+                <li><a  href="#">武侠片</a></li>
+                <li><a  href="#">战争片</a></li>
+                <li><a href="#">探险片</a></li>
+                <li><a  href="#">科教片</a></li>
+                <li><a  href="#">综艺片</a></li>
+                <li><a  href="#">惊悚片</a></li>
+                <li><a  href="#">恐怖片</a></li>
+                <li><a  href="#">宗教片</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">古装片</a></li>
+                <li><a  href="#">武打片</a></li>
+                <li><a href="#">科幻片</a></li>
+                <li><a  href="#">科教片</a></li>
+                <li><a  href="#">综艺片</a></li>
+                <li><a  href="#">惊悚片</a></li>
+                <li><a  href="#">恐怖片</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"> </div>
+        </div>
+        <div class="headTopRight">
+          <div id="mfdropdown" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" onclick="moviesmenuNew(this, 'moviepulldown', 'rightbottom');mopen('moviepulldown');"> <span class="sortmenu">科幻电影</span> <span class="selectimg"> <img width="27" height="25" border="0" class="arrow" alt="" src="image/mf_main_head_arrowbtn.gif" /> </span> </div>
+          <div class="ivr"> <a href="#">电影网</a></div>
+          <div id="moviepulldown" style="position: absolute; display: none;" onmouseout="mclosetime()"
+                            onmouseover="mcancelclosetime()">
+            <div>
+              <ul>
+                <li><a href="#">爱丽丝梦游仙境</a></li>
+                <li><a href="#">战神</a></li>
+                <li><a href="#">诸神之战</a></li>
+                <li><a href="#">A计划</a></li>
+                <li><a href="#">警察故事</a></li>
+                <li><a href="#">科幻3D</a></li>
+                <li><a href="#">午夜骑士</a></li>
+                <li><a href="#">死亡骑士</a></li>
+                <li><a href="#">美食天下</a></li>
+                <li><a href="#">第一滴血</a></li>
+                <li><a href="#">终结者</a></li>
+                <li><a href="#">木马屠城</a></li>
+                <li><a href="#">3D电影</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="userZip userZipLong">
+            <div class="userInfo "> <a href="#"/>登录/注册</a> </div>
+            <div class="headZip">
+               <form name="locForm" onsubmit="javascript:onSubmitLocationSearch();">
+                                    <input name="location" type="text" class="srchtix" id="locSearch" onfocus="if(this.value=='请输入')this.value='';"
+                                        onblur="if(this.value=='')this.value='请输入';" value="请输入" />
+                                    <a href="#" id="submit"  class="submit">
+                                    </a>
+                                    <input type="hidden" name="showBorderOption" value="true" />
+                                </form>
+                                <span>搜索电影</span></div>
+            <div class="clear"> </div>
+          </div>
+          <div class="clear"> </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+						
+						
+						
+						 if(document.getElementById('localnav')){
+						 	var currentPage;
+							document.getElementById('localnav').getElementsByTagName('li')[6].className='';
+							if(currentPage != undefined){
+								if(currentPage=="news") {
+									document.getElementById('localnav').getElementsByTagName('li')[27].className='selected';
+								} else if(currentPage=="coming-soon") {
+									if(document.getElementById('localnav').getElementsByTagName('li')[5].className=="hasSub"){
+										document.getElementById('localnav').getElementsByTagName('li')[5].className+=' selected';
+									}else{
+										document.getElementById('localnav').getElementsByTagName('li')[5].className='selected';
+									}	
+								} else if(currentPage=="in-theaters") {
+									if(document.getElementById('localnav').getElementsByTagName('li')[2].className=="hasSub"){
+										document.getElementById('localnav').getElementsByTagName('li')[2].className+=' selected';
+									}else{
+										document.getElementById('localnav').getElementsByTagName('li')[2].className='selected';
+									}
+								}else if(currentPage=="showtimes") {
+									document.getElementById('localnav').getElementsByTagName('li')[1].className='selected';
+								
+								} else if (currentPage=="main") {
+									document.getElementById('localnav').getElementsByTagName('li')[0].className='selected';
+								} else if (currentPage=="dvd") {
+									document.getElementById('localnav').getElementsByTagName('li')[8].className='selected';
+								
+								}else if (currentPage=="insideMovies") {
+									if(document.getElementById('localnav').getElementsByTagName('li')[10].className=="hasSub"){
+										document.getElementById('localnav').getElementsByTagName('li')[10].className+=' selected';
+									}else{
+										document.getElementById('localnav').getElementsByTagName('li')[10].className='selected';
+									}
+								
+								}else if (currentPage=="mfminute") {
+									document.getElementById('localnav').getElementsByTagName('li')[26].className='selected';
+								}else if (currentPage=="twilight") {
+									document.getElementById('localnav').getElementsByTagName('li')[28].className='selected';
+								}
+
+							}
+						}
+    </script>
+<script language="javascript">
+						
+						function onSubmitSearch(searchBox, url) {
+							// trim the string and check whether the string is empty - this is the fastest trim function implementation in javascript, using regex
+							if (searchBox.value.replace(/^\s\s*/, '').replace(/\s\s*$/, '').length == 0) {
+					  		searchBox.focus();
+							} else {
+								var newLocation = url + searchBox.value;
+								document.location = newLocation;
+							}
+						}
+						function onSubmitLocationSearch() {
+							onSubmitSearch(document.getElementById('locSearch'), '/showtimes?showBorderOption=true&checkIncludeOtherCountries=true&location=');
+						}
+						function onSubmitMovieSearch(searchBoxId) {
+							if(!searchBoxId) {
+								searchBoxId = "movieSearch";
+							}
+							
+							if(document.getElementById(searchBoxId).value !="Search by Movie, Actor or Theater name"){
+								onSubmitSearch(document.getElementById(searchBoxId), '/search/');
+							}
+						}
+					
+						
+								smartSrchMsg = "<span class='smartsrchmsg' style='font-size:9px;padding-top:5px;'>*These are the closest theaters near you based on the  location specified.  They have been added to your search results for your convenience.</span>";
+							
+							var smartSearchLinkBaseUrl = 'http://www.moviefone.com';
+    </script>
+</div>
+<div id="content">
+  <div id="z">
+    <div class="productheader">
+      <h1> <span class="red">最新</span> 大片</h1>
+    </div>
+  </div>
+  <div id="k">
+    <div class="kgroup">
+      <div class="k1">
+        <div class="featured">
+          <div id="slideshow">
+            <div id="slidesContainer">
+              <div class="slide">
+                <div class="slideItem">
+                  <div class="slideThumb"> <a href="#"> <img src="image/eclipse-293x195.jpg" width="293px" height="195px" border="0" /> </a> </div>
+                  <div class="slideInfo">
+                    <h3> 暮光之城2</h3>
+                    <p class="description"> 贝拉发现自己再次被危险包围。。。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slideItem">
+                  <div class="slideThumb"> <a href="#"> <img src="image/grownups-293x195.jpg" width="293px" height="195px" border="0" /> </a> </div>
+                  <div class="slideInfo">
+                    <h3> 大人模样</h3>
+                    <p class="description"> 30年高中毕业后，5个篮球队员在湖边的房子，他们聚集在那里庆祝他们最大的胜利，悼念他们的已故的教练。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slideItem">
+                  <div class="slideThumb"> <a href="#"> <img src="image/otherguys-293x195.jpg" width="293px" height="195px" border="0" /> </a> </div>
+                  <div class="slideInfo">
+                    <h3> 其它球员</h3>
+                    <p class="description"> 威尔法瑞尔和Mark Wahlberg在这个由亚当麦凯执导的喜剧明星警察</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slideItem">
+                  <div class="slideThumb"> <a href="#"> <img src="image/dinnerforschmucks-293x195.jpg" width="293px" height="195px" border="0" /> </a> </div>
+                  <div class="slideInfo">
+                    <h3> 晚宴</h3>
+                    <p class="description"> 一位著名的出版商鼓励他的朋友找到最可怜的客人来进行他们每周的晚宴。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slideStatus"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="m1">
+    <div class="admodule"> <img src="image/21411_p_m.jpg" /> </div>
+  </div>
+  <div class="clear"> </div>
+  <div id="r1">
+    <h2 class="navTitle">
+      <div class="red"> 大片索引</div>
+    </h2>
+    <div class="naviga">
+      <ul>
+        <li class="item selected">所有类型</li>
+        <li class="item"><a href="#"> 动作片</a></li>
+        <li class="item"><a href="#"> 喜剧片</a></li>
+        <li class="item"><a href="#"> 爱情片</a></li>
+        <li class="item"><a href="#"> 恐怖片</a></li>
+        <li class="item"><a href="#"> 纪录片</a></li>
+        <li class="item"><a href="#"> 罪案片</a></li>
+        <li class="item"><a href="#"> 战争片</a></li>
+        <li class="item"><a href="#"> 动画片</a></li>
+        <li class="item"><a href="#"> 剧情片</a></li>
+        <li class="item"><a href="#"> 冒险片</a></li>
+        <li class="item"><a href="#"> 惊险片</a></li>
+        <li class="item"><a href="#"> 历史片</a></li>
+        <li class="item"><a href="#"> 西部片</a></li>
+        <li class="item"><a href="#"> 黑色片</a></li>
+        <li class="item"><a href="#"> 悬念片</a></li>
+        <li class="item"><a href="#"> 歌舞片</a></li>
+        <li class="item"><a href="#"> 幻想片</a></li>
+        <li class="item"><a href="#"> 科幻片</a></li>
+        <li class="item"><a href="#"> 音乐片</a></li>
+        <li class="item"><a href="#">家庭片</a></li>
+        <li class="item"><a href="#"> 武侠片</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="s">
+    <div class="kgroup">
+      <div class="s1">
+        <!-- Spotlight Module -->
+        <div class="hubCenter trailerHubArchive">
+          <div class="movieStates"> <span></span> <span class="selected"></span> <span></span> <span></span>
+            <div class="clear"> </div>
+          </div>
+          <div class="body">
+            <div class="sort">
+              <h2> 热播经典大片回顾</h2>
+            </div>
+            <span class="clipbox"> </span>
+            <div style="position: absolute; display: none;" id="trailersort">
+              <div>
+                <ul>
+                  <li><a href="#">最新拖车</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="clear"> </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/1415415_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>孤独的人 </b> </a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#"target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank" >简介</a></span> </div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/28119_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>晚宴 </b> </a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" arget="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span> </div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/1442004_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>彩票 </b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span></div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/37014_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>榆树街噩梦 </b> </a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span> </div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/36148_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>卑鄙的我</b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#"target="_blank" >简介</a></span> </div>
+              </div>
+            </div>
+            <div class="clear"> </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/10011343_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>马里奥兄弟 </b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#"target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span></div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/37684_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>加强三维 </b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">480</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">720</a></span></div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/35215_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>用音乐挑战世界 </b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#"
+                                                    target="_blank">简介</a></span></div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/37107_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>盐 </b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span> </div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/36188_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>恐怖危机 </b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span></div>
+              </div>
+            </div>
+            <div class="clear"> </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/1435845_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>罗马假日</b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#"target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span></div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/34445_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>我的猫头鹰 </b> </a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#"target="_blank">简介</a></span> </div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/10011344_p_m.jpg" class="captify" rel="thecaption" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>家庭 </b> </a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span> </div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/10024795_p_m.jpg" width="125" height="185" /> </div>
+                <div class="videoName"> <a href="#"> <b>我和球星 </b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span> </div>
+              </div>
+            </div>
+            <div class="movieWrapper">
+              <div class="item noBorder">
+                <div class="image"> <img src="image/37197_p_m.jpg" width="125" height="185" /> </div>
+                <div class="icon"> </div>
+                <div class="videoName"> <a href="#"> <b>魔法学徒 </b></a> </div>
+                <div id="movieLinks"> <span class="butoneshd hd480"><a href="#" target="_blank">观看</a></span> <span class="butoneshd hd720"> <a href="#" target="_blank">简介</a></span> </div>
+              </div>
+            </div>
+            <div class="clear"> </div>
+            <div class="clearMovies"> </div>
+            <div class="clear"> </div>
+            <div class="newPagination">
+              <div class="pages">
+                <div class="pageInput">
+                  <div class="clear"> </div>
+                </div>
+                <div class="inactivePrev"> </div>
+                <div class="clear"> </div>
+              </div>
+              <div class="clear"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="y">
+    <div class="clear"> </div>
+    <div id="cod-promo" class="cod"> <a href="#" style="display: none;">Around the Web
+      &gt;&gt;&gt;</a> </div>
+    <script language="JavaScript">
+// crosspromo
+var d=document; var w=window;var docHg;
+var range=400;
+var cod_arr=new Array();
+var arrLen = 0;
+var modSpan = 6;
+var currId = 0;
+var opt = {
+	ae:function(o,et,fn){if(o.addEventListener)o.addEventListener(et,fn,false);else if(o.attachEvent)o.attachEvent("on"+et,fn);},
+	gt:function(t,o){o=o?o:document;return o.getElementsByTagName(t)},
+	gc:function(c,t,s,o){var r=new Array();var os=opt.gt(t,o);for(var i=0,j=0,l=os.length;i<l;i++){var sc = s + os[i].className + s;if(sc.indexOf(s+c+s)!=-1){r[j] = os[i];j++;}}return r;},
+        nview:function(obj,i) {
+                if (obj.loaded==null) {
+                    obj.loaded=0;
+                }
+                if (obj.loaded==0) {
+                    var relTop=obj.offsetTop-(w.scrollY||d.documentElement.scrollTop);
+                    if((relTop-docHg-20)<range) {
+                      var codUrl=opt.gt('a',obj)[0].href;
+                      opt.xhr(codUrl,obj,i);
+                    }
+                }
+        },
+        doCod:function(){
+                var l=cod_arr.length;
+                for (var i=0;i<l;i++) {
+                        opt.nview(cod_arr[i],i);
+                }
+        },
+        xhr:function(u,obj,i){
+                u='#';
+                obj.loaded=1;
+                var f,r,m='GET';
+                f=function(){if(r.readyState>3)opt.update(obj,r,i);}
+                r= window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP");
+                r.onreadystatechange=f;
+                r.open(m,u,1);
+                r.setRequestHeader('content-type','text/xml');
+                r.send('');
+        },
+        update:function(obj,r,i) {
+                if(r.status==200){
+                        obj.innerHTML=r.responseText;
+                } else {obj.loaded=0;}
+        },
+        init:function() {
+                        cod_arr=opt.gc('cod','div','',document);
+                        docHg=w.innerHeight||d.documentElement.offsetHeight;
+                        opt.doCod();
+                        opt.ae(window,'scroll',opt.doCod);
+        },
+        res:function(){
+                docHg=w.innerHeight||d.documentElement.offsetHeight;
+                opt.doCod();
+        }
+
+}
+opt.ae(window,'resize',opt.res);
+opt.ae(window,'load',opt.init);
+
+            </script>
+    <style>
+#y{margin:0.83em auto;}
+</style>
+  </div>
+</div>
+<div id="footer">
+<script language="JavaScript">
+        var sitedomain = "channel.aol.com";
+        var authLev = "1";
+        var _sns_bg_color_ = "#4D90E0";
+        var _sns_x_offset_ = 0;
+        var _sns_y_offset_ = 0;
+        var _sns_showSignInOutLinks_ = 0;
+        var _sns_showByDef_ = 1;
+        var _sns_set_var_ = 1;
+        var _sns_var_ = "";
+        var siteState = encodeURIComponent("OrigUrl="+encodeURIComponent(window.location));
+        </script>
+<script src="js/jslogin.psp.js" type="text/javascript">
+        </script>
+<div id="snsMiniUI"> </div>
+<div class="headMiddle footMiddle">
+  <div id="moviefoneLogo"> <a  href="#"> <img src="image/moviefone-logo-195x68.jpg" id="mainimage" /> </a> </div>
+  <div id="moviefoneSearch">
+    <div class="searchBar">
+      <form name="movieForm" action="javascript:onSubmitMovieSearch('footerMovieSearch');"
+                        onsubmit="javascript:onSubmitMovieSearch('footerMovieSearch');">
+        <input name="q" type="text" class="srch" id="footerMovieSearch" onfocus="if(this.value=='Search by Movie, Actor or Theater name')this.value='';"
+                            onblur="if(this.value=='')this.value='Search by Movie, Actor or Theater name';"
+                            value="Search by Movie, Actor or Theater name" />
+      </form>
+      <a href="javascript:onSubmitMovieSearch('footerMovieSearch');" id="submit" title="SEARCH"
+                        class="submit"></a>
+      <div class="clear"> </div>
+    </div>
+  </div>
+  <div class="clear"> </div>
+</div>
+<div id="footLinks">
+  <div class="clear"> </div>
+</div>
+<div id="footLegal">
+  <div class="links">
+    <ul>
+      <li><a href="#">搜索电影</a></li>
+                    <li><a href="#">搜索电视剧</a></li>
+                    <li><a href="#">搜索影评</a></li>
+                    <li><a href="#">搜索社区</a></li>
+                    <li><a href="#">搜索好友</a></li>
+                    <li><a href="#">电影专区</a></li>
+                    <li><a href="#">电视专区</a></li>
+                    <li><a href="#">动画专区</a></li>
+    </ul>
+  </div>
+  <div class="links">
+    <ul>
+      <li><a href="#">网站地图</a></li>
+                    <li><a href="#">我们的团队</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">合作渠道</a></li>
+                    <li><a href="#">网站帮助</a></li>
+                    <li class="last"><a href="#">首页</a></li>
+    </ul>
+  </div>
+  <div class="copyright"> &copy; 2010 保留一切权利 </div>
+  <script>
+    if(window.sb_id) {
+        sb_end();
+    }
+            </script>
+</div>
+</body>
+</html>

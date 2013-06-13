@@ -1,0 +1,111 @@
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+	<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="mystyles.css" rel="stylesheet" type="text/css">
+	<link href="http://www.taxireservations.gr/css/agcxlvi.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript" src="DynamicOptionList.js" type="text/javascript"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript">
+
+//servlet
+var listB = new DynamicOptionList("startpoint","A");
+listB.addOptions("虹口区","赤峰路","1604","大柏树","1616","虹口足球场","2172","水电路","1","曲阳路","3221","中山北二路","3522","四平路","1809","欧阳路","1692","周家嘴路","1610","天宝路","1606","飞虹路","2983");
+listB.addOptions("黄浦区","浙江中路","1663","广西北路","1684","山东中路","2173","人名路","1617","西藏南路","3523","九江路","1810","汉口路","1620","北京东路","1618","四川中路","1685","福州路","1683","黄陂北路","1619","广东路","2984");
+function init() {
+	var theform = document.forms[0];
+	listB.init(theform);
+	}
+</SCRIPT>
+
+
+</head>
+<BODY  onload="init()">
+
+
+<table width="725"  align="center" class="tablethic" cellpadding="0" cellspacing="0" >
+<tr><td>
+</td></tr>
+  <tr>
+    <td><div align="center"><br/><img src="images/step1en.gif" alt=""></div></td>
+<tr>
+  
+    <td><table width="723" border="0" cellpadding="0" cellspacing="0" style="background:url(images/backstep1.gif);background-repeat:no-repeat">
+<tr>
+          <td width="517">
+<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+                <td width="22" height="22">&nbsp;</td>
+              <td height="22">
+</td>
+                <td width="22" height="22">&nbsp;</td>
+            </tr>
+              <tr>
+                <td width="22">&nbsp;</td>
+                <td>
+<p></p><div align="center"><strong><font color="#004080" size="2" face="宋体">请选择你的出发地和终点，点击查询，查询路线</font></strong></div>
+<p><font color="#FF0000" size="2" face="宋体"></font></p>
+					<FORM action="" method="get">
+  					<input name="step" type="hidden" id="step" value="2">
+                    <input name="lang" type="hidden" id="lang" value="en">
+                    <input name="usercode" type="hidden" id="usercode" value="agcxlvi">
+                    <input name="aid" type="hidden" id="aid" value="">
+					<input name="showhome" type="hidden" id="showhome" value="no">
+
+                    <table border=0 align="center">
+<tbody>
+                        <tr>
+                          <td><div align="center"><font color="#004080" size="2" face="宋体">起点</font></div></td>
+                          <td><div align="center"><font color="#004080" size="2" face="宋体">终点</font></div></td>
+                        </tr>
+                        <tr>
+                          <td><select name=A size="8" style="font-size:11px" onChange="listB.populate();">
+											              <option selected value="虹口区">虹口区</option>
+												          <option value="黄浦区">黄浦区</option>
+					
+           </select></td>
+                          <td><select name="startpoint" style="font-size:11px" size="8" STYLE="width: 300px">
+						  <option />
+						  </select>
+							<script language="JavaScript" type="text/javascript">listB.printOptions()</script></td>
+                        </tr>
+                        <tr>
+                          <td height="20" colspan="2">
+<div align="center">
+<input type="button" name="Submit" value="查询">
+                            </div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+</FORM>
+</td>
+                <td width="22">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="22" height="22">&nbsp;</td>
+                <td height="22">&nbsp;</td>
+                <td width="22" height="22">&nbsp;</td>
+              </tr>
+            </table>
+        </td>
+
+          <td width="206" valign="bottom"><table width="0" border="0">
+            <tr>
+              <td><br/><img alt="book step" src="images/bookstepen.gif" width="173" height="259"></td>
+            </tr>
+          </table></td>
+</tr>
+      </table></td>
+</tr>
+</table>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1131903-19");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

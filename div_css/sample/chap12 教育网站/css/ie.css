@@ -1,0 +1,70 @@
+/* Backslash hack \ */
+* html #main, * html #site-info div, * html #main-nav, * html .cont-box, #page-header, body.section #main-content, * html #page-header, * html #sub-panels div, * html #inner-mainp, #upcoming-events li, * html #main-news {
+	height/**/:1%;
+}
+#logo a {
+	text-indent:-5000px
+}
+#home #main-panels h3#oldnews-h {
+	padding:1px 0 7px 13px
+}
+* html #sectionpanel, * html #intropanel, * html #sub-panel, * html #main-panels, * html #sub-panels, * html #upcoming-events li a {
+	_height:auto;  /* IE 5.5 only */
+	_height/**/:/**/ 1%; /* IE 6 only */
+}
+* html #upcoming-events li {
+	_width:373px;  /* IE 5.5 only */
+	_width/**/:/**/ 349px; /* IE 6 only */
+}
+* html fieldset {
+	width:525px;
+}
+.section #page-header {
+	clear:none
+}
+* html #whats-on #sectionpanel #sub-panel {
+	width:274px;
+	display:inline
+}
+* html #whats-on #main-content #sectionpanel h3 {
+	width:272px
+}
+#global-nav button {
+	margin-left:5px;
+	margin-top:1px;
+	line-height:1.5
+}
+#sub-nav {
+	padding-top:49px
+}
+* html #main .deep-nav .deep-nav li a {
+	height:1%;
+}
+* html .deep-nav ul.deep-nav {
+height: expression(this.scrollHeight > 120 ? "120px": "auto");
+!important
+}
+* html #sub-nav li a {
+	_width:175px;  /* IE 5.5 only */
+	_width/**/:/**/ 155px; /* IE 6 only */
+}
+* html #main #sub-nav li ul li a {
+	_width:175px;  /* IE 5.5 only */
+	_width/**/:/**/ 145px; /* IE 6 only */
+}
+#main a.external {
+	padding-right:0;
+	background:none;
+!important
+}
+#main-content #formsubmit-p input, #loginreminder input, input.button {
+	padding:0 0 0 0
+}
+#sub-content {
+	display:inline
+}
+/*============================ IE 5.5 HACKS =========================*/
+
+#header a {
+	font-size:0
+}

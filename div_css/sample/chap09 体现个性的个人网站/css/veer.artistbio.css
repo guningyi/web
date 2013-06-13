@@ -1,0 +1,33 @@
+/*Styles for artist bio in galleries*/
+#artistbio {
+	background:#333;
+	margin:0 0 20px 0
+	}
+#artistwrap p {
+	color:#ccc;
+	border-top: 1px solid #ccc;
+	margin: 0 0 0 165px;padding:15px 100px 0 0;
+	line-height: 16px;
+	}
+#artistwrap img.artistFlont{;margin: 20px 0 15px 20px;}
+#artistwrap img.headShot {
+	float: left;
+	clear:both;
+	margin:0;
+	padding:0
+	}
+/*Min-Height Hack - tip of the hat to Dave Shea*/
+/*Safari/Mozilla/Opera*/
+*>#artistbio {
+	padding-top: 199px;
+	min-height:1px;
+	}
+
+/*IE and IE Mac*/
+*>#artistbio #artistwrap {margin-top: -199px;}
+* html #artistbio {
+	/* IE5Mac filter \*/
+	height: 199px;
+	/* end filter */
+}
+

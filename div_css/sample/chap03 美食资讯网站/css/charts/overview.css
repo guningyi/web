@@ -1,0 +1,96 @@
+table.mediumImageChart {
+    width: 100%;
+}
+
+table.mediumImageChart td {
+    border-bottom: 10px solid #fff;
+}
+
+table.mediumImageChart td.positionCell {
+    text-align: right;
+}
+
+table.mediumImageChart td.positionCell strong {
+    display: block;
+    width: 28px;
+    height: 18px;
+    margin: 0 10px 0 0;
+    padding: 5px 0;
+    background-image: url(../../img/chart_position.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/chart_position.png', sizingMethod='scale');
+    _background-image: none;
+    color: #0187c5;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+table.mediumImageChart td.positionCell span.delta {
+    display: block;
+    margin: 2px 12px 0 0;
+    color: #696969;
+    font-size: 10px;
+    line-height: 1.2em;
+    font-weight: normal;
+}
+
+table.mediumImageChart td.imageCell img {
+    display: block;
+    padding: 1px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+table.mediumImageChart td.subjectCell {
+    position: relative;
+    width: 100%;
+    font-size: 10px;
+    line-height: 1.2em;
+}
+
+table.mediumImageChart td.subjectCell span.subject {
+    display: block;
+    margin: 0 0 11px 5px;
+    font-size: 11px;
+    line-height: 1.181818em;
+    font-weight: bold;
+}
+
+table.mediumImageChart td.subjectCell div.plays {
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+
+table.mediumImageChart td.subjectCell span.subject a {
+    color: #1b1b1b;
+}
+
+strong.subTitle {
+    color: #696969;
+}
+
+
+div.lovedTracksChart span.chartbar2 img {
+    vertical-align: middle;
+}
+
+div.lovedTracksChart p.sponsor {
+    color: #696969;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+    margin: -15px 0 10px 0;
+}
+
+div.lovedTracksChart p.sponsor img {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+table.candyStriped tr.odd {
+    background: #EBEBEB;
+}

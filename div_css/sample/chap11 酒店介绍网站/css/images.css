@@ -1,0 +1,221 @@
+.image {
+	color: #666;
+}
+.image p, .imagecaption {
+	font-size: .8em;
+	margin-top: 0em;
+	line-height: 1.2em;
+	color: #666;
+}
+
+.detail .image {
+	display:inline;
+	clear:both;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:relative;
+}
+.detail .image img {
+}
+.detail .right .image {
+	display:block;
+	clear:none;
+	width:288px;
+	float:right;
+	margin:0 0 28px 18px;
+	overflow:visible;
+	right:0;
+}
+.detail .left .image {
+	display:block;
+	clear:none;
+	width:288px;
+	float:left;
+	margin:0 18px 18px 0;
+	overflow:visible;
+	right:0;
+}
+.detail .right .image img, .detail .left .image img {
+	width:288px;
+}
+.detail .rightSm .image {
+	display:block;
+	clear:right;
+	width:144px;
+	float:right;
+	margin:0 0 28px 18px;
+	overflow:visible;
+	right:0;
+}
+.detail .leftSm .image {
+	display:block;
+	clear:left;
+	width:144px;
+	float:left;
+	margin:0 18px 28px 0;
+	overflow:visible;
+	right:0;
+}
+.detail .rightSm .image img, .detail .leftSm .image img {
+	width:144px;
+}
+.detail .image-container {
+	display:block;
+	float:none;
+	clear:both;
+	overflow:hidden;
+}
+.detail .image-container .right .image {
+	margin-left:0;
+}
+.detail .image-container .left .image {
+	margin-right:0;
+}
+
+.heroimagecaption {
+	font-size: 10px;
+	margin:0;
+	padding:0;
+	line-height:10px;
+	color: #666;
+}
+.heroimagecaption a {
+	color: #666;
+	font-weight:normal;
+}
+.members_whatson {
+	width:160px;
+	margin-left:15px;
+	margin-bottom:15px;
+	float:right;
+}
+#matthew_bw {
+	width: 18.66em;
+	float: right;
+	padding: 1em 0em 1em 1em;
+}
+.exhibitionthumbnail {
+	width: 4.166em;
+	height: 4.166em;
+	float: right;
+	padding: 1em 0em 1em 1em;
+}
+.webproject {
+	width: 27.916em;
+	height: 3.916em;
+	padding-top: 1em;
+}
+#kane {
+	width: 139px;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#p_d {
+	width: 9.75em;
+	float: right;
+	padding: 0em 0em 1em 1em;
+}
+/*Large images, set to 514px*/
+#parking-mapL img, #webcam-a img, #webcam-b img, #elevation-south2 img, #elevation-north2 img, #elevation-east img, #elevation-west img, #concourse img, #streetlevel img, #second-floor img, #third-floor img, #fourth-floor img, #north img, #north-west img, #north-east img, #a5thFlCorridor img, #a507 img, #S83-S84-c img, #S83-S84-b img {
+	width: 594px;
+}
+#gehry-portrait {
+	width: 16.66em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#frank_boy {
+	width: 12.5em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#dufy {
+	width: 25em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#promenade-photo {
+	width: 18.75em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#E-Kids-Plug, #E-Adult-Plug {
+	width: 28.5em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#school-kids, #school-costume {
+	width: 16.666em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#hoarding {
+	width: 30em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#parking-mapS {
+	width: 25em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#walker {
+	width: 13.333em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#volunteers {
+	width: 16.666em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#capacity {
+	width: 21em;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+#services {
+	width: 42.833em;
+	padding: 1em 0em 1em 0em;
+	clear: both;
+}
+div#go_brazilfest, div#go_team {
+	float:right;
+	margin-left:1em;
+	margin-bottom:1em;
+}
+div#quebectrip {
+	width:23em;
+	float:right;
+}
+#contemp {
+	float:right;
+	width:25em;
+	margin-left:15px;
+}
+/*#scintillator { width:300px;float:right; margin:10px 0 0 18px;}*/
+
+#nuitblanche {
+	float:right;
+	width:200px;
+}
+/* COLLECTION / NEW ART */
+
+
+/*Thomson*/
+#X-00888 {
+	width:255px;
+	float:left;
+	margin-right:18px;
+}
+#kane-lg {
+	width:276px;
+	float:left;
+}
+#a71064a {
+	width:366px;
+	padding-top:18px;
+	clear:both;
+	float:none;
+}

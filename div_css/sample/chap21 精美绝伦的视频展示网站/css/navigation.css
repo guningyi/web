@@ -1,0 +1,17 @@
+ul#nav-main{ overflow: visible;  }
+ul#nav-main li{ margin: 0; margin-bottom: -2px; height: 30px; }
+
+ul#nav-main li.home li a:hover{ width: auto; }
+ul#nav-main li.contest li a:hover{ width: auto; }
+ul#nav-main li.getaways li a:hover{ width: auto; }
+ul#nav-main li.tastes li a:hover{ width: auto; }
+ul#nav-main li.family li a:hover{ width: auto; }
+ul#nav-main li.happenings li a:hover{ width: auto; }
+ul#nav-main li.multimedia li a:hover{ width: auto; }
+
+ul#nav-main li li a{ display: block; color: #ffffff; padding: 8px 16px; background: #990077; float: none; width: auto; }
+ul#nav-main li li a:hover{ width: auto; color: #fff; text-decoration: none; background: #df31ac;  }
+ul#nav-main li ul{ width: 220px; position: absolute; top: auto; left: -999em; z-index: 902; margin: -30px 0 0 199px !important; margin: -30px 0 0 185px; list-style: none; background: #990077; }
+ul#nav-main li>ul{ top: auto; left: -999em; }
+ul#nav-main li li{ float: none; font-size: 12px; line-height: 1; font-weight: bold; background: #532d19; width: auto; text-indent: 0; font-weight: normal; }
+ul#nav-main li:hover ul, ul#nav-main li a:hover ul{ left: auto; }

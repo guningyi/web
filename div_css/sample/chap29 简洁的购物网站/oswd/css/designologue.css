@@ -1,0 +1,146 @@
+#designologuefp {
+	MARGIN: 0px 12px;
+	TEXT-TRANSFORM: none
+}
+#designologuefp H3 {
+	FONT-SIZE:12px;
+	COLOR: #85c329
+}
+#designologuefp H4 {
+	FONT-SIZE: 0.9em;
+	MARGIN: 0px 0px 4px;
+	COLOR: #939393
+}
+#designologuefp H5 {
+	FONT-SIZE: 0.9em;
+	MARGIN: 0px 0px 4px;
+	COLOR: #939393
+}
+#designologuefp H4 A {
+	FONT-WEIGHT: normal
+}
+#designologuefp UL {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 20px 0px 30px;
+	PADDING-TOP: 0px;
+	LIST-STYLE-TYPE: none
+}
+#designologuefp UL LI {
+	PADDING-RIGHT: 0px;
+	BACKGROUND-POSITION: 0px 3px;
+	PADDING-LEFT: 28px;
+	FONT-SIZE: 0.8em;
+	BACKGROUND-IMAGE:url(../image/nav_07.jpg);
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 0px 16px;
+	COLOR: #636363;
+	LINE-HEIGHT: 160%;
+	PADDING-TOP: 0px;
+	BACKGROUND-REPEAT: no-repeat
+}
+#designologuefp UL LI A.addedby {
+	COLOR: #b4b4b4
+}
+#designologuefp UL LI A.addedby:visited {
+	COLOR: #b4b4b4
+}
+#designologuefp UL LI A.addedby:active {
+	COLOR: #fb9622
+}
+#designologuefp UL LI A.addedby:hover {
+	COLOR: #fb9622
+}
+#designologue {
+	FLOAT: left;
+	TEXT-TRANSFORM: none;
+	WIDTH: 529px
+}
+#designologue P {
+	PADDING-RIGHT: 30px;
+	PADDING-LEFT: 30px;
+	PADDING-BOTTOM: 20px;
+	MARGIN: 26px 16px;
+	COLOR: #636363;
+	LINE-HEIGHT: 160%;
+	PADDING-TOP: 20px;
+	BACKGROUND-COLOR: #f4f4f4
+}
+#designologue #timeline {
+	PADDING-RIGHT: 30px;
+	PADDING-LEFT: 30px;
+	FONT-WEIGHT: bold;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 36px 16px;
+	PADDING-TOP: 0px
+}
+#designologue #timeline UL {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 0px 8px;
+	PADDING-TOP: 0px;
+	LIST-STYLE-TYPE: none
+}
+#designologue #timeline UL LI {
+	PADDING-RIGHT: 0px;
+	DISPLAY: inline;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 0px 0px 10px;
+	PADDING-TOP: 0px
+}
+#designologue #timeline UL LI A {
+	PADDING-RIGHT: 4px;
+	PADDING-LEFT: 4px;
+	PADDING-BOTTOM: 2px;
+	PADDING-TOP: 2px
+}
+#designologue #timeline UL LI A.current {
+	COLOR: #85c329
+}
+#designologue #links {
+	MARGIN: 26px 16px
+}
+#designologue #links H4 {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 0.9em;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 0px 30px;
+	COLOR: #85c329;
+	PADDING-TOP: 0px
+}
+#designologue #links UL {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 30px 40px;
+	PADDING-TOP: 0px;
+	LIST-STYLE-TYPE: none
+}
+#designologue #links UL LI {
+	PADDING-RIGHT: 0px;
+	BACKGROUND-POSITION: 0px 3px;
+	PADDING-LEFT: 28px;
+	FONT-SIZE: 0.8em;
+	BACKGROUND-IMAGE: url(/img/icons/glinks.gif);
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 0px 12px;
+	LINE-HEIGHT: 160%;
+	PADDING-TOP: 0px;
+	BACKGROUND-REPEAT: no-repeat
+}
+#designologue #links UL LI A.addedby {
+	COLOR: #b4b4b4
+}
+#designologue #links UL LI A.addedby:visited {
+	COLOR: #b4b4b4
+}
+#designologue #links UL LI A.addedby:active {
+	COLOR: #fb9622
+}
+#designologue #links UL LI A.addedby:hover {
+	COLOR: #fb9622
+}

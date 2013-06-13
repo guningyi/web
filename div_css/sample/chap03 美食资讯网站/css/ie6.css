@@ -1,0 +1,6 @@
+.transparent_png {
+    behavior: url(http://cdn.last.fm/pngbehavior2.htcc');
+}
+#jumpToDate {
+        display: inline;
+}

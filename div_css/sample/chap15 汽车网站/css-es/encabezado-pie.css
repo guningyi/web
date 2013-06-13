@@ -1,0 +1,150 @@
+.pie {
+	width: 995px;
+	position: relative;
+}
+.cabecera {
+	width: 994px;
+	height: 1.5em;
+}
+#barraPie {
+	width:995px;
+	height:8px;/*background-color: red;*/
+}
+.pieIz, .pieCentro, .pieDer {
+	position:relative;
+	float:left;
+}
+.pieIz {
+	height:8px;
+	background-image:url(../img/br_pieIzq.jpg);
+	width: 3px;
+	background-repeat:no-repeat;/*background-color: blue;*/
+}
+.pieCentro {
+	height:8px;
+	background-image:url(../img/br_pieCen.jpg);
+	background-repeat:repeat-x;
+	border: 1px none #000000;
+	width: 989px;/*background-color: blue;*/
+}
+.pieDer {
+	/*right: 0px;*/
+	height:8px;
+	background-image:url(../img/br_pieDer.jpg);
+	width: 3px;
+	background-repeat:no-repeat;/*background-color: blue;*/
+}
+.columnaIzquierdaPie {
+	z-index:10;
+	text-align: left;
+	float: left;
+}
+.columnaDerechaPie {
+	z-index:20;
+	text-align:right;
+	float: right;
+}
+.basicos, .basicosinferior, .basicosinferiorA, .cae {
+	margin:0;
+	list-style-type: none;
+	list-style-position: outside;
+	padding:0;
+}
+.cae {
+	margin: -12px 0 0 0;
+}
+.basicosinferiorA {
+	margin-top:6px;
+}
+.basicos {
+	padding:7px 0px 0px 0px;
+}
+.copyrigth {
+	color:#707070;/*#4a9024;*/
+	font-size: 0.75em;/*12px*/
+	font-family: Trebuchet MS;
+	text-decoration: none;
+	display: inline;
+}
+.copyrigth {
+	border-right: 1px none #262626;
+}
+.texto, .textoB, .textoC {
+	position:relative;
+	float: left;
+	margin: 0px;
+	padding:0px 6px 0px 6px;
+	line-height: 0.80em;
+}
+.textoB {
+	border-right: 1px solid #262626;
+}
+.textoC {
+	padding:0px 0px 0px 6px;
+}
+.iconoinferior {
+	margin-top: -4px;
+	float: left;
+	border: transparent;
+	border:none;
+}
+.iconoencpie .icono {
+	padding-right:5px;
+	padding-bottom:2px;
+}
+*:first-child+html .iconoencpie .icono {
+	padding:0px;
+}
+* html .iconoencpie .icono {
+	padding:0px;
+}
+.icono {
+	margin-top: -6px;
+	width: 6.81em;/*109px*/
+	height: 1.88em;/*30px*/
+	float: left;
+	border: transparent;
+	border:none;
+}
+.pieIcono {
+	position:relative;
+	float: left;
+	margin: 0px;
+	padding:0px 8px 0px 6px;
+	line-height: 0.8em;
+}
+*:first-child+html .pieIcono {
+	line-height: 0.95em;
+}
+* html .pieIcono {
+	line-height: 0.95em;
+}
+a.iconoencpie span.iconoventanafoto img.iconoventana {
+	width:13px;/*0.81em13px*/
+	height:12px;/*0.75em*12px*/
+	border:none;
+	border-color:transparent;
+	float:left;
+	top:2px;
+	position:relative;
+}
+*:first-child+html a.iconoencpie span.iconoventanafoto img.iconoventana {
+	top:-6px;
+	padding-right:4px;/*0.25em*/
+}
+* html a.iconoencpie span.iconoventanafoto img.iconoventana {
+	top:-6px;
+	padding-right:4px;/*0.25em*/
+}
+/*icono verde small, abre en nueva ventana*/
+.iconoinferior {
+	border:none;
+	border-color:transparent;
+}
+.iconoencpieinferior span img {
+	border:none;
+	border-color:transparent;
+	vertical-align:middle;
+	margin:8px 8px 0 0;
+	padding:0;
+}

@@ -1,0 +1,19 @@
+// JavaScript Document
+
+function clearText(thefield){
+	
+	if (thefield.defaultValue==thefield.value)
+		thefield.value = ""
+}
+
+
+function changeHighlightBar(elementID, bOver) {
+	elem = document.getElementById(elementID);
+	
+	if (bOver == true) {
+		elem.className = 'highlight-bar-blue';
+	}
+	else {
+		elem.className = 'highlight-bar-grey';
+	}
+}

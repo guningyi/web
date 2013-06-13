@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+/* LAYOUT 
+--------------------------------------------------------------*/
+#container{
+	position:relative;
+	width:100%;
+	text-align:center;
+	min-height:100%;
+	height:auto;
+}
+* html body #container{
+	height:99.9%;
+}
+
+/* FOOTER */
+#footer{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:38px;
+	overflow:hidden;
+	zoom:1;
+	width:100%;
+	background:#f8f8f8 url(../images/bg.gif) repeat-x;
+	text-align:center;
+}
+#footer .fPad{
+	width:970px;
+	margin:0 auto;
+}
+#footer ul{
+	height:38px;
+	float:left;
+	padding-left:10px;
+}
+#footer ul li{
+	display:inline;
+	margin-right:5px;
+}
+#footer p{
+	float:right;
+	padding-right:10px;
+}
+
+/* HEADER*/
+#header{
+	width:970px;
+	margin:0 auto;
+	text-align:left;
+	position:relative;
+}
+#header h1.logo,
+#header p.logo{
+	float:left;
+	width:180px;
+	padding-left:10px;
+	font-size:0;
+	line-height:0;
+	margin:0;
+}
+#header div.sub{
+	float:right;
+	width:670px;
+	height:47px;
+	overflow:hidden;
+}
+#header div.sub ul{
+	float:right;
+	padding-top:4px;
+	padding-right:10px;
+}
+#header div.sub ul li{
+	float:left;
+	margin-left:5px;
+}
+#header div.sub ul li p{
+	margin:7px 0 0 2px;
+	line-height:0px;
+}
+#header div.sub ul li p input#searchTxt{
+	border:none !important;
+	width:120px;
+	line-height:21px;
+	font-size:12px;
+	padding:3px 3px 0 20px;
+	*padding:0 3px 0 20px;
+	height:21px;
+	background:url(../images/bg_search_input.gif) no-repeat 0 0;
+	color:#343434;
+}
+#header div.sub ul li p input#searchBtn{
+	margin:-3px 0 0;
+	*margin:0;
+}
+#header div.gnav{
+	float:right;
+	width:670px;
+}
+#header div.gnav ul{
+	float:right;
+	padding-right:10px;
+}
+#header div.gnav ul li{
+	float:left;
+	padding-left:3px;
+	background:url(../images/separator.gif) no-repeat left top;
+}
+#header div.gnav ul li img{
+	display:block;
+}
+
+#header h1#cateName,
+#header p#cateName{
+	position:absolute;
+	top:0;
+	left:190px;
+	margin:0;
+	padding:0;
+	width:98px;
+	height:97px;
+	background:none !important;
+}
+#header h1#cateName a,
+#header p#cateName a{
+	display:block;
+}
+
+/* CATEGORY NAVI */
+#cateNavi{
+	width:100%;
+	height:47px;
+	background:url(../images/bg1.gif) repeat-x;
+}
+#cateNavi .cnavPad{
+	width:970px;
+	margin:0 auto;
+	text-align:left;
+}
+#cateNavi ul{
+	padding:0 0 0 10px;
+	margin:0;
+}
+#cateNavi ul li{
+	float:left;
+	margin:0 3px 0 0;
+}
+#cateNavi ul li img{
+	display:block;
+}
+
+#breadClumb{
+	width:970px;
+	margin:0 auto;
+	text-align:left;
+}
+#breadClumb ul{
+	padding:10px 0 30px 10px;
+}
+#breadClumb ul li{
+	display:inline;
+	margin-right:7px;
+	color:#999;
+}
+#breadClumb ul li strong{
+	font-weight:normal;
+}
+
+
+#contentsArea{
+	width:970px;
+	margin:0 auto;
+	padding-bottom:58px;
+	text-align:left;
+}
+#contentsArea #mainArea{
+	width:700px;
+	float:left;
+	*display:inline;
+	margin-left:10px;
+}
+
+
+#contentsArea #mainArea p.pageUp{
+	text-align:right;
+	margin:20px 0 0 0;
+}
+#contentsArea #mainArea p.pageUp a{
+	background:url(../images/icn_up.gif) no-repeat 0 0.5em;
+	padding-left:11px;
+	color:#0083c4;
+}
+
+/* RIGHT AREA */
+#contentsArea #rightArea{
+	width:210px;
+	float:right;
+	*display:inline;
+	margin-right:10px;
+}
+
+
+
+/* SUB WINDOW
+--------------------------------------------------------------------*/
+body.subWindow{
+/* basic.cssɋL */
+}
+body.subWindow #header{
+	width:700px;
+	height:87px;
+	overflow:hidden;
+}
+body.subWindow #header p.logo{
+	float:none;
+	padding-left:0;
+}
+body.subWindow #contentsArea{
+	width:740px;
+	text-align:center;
+}
+body.subWindow #contentsArea #mainArea{
+	width:700px;
+	float:none;
+	margin:0 auto;
+	display:block;
+	text-align:left;
+}
+
+body.subWindow #footer{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:38px;
+	overflow:hidden;
+	zoom:1;
+	width:100%;
+	background:#f8f8f8 url(../images/bg.gif) repeat-x;
+	text-align:center;
+}
+body.subWindow #footer p{
+	width:700px !important;
+	margin:0 auto;
+	padding:0;
+	float:none;
+	text-align:right;
+}

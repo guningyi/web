@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* 印刷用定義
+--------------------------------------------------------------*/
+*{
+	background:none !important;
+}
+#header div.sub,
+#header div.gnav,
+#cateNavi,
+#breadClumb,
+p.pageUp,
+#rightArea,
+#footer ul{
+	display:none;
+}
+#header{
+	width:700px;
+	border-bottom:solid 1px #ccc;
+}
+#contentsArea{
+	width:700px;
+}
+#footer{
+	position:relative !important;
+	width:700px !important;
+	margin:0 !important;
+	padding:0 !important;
+	border-top:solid 1px #ccc;
+	overflow:visible;
+}
+#footer .fPad{
+	width:700px !important;
+	margin:0 !important;
+	padding:0;
+}

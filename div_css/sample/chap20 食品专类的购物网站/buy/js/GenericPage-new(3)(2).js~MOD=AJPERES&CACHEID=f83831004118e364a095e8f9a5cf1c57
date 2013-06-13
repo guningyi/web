@@ -1,0 +1,60 @@
+/**
+ * Copyright © 2008 Woolworths Limited<br>
+ * 1 Woolworths Way Bella Vista NSW 2153 Australia
+ * <p>
+ * All rights reserved.
+ * <p>
+ * This software is the confidential and proprietary information of Woolworths Limited. You shall
+ * not disclose such confidential information and shall use it only in accordance with the terms of
+ * the licence agreement you entered into with Woolworths Limited. No part of this document may be
+ * presented, reproduced or copied in any form or by any means (graphical, electronic or mechanical
+ * including photocopying, recording tape or by any information storage and retrieval system)
+ * without the express written permission of Woolworths Ltd.
+ * <p>
+ * 02/09/2008 3:04:15 pM
+ */
+var params ={};
+var attributes = {};
+
+
+
+function insertHeading(description) {
+  if (description != "") {
+    document.write('<h1 class="portlet-section-header">');
+    document.write(description);
+    document.write('</h1>');
+
+  }
+}
+
+
+/*function insertFlashAnimation(flashurl, width, height,vars,altAttr) {
+
+  params.wmode = "transparent";
+  if(vars != ""){
+        params.flashvars=vars;
+  }
+  
+
+
+  if (flashurl != "") {
+    attributes.alt = altAttr;
+    
+    /*Please note altContent define in the content*/    
+ /*   swfobject.embedSWF(flashurl, "altContent", width , height, "8.0.0",false,false,params,attributes);
+    	 
+   
+  }
+}
+*/
+function insertFlashAnimation(flashurl, width, height,vars,altAttr) {
+	var params = {};
+	var attributes = {};
+	var flashvars = vars;
+ 	params.wmode = "transparent";
+	if (flashurl != "") {
+	  attributes.alt = altAttr;  
+	  /*Please note altContent define in the content*/    
+	  swfobject.embedSWF(flashurl, "altContent", width , height, "8.0.0",false,flashvars,params,attributes);
+	}
+}

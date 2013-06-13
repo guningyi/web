@@ -1,0 +1,311 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<TITLE>交友网站-首页</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<LINK href="css/global.css" type=text/css rel=stylesheet>
+<LINK href="css/facebook.css" type=text/css rel=stylesheet>
+<LINK href="css/homepage.css" type=text/css rel=stylesheet>
+<LINK media=screen href="css/cluetip.css" type=text/css rel=stylesheet>
+<LINK media=screen href="css/thickbox.css" type=text/css rel=stylesheet>
+<SCRIPT language=javascript src="js/handle_errors.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/maps" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.json.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.dimensions.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.hoverIntent.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.cluetip.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/cluetip.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/oppsearch.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.cookie.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/fontsize.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/helplink.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/jquery.thickbox-compressed.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/flow.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/facebook_util.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="js/homepage.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+
+    $(document).ready(function() {
+        renderFacebookElements();
+        updateAccountTab();
+    
+    
+    });
+//]]>
+</SCRIPT>
+</HEAD>
+<BODY style="FONT-SIZE: medium">
+<SCRIPT type=text/javascript>
+	var WRInitTime=(new Date()).getTime();
+</SCRIPT>
+<DIV id="container">
+  <DIV class=flowContainer id=loginContainer></DIV>
+  <DIV id=lightboxContainerContainer style="DISPLAY: none">
+    <DIV class="flowContainer closeable" id=lightboxContainer></DIV>
+  </DIV>
+  <DIV id=header>
+    <DIV id=headertop>
+      <DIV id=topnav>
+        <DIV id=loginStatus>
+          <UL>
+            <LI><A href="#">登录</A> | </LI>
+            <LI><A href="#">注册</A> | </LI>
+            <LI><A href="#">联系我们</A> | </LI>
+            <LI><A href="#">帮助中心</A> </LI>
+          </UL>
+        </DIV>
+      </DIV>
+      <p><A id=sponsorlink href="#" target=new></A></p>
+      <p><img src="image/banner01.jpg" /></p>
+    </DIV>
+    <DIV id=mainnav>
+      <UL>
+        <LI id=navigation_tab_search><A class="tab " href="#">首页 </A></LI>
+        <LI id=navigation_tab_volunteers><A class="tab " href="Activity.htm">活动 </A></LI>
+      </UL>
+    </DIV>
+  </DIV>
+  <DIV id=content>
+    <SCRIPT type=text/javascript>
+  $(document).ready(function() {
+    $('.vm-closealert').click(function() {
+      var p = $(this).parents('.vm-sitealert');
+      var alert_id = p.attr("alert_id");
+      p.hide();
+      var date = new Date();
+		  date.setTime(date.getTime()+(365*24*60*60*1000));
+      document.cookie = "alert" + alert_id + "=false; path=/; expires="+date.toGMTString();
+    });
+  });
+</SCRIPT>
+    <DIV id=columnmain>
+      <DIV id=searchbox>
+        <DIV id=rightsearch>
+          <H2>寻找知己</H2>
+          <DIV class=formerror id=searcherror style="DISPLAY: none">
+            <DIV class=formerror><IMG class=pngimg height=16 alt="" src="image/exclamation.png" width=16>&nbsp; <SPAN id=innererror></SPAN> </DIV>
+          </DIV>
+          <FORM id=oppsearchform name=oppsearchform method=get>
+            <DIV id=locationentry>
+              <LABEL class=overlabel for=location>地区</LABEL>
+              <INPUT class=field id=location title=Location tabIndex=1 maxLength=80 size=15 
+name=l>
+              <DIV 
+style="PADDING-LEFT: 3px; FONT-SIZE: 0.7em; COLOR: gray">例:&nbsp;<EM>上海</EM></DIV>
+            </DIV>
+            <DIV id=keywordsentry>
+              <LABEL class=overlabel for=keywords>交友标准</LABEL>
+              <INPUT class=field id=keywords title=Keywords tabIndex=2 maxLength=80 name=k>
+              <DIV 
+style="PADDING-LEFT: 3px; FONT-SIZE: 0.7em; COLOR: gray">例:&nbsp;<EM>女28岁</EM></DIV>
+            </DIV>
+            <input id=submitsearch type="button" value='搜索' name=submitsearch>
+            <BR>
+            <DIV id=geocodelocations style="DISPLAY: none"></DIV>
+            <DIV style="PADDING-TOP: 10px"> </DIV>
+          </FORM>
+          <P><A href="#">高级搜索</A></P>
+        </DIV>
+        <img src="image/s01.jpg" />
+        <DIV style="CLEAR: both"> </DIV>
+      </DIV>
+      <DIV id=volunteerbox>
+        <DIV id=volunteerheader>
+          <H3>最佳女会员</H3>
+          <UL id=vt>
+            <LI class="tabup tab" id=vt1> <A href="#/#vt1_s"><SPAN style="DISPLAY: none">交友宣言 </SPAN>1</A> </LI>
+            <LI class=tab id=vt2><A href="#/#vt2_s"><SPAN 
+  style="DISPLAY: none">交友宣言 </SPAN>2</A> </LI>
+            <LI class=tab id=vt3><A href="#/#vt3_s"><SPAN 
+  style="DISPLAY: none">交友宣言 </SPAN>3</A> </LI>
+            <LI class=tab id=vt4><A href="#/#vt4_s"><SPAN 
+  style="DISPLAY: none">交友宣言 </SPAN>4</A> </LI>
+          </UL>
+        </DIV>
+        <DIV id=vt1_s> <a href="Member.htm"> <IMG class=imgleft alt="" src="image/001.jpg" border="0"> </a>
+          <DIV class=subinfo>
+            <H4><a href="Member.htm">菲儿139</a></H4>
+            <P>女/20岁</p>
+            <p>北京/北京</p>
+            <p> 大家好，很高兴认识大家。 </P>
+            <P><STRONG><A href="Member.htm">详细交友资料</A></STRONG></P>
+          </DIV>
+        </DIV>
+        <DIV id=vt2_s style="DISPLAY: none"><IMG class=imgleft alt="" src="image/002.jpg">
+          <DIV class=subinfo>
+            <H4>静秋-</H4>
+            <P>女/32岁</P>
+            <p>湖南/长沙</p>
+            <p> 拥抱阳光不是罪！
+              &nbsp;</P>
+            <P><STRONG><A 
+href="#">详细交友资料</A></STRONG></P>
+          </DIV>
+        </DIV>
+        <DIV id=vt3_s style="DISPLAY: none"><IMG class=imgleft alt="" src="image/003.jpg">
+          <DIV class=subinfo>
+            <H4>小奶茶</H4>
+            <P>女/22岁</P>
+            <p> 辽宁/大连</p>
+            <p> 希望对方真诚稳重，性格乐观开朗... </P>
+            <P><STRONG><A 
+href="#">详细交友资料</A></STRONG></P>
+          </DIV>
+        </DIV>
+        <DIV id=vt4_s style="DISPLAY: none"><IMG class=imgleft alt="" src="image/004.jpg">
+          <DIV class=subinfo>
+            <H4>小笨笨</H4>
+            <P>
+            <P>女/20岁</P>
+            <p> 江苏/南京</p>
+            <p> 很聪明的人 </P>
+            <P><STRONG><A 
+href="#">详细交友资料</A></STRONG></P>
+          </DIV>
+        </DIV>
+      </DIV>
+      <DIV id=nonprofitbox>
+        <DIV id=nonprofitheader>
+          <H3>最佳男会员</H3>
+          <UL id=nt>
+            <LI class="tabup tab" id=nt1><A 
+  href="#/#nt1_s"><SPAN 
+  style="DISPLAY: none">交友宣言</SPAN>1</A> </LI>
+            <LI class=tab id=nt2><A href="#/#nt2_s"><SPAN 
+  style="DISPLAY: none">交友宣言 </SPAN>2</A> </LI>
+            <LI class=tab id=nt3><A href="#/#nt3_s"><SPAN 
+  style="DISPLAY: none">交友宣言 </SPAN>3</A> </LI>
+            <LI class=tab id=nt4><A href="#/#nt4_s"><SPAN 
+  style="DISPLAY: none">交友宣言 </SPAN>4</A> </LI>
+          </UL>
+        </DIV>
+        <DIV id=nt1_s><IMG class=imgleft alt="" src="image/005.jpg">
+          <DIV class=subinfo>
+            <H4>缘唻是你</H4>
+            <P>男/28岁</P>
+            <p> 湖南/怀化</p>
+            <p> 我是一个真诚快乐的青年，讨厌做作，喜欢人与人之间真诚相对，尊重别人，重情重义．</P>
+            <P><STRONG><A href="#">详细交友资料</A></STRONG></P>
+          </DIV>
+        </DIV>
+        <DIV id=nt2_s style="DISPLAY: none"><IMG class=imgleft alt="" src="image/006.jpg">
+          <DIV class=subinfo>
+            <H4>枫之子</H4>
+            <P>男/21岁</P>
+            <p> 北京/北京</p>
+            <p> 我想有个家，一个不需要太大的地方…… 我梦想的家，是...</P>
+            <p></p>
+            <P><STRONG><A 
+href="#">详细交友资料</A></STRONG></P>
+          </DIV>
+        </DIV>
+        <DIV id=nt3_s style="DISPLAY: none"><IMG class=imgleft alt="" src="image/007.jpg">
+          <DIV class=subinfo>
+            <H4>荷塘月色</H4>
+            <P>男/28岁</P>
+            <p> 北京/北京</p>
+            <p> 我要的爱情 或许是在茫茫人海中 和某人相遇 ... </P>
+            <p></p>
+            <P><STRONG><A 
+href="#">详细交友资料</A></STRONG></P>
+          </DIV>
+        </DIV>
+        <DIV id=nt4_s style="DISPLAY: none"><IMG class=imgleft alt="" src="image/008.jpg">
+          <DIV class=subinfo>
+            <H4>缘分天空</H4>
+            <P>男/26岁</p>
+            <p>甘肃/兰州</p>
+            <p> 成熟。比较内向。是个只带耳朵，不带嘴的家伙。各种雕虫... </P>
+            <p></p>
+            <P><STRONG><A 
+href="#">详细交友资料</A></STRONG></P>
+          </DIV>
+        </DIV>
+      </DIV>
+      <DIV id=subbox1> <a href="#"><img class=subboximg alt="明星会员" src="image/023.jpg"></a>
+        <H4 class=bold>成为明星会员</H4>
+        <P>成为明星，交更多的朋友 </P>
+        <P><STRONG><A href="#">查看详细</A></STRONG></P>
+      </DIV>
+      <DIV id=subbox2><A href="#"><IMG class=subboximg width="230" height="120" alt="快速配对" src="image/009.jpg"></A>
+        <H4 class=bold>男女会员快速配对</H4>
+        <P>本站特色：快速配对。为您节约时间。 </P>
+        <P><STRONG><A href="#">查看详细</A></STRONG></P>
+      </DIV>
+      <DIV id=subbox3> <a 
+href="#"><img class=subboximg alt="会员博客" width="230" height="120" src="image/010.jpg"></a>
+        <H4 class=bold>会员博客</H4>
+        <P>我们提供专业的博客 您可以上传你的图片写下您的心情 </P>
+        <P><STRONG><A href="#">进入博客 </A></STRONG></P>
+      </DIV>
+    </DIV>
+    <DIV id=columnside>
+      <DIV id=aboutbox>
+        <DIV>
+          <H3>最新活动</H3>
+          <A href="#"><IMG width="100" height="100"
+class=imgright title="Activity Map" 
+style="BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" alt="Activity Map" src="image/011.jpg"></A>
+          <P>本站将于5.28在上海举行一次大型相亲会,请网友们参加，谢谢！</P>
+          <P><A href="#">参加活动</A></P>
+        </DIV>
+      </DIV>
+      <DIV class=homepagebox>
+        <H3>金牌会员</H3>
+        <P>成为金牌会员,我们会优先推荐活动聚会等</P>
+        <P><STRONG>
+          <input type="submit" value="成为金牌会员">
+          </STRONG></P>
+      </DIV>
+      <DIV id=subsearchbox>
+        <H3>征婚</H3>
+        <P>想找到你的另一半吗？开始搜索吧</P>
+        <FORM action=/search/ method=get>
+          <INPUT type=hidden value=true name=v>
+          <input 
+class=field id=keyword maxlength=15 size=15 value="关键字" name=k2>
+          <input class=button type="button" value="确 定" name=submit>
+        </FORM>
+        <P>输入关键字来寻找您的另一半</P>
+      </DIV>
+    </DIV>
+    <DIV style="CLEAR: both"></DIV>
+  </DIV>
+  <DIV id=footer>
+    <UL>
+      <LI><A title="关于我们" href="#">关于我们</A> |
+      <LI><A title="最新动态" 
+  href="#">最新动态</A> |
+      <LI><A title="招贤纳士" href="#">招贤纳士</A> |
+      <LI><A href="#">会员排行</A> |
+    </UL>
+  </DIV>
+</DIV>
+<SCRIPT type=text/javascript>
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  var scr = "<" + "script src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'" + ">" + "<" + "/script" + ">";
+  document.write(scr);
+</SCRIPT>
+<SCRIPT type=text/javascript>
+  try{
+    var sTracker = _gat._getTracker("UA-937784-1");
+    sTracker._initData();
+    sTracker._trackPageview();
+
+    var rTracker = _gat._getTracker("UA-937784-79");
+    rTracker._initData();
+    rTracker._trackPageview();
+
+  } catch(err) {}
+</SCRIPT>
+<!-- ClickTale Bottom part -->
+<DIV id=ClickTaleDiv style="DISPLAY: none"></DIV>
+<SCRIPT src="VolunteerMatch - Where Volunteering Begins.files/WRb.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>
+if(typeof ClickTale=='function') ClickTale(17029,0.0007);
+</SCRIPT>
+<!-- ClickTale end of Bottom part -->
+</BODY>
+</HTML>

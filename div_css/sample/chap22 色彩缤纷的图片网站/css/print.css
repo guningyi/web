@@ -1,0 +1,120 @@
+/* =basics
+--------------------------------------------------------------- */
+body {
+	color: #000;
+	background-color: #fff;
+	text-align: left;
+	margin: 0;
+	padding: 0.5em;
+	font: 11pt/15pt Arial, Georgia, "Times New Roman", Times, serif;
+	}
+
+/* =ausblenden nicht verwendeter elemente fuer druck
+--------------------------------------------------------------- */
+#accesskeys, #head, #headswf, .abisz, #navigation, #unternavigation, #top, #footer, form#FormName, #page13 h2, h1.temptitel, img.lupe {
+	display: none;
+	}
+
+ul#breadcrumb {
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 0.8em;
+	}
+ul#breadcrumb li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	padding-right: 0.8em;
+	}
+
+/* =links
+--------------------------------------------------------------- */
+a:link {
+	color: #9d9d9d;
+	text-decoration: underline
+	}
+a:link:after, a:link:visited:after {
+	color: #9d9d9d;
+	}
+p, table, .normal {
+	color: #000;
+	font: 11pt/15pt Arial, Georgia, "Times New Roman", Times, serif;
+	}
+h1, .titel {
+	font-size: 20pt;
+	font-weight: bold;
+	line-height: 22pt;
+	margin-top: 1em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #666
+	}
+h2 {
+	font-size: 18pt;
+	font-weight: bold;
+	line-height: 20pt;
+	}
+h3, .untertitel {
+	font-size: 16pt;
+	font-weight: bold;
+	line-height: 18pt;
+	}
+h4 {
+	font-size: 12pt;
+	font-weight: bold;
+	line-height: 16pt;
+	}
+hr {
+	color: #000;
+	background-color: #000;
+	height: 1px;
+	border: 0
+	}
+ul {
+	
+	}
+ol {
+	
+	}
+table {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0
+	}
+th {
+	font-weight: bold;
+	text-align: left;
+	padding: 0.1em 1em 0.1em 0;
+	}
+td {
+	vertical-align: top;
+	padding: 0.1em 1em 0.1em 0;
+	}
+img {
+	float: right;
+	padding: 0 0 10px 15px;
+	border: 0;
+	}
+/* dokumente */
+a.pdf {
+	background-image: url(../image/icon_pdf_klein.gif");
+	}
+a.doc, a.rtf {
+	background-image: url(../image/icon_word_klein.gif");
+	}
+a.xls {
+	background-image: url(../image/icon_excel_klein.gif");
+	}
+a.pps {
+	background-image: url(../image/icon_powerpoint_klein.giff");
+	}
+a.zip {
+	background-image: url(../image/icon_zip_klein.giff");
+	}
+a.document {
+	background-position: 0 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	}

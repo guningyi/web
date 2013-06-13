@@ -1,0 +1,30 @@
+body {
+	background:transparent url(../img/right_bg_2.jpg) no-repeat scroll center 188px;
+}
+.h {
+	height: 237px;
+	margin-top: 0px;
+}
+.h1 {
+	margin-top:18px;
+}
+.h2 {
+	float:left;
+	position:absolute;
+	top:194px;
+	left:76px;
+	z-index:10;
+	margin:0px;
+	padding:0px;
+	margin-top: 18px;
+}
+.h0 {
+	display: block;
+}
+.d {
+	position:relative;
+	top:0px;
+}
+.d-main {
+	padding-top:18px;
+}

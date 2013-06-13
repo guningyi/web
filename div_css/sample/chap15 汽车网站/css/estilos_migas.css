@@ -1,0 +1,112 @@
+
+/*************** MIGAS *******************/
+div.tituloNivel
+{
+	/*border-top: 2px black dotted;
+	border-bottom: 2px black  dotted;*/
+	width:230px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 15px 0px;
+	text-align: left;
+
+}
+div.tituloNivel h2.nivel2{
+	color: #66ab05;
+	font-family: "Trebuchet MS", verdana, sans-serif;
+	text-decoration:none; 
+	font-size: 1.5em;
+	line-height: 25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align:left;
+
+}
+
+div.migasNiveles
+{
+
+	text-align: right;
+	border-top: 1px #dae5d7 dotted;
+	border-bottom: 1px #dae5d7 dotted;
+	height: 25px !important;
+	vertical-align: middle;
+}
+div.migasNiveles span.nivelSeleccionado{
+	color: #ff7800;
+	font-family: "Trebuchet MS", verdana, sans-serif;
+	text-decoration:none; 
+	text-align: left !important;
+	font-size: 11px;
+
+}
+div.migasNiveles span.niveles{
+	color: #707070;
+	font-family: "Trebuchet MS", verdana, sans-serif;
+	text-decoration:none; 
+	text-align: left !important;
+	font-size: 11px;
+
+}
+a.migasURL {
+	color: #707070;
+	font-family: "Trebuchet MS", verdana, sans-serif;
+	text-decoration:none; 
+	text-align: left !important;
+	font-size: 11px;
+}
+a:hover.migasURL {
+	color: #ff7800;
+	font-family: "Trebuchet MS", verdana, sans-serif;
+	text-decoration:none; 
+	text-align: left !important;
+	font-size: 11px;
+}
+
+
+div.contentmigas{
+	width:742px;
+	background-image:url(../img/fondomigas.gif);
+	background-repeat:repeat-x;
+	height:2em;
+	float:right;
+	text-align:right;
+	/*border-bottom:5px solid #FFFFFF;*/
+	padding:4px 0px 0px 0px;
+	font-family: "Trebuchet MS", verdana, sans-serif;
+	color:#ff7800;
+	font-size:0.688em;
+	margin:0px;
+}
+div.contentmigas div.migasderecha{
+	float:right;
+}
+div.contentmigas  ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	float:  left;
+}
+div.contentmigas  ul li{
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+div.contentmigas span.estasen{
+	float:left
+}
+div.contentmigas  ul li a{
+	color:#707070;
+	text-decoration:none;
+	font-family: "Trebuchet MS", verdana, sans-serif;
+	float:left;
+}
+div.contentmigas  ul li a:hover{
+	color: #ff7800;
+	text-decoration:none; 
+
+	
+}
+
+/************** FIN MIGAS *******************/
+

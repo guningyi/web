@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>index</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/sIFR-screen.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="css/sIFR-print.css" media="print" />
+<link type="text/css" rel="stylesheet" href="css/facebox.css" media="screen" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
+<script type="text/javascript" src="js/sifr.js"></script>
+<script type="text/javascript" src="js/sifr-addons.js" ></script>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/smooth_scroll.js"></script>
+<script type="text/javascript" src="js/jquery.filestyle.js"></script>
+<script type="text/javascript" src="js/facebox.js"></script>
+<script type="text/javascript" src="js/ajaxupload.3.6.js"></script>
+<script type="text/javascript" src="js/jquery.popupwindow.js"></script>
+<script type="text/javascript" src="js/library.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/all.css" />
+<link media="all" type="text/css" rel="stylesheet" href="css/en-US.css" />
+<script type="text/javascript" src="js/en-US.js"></script>
+</head>
+<body>
+<form name="aspnetForm" method="post" id="aspnetForm" enctype="multipart/form-data">
+  <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+  <script src="bak01/www.bakmagazine.com/WebResource.axd~d=jY3FmbFcSUf0vJ-05jPLyQ2&amp;t=633912597471213750.js" type="text/javascript"></script>
+  <div id="main-container">
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("div.middle-line-right div:gt(0)").hide();
+            $("div.cover img:gt(0)").hide();
+
+            $("ul.cover-selector li").each(function(i) {
+                $(this).click(function() {
+                    $("ul.cover-selector li a").removeClass("active");
+                    $("ul.cover-selector li a:eq(" + i + ")").addClass("active");
+
+                    $("div.middle-line-right div").hide();
+                    $("div.cover img").hide();
+                    $("div.middle-line-right div:eq(" + i + ")").show();
+                    $("div.cover img:eq(" + i + ")").show();
+                });
+            });
+
+            $("a#pc-download").click(function() {
+                var issue = $('[id$=ddlIssues]').val();
+                if (issue != '') {
+                    window.location = '/download/' + issue + '/windows';
+                }
+                else {
+                    jQuery.facebox(_chooseissue);
+                }
+            });
+
+            $("a#mac-download").click(function() {
+                var issue = $('[id$=ddlIssues]').val();
+                if (issue != '') {
+                    window.location = '/download/' + issue + '/mac';
+                }
+                else {
+                    jQuery.facebox(_chooseissue);
+                }
+            });
+
+            $("a#details").click(function() {
+                var issue = $('[id$=ddlIssues]').val();
+                if (issue != '') {
+                    window.location = '/' + _magazine + '/' + issue;
+                }
+                else {
+                    jQuery.facebox(_chooseissue);
+                }
+            });
+
+            $("a#pc-download").click(function() {
+                var issue = $('[id$=ddlIssues]').val();
+                if (issue != '') {
+                    window.location = '/download/' + issue + '/windows';
+                }
+                else {
+                    jQuery.facebox(_chooseissue);
+                }
+            });
+
+            $("a#online").popupWindow({
+                height: 768,
+                width: 1024,
+                centerBrowser: 1,
+                windowName: 'bakonline'
+            });
+
+            $(".search-go").click(function() {
+                var q = $('[id$=txtSearch]').val();
+                window.location = '/' + _search + '/' + q;
+                return false;
+            });
+
+            $("a#online").attr("href", _onlinedomain + '?issue=' + $('[id$=ddlIssues]').val());
+            $('[id$=ddlIssues]').change(function() {
+                $("a#online").attr("href", _onlinedomain + '?issue=' + $('[id$=ddlIssues]').val());
+                return false;
+            });
+        });
+    </script>
+    <div class="top">
+      <div class="top-left"> <a id="ctl00_Header1_linkLogo" class="logo" href="index.html">首页</a> </div>
+    </div>
+    <div class="menu-cover">
+      <div class="menu-area">
+        <ul id="navigation">
+          <li id="navigation-1"><a id="ctl00_Header1_linkMagazine"  href="index.html"></a></li>
+          <li id="navigation-2"><a id="ctl00_Header1_linkInterviews"  href="interviews.html"></a></li>
+          <li id="navigation-3"><a id="ctl00_Header1_linkBakAtMe"  href="magazine.html"></a></li>
+          <li id="navigation-4"><a id="ctl00_Header1_linkContact"  href="interviews.html"></a></li>
+          <li id="navigation-5"><a id="ctl00_Header1_linkGoodies"  href="magazine.html"></a></li>
+          <li id="navigation-6"><a id="ctl00_Header1_linkGetRss"  href="interviews.html"></a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <input  type="text"  class="search" />
+        <input type="submit"  value="" class="search-go" />
+        <div class="clearfix"></div>
+        
+        <div class="clearfix"></div>
+        <a id="ctl00_Header1_linkDownload" class="download">download</a> </div>
+      <div class="cover"> <a  href="#"><img src="img/79292fef-14da-4bf0-ac58-ba4a05ece525.jpg" style="border-width:0px;" /></a> <a  href="#"><img  src="img/d02220f5-3349-41d3-90cc-e574ab1221d2.jpg" style="border-width:0px;display:none" /></a> <a href="#"><img src="img/3ee24ccc-4e16-4892-82a0-805a138b319d.jpg"  style="border-width:0px;display:none" /></a> </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="middle-line">
+      <div class="middle-dummy"></div>
+      <div class="middle-line-left">
+        <select class="select-issue2">
+          <option value="15" selected="selected">-- 近1周------</option>
+          <option value="14">-- 近1月 ------</option>
+          <option value="13">-- 近3月 ------</option>
+          <option value="12">-- 近半年 ------</option>
+        </select>
+        <ul class="issue-download">
+          <li class="pc"><a id="pc-download" >流行</a></li>
+          <li class="mac"><a id="mac-download" >时尚</a></li>
+          <li class="online"><a id="online">电子书</a></li>
+          <li class="details"><a id="details"  >注册</a></li>
+        </ul>
+      </div>
+      <div class="middle-line-right">
+        <div >
+          <h5 class="pink-announce">《春晓》每一位学生都值得赞美 </h5>
+          <span>《风格品位志》周迅 幸好还有你 </span> </div>
+        <div class="hidden">
+          <h5 class="pink-announce">《东西》传奇的安特卫普 </h5>
+          <span>《家庭医师》喉中异物感 半夏厚朴汤 </span> </div>
+        <div class="hidden">
+          <h5 class="pink-announce">《花溪》甜蜜的美丽攻略 </h5>
+          <span>《看世界》谁阻挠张学良回归大陆? </span> </div>
+      </div>
+      <ul class="cover-selector">
+        <li class="no1"><a class="active" href="javascript:void(0);" title="1">1</a></li>
+        <li class="no2"><a href="javascript:void(0);" title="2">2</a></li>
+        <li class="no3"><a href="javascript:void(0);" title="3">3</a></li>
+      </ul>
+    </div>
+    <div class="middle-big">
+      <div class="middle-big-left">
+        <script type="text/javascript">
+                $(document).ready(function() {
+                    $(".blog-share").click(function() {
+                        $(this).next(".hit").next(".blog-social-networks").slideToggle(300);
+                    });
+
+                    $(".blog-share-list li a").click(function() {
+                        var nod = $(this).attr("rel");
+                        var title = $(this).parent().parent().next("input");
+                        var url = title.next("input");
+                        blogshare(nod, title.val(), url.val());
+                    });
+                });
+            </script>
+        <h4 class="blog">时尚杂志推荐</h4>
+        <a class="submit-entry" href="#"></a>
+        <div class='blog-entries'> 
+        <a  class="name" href="#" target="_blank">时尚时间</a> 
+        <a  class="url" rel="no-follow" href="#" target="_blank">一本阅读人数随中国钟表珠宝市场同步上涨的杂志</a> 
+        <a class="thumb" rel="no-follow" href="#" target="_blank"><img  src="img/blog/d90328c2-e98b-4aec-8ce5-2de907b5fe62.jpg"  style="border-width:0px;" /></a>
+          <p>一本以钟表、珠宝为主题元素的时尚生活杂志一本最了解中国内地钟表珠宝消费市场的行业性杂志　 <strong>2010-5月刊 </strong></p>
+          <span class="date">2010-05-01</span> <a class="blog-share" href="#">阅读</a> <span class="hit">点击: 313&nbsp; | &nbsp;</span>
+         
+          <div class="clearfix"></div>
+        </div>
+        <div class='blog-entries'> <a class="name" rel="no-follow" href="#" target="_blank">时尚先生</a> <a  class="url" rel="no-follow" href="#" target="_blank">时尚电子杂志内容全部摘抄时尚实体纸质杂志</a> <a class="thumb" rel="no-follow" href="#" target="_blank"><img src="img/blog/2f458952-1731-4683-8d5e-4a205962cb40.jpg" style="border-width:0px;" /></a>
+          <p>一本阅读人数随中国钟表珠宝市场同步上涨的杂志　　一本被读者推崇为时尚集团最具收藏价值的杂志 </p>
+          <span class="date">2010-4-23</span> <a class="blog-share" href="#">阅读</a> <span class="hit">点击: 343&nbsp; | &nbsp;</span>
+          <div class="clearfix"></div>
+        </div>
+        <div class='blog-entries'> <a  class="name" rel="no-follow" href="#" target="_blank">男人装</a> <a  class="url" rel="no-follow" href="#" target="_blank">《男人装》为时尚媒体集团在2004年隆重推出的一本男性综合类时尚杂志</a> <a class="thumb" rel="no-follow" href="#" target="_blank"><img  src="img/blog/74ab950c-93fe-4933-b350-4092ce63a915.jpg"  style="border-width:0px;" /></a>
+          <p>《男人装》为时尚媒体集团在2004年隆重推出的一本男性综合类时尚杂志，它开宗明义就是要做“男人的真性情杂志”...</p>
+          <span class="date">2010-4-22</span> <a class="blog-share" href="#">阅读</a> <span class="hit">点击: 184&nbsp; | &nbsp;</span>
+         
+          <div class="clearfix"></div>
+        </div>
+        <div class='blog-entries'> <a class="name" rel="no-follow" href="#" target="_blank">芭莎男士</a> <a class="url" rel="no-follow" href="#" target="_blank">作为中国最具影响力的高级时尚杂志《时尚芭莎》的延伸品牌</a> <a  class="thumb" rel="no-follow" href="#" target="_blank"><img id="ctl00_ContentPlaceHolder1_Bloglist1_lvBlogs_ctrl3_imageBlogImage" src="img/blog/0d338e8b-9fd5-41a5-911b-d259195531ab.jpg" style="border-width:0px;" /></a>
+          <p>作为中国最具影响力的高级时尚杂志《时尚芭莎》的延伸品牌，《芭莎男士》自2003年起，以塑造中国男士的成功品位为己任，5年经验厚积薄发，奠定了广泛的杂志知名度和精英男性读者的需求。</p>
+          <span class="date">2010-4-22</span> <a class="blog-share" href="#">阅读</a> <span class="hit">点击: 221&nbsp; | &nbsp;</span>
+          
+          <div class="clearfix"></div>
+        </div>
+        <div class='blog-entries'> <a  class="name" rel="no-follow" href="#" target="_blank">《时尚健康》（男士）</a> <a  class="url" rel="no-follow" href="#" target="_blank">Men’s Health是国内第一本高档男性减压杂志。</a> <a  class="thumb" rel="no-follow" href="#" target="_blank"><img  src="img/blog/14a94e1a-ef7e-4b9c-83f7-1dac48e3df7b.jpg" style="border-width:0px;" /></a>
+          <p>在同类型男性杂志中，《Men’s Health》销量增加最迅速。 拥有深厚的国际媒体运作实力，强大的《时尚》出版队伍，与已经具有353万发行量的国外知名男性刊物的版权合作。</p>
+          <span class="date">2010-4-19</span> <a class="blog-share" href="#">阅读</a> <span class="hit">点击: 882&nbsp; | &nbsp;</span>
+         
+          <div class="clearfix"></div>
+        </div>
+        <div class='blog-entries'> <a  class="name" rel="no-follow" href="#" target="_blank">座驾</a> <a  class="url" rel="no-follow" href="#" target="_blank">通过版权合作，可以充分享用美国先锋汽车杂志</a> <a  class="thumb" rel="no-follow" href="http://www.bakmagazine.com/redirect/blog/618" target="_blank"><img  src="img/blog/1445ecba-0c05-43e0-8842-3bf01743f370.jpg" style="border-width:0px;" /></a>
+          <p>《座驾》的编辑团队拥有多年《时尚·Esquire》的创作经验，充分了解读者的需求及时尚的汽车生活。拥有成熟的发行渠道及优秀的《时尚》系列刊物读者资源。以汽车为主体，定位于高收入群体，读者商业价值巨大。汽车专业内容详尽，独特的媒体观点，注重文章的深度及客观性。 ...</p>
+          <span class="date">2010-4-18</span> <a  class="blog-share" href="#">阅读</a> <span class="hit">点击: 382&nbsp; | &nbsp;</span>
+          
+          <div class="clearfix"></div>
+        </div>
+        <div class='blog-entries'> <a class="name" rel="no-follow" href="#" target="_blank">时尚家居</a> <a  class="url" rel="no-follow" href="#" target="_blank">诞生于1999年4月，是中国第一本关于现代家居潮流的精品期刊，也是国内最成功的且发行量最大的家居类杂志。</a> <a class="thumb" rel="no-follow" href="#" target="_blank"><img src="img/blog/9b414aad-b82f-4267-9ff8-5779923f79a2.jpg"  style="border-width:0px;" /></a>
+          <p>《时尚家居》不是一本单纯的家庭装修设计杂志，也不仅仅是展示、炫耀豪华家具的画刊，她是为大家编织的一个对家的梦想，我们相信热爱生活、热爱家庭的人最执著的莫过于把梦想变成现实，这是人们生活中最大的幸福和最强劲的动力。 </p>
+          <span class="date">4/17/2010</span> <a class="blog-share" href="#">阅读</a> <span class="hit">点击: 296&nbsp; | &nbsp;</span>
+         
+          <div class="clearfix"></div>
+        </div>
+        
+        <div class="middle-left-end">
+          <div >
+            <input type="text" value="请输入" class="subscribe" />
+            <a  class="sub" href="#" style="font-weight:bold;">搜索</a> <span class="unsub">|</span> <a class="unsub" href="#">订阅电子杂志</a> </div>
+          <span class="message"></span> </div>
+        <div class="outer-end">
+         
+          <span class="yellow-text">我想找</span><span class="blue-text"> 最新的时尚杂志，最火的杂志</span>
+          <input  type="text" class="ithink" />
+          <input type="submit" value="" class="ithink-button" />
+        </div>
+      </div>
+      <div class="middle-big-right">
+        <div class="middle-big-right-1">
+          <script type="text/javascript" src="js/bakatme.js" ></script>
+          <h3 class="bakatme"></h3>
+          <a  class="addyoursite" href="#">注册</a>
+          <div class="middle-right-sort">
+            <select  class="sort-site">
+              <option selected="selected" value="0">所有杂志</option>
+              <option value="1">昨天的</option>
+              <option value="2">近2天的</option>
+              <option value="3">近3天的</option>
+              <option value="7">近一周的</option>
+              <option value="30">近一月的</option>
+              <option value="90">近3月的</option>
+              <option value="365">近一年的</option>
+            </select>
+            <span class="sort"> 类别 <a class="right-yellow1" href="#">女性</a>|<a class="right-yellow1" href="#">男士</a>|<a  class="right-yellow1" href="#">潮流</a> </span> </div>
+          <div class="middle-right-content">
+            <ul class="bakatme">
+              <li > <a rel="no-follow" href="#" target="_blank"><img class="website-images" src="img/82bebe25-bfc6-46c3-b038-c2979cb6d5ba.jpg" style="border-width:4px;border-style:solid;" /></a> <img class="flag" src="img/flags/gb.gif" style="border-width:0px;" /> <a class="name" rel="no-follow" href="#" target="_blank">时尚家居</a> <span class="rating-point"></span>
+                
+                
+                <span class="hit-counts">17</span> <span class="hit-count">点击</span> </li>
+              <li > <a rel="no-follow" href="#" target="_blank"><img class="website-images" src="img/43114797-8087-4e76-ad8e-650a527a369a.jpg" style="border-width:4px;border-style:solid;" /></a> <img  class="flag" src="img/flags/fr.gif" style="border-width:0px;" /> <a   class="name" rel="no-follow" href="#" target="_blank">时尚时间</a> <span class="rating-point"></span>
+               
+                <span class="hit-counts">157</span> <span class="hit-count">点击</span> </li>
+              <li  class="nomargin"> <a rel="no-follow" href="#" target="_blank"><img class="website-images" src="img/5885408a-2756-4a1f-9080-0688f2d4ddb5.jpg" style="border-width:4px;border-style:solid;" /></a> <img  class="flag" src="img/flags/fr.gif"  /> <a  class="name" rel="no-follow" href="#" target="_blank">男人装</a> <span class="rating-point"></span>
+               
+                <span class="hit-counts">133</span> <span class="hit-count">点击</span> </li>
+              <li > <a rel="no-follow" href="http://www.bakmagazine.com/redirect/792" target="_blank"><img class="website-images" src="img/33c0ca64-45a4-4d6a-b2f8-d9dd2b300b02.jpg"  style="border-width:4px;border-style:solid;" /></a> <img class="flag" src="img/flags/us.gif"  style="border-width:0px;" /> <a class="name" rel="no-follow" href="#" target="_blank">时尚健康</a> <span class="rating-point"></span>
+                
+                <span class="hit-counts">134</span> <span class="hit-count">点击</span> </li>
+              <li > <a  rel="no-follow" href="#" target="_blank"><img  class="website-images" src="img/dae74adb-53e9-4e84-9124-e94e70bbacdd.jpg"  style="border-width:4px;border-style:solid;" /></a> <img  class="flag" src="img/flags/us.gif" style="border-width:0px;" /> <a class="name" rel="no-follow" href="#" target="_blank">座驾</a> <span class="rating-point"></span>
+                
+                <span class="hit-counts">294</span> <span class="hit-count">点击</span> </li>
+              <li  class="nomargin"> <a  rel="no-follow" href="#" target="_blank"><img class="website-images" src="img/75abdf8d-e8f5-4e30-b35a-0fbca8512da6.jpg"  style="border-width:4px;border-style:solid;" /></a> <img class="flag" src="img/flags/au.gif"  style="border-width:0px;" /> <a class="name" rel="no-follow" href="#" target="_blank">星尚</a> <span class="rating-point"></span>
+                
+                <span class="hit-counts">346</span> <span class="hit-count">点击</span> </li>
+              <li > <a rel="no-follow" href="#" target="_blank"><img  class="website-images" src="img/500b7282-c0a8-4efa-b3b1-ccc621b4057a.jpg"  style="border-width:4px;border-style:solid;" /></a> <img  class="flag" src="img/flags/de.gif" style="border-width:0px;" /> <a class="name" rel="no-follow" href="#" target="_blank">时尚新娘</a> <span class="rating-point"></span>
+                
+                <span class="hit-counts">986</span> <span class="hit-count">点击</span> </li>
+              <li > <a  rel="no-follow" href="#" target="_blank"><img class="website-images" src="img/e8208fc5-e920-4c85-96b2-bb418d3da4a5.jpg"  style="border-width:4px;border-style:solid;" /></a> <img  class="flag" src="img/flags/at.gif" style="border-width:0px;" /> <a  class="name" rel="no-follow" href="#" target="_blank">奢侈品</a> <span class="rating-point"></span>
+               
+                <span class="hit-counts">682</span> <span class="hit-count">点击</span> </li>
+              <li  class="nomargin"> <a rel="no-follow" href="#" target="_blank"><img  class="website-images" src="img/5d168579-ca7c-4545-806a-244edbacb288.jpg" style="border-width:4px;border-style:solid;" /></a> <img class="flag" src="img/flags/us.gif" style="border-width:0px;" /> <a class="name" rel="no-follow" href="#" target="_blank">虾米湖</a> <span class="rating-point"></span>
+               
+                <span class="hit-counts">586</span> <span class="hit-count">点击</span> </li>
+              <li > <a  rel="no-follow" href="#" target="_blank"><img class="website-images" src="img/5d168579-ca7c-4545-806a-244edbacb288.jpg"  style="border-width:4px;border-style:solid;" /></a> <img class="flag" src="img/flags/de.gif" style="border-width:0px;" /> <a class="name" rel="no-follow" href="#" target="_blank">美丽家族</a> <span class="rating-point"></span>
+               
+                <span class="hit-counts">738</span> <span class="hit-count">点击</span> </li>
+              <li > <a rel="no-follow" href="#" target="_blank"><img  class="website-images" src="img/5d168579-ca7c-4545-806a-244edbacb288.jpg"  style="border-width:4px;border-style:solid;" /></a> <img  class="flag" src="img/flags/ar.gif"  style="border-width:0px;" /> <a class="name" rel="no-follow" href="#" target="_blank">Hompar上海</a> <span class="rating-point"></span>
+                
+                <span class="hit-counts">741</span> <span class="hit-count">点击</span> </li>
+              <li  class="nomargin"> <a rel="no-follow" href="#" target="_blank"><img class="website-images" src="img/d475cc1e-0284-4620-afdf-585f5c465461.jpg" style="border-width:4px;border-style:solid;" /></a> <img class="flag" src="img/flags/de.gif" style="border-width:0px;" /> <a class="name" rel="no-follow" href="#" target="_blank">小资生活</a> <span class="rating-point"></span>
+                
+                <span class="hit-counts">1448</span> <span class="hit-count">点击</span> </li>
+            </ul>
+          </div>
+          <div> <a  class="previous-right" href="#">当前显示12本</a> <span class="previous-right">|</span> <a class="previous-right" href="#">所有杂志</a> </div>
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(document).ready(function() {
+                // custom file upload           
+                $("input.fileupload").filestyle({
+                    image: _imagepath,
+                    imageheight: 35,
+                    imagewidth: 46,
+                    width: 130
+                });
+
+                // form validation
+                $('[id$=btnSubmit]').click(function() {
+                    var msg = new Array();
+
+                    if (jQuery.trim($('[id$=txtName]').val()) == '') {
+                        msg.push(_nameWarning);
+                    }
+
+                    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                    if (reg.test(jQuery.trim($('[id$=txtEmail]').val())) == false) {
+                        msg.push(_emailWarning);
+                    }
+
+                    if (msg.length > 0) {
+                        jQuery.facebox(msg.join('<br \/>'));
+                        return false;
+                    }
+
+                    return true;
+                });
+            });
+            //]]>                
+        </script>
+        <div  class="middle-big-right-2">
+          <div class="work-submit" id="submityourwork">
+            <h4>请输入你的个人信息</h4>
+            <div class="submit-1"> <span class="yellow-text2">订阅数&nbsp; </span> <span class="submit-no">1</span> <span class="yellow-text2"> | 名称:&nbsp; </span><span class="submit-no">时尚都市</span>
+              <div class="clearfix"></div>
+              <span class="form-text"><strong>姓名 :</strong></span>
+              <input  type="text"  class="submit-form" />
+              <span class="yellow-text2">*</span> <span class="form-text"><strong>邮箱地址 :</strong></span>
+              <input  type="text"  class="submit-form" />
+              <span class="yellow-text2">*</span> <span class="form-text"><strong>家庭地址:</strong></span>
+              <input  type="text"  class="submit-form" />
+              <span class="select-files"><strong>订阅杂志名:</strong></span>
+              <div class="browse-box">
+                <input type="file"  class="fileupload" />
+                <input type="file"  class="fileupload" />
+                <input type="file"  class="fileupload" />
+              </div>
+            </div>
+            <div class="guide"> <span class="yellow-text3">信息核对</span><br />
+              <span class="">杂志名:</span> <span class="guide-info">时尚都市</span> <span class="grey2">数量:</span> <span class="guide-info">1本</span> <span class="grey2">收件地址:</span> <span class="guide-info">上海市大马路123号</span> <span class="grey2">到货日期:</span> <span id="ctl00_ContentPlaceHolder1_SubmitYourWork1_lblDeadline" class="guide-info-2 expired">2010-5-3</span> </div>
+          </div>
+          <div class="pink-submit"> 
+            <input type="submit" name="ctl00$ContentPlaceHolder1$SubmitYourWork1$btnSubmit" value="" id="ctl00_ContentPlaceHolder1_SubmitYourWork1_btnSubmit" class="work-submit-button" />
+          </div>
+          <div class="dummy-black"></div>
+        </div>
+        <script type="text/javascript">
+    $(document).ready(function() {
+        $('[id$=ddlOutLinks]').change(function() {
+            if ($(this).val() != '') {
+                window.location = $(this).val();
+            }
+        });
+
+        $('a[rel*=facebox]').facebox();
+
+//        $(".networks-list li a").click(function() {
+//            var nod = $(this).attr("rel");
+//            share(nod);
+//        });        
+    });
+    </script>
+        <div class="foot">
+          <ul>
+            <li>快速导航</li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">时尚杂志</a></li>
+            <li><a  href="#">男士杂志</a></li>
+            <li><a  href="#">女性杂志</a></li>
+            <li> <a href="#" rel="facebox" >博客</a> </li>
+            <li><a  href="#">关于我们</a></li>
+            <li><a  href="#">联系我们</a></li>
+            <li><a  href="#">网站帮助</a></li>
+            <li><a  href="#">免费订阅</a></li>
+            <li><a  href="#"><img src="img/rss.gif" /></a></li>
+          </ul>
+          <div class="share">
+            <select class="outlinks">
+              <option value="" id="li0">时尚先生</option>
+              <option value="" id="li1">时尚女性</option>
+              <option value="" id="li2">潮流时尚</option>
+              <option value="" id="li3">时尚时间</option>
+              <option value="" id="li4">时尚一刻</option>
+            
+    
+            </select>
+          </div>
+         
+          
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+</form>
+
+</body>
+</html>

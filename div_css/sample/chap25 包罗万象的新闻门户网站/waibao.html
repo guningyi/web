@@ -1,0 +1,246 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>专题新闻</title>
+<link href="toolbar/case_style.css" rel="stylesheet" type="text/css">
+<link href="toolbar/case_list.css" rel="stylesheet" type="text/css">
+</head>
+<script Language="JavaScript" src="toolbar/include/common.js"></script>
+<script Language="JavaScript" src="toolbar/include/cat.js"></script>
+<script Language="JavaScript" src="toolbar/include/casecount.js"></script>
+<script language="JavaScript">
+function keywordSearch(){
+	var keyFrm = document.form1;
+	var keyWd = keyFrm.key.value;
+	if(trim(keyWd) != ""){
+		keyFrm.caseno.value = keyFrm.key.value;
+	}else{
+		alert("请输入关键字!!");
+		keyFrm.key.focus();
+		return false;
+	}
+	keyFrm.op.value=3;
+	keyFrm.target = "_bank";
+	keyFrm.action = "postcase_list.cfm";
+	keyFrm.submit();
+}
+
+function keywordHot(str){
+	var keyFrm = document.form1;
+	keyFrm.caseno.value = str;
+	keyFrm.op.value=3;
+	keyFrm.target = "_bank";
+	keyFrm.action = "postcase_list.cfm";
+	keyFrm.submit();
+}
+
+function trim(s) {
+	var llen = 0, rlen = 0;
+	
+	for (var idx = 0; idx < s.length; idx++) {
+		if (s.substr(idx, 1) == ' ')
+			++llen;
+		else
+			break;
+	}
+	
+	if (llen < s.length) {
+		for (var idx = s.length - 1; idx >= llen; idx--) {
+			if (s.substr(idx, 1) == ' ')
+				++rlen;
+			else
+				break;
+		}
+	}
+	
+	return s.substr(llen, s.length - llen - rlen);
+}
+
+
+</script>
+<body bgcolor="FFFFFF" text="736351" link="736351" vlink="736351" topmargin="0" marginheight="0" leftmargin="0" marginwidth="0">
+<form name="form1" method="post" action="">
+  <div id="outer-wrapper">
+    <div id="wrapper">
+      <div id="page">
+        <div id="header">
+          <ul id="map">
+            <li><a href="javascript:window.external.AddFavorite('waibao.html')">加入收藏</a></li>
+            <li><a href="#">问题咨询</a></li>
+            <li><a href="#">网站地图</a></li>
+            <li><a href="#">意见建议</a></li>
+            <li><a href="#">合作方式</a></li>
+          </ul>
+          <div id="ad1"><a href="#"><img src="toolbar/img/img/case_logo.gif" width="250" height="100" border="0"></a> <img src="toolbar/img/banner01.jpg" border="0" /> </div>
+          <div id="nav">
+            <ul>
+              <li id="fresh" style="display:block" onMouseOver="div_hidden('002');div_hidden('001');return false;"><a href="#">电子报</a></li>
+              <li id="pro" style="display:block" onMouseOver="div_hidden('002');div_hidden('001');return false;"><a href="#">外包顾问</a></li>
+              <li id="d0send" style="display:block"><a href="#" onMouseOver="div_display('002');div_hidden('001');return false;">我要发单</a></li>
+              <li id="d0get" style="display:block"><a href="#" onMouseOver="div_display('001');div_hidden('002');return false;">我要接单</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hrline"></div>
+        <div id="main">
+          <div id="hotnews">
+            <table width="248" border="0" cellpadding="0" cellspacing="0" align="center" class="newsSty">
+              <tr>
+                <td width="100%"><table width="100%" height="100%" cellpadding="0" cellspacing="0" align="center" class="hotSty">
+                    <tr>
+                      <td width="100%" height="35" colspan="4">&nbsp;<b><font style="font-size:13px">热门搜索</font></b> </td>
+                    </tr>
+                    <tr>
+                      <td height="28" align="center"><font color="#FF6600" style="font-size:15px"> <b><a href="#" style="text-indent:0px" class="ilink1">国际</a></b> </font></td>
+                      <td align="center"><font color="#FF6600" style="font-size:17px"> <b><a href="#" style="text-indent:0px" class="ilink">财经</a></b> </font></td>
+                      <td align="center"><font color="#000000" style="font-size:14px"> <b><a href="#" style="text-indent:0px" class="ilinkB">国内</a></b> </font></td>
+                      <td align="center"><font color="#7A7A7A" style="font-size:15px"> <b><a href="#" style="text-indent:0px" class="ilink1">军事</a></b> </font></td>
+                    </tr>
+                    <tr>
+                      <td height="28" align="center"><font color="#7A7A7A" style="font-size:14px"> <b><a href="#" style="text-indent:0px" class="ilinkB">体育</a></b> </font></td>
+                      <td align="center"><font color="#000000" style="font-size:15px"> <b><a href="#" style="text-indent:0px" class="ilink1">科技</a></b> </font></td>
+                      <td align="center"><font color="#000000" style="font-size:17px"> <b><a href="#" style="text-indent:0px" class="ilink">娱乐</a></b> </font></td>
+                      <td align="center"><font color="#FF6600" style="font-size:14px"> <b><a href="#" style="text-indent:0px" class="ilinkB">汽车</a></b> </font></td>
+                    </tr>
+                    <tr>
+                      <td height="28" align="center"><font color="#FF6600" style="font-size:15px"> <b><a href="#" style="text-indent:0px" class="ilink">女性</a></b> </font></td>
+                      <td align="center"><font color="#FF6600" style="font-size:17px"> <b><a href="#" style="text-indent:0px" class="ilinkB">时尚</a></b> </font></td>
+                      <td align="center"><font color="#000000" style="font-size:14px"> <b><a href="#" style="text-indent:0px" class="ilink1">手机</a></b> </font></td>
+                      <td align="center"><font color="#7A7A7A" style="font-size:15px"> <b><a href="#" style="text-indent:0px" class="ilink">读书</a></b> </font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td><table width="248" height="75" border="0" cellpadding="0" cellspacing="0" align="center" class="tableSty">
+                    <tr>
+                      <td height="5"></td>
+                    </tr>
+                    <tr>
+                      <td height="25" align="center"><input type="text" id="key" name="key" style="width:150;height:22" class="inpStyle"></td>
+                      <td><img src="toolbar/img/img/btn_1.gif" width="71" height="22" style="CURSOR: hand" onClick="keywordSearch();"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+          </div>
+          <div id="get">
+            <div class="news_one">
+              <p style="color:#512800;">2012我们一起玩完？</p>
+              <p>每隔几年，就会有一个或者一批“狂想家”抛出新的“绝世天劫”论来吓唬我们这些老百姓…[详细]</p>
+            </div>
+            <div class="news_one">
+              <p style="color:#512800;">关于地震的数字巧合</p>
+              <p>地震似乎与所有数字都有联系，因为数字与所有事物都有联系，数字与日期更是关系暧昧…[详细]</p>
+            </div>
+          </div>
+          <div id="send">
+            <div class="news_two">
+              <p>你觉得本期专题质量如何？</p>
+              <ul>
+                <li>
+                  <input name="an" type="radio" value="">
+                  很好，会继续关注今日话题 </li>
+                <li>
+                  <input name="an" type="radio" value="">
+                  还可以，看后有些收获 </li>
+                <li>
+                  <input name="an" type="radio" value="">
+                  无聊，浪费我的时间 </li>
+                <li>
+                  <input name="an" type="radio" value="">
+                  很烂，看后就想狂K编辑</li>
+              </ul>
+              <p>
+                <input type="button" value="提 交">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="content">
+          <div id="leftside">
+            <div id="getpro">
+              <h2></h2>
+              <div id="probanner"><a href="#"><img src="toolbar/img/img/31600570.jpg" border="0"></a></div>
+              <ul>
+                <li><a href="#">CCTV抵抗NBA能成功吗</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="rightside">
+            <div id="list">
+              <h2></h2>
+              <div id="caselist">
+                <h3><a href="#" class="alllist">为什么“世界末日”能够深入人心</a></h3>
+                <div id=d00 class="news_three">
+                  <p>我们本来就是个爱八卦、相信“天人感应”的国度谶纬，这个词可能很多人不熟悉，但如果说“阴阳五行”“天人感应”“巫婆神汉”，您是不是就明白了？
+                    
+                    但就这么一个人为编造“预言”的工夫，也成为了中国古代的一种学说，还曾屡屡被尊奉。有人说，这是封建统治者的需要，其实不完全是这样，老百姓更需要这套“理论”。
+                    
+                    试想，在一个经常没有舆论自由、政治民主、科学法制的封建时代，你让一个普通老百姓怎么决策自己的人生大事呢？更遑论饱受压迫的人民，连偷偷蹲在墙角往木头人身上扎针的“出气权”都不能有吗？当陈胜吴广从鱼和狐狸身上找到自己的“合法性”的时候，这类能够断言吉凶的“宗教迷信”也就算是在中国人的心中扎下了根。
+                    
+                    但很可惜，玛雅人也知道自己老祖宗留下的这套理论被误解了，这次连人家的长老都跳出来辟谣了... </p>
+                </div>
+                <a href="#" class="more"></a> </div>
+              <div id="memlist">
+                <h3><a href="#" class="alllist">媒体的传播影响力，让地球显得“多灾多难”</a></h3>
+                <div id=d010  class="news_three">
+                  <p>其实地震还是那些地震，它有规律又随机地发生着，但它从来不管降临的地方是人烟稠密还是人口稀少。只不过，因为近年来发生在人口稠密的地区的大地震让我们对地震比以前更关注了。
+                    
+                    谁还记得2001年11月14日发生在青海昆仑山的8.1级地震呢？这次地震是中国近半个世纪来最大的一次地震。但正因为它发生在人烟稀少的西部地区，人员财产伤亡小，所以未被大众提及。
+                    
+                    为什么未被大众提及？因为媒体更倾向于选择容易受到关注的新闻事件，这些新闻事件本就具备被关注的因素，为什么未被大众提及？因为媒体更倾向于选择容易受到关注的新闻事件，这些新闻事件本就具备被关注的因素再加上现代传媒的快速立体化报道方式，以及日渐透明公开明公开的信息流，让受众接收的信息流，让受众接收明公开的信息流，让受众接收了比以往更丰富的灾难新闻 …</p>
+                </div>
+                <a href="#" class="more"></a> </div>
+            </div>
+            <div id="info" >
+              <h2>
+                <ul class="infotag">
+                  <li id="sendinfo"><a href="#" target="_blank" style="cursor:default;" onMouseOver="div_display(51);div_hidden(52)" alt="">网友评论</a></li>
+                  <li id="getinfo"><a href="#" target="_blank" style="cursor:default;" onMouseOver="div_display(52);div_hidden(51)" >近期专题</a></li>
+                </ul>
+              </h2>
+              <div id="d052"  style="display:''" class="info_content">
+                <div id="infoban"><a href="#" target="_parent"><img src="toolbar/banner/ad_case1.gif" width="98" height="98" border="0" alt=""></a> </div>
+                <div id="infolist">
+                  <ul>
+                    <li><a href="#"  target="_blank">末日快来吧！我受够了现在的生活！支持我的顶我！ </a></li>
+                    <li><a href="#"  target="_blank">中国的专家又来辟谣了吧 恩 我反着想就对了 </a></li>
+                    <li><a href="#"  target="_blank">每次中国汽油一涨价，当天必发生大地震，几个月前的海底地震和昨天</a></li>
+                  </ul>
+                </div>
+                <div id="infocon">
+                  <ul>
+                    <li><a href="#"  target="_blank">专家上个月还说过我国不会有灾难性的地震呢。</a></li>
+                    <li><a href="#"  target="_blank">我就纳闷了，好好过日子行不？</a></li>
+                    <li><a href="#"  target="_blank">如果真相信2012有世界末日，那就好好珍惜现在的生活啊！</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="d051"  style="display:none" >
+                <div id="infoban"> <a href="#" target="_blank"><img src="toolbar/banner/ad_case7.gif" width="98" height="98" border="0" alt=""></a> </div>
+                <div id="infolist">
+                  <ul>
+                    <li> <a href="#" target="_blank">当超生的是知名副教授 </a> </li>
+                    <li> <a href="#" target="_blank">精神病人杀人怎么办</a> </li>
+                    <li> <a href="#" target="_blank">有什么背景可以酒后乱性</a> </li>
+                  </ul>
+                </div>
+                <div id="infocon">
+                  <ul>
+                    <li> <a href="#" target="_blank">一名总统的意外死亡</a> </li>
+                    <li> <a href="#" target="_blank">贫穷的怒火点燃吉尔吉斯</a> </li>
+                    <li> <a href="#" target="_blank">韩寒的影响力和无力感</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"><a href="#"><font color="ff3300">意見建议</font></a>　TEL：021-62123145 <a href="#"><b>法律条款</b></a> <br>
+        &copy; 专题新闻 保留一切权利</div>
+    </div>
+  </div>
+</form>
+</BODY>
+</HTML>

@@ -1,0 +1,141 @@
+table{
+	border-top:1px solid #dddddd;
+	width:100%;
+	font-family:Trebuchet MS; 
+	color:#707070;
+	margin:0px;
+	padding:0px;
+}
+table.contenido{text-align:left;}
+table.contenidoDerecha{text-align:right;}
+table.contenidoCentrado{text-align:center;}
+table.adicional{
+	border-top:1px solid #707070;
+	border-collapse:collapse;
+	width:98%;
+	color:#707070;
+	font-family:Trebuchet MS; 
+}
+table.adicional{text-align:left;}
+table.adicionalDerecha{text-align:right;}
+table.adicionalCentrado{text-align:center;}
+/*INICIO TITULO TABLA*/
+caption{
+	font-family:Trebuchet MS; 
+	color:#262626;
+	text-transform:uppercase;
+	padding-bottom:12px;
+	text-align:left;
+}
+table.adicional caption, table.contenido caption{text-align:left;}
+table.adicionalDerecha caption, table.contenidoDerecha caption{text-align:right;}
+table.adicionalCentrado caption, table.contenidoCentrado caption{text-align:center;}
+/*FIN TITULO TABLA*/
+td{font-size:1em;/*12px*/}
+table.adicional th,table.adicional td {	border-bottom:1px solid #707070;}
+th{color:#276015; font-weight:normal; text-transform:uppercase;}
+th, td{	
+	vertical-align:top;
+	margin:0px 0px 0px 0px;
+	padding:8px 30px 8px 30px;
+	border-top:3px solid #FFFFFF;
+	background-image:url(../img/entabla.jpg); 
+	background-position:bottom; 
+	background-repeat:repeat-x;	
+}
+.fin th, .fin td{
+	background-attachment:inherit; 
+	background-image:url(../img/tabla.jpg); 
+	background-repeat:repeat-x;
+	padding:8px 30px 44px 30px;
+	background-position:bottom center; 
+}
+/*INICIO THEAD*/
+thead th, thead td{
+	background-color:#dee7dc; 	
+	padding:18px 0px 18px 30px;
+}
+table.contenidoDerecha thead th, table.contenidoDerecha thead td, table.adicionalDerecha thead th, table.adicionalDerecha thead td, thead th.derechaAli, thead td.derechaAli{
+	padding:18px 30px 18px 0px;
+}
+table.contenidoCentrado thead th, table.contenidoCentrado thead td, table.adicionalCentrado thead th, table.adicionalCentrado thead td, thead th.centradoAli, thead td.centradoAli{
+	padding:18px 15px 18px 15px;
+}
+thead{text-transform:uppercase;}
+thead a:link{ color:#276015; text-transform : uppercase;}
+thead a:hover, thead a:focus{color:#276015; text-decoration:underline; text-transform : uppercase;}
+/*FIN THEAD*/
+tbody{
+	color:#707070;
+	border-bottom:#707070 1px solid;
+}
+tfoot{	
+	background:#d7e2d4;
+	color:#276015;
+	text-transform:uppercase;
+	height:36px;/*2.63em*42px*/
+	background-attachment:inherit; 
+	background-image:url(../img/tabla.jpg); 
+	background-position:center center; 
+	background-repeat:repeat-x;
+}
+/*INICIO ALINEACIONES celdas, filas, encabezados*/
+td.centradoAli{text-align:center;}
+td.izquierdaAli{text-align:left;}
+td.derechaAli{text-align:right; padding: 8px 30px 8px 0px;}
+tr.centradoAli{text-align:center;}
+tr.izquierdaAli{text-align:left;}
+tr.derechaAli{text-align:right; padding: 8px 30px 8px 0px;}
+th.centradoAli{text-align:center;}
+th.izquierdaAli{text-align:left;}
+th.derechaAli{text-align:right; padding: 8px 30px 8px 0px;}
+/*FIN ALINEACIONES celdas, filas, encabezados*/
+
+/*ENLACES*/
+table a:link{ color:#0765c5;}
+table a:hover, table a:focus{ color:#0765c5; text-decoration:underline;}
+.verdetabla{
+	color:#276015 !important;
+	font-family: Trebuchet MS; 
+}
+a.verdetabla:link{color:#276015!important; text-decoration:none; text-transform:uppercase;}
+a.verdetabla:visited{color:#123100; text-decoration:none; text-transform:uppercase;}
+a.verdetabla:focus,a.verdetabla:hover,a.verdetabla:active{
+	color:#276015 !important; 
+	text-decoration:underline !important; 
+	text-transform:uppercase;
+}
+/*TABLAS ANIDADAS*/
+ul.tabla{margin:0px; padding:0px;}
+ul.tabla,ul.Anidada{list-style:inside;	list-style-type:none;}
+ul.Anidada{
+	border-left:1px solid #dddddd;
+	list-style:outside;
+	list-style-type:none;
+	float:left;
+	width:50%;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 6px;
+} 
+ul.Anidadault{
+	border-left:1px solid #dddddd;
+	list-style:outside;
+	list-style-type:none;
+	float:left;
+	width:50%;
+	/*width:60%;*/
+	margin:6px 0px 0px 0px;
+	padding:0px 0px 0px 6px;
+} 
+ul.tabla li{ float:left; width:100%;}
+ul.tabla li.bordeinf{
+	border-bottom:1px solid #dddddd;
+	padding:0px 0px 6px 0px;
+}
+ul.Anidada li{ border:none}
+span.elem,span.elem1,span.elemSin,span.elem1Sin{float:left;}
+span.elem,span.elem1,span.elemV,span.elem1V{width:30%;}
+span.elemV,span.elem1V,span.elemSinV,span.elem1SinV{color:#276015; float:left;}
+*:first-child+html span.elem,*:first-child+html span.elem1,*:first-child+html span.elemV,*:first-child+html span.elem1V{float:left; width:35%;}
+* html span.elem, * html span.elem1,* html span.elemV, * html span.elem1V{float:left; width:35%;}
+span.elem, span.elemSin, span.elemV, span.elemSinV{padding-top:6px;}

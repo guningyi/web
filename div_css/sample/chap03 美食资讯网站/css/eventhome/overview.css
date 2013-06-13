@@ -1,0 +1,265 @@
+h1#eventsLandingTitle {
+    float: left;
+    margin-bottom: 23px;
+}
+
+#page .leftColWrapper,
+#page .rightCol {
+    position: relative;
+    padding-top: 0;
+}
+
+#addEventButton {
+    float: right;
+    margin: 3px 0 0 0;
+}
+
+p#location {
+    float: left;
+    margin: 3px 0 0 5px;
+    vertical-align: middle;
+}
+p#location a.icon img {
+    margin: -2px 2px 0 0;
+    vertical-align: middle;
+}
+
+/* Filtered tags */
+
+#eventTags {
+    clear: both;
+    margin: 0 0 15px 0;
+    padding: 7px;
+    background: #f2f2f2;
+}
+
+.filterTags li {
+    display: inline;
+}
+
+.filterTags li a {
+    display: block;
+    float: left;
+    background: #FFF url(../../img/tag_left1.png) no-repeat left top;
+    font-size: 11px;
+    line-height: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+    padding: 0 0 0 3px;
+    color: #333;
+    cursor: pointer;
+}
+
+.filterTags li a span {
+    display: block;
+    float: left;
+    line-height: 24px;
+    height: 24px;
+    padding: 0 10px 0 7px ;
+    background: #FFF url(../../img/tag_right.png) no-repeat right top;
+}
+
+.filterTags li a:hover,
+.filterTags li a.all:hover,
+.filterTags li a.selected:hover {
+    background-position: left -24px;
+}
+
+.filterTags li a:hover span,
+.filterTags li a.all:hover span,
+.filterTags li a.selected:hover span {
+    background-position: right -24px;
+}
+
+.filterTags li a:hover {
+    text-decoration: underline;
+}
+
+.filterTags li a.all {
+    background: url(../../img/tag-all_left.png) no-repeat left top;
+    font-weight: bold;
+}
+
+.filterTags li a.all span {
+    background: url(../../img/tag-all_right.png) no-repeat right top;
+}
+
+.filterTags li a.selected {
+    background: url(../../img/tag-selected_left.png) no-repeat left top;
+    color: #FFF;
+}
+
+.filterTags li a.selected span {
+    background: url(../../img/tag-selected_right.png) no-repeat right top;
+    font-weight: bold;
+}
+
+p#filteredCopy {
+    font-size: 11px;
+    line-height: 1.272727em;
+}
+
+/* Events recs */
+
+#eventRecs {
+    float: right;
+    margin-right: 15px;
+}
+
+/* Date filter */
+
+#eventRecs a,
+#jumpToDate input,
+#jumpToDate select,
+#jumpToDate a {
+    vertical-align: bottom;
+}
+#jumpToDate {
+    font-size: 11px;
+    position: relative;
+}
+#jumpToDate select {
+    margin: 0 5px 0 0;
+}
+#jumpToDate {
+    display: inline-block;
+}
+#datePicker {
+    margin: 0 0 0 5px;
+    font-size: 11px;
+}
+
+#calendar {
+    position: absolute;
+    top: 100%;
+    left: 14.5em;
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc; 
+    z-index: 10;
+}
+
+/* Rightcol search */
+
+#eventSearchForm {
+    float: right;
+    margin: 15px 0;
+}
+#eventSearchForm.eventSearchFormHome {
+    margin: -3px 0 0 0;
+}
+#eventSearchForm fieldset {
+    font-size: 11px;
+}
+#eventSearchForm input {
+    margin-left: 5px;
+}
+#eventSearchForm p.advanced {
+    margin: 5px 0 0 0;
+    text-align: right;
+}
+#eventSearchForm.eventSearchFormHome p.advanced {
+}
+
+/* Upcoming Events */
+
+#upcomingEvents {
+    margin: 0 0 15px 0;
+}
+
+/* Posters */
+
+#eventPosters {
+    margin: 15px 0 0 0;
+}
+#eventPosters ul {
+    overflow: hidden;
+    position: relative;
+}
+#eventPosters img.theTape {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    margin: 0 0 0 -18px;
+}
+#eventPosters li.largePoster {
+    position: relative;
+    float: left;
+    margin: 0 12px 15px 0;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+#eventPosters li.last {
+    margin-right: 0;
+}
+#eventPosters img.posterImg {
+    float: left;
+}
+#eventPosters a {
+    text-decoration: none;
+}
+#eventPosters a span.posterInfo {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    padding: 3px;
+    color: #fff;
+    background: #1f72b7;
+    font-size: 9px;
+    line-height: 1.555556;
+    visibility: hidden;
+}
+#eventPosters a:hover span.posterInfo {
+    visibility: visible;
+}
+
+/* Event results */
+
+.topPagination {
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+
+#eventResults {
+    clear: both;
+    margin: -18px 0 0 0;
+}
+/* Advanced search */
+
+#eventAdvancedSearchForm {
+}
+#eventAdvancedSearchForm table {
+    width: 100%;
+}
+#eventAdvancedSearchForm td,
+#eventAdvancedSearchForm th {
+    padding: 15px 15px 0 15px;
+    vertical-align: middle;
+    background: #eee;
+}
+#eventAdvancedSearchForm th {
+    width: 6.5em;
+    padding-right: 0;
+    text-align: right;
+    font-weight: bold;
+}
+#eventAdvancedSearchForm #eventSearchQText,
+#eventAdvancedSearchForm #eventSearchCityText,
+#eventAdvancedSearchForm #eventSearchCountryText {
+    width: 192px;
+}
+
+#eventAdvancedSearchForm #eventSearchWhenRadio input,
+#eventAdvancedSearchForm #eventSearchWhenRadio label {
+    vertical-align: middle;
+}
+#eventAdvancedSearchForm #eventSearchWhenRadio label {
+    margin: 0 10px 0 5px;
+}
+#eventAdvancedSearchForm #eventSearchSubmit {
+    padding-bottom: 15px;
+    text-align: right;
+}

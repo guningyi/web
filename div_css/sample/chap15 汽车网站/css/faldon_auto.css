@@ -1,0 +1,341 @@
+ .faldonScroll_aa, .destacados_aa, .faldonDes_aa{padding:0 0 15px 0; float:left; position:relative; margin:0;}
+.faldon{width:994px;}
+.tam_faldon_aa{	float:left; width:1px;height:auto;}
+.columnaIzquierdaFaldon, .columnacentroFaldon{height:15.13em;/*233px*/}
+*:first-child+html .columnaIzquierdaFaldon, *:first-child+html .columnacentroFaldon{height:14.563em;/*233px*/}
+.columnacentroNotFaldon, .columnaDerechaFaldon, .columnaIzquierdaNotFaldon, .columnaIzquierdaFaldon, .columnacentroFaldon{
+	position:relative;
+	float:left;
+}
+/*noticia más imagen*/
+.columnaIzquierdaFaldon{
+	z-index:10;
+	width:15.75em;/*252px*/
+	background-image:url(../img/fnd_faldon_aa.gif);
+	background-repeat: repeat-x;
+}
+.columnacentroNotFaldon img{float:left;}
+.columnacentroFaldon{
+	z-index:20;
+	width:713px;/*44.56em 713px*/
+	background-image:url(../img/fnd_faldonVerde_aa.gif);
+	background-repeat: repeat-x;
+}
+.columnaDerechaFaldon{
+	z-index:30;
+	width:29px;/*1.87em 30px*/
+	background-image:url(../img/fnd_faldon_aa.gif);
+	background-repeat: repeat-x;
+}
+/*solo noticias*/
+.columnaIzquierdaNotFaldon{
+	z-index:10;
+	width:30px;/*1.87em 30px*/
+	background-image:url(../img/fnd_faldon_aa.gif);
+	background-repeat: repeat-x;
+}
+.columnacentroNotFaldon{
+	z-index:20;
+	width:935px;/*58.44em 935px*/
+	background-image:url(../img/fnd_faldonVerde_aa.gif);
+	background-repeat: repeat-x;
+}
+/*titulo de noticias*/
+h2.noticiasSinImagen_aa, h2.noticiasImagen_aa, h2.imagenes_aa{
+	color:#707070; 
+	font-size: 1.25em;/*20px*/ 
+	height:1.25em;/*12px*/ 
+	position:relative;
+	font-weight:normal;
+	font-family: Trebuchet MS;
+	z-index:100;
+}
+h2.noticiasSinImagen_aa{
+	top:85px;
+	left:30px;
+	width:80%
+}
+h2.noticiasImagen_aa{
+	top:85px;
+	left:255px;
+	width: 713px;
+}
+h2.imagenes_aa{
+	padding: 23px 0 0 30px;
+	margin:0px;
+}
+/*destacados solo imagenes*/
+.destacados_aa{
+	width:994px;
+	float:left;
+	background:url(../img/fnd_faldonDestacados_aa.gif);
+	background-repeat:repeat-x;
+	/*height:270px;*/
+}
+.lineades_aa{/*linea de faldon solo img*/
+	position:relative;
+	background:#275f14;
+	width:935px;/*58.44em;*/
+	height:1px;
+	left:30px;
+	margin-top:9px;
+	font-size: 0px;
+	line-height: 0px;
+	visibility: visible;
+}
+.listadoimg{
+	list-style-type: none;
+	list-style-position: outside;
+	margin:0;
+	padding:20px 0 0 10px;
+}
+.imgDerFaldon_aa{
+	position:relative;
+	float:left;
+	width:12.5em;
+	padding-left:80px;
+	border:none;
+	border-color:transparent;
+}
+*:first-child+html .imgDerFaldon_aa{ padding-right: 0px; }
+.imgCenFaldon_aa, .imgIzqFaldon_aa{
+	position:relative;
+	float:left;
+	width:12.5em;
+	padding-left:117px;
+	border:none;
+	border-color:transparent;
+}
+.imagenfal_aa .imgDerFaldon_aa{padding:0;}
+*:first-child+html .imgCenFaldon_aa{ padding-right: 0px; padding-left:117px; }
+*:first-child+html .imgIzqFaldon_aa{ padding-left:117px; }
+.imagenfal_aa{
+	position: relative; 
+	left:0px; 
+	/*height:212px; */
+	width:12.5em;
+	list-style-type: none;
+	list-style-position: outside;
+	top: 0px; 
+	border:none;
+	border-color:transparent;
+}
+*:first-child+html .imagenfal_aa{top:20px;}
+* html .imagenfal_aa{top:20px;}
+ul.noticias_aa{
+	list-style-type: none;
+	list-style-position: outside;
+	margin:80px 0px 0px 0px;
+	padding:0px 0px 0px 10px;
+	float:left;
+}
+li.noticiaAA, li.noticiaAAPri, li.noticiaAALast{/*enlace noticia*/
+	margin:0;
+	padding:0;
+}
+*:first-child+html li.noticiaAA{line-height:1.06em;}		
+* html li.noticiaAA{line-height:1.06em;}
+li.noticiaAAPri{ padding-top:13px;}
+li.noticiaAALast{ padding-bottom:20px;}
+/*NOTICIAS CON SCROLL*/
+.Content_aa{ margin-top:100px; }
+.myContent_aa ul{/*capa texto cuando hay más de 6 noticias*/
+	position:relative;
+	z-index:24;
+	/*width:58.44em;/*935px*/
+	color:#262626; 
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	z-index:24;
+	list-style-type: none;
+	list-style-position: outside;
+}
+ul.noticiasScroll_aa, ul.soloNoticiasScroll_aa{/*Solo noticias con scroll solo o + imagen*/
+	padding:0;
+	margin:0;
+	left:5px;
+	list-style-type: none;
+	list-style-position: outside;
+}
+li.noticiaScroll_aa{ margin-left:5px; line-height:1em;}
+*:first-child+html li.noticiaScroll_aa{margin-left:5px; line-height:1.06em;}
+/* botones scroll más de 6 noticias*/		
+#easyscroll_aa{color:#7a7777;	/*top:48px;*/}		
+#easyscrollnav_aa li{
+	float:right;
+	cursor:pointer;	
+	list-style-type: none;
+	list-style-position: outside;
+}
+/*sin imagen left:915px; con imagen left:695px;*/
+#btUp{
+	position:absolute;
+	background:url(../img/flecha-vertical_arriba.png);
+	background-repeat:no-repeat;
+	width:18px;
+	height:11px;
+	right:5px;
+	z-index:100;
+	/*top:215px;*/
+	top:220px;
+}
+*:first-child+html #btUp{top:210px;/*explorer*/}		
+* html #btUp{top:210px;/*explorer*/}		
+.btUpOver{
+	position:absolute;
+	background:url(../img/flecha-vertical_arriba_rollover.png) !important;
+	background-repeat:no-repeat;
+	/*background:#000000;	/Quitar*/
+	width:18px;
+	height:11px;
+	right:5px;
+	z-index:100;
+	top:219px;
+}	
+*:first-child+html .btUpOver{top:221px;/*explorer*/}		
+* html .btUpOver{top:221px;/*explorer*/}		
+#btDown{
+	position:absolute;
+	background:url(../img/flecha-vertical_abajo.png);	
+	background-repeat:no-repeat;
+	/*background:#000000;/Quitar*/
+	width:18px;
+	height:11px;
+	top:68px;
+	right:5px;
+	z-index:100;
+}	
+.btDownOver{
+	position:absolute;
+	background:url(../img/flecha-vertical_abajo_rollover.png) !important;	
+	background-repeat:no-repeat;
+	/*background:#000000;/Quitar*/
+	width:18px;
+	height:11px;
+	top:77px;
+	right:5px;
+	z-index:100;
+}		
+#linea_aa, #lineanot_aa, .linea2not_aa, .linea2_aa{
+	position:relative;	
+	background:#275f14;
+	visibility: visible;
+	z-index: 23;
+	height:1px;
+	font-size: 0px;
+	line-height: 0px;
+	float:left;
+}
+#linea_aa{/*linea verde inferior para destacado con imagen sin scroll*/
+	width:713px;
+	margin:0;
+	padding:0;
+}
+#lineanot_aa{/*linea verde inferior para destacados sin imagen sin scroll*/
+	width:935px;
+	margin-top:-13px;
+}
+*:first-child+html #lineanot_aa{top:-7px;}		
+* html #lineanot_aa{top:-7px;}
+.linea2not_aa{/*linea verde inferior para destacados sin imagen con scroll*/
+	width:935px;
+	top:-13px;
+}
+*:first-child+html .linea2not_aa{top:-20px;}		
+* html .linea2not_aa{top:-20px;}
+.linea2_aa{/*linea verde inferior para destacado con imagen con scroll*/
+	width:713px;
+	top:20px;
+}
+*:first-child+html .linea2_aa{top:17px;}		
+* html .linea2_aa{top:17px;}
+/*Faldon vacio*/
+.centroFaldonVacio,.derechaFaldonVacio,.izquierdaFaldonVacio{
+	position:relative;
+	float:left;
+	height:109px;
+	min-height:109px;/*6.813em 109px*/
+}
+.centroFaldonVacio{
+	z-index:20;
+	width:935px;
+	background:url(../img/fnd_faldonVerde_aa.gif);
+}
+.derechaFaldonVacio, .izquierdaFaldonVacio{
+	z-index:30;
+	width:30px;
+	background:url(../img/fnd_faldon_aa.gif);
+}
+/*ELEMENTO IMAGEN*/
+.descFaldon{
+	background-repeat:no-repeat !important;
+	position:relative;
+	float:left;
+	font-family:Trebuchet MS;
+	height:11.875em;
+	text-decoration:none;
+	width:12.53em;
+}
+.descFaldon span{ top:172px; }
+.descFaldon span.titImagenP1Ader, .descFaldon span.titImagenP1Aizq, .descFaldon span.titImagenPpAder, .descFaldon span.titImagenPpAizq{ top:176px; }
+.descFaldon span.spanishVersionAizq1, .descFaldon span.spanishVersionAder1{ margin-top: 5px;}
+a.descFaldon:link, a.descFaldon:visited{ color:#276015; text-decoration:none; }
+/*hover texto faldon underline*/
+a.descFaldon:focus, a.descFaldon:hover, a.descFaldon:active{ text-decoration:underline; }
+/*ICONO MAS DESTACADO IMAGEN FALDON SOLO APARECE CON EL HOVER*/
+a.descFaldon span.iconoMas, a.descFaldon span.iconoMas2, a.descFaldon span.iconoMasExt, a.descFaldon span.iconoMas2Ext{
+	background-image:url(../img/gota_mas_destacados.png);
+	display:none;
+	position:relative;
+	float:left;
+	text-decoration:none;
+}
+/*Solo se visualiza cuando pasamos por encima del enlace a:hover*/
+a.descFaldon:hover span.iconoMas, a.descFaldon:hover span.iconoMas2, a.descFaldon:hover span.iconoMasExt, a.descFaldon:hover span.iconoMas2Ext{
+	width:31px;
+	height:67px;
+	z-index:3;
+	float:left;
+	display:block;
+	text-decoration:none;
+}
+a.descFaldon:hover span.iconoMas, a.descFaldon:hover span.iconoMasExt{left:168px;top:105px;}
+a.descFaldon:hover span.iconoMas2, a.descFaldon:hover span.iconoMas2Ext{left:168px;top:87px;}
+/*FORMATO TEXTO ENLACE*/
+.titImagenAizq, .titImagenPpAizq, .titImagenP1Aizq, .titImagenAder, .titImagenPpAder, .titImagenP1Ader, .spanishVersionAder, .spanishVersionAizq, .spanishVersionAder1, .spanishVersionAizq1{
+	border-color:transparent;
+	position:relative;
+	color:#276015;
+	text-transform: uppercase;
+	vertical-align:text-top;
+	float:left;
+	text-decoration:none;
+	z-index:10;
+	width:100%;
+}
+/*ALINEACION texto imagen*/
+.titImagenAder, .titImagenPpAder, .titImagenP1Ader, .spanishVersionAder, .spanishVersionAder1{ text-align:right; }
+.titImagenAizq, .titImagenPpAizq, .titImagenP1Aizq, .spanishVersionAizq, .spanishVersionAizq1{ text-align:left; }
+/*TAMANOS LETRA Y LINEA*/
+/*titImagen interlineado 18pt, tamano 18pt*/
+.titImagenAder, .titImagenAizq{ line-height:1em; font-size:1.125em;}
+*:first-child+html .titImagenAder, *:first-child+html .titImagenAizq{ line-height:1.2em; }
+* html .titImagenAder, * html .titImagenAizq{ line-height:1.2em; }
+/*titImagenP1 interlineado 15pt, tamano 14pt*/
+.titImagenP1Ader, .titImagenP1Aizq{ line-height:1.072em; font-size:0.875em; }
+*:first-child+html .titImagenP1Ader, *:first-child+html .titImagenP1Aizq{ line-height:1.2em; }
+* html .titImagenP1Ader, * html .titImagenP1Aizq{ line-height:1.2em; }
+/*titImagenPp spanishVersion interlineado 15pt,tamano 12pt*/
+.titImagenPpAder, .titImagenPpAizq, .spanishVersionAder, .spanishVersionAizq, .spanishVersionAder1, .spanishVersionAizq1{ line-height:1.25em; font-size:0.75em; }
+*:first-child+html .titImagenPpAder, *:first-child+html .titImagenPpAizq, *:first-child+html .spanishVersionAder, *:first-child+html .spanishVersionAder1, *:first-child+html .spanishVersionAizq, *:first-child+html .spanishVersionAizq1{ line-height:1.3em; }
+* html .titImagenPpAder, * html .titImagenPpAizq, * html .spanishVersionAder, * html .spanishVersionAder1, * html .spanishVersionAizq, * html .spanishVersionAizq1{ line-height:1.3em; }
+/*NEGRITA span*/
+.negrita_destacado{ font-weight:bold; }
+/*Iconos enlace en ventana nueva*/
+a.descFaldon span.iconoPdfFaldon, a.descFaldon span.iconoPdfFaldon2, a.descFaldon span.iconoVentanaFaldon, a.descFaldon span.iconoVentanaFaldon2{
+	float:left;
+	position:absolute;
+	z-index:4;
+	left:6px;
+	top:7px;
+}

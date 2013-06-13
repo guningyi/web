@@ -1,0 +1,85 @@
+.closenav, .MultiBoxClose, .MultiBoxPrevious, .MultiBoxNext, .MultiBoxNextDisabled, .MultiBoxPreviousDisabled, .Overlay{
+	/*behavior:url(http://www.dynamicearth.co.uk/Portals/ODE/css/iepngfix.htcc");*/
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+/*
+.orange h1{
+	background:transparent url(http://www.dynamicearth.co.uk/Portals/ODE/graphics/h1_orange.jpg) no-repeat scroll 0 0;
+	display:block;
+	font-size:160%;
+	color:#fff;
+	font-weight:bold;
+	height:47px;
+	margin: 0 0;
+	text-indent: 20px;
+	width:321px;
+	line-height:2.75em;
+}
+.orange h2{
+	margin-left:10px;
+	width:110px;
+	font-size:160%;
+	float: left;
+}
+.orange p{
+	font-size:120%;
+	margin-top:15px;
+	float: left;
+	clear: both;
+}*/
+
+.orange, #mainContent .orange{
+	background-position:-642px bottom;
+}
+.orange h1, #mainContent .orange h1{
+	background-position:-642px top;
+}
+
+
+.orange img{
+	margin-left:32px;
+	margin-top:2px;
+	position:absolute;
+	z-index:1;
+}
+
+.hp_box p{margin-left:10px;}
+
+#background{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../img/bigearth.jpg) no-repeat center top ;
+}
+
+.searchbox{
+	top:93px;
+}
+.searchbox .subbut{
+	padding: 1px;
+}
+
+/*#farRight{
+	margin-left:-3px;
+}*/
+
+
+#default_content .flashholder{
+	margin:6px
+}
+
+#sideNav .visitors, #sideNav .teachers, #sideNav .events, #sideNav .kids{
+	margin:0px !important;
+}
+
+/*white*/
+div.white ul li, #mainContent div.white ul li{
+	height:1%;
+}
+div.white ul li.download, #mainContent div.white ul li.download{
+	height:auto;
+}

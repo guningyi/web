@@ -1,0 +1,168 @@
+.contents_top 		{ height: 30px; position: relative; background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/contents_top.pngg') 0px 0 no-repeat; }
+.contents_tile 		{ background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/contents_tile.pngg') 0px 0 repeat-y; }
+.contents_bottom 	{ height: 7px; background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/contents_bottom.pngg') 0 0 no-repeat; }
+
+.R_Top				{ width: 100%; height: 5px; float: left; background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/R_top.pngg') 0 0 no-repeat; }
+.R_Tile				{ width: 100%; float: left; background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/R_tile.pngg') 0 0 repeat-y; }
+.R_Bottom			{ width: 100%; height: 5px; float: left; background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/R_bottom.pngg') 0 0 no-repeat; }
+
+a#signUp {}
+
+* html a#signUp {
+	height: 34px;
+	padding-top: 0;
+	text-align: left;
+}
+
+a#signUp { }
+a#signUp:hover { }
+a#signUp.on{ }
+
+a#btnClose { width: 25px; height: 25px; font-size: 0; position: absolute; text-indent: -9999px; color: #fff; right: 0; top: 0; }
+
+#sign {
+	position: absolute;
+	bottom: 17px;
+	left: 36px;
+	width: 400px;
+	height: 34px;
+	padding: 15px 27px 11px 17px;
+	font-size: 13px;
+	color: #FFF;
+	line-height: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	display: block;
+}
+
+#signUpForm { padding: 0px 0 0px 0; }
+#signUpForm .contents { width: 960px; margin: 0px auto; padding: 10px 0 25px 0; }
+
+#signUpForm .L {
+	float: left;
+	width: 360px;
+	padding: 0px 20px 0px 30px;
+	color: #fff;
+	
+}
+#signUpForm .L h2 { color: #feca78; font-weight: bold; font-family: helvetica, 'helvetica neue', arial; text-shadow: none; }
+#signUpForm .L h4 { color: #feca78; text-shadow: none; font-size: 1.1em; font-weight: bold; }
+#signUpForm a { color: #feca78; }
+
+
+#signUpForm .R {
+	float: right;
+	width: 506px;
+	margin: 0px 30px 15px 0;
+	color: #fff;
+}
+#signUpForm .R h4 { display: block; font-weight: bold; font-size: 1.4em; text-shadow: none; margin-top: 0px; margin-bottom: 20px; padding-top: 20px;}
+#signUpForm .R p.small { line-height: 1.4em; padding-top: 10px; color: #edf4bc;  }
+#signUpForm h1, #signUpForm h2, #signUpForm h3, #signUpForm h4, #signUpForm h5, #signUpForm h6 {color: #FFF;}
+
+#promo a#signUp {visibility: visible;}
+#signUpForm {display: none;}
+
+#signUpForm a {font-weight: bold;}
+
+#signUpForm .form {
+	padding: 0 24px;
+}
+
+#signUpForm .form h4 {
+	display: block;
+	float: left;
+	width: 100%;
+	margin-bottom: 10;
+}
+
+#signUpForm .form h4 span.step_num {
+	font-weight: bold;
+	width: 22px;
+	height: 32px;
+	padding: 1px 0 0 10px;
+	margin-top: -3px;
+	margin-right: 10px;
+	float: left;
+	font-family: "Arial Black", arial, helvetica, sans-serif;
+	background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/circle.pngg') 0 0 no-repeat;
+}
+#signUpForm .form h4 span.step_title { float: left; margin: 5px 0 0px 0; }
+
+#signUpForm .form input {
+	padding: .15em 0.25em;
+	font-size: 1.1667em;
+	font-weight: bold;	
+	color: #0b3e4e;
+}
+label { font-size: 1.1em; }
+#signUpForm #step1 input {width: 10em;}
+
+#signUpForm #step2 label, #signUpForm #step3 label,#signUpForm #step4 label  {
+	width: 170px;
+	text-align: right;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 2.4em;
+	margin-right: 0.5em;
+}
+#step4 .agreeTerms 				{ width: 100%; float: left; }
+#step4 .agreeTerms #chkTerms	{ float: left !important; margin-top: 8px; }
+#step4 .agreeTerms label		{ width: 90% !important; padding-left: 2%; display: inline !important; text-align: left !important; }
+
+#pWebsiteCreating, #pTerms, 
+#pBlankError					{ width: 86%; float: left; padding: 3%; margin: 0 2% 10px 2%; }
+
+#signUpForm .form .message {
+	padding: 0.5em 1em 0.5em 30px;
+	display: block;
+	background: #dfedb5;
+}
+#signUpForm .form .success { font-weight: bold; background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/green.png);}
+#signUpForm .form .fail {font-weight: bold; background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/error.png);}
+#signUpForm h4, #signUpForm .form p {margin-bottom: 0.5em;}
+#signUpForm li {list-style: none; margin-bottom: 0.5em;}
+#signUpForm li img {vertical-align: middle; margin-right: 0.25em;}
+
+#signUpForm .form p .btn {
+	width: 62px !important;
+	height: 31px !important;
+	text-indent: -999em;
+	padding: 10px 0 0 0 !important;
+	border: none;
+	background: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/btn_go.png) no-repeat left top;
+	float: right;
+	margin: 0 0 0 1em;
+	font-size: 1em;	
+}
+
+#signUpForm .form p .next {
+	width: 62px !important;
+	height: 31px !important;
+	background-image: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/btn_go.png) 0 0 no-repeat;
+}
+#signUpForm .form p .finish {
+	width: 71px !important;
+	background-image: url(http://www.speaklight.com/Websites/lux/templates/lightCMS/styles/images/btn_finish.png);
+}
+
+#signUpForm .form p.foot {
+	padding: 0.5em 24px;
+	margin: 0 -24px;
+	font-weight: bold;
+	color: #c7ebf4;
+	font-size: 1.2em;
+}
+
+#signUpForm .form .foot span {float: left; line-height: 34px;}
+#step2, #step3, #step4, #step5 {display: none;}
+
+code {
+	display: block;
+	text-indent: 0;
+	padding: 0.75em 1.5em;
+	font-size: 1.25em;
+	}
+	
+#step5 .success	{ display: block !important; float: left !important; width: 95% !important; margin: 0 0 10px 0 !important; padding: 10px 0 10px 5% !important;  }

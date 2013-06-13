@@ -1,0 +1,314 @@
+/*  Modern style sheet for standards compliant browsers  */
+
+hr {
+	display : none;
+	}
+
+/*  Note: This child selector affects all bold tags within   */
+/*  paragraphs, not the bold tags within the hard coded and  */
+/*  convoluted search results table layouts                  */
+
+p > b {
+  	font-weight : bold;
+  	color : #444;
+  	}
+
+p > strong {
+  	font-weight : bold;
+  	color : #444;
+  	}
+
+
+/*  Resets the color of bold declarations within class error */
+
+p.error > b {
+  	color : #C00;
+  	}
+
+table.cdupsell {
+	padding: 10px;
+	border-top : 1px solid;
+	border-bottom : 1px solid;
+	border-color : #CCC;
+	background : #FFF;
+	}
+	
+table.smallcontent {
+	border-top : 1px solid;
+	border-bottom : 1px solid;
+	border-color : #CCC;
+	background : #EEE;
+	}
+
+table.smallcontentwhite {
+	border-top : 1px solid;
+	border-bottom : 1px solid;
+	border-color : #CCC;
+	background : #FFF;
+	}
+
+
+/* Form element formatting */
+
+textarea,
+input.text,
+input.password {
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	border : 1px solid #666;
+	padding : 3px;
+	background : #FFF;
+	}
+
+select {
+	color : #666;
+	background : #FFF;
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	}
+
+input.check {
+	color : #666;
+	background : #FFF;
+	}
+
+
+/*  Used on media clippings page */
+
+.indent {
+	margin : 0px 75px 10px 7px;
+	text-indent : -5px;
+	}
+
+.soft {
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #777;
+	background : transparent;
+	}
+	
+.black {
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #000;
+	border-style : none;
+	background : transparent;
+	}
+
+.callout {
+	margin-top : 15px;
+	padding : 10px;
+	border : 1px solid #C00;
+	line-height : 14px;
+	color : #777;
+	}
+		
+
+/* Used on pricingcallout.ascx, productcallout.ascx, discs page */
+
+.callout4 {
+	padding : 10px;
+	border : 1px solid #CCC;
+	line-height : 14px;
+	color : #444;
+	width:296px;
+	}
+
+/* Used on help licensing.aspx, howtodownload.ascx, receiptitem.ascx, big bout rules page */
+
+.calloutz {
+	padding : 10px;
+	border : 1px solid #666;
+	line-height : 14px;
+	color : #666;
+	background : #EEE;
+	}
+
+.coupon {
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 15px;
+	background : transparent;
+	}
+
+.dottop {
+	border-top : 1px solid #CCC;
+	line-height : 14px;
+	}
+
+
+/*  Used on cartitem, indicating usage expiration */
+/*  *** Note ***                                  */
+/*  Should be replaced with responsemessage div   */
+
+.error {
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #C00;
+	border : 1px solid #444;
+	padding : 10px;
+	}
+	
+.error a:link {
+	color : #000;
+	background : transparent;
+	}
+
+.error a:visited {
+	color : #000;
+	background : transparent;
+	}
+
+.error a:hover {
+	color : #C00;
+	background : transparent;
+	text-decoration : underline;
+	}
+
+.error a:active {
+	color : #000;
+	background : transparent;
+	text-decoration : underline;
+	}
+	
+.mouse {
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 15px;
+	color : #777;
+	background : transparent;
+	}
+
+.offer {
+	margin : 0px;
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 12px;
+	color : #FFF;
+	background : transparent;
+	}
+
+.offer b {
+	margin : 0px 0px 10px 0px;
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	font-weight : bold;
+	line-height : 12px;
+	color : #FFF;
+	background : transparent;
+	}
+
+.offer p {
+	margin : 0px 0px 10px 0px;
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 12px;
+	color : #FFF;
+	background : transparent;
+	}
+
+.offer a:link {
+	color : #FFF;
+	background : transparent;
+	}
+
+.offer a:visited {
+	color : #FFF;
+	background : transparent;
+	}
+
+.offer a:hover {
+	color : #000;
+	background : transparent;
+	}
+
+.offer a:active {
+	color : #000;
+	background : transparent;
+	text-decoration : none;
+	}
+
+.white {
+	margin : 0px;
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #FFF;
+	background : transparent;
+	}
+
+.white a:link {
+	color : #FFF;
+	background : transparent;
+	}
+
+.white a:visited {
+	color : #FFF;
+	background : transparent;
+	}
+
+.white a:hover {
+	color : #000;
+	background : transparent;
+	}
+
+.white a:active {
+	color : #000;
+	background : transparent;
+	text-decoration : none;
+	}
+
+a.onblack:link {
+	color : #AAA;
+	background : transparent;
+	}
+
+a.onblack:visited {
+	color : #AAA;
+	background : transparent;
+	}
+
+a.onblack:hover {
+	color : #EEE;
+	background : transparent;
+	text-decoration : underline;
+	}
+
+a.onblack:active {
+	color : #EEE;
+	background : transparent;
+	text-decoration : underline;
+	}
+
+.distractions {
+	margin : 0px;
+	padding : 5px 0px 0px 10px;
+	font : 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #666;
+	}
+
+.skinny {
+	margin : 0px;
+	padding : 10px 15px 10px 15px;
+	background : #FFF;
+	border-right : 1px solid #CCC;
+	border-left : 1px solid #CCC;
+	border-bottom : 1px solid #CCC;
+	}
+
+.skinnytop {
+	margin : 0px;
+	padding : 10px;
+	background : #EEE;
+	border : 1px solid #CCC;
+	}
+	
+.skinnywhite {
+	margin : 0px;
+	padding : 10px;
+	background : #FFF;
+	border-right : 1px solid #CCC;
+	border-left : 1px solid #CCC;
+	border-bottom : 1px solid #CCC;
+	}
+
+.skinnyitem {
+	margin : 0px;
+	padding : 0px 0px 5px 0px;
+	font : 10px verdana, helvetica, arial, geneva, sans-serif;
+	line-height : 14px;
+	color : #000;
+	}

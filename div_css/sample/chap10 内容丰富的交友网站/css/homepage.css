@@ -1,0 +1,219 @@
+#searchbox H2 {
+	COLOR: #fff
+}
+#featurebox H2 {
+	COLOR: #fff
+}
+#subfeatureheader H2 {
+	COLOR: #fff
+}
+#leftsearchimage {
+	DISPLAY: block
+}
+#rightsearch {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: right; PADDING-BOTTOM: 10px; WIDTH: 458px; PADDING-TOP: 10px
+}
+#searchbox {
+	BORDER-RIGHT: #70bc7e 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #70bc7e 1px solid; PADDING-LEFT: 0px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 0px; BORDER-LEFT: #70bc7e 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #70bc7e 1px solid; BACKGROUND-COLOR: #9bd061
+}
+FORM#search {
+	POSITION: relative
+}
+ HTML DIV#locationentry LABEL {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 0.8em; COLOR: #000; MARGIN-RIGHT: 3px
+}
+ HTML DIV#keywordsentry LABEL {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 0.8em; COLOR: #000; MARGIN-RIGHT: 3px
+}
+DIV#locationentry {
+	FLOAT: left; MARGIN-RIGHT: 3px; POSITION: relative
+}
+DIV#keywordsentry {
+	FLOAT: left; MARGIN-RIGHT: 3px; POSITION: relative
+}
+ HTML DIV#locationentry {
+	FLOAT: left; MARGIN-RIGHT: 3px; POSITION: relative
+}
+ HTML DIV#keywordsentry {
+	FLOAT: left; MARGIN-RIGHT: 3px; POSITION: relative
+}
+INPUT#location {
+	FONT-SIZE: 1em
+}
+INPUT#keywords {
+	FONT-SIZE: 1em
+}
+INPUT#submitsearch {
+	FONT-SIZE: 1em
+}
+ HTML INPUT#submitsearch {
+	MARGIN-TOP: 1em
+}
+LABEL.overlabel {
+	COLOR: #999
+}
+LABEL.overlabelapply {
+	Z-INDEX: 1; LEFT: 5px; COLOR: #999; POSITION: absolute; TOP: 5px
+}
+#searchbox P {
+	CLEAR: both
+}
+#featurebox {
+	BORDER-RIGHT: #f37c16 1px solid; BORDER-TOP: #f37c16 1px solid; MIN-HEIGHT: 110px; MARGIN-BOTTOM: 10px; BORDER-LEFT: #f37c16 1px solid; BORDER-BOTTOM: #f37c16 1px solid
+}
+ HTML #featurebox {
+	HEIGHT: 110px
+}
+#featureleft {
+	FLOAT: left; WIDTH: 236px; HEIGHT: 110px; BACKGROUND-COLOR: #f59645
+}
+#featureleft H2 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; HEIGHT: 80px
+}
+#featureleft UL {
+	MARGIN-LEFT: 210px
+}
+ HTML #featureleft UL {
+	MARGIN-LEFT: 207px
+}
+#featureleft LI {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 1px; PADDING-BOTTOM: 3px; WIDTH: 20px; COLOR: #fff; PADDING-TOP: 3px; HEIGHT: 20px; BACKGROUND-COLOR: #f37c16; TEXT-ALIGN: center
+}
+ HTML #featureleft LI {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 1px; PADDING-BOTTOM: 3px; WIDTH: 20px; COLOR: #fff; PADDING-TOP: 3px; HEIGHT: 20px; BACKGROUND-COLOR: #f37c16
+}
+#featureleft .tabup {
+	COLOR: #f37c16; BACKGROUND-COLOR: #fff; TEXT-ALIGN: center
+}
+#featureleft .tabup A {
+	COLOR: #f37c16
+}
+#featureright {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN-LEFT: 236px; PADDING-TOP: 10px
+}
+#featureright DIV {
+	WIDTH: 450px; POSITION: absolute
+}
+#volunteerbox {
+	BORDER-RIGHT: #37abbe 1px solid; BORDER-TOP: #37abbe 1px solid; MIN-HEIGHT: 193px; FLOAT: left; MARGIN-BOTTOM: 10px; BORDER-LEFT: #37abbe 1px solid; WIDTH: 355px; BORDER-BOTTOM: #37abbe 1px solid
+}
+ HTML #volunteerbox {
+	HEIGHT: 195px
+}
+#volunteerbox IMG {
+	
+}
+#volunteerheader {
+	PADDING-LEFT: 10px; PADDING-TOP: 3px; HEIGHT: 1.66em; BACKGROUND-COLOR: #73c4d1
+}
+#volunteerheader H3 {
+	FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #fff
+}
+#volunteerheader UL {
+	MARGIN-LEFT: 220px
+}
+#volunteerheader LI {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FLOAT: left; PADDING-BOTTOM: 3px; WIDTH: 20px; COLOR: #fff; MARGIN-RIGHT: 1px; PADDING-TOP: 3px; HEIGHT: 19px; BACKGROUND-COLOR: #37abbe; TEXT-ALIGN: center
+}
+#volunteerheader .tabup {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; COLOR: #37abbe; MARGIN-RIGHT: 1px; PADDING-TOP: 3px; BACKGROUND-COLOR: #fff; TEXT-ALIGN: center
+}
+#volunteerheader .tabup A {
+	COLOR: #37abbe
+}
+#nonprofitbox {
+	BORDER-RIGHT: #70bc7e 1px solid; BORDER-TOP: #70bc7e 1px solid; MIN-HEIGHT: 193px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 365px; BORDER-LEFT: #70bc7e 1px solid; BORDER-BOTTOM: #70bc7e 1px solid
+}
+ HTML #nonprofitbox {
+	HEIGHT: 195px
+}
+#nonprofitbox IMG {
+	
+}
+#nonprofitheader {
+	PADDING-LEFT: 10px; PADDING-TOP: 3px; HEIGHT: 1.66em; BACKGROUND-COLOR: #9bd061
+}
+#nonprofitheader H3 {
+	FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #fff
+}
+#nonprofitheader UL {
+	MARGIN-LEFT: 220px
+}
+#nonprofitheader LI {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FLOAT: left; PADDING-BOTTOM: 3px; WIDTH: 20px; COLOR: #fff; MARGIN-RIGHT: 1px; PADDING-TOP: 3px; HEIGHT: 19px; BACKGROUND-COLOR: #70b62b; TEXT-ALIGN: center
+}
+#nonprofitheader .tabup {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; COLOR: #70b62b; MARGIN-RIGHT: 1px; PADDING-TOP: 3px; BACKGROUND-COLOR: #fff; TEXT-ALIGN: center
+}
+#subnav .tabup {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; COLOR: #70b62b; MARGIN-RIGHT: 1px; PADDING-TOP: 3px; BACKGROUND-COLOR: #fff; TEXT-ALIGN: center
+}
+#nonprofitheader .tabup A {
+	COLOR: #70b62b
+}
+.enroll {
+	PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+P.enroll {
+	MARGIN-BOTTOM: -5px; PADDING-BOTTOM: 2px! important
+}
+.enroll A {
+	FONT-WEIGHT: bold; COLOR: #fff; TEXT-DECORATION: none
+}
+.enroll A:hover {
+	TEXT-DECORATION: underline
+}
+#nonprofitbox .enroll {
+	BACKGROUND-COLOR: #70b62b
+}
+#subbox1 {
+	CLEAR: left; FLOAT: left; WIDTH: 230px; COLOR: #333
+}
+#subbox2 {
+	FLOAT: left; MARGIN-LEFT: 14px; WIDTH: 230px; COLOR: #333
+}
+ HTML #subbox2 {
+	FLOAT: left; MARGIN-LEFT: 12px; WIDTH: 230px; COLOR: #333
+}
+#subbox3 {
+	MARGIN-BOTTOM: 20px; MARGIN-LEFT: 488px; COLOR: #333
+}
+ HTML #subbox3 {
+	MARGIN-BOTTOM: 20px; MARGIN-LEFT: 485px; COLOR: #333
+}
+#columnside {
+	MARGIN-LEFT: 730px
+}
+#columnside A {
+	COLOR: #333
+}
+#loginbox {
+	BORDER-RIGHT: #b2b2b2 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #b2b2b2 1px solid; PADDING-LEFT: 10px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #b2b2b2 1px solid; COLOR: #333; PADDING-TOP: 10px; BORDER-BOTTOM: #b2b2b2 1px solid; BACKGROUND-COLOR: #f1f2f2
+}
+#aboutbox {
+	BORDER-RIGHT: #b2b2b2 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #b2b2b2 1px solid; PADDING-LEFT: 10px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #b2b2b2 1px solid; COLOR: #333; PADDING-TOP: 10px; BORDER-BOTTOM: #b2b2b2 1px solid
+}
+.homepagebox {
+	BORDER-RIGHT: #b2b2b2 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #b2b2b2 1px solid; PADDING-LEFT: 10px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #b2b2b2 1px solid; COLOR: #333; PADDING-TOP: 10px; BORDER-BOTTOM: #b2b2b2 1px solid
+}
+#aboutbox H3 {
+	COLOR: #ff360c
+}
+.homepagebox H3 {
+	COLOR: #ff360c
+}
+#subsearchbox {
+	BORDER-RIGHT: #b2b2b2 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #b2b2b2 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #b2b2b2 1px solid; COLOR: #333; PADDING-TOP: 10px; BORDER-BOTTOM: #b2b2b2 1px solid
+}
+#subsearchbox H3 {
+	COLOR: #ff360c
+}
+#tagcloud {
+	PADDING-BOTTOM: 10px; TEXT-ALIGN: center
+}
+#tagcloud A {
+	PADDING-RIGHT: 10px; COLOR: #73c4d1; TEXT-DECORATION: none
+}
+#tagcloud A:hover {
+	COLOR: #37abbe
+}

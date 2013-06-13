@@ -1,0 +1,176 @@
+
+/*********** 3rd LEVEL PAGE - MENU TABLE *************/
+/*****************************************************/
+#MenuTable {
+	width:95%;
+	border:0px;
+	padding:0px;
+	margin-top:15px;
+	padding:0px;
+	text-align:left;
+	font-size: 10px;
+}
+
+
+#MenuTable td #caption {
+	border:0px;
+	margin-top:6px;
+	text-align:left;
+	padding-left:0px;
+	background:#FF0000;
+}
+
+#MenuTable tbody {
+	border: 0px;
+}
+
+
+#MenuTable tr {
+}
+
+#MenuTable td {
+	padding-top:1px;
+	border:0px;
+}
+
+#MenuTable td.bold, #MenuTable td b {
+	font-weight:bold;
+	color:#333333;
+}
+
+#MenuTable td.menuItem {
+	width:85%;
+	/*background:#99CC66;*/
+}
+
+#MenuTable td.price {
+	width:10%;
+	text-align:right;
+	/*background:#999999;*/
+}
+
+
+#webform-client-form-115 fieldset {
+	padding-bottom:10px;
+	padding-left:10px;
+	width:525px;
+}
+
+#webform-client-form-115 fieldset {
+	padding-bottom:10px;
+	padding-left:10px;
+}
+#webform-component-your_address div {
+	float:left;
+	padding-right:20px;
+}
+#webform-component-your_details div {
+	float:left;
+	padding-right:20px;
+}
+#webform-component-type_of_event {
+	float:left;
+	padding-right:20px;
+}
+
+#webform-component-preferred_date,
+#webform-component-alternate_date_1 {
+	float:left;
+	padding-right:20px;
+}
+
+#webform-component-daytime_phone_number,
+#webform-component-alternate_phone_number {
+	float:left;
+	width:175px;
+}
+
+#webform-component-starting_time{
+	clear:both;
+}
+
+.calendar-calendar div.date-nav {
+	border:none;
+	color:#777777;
+	background:#E9F4F7 none repeat scroll 0;
+}
+.calendar-calendar table {
+	border-collapse:collapse;
+}
+.calendar-calendar thead th {
+	border-bottom:none;
+}
+.calendar-calendar th.days {
+	border:none;
+	background-color:#E9F4F7;
+}
+.calendar-calendar td {
+	padding: 5px;
+	border: 0;
+	background: #E9F4F7;
+}
+.calendar-calendar td.empty {
+	background:#E9F4F7 none repeat scroll 0;
+}
+
+.calendar-calendar td .inner div.calendar div, .calendar-calendar td .inner div.calendar div a {
+	background:none;
+	text-align:center;
+	margin-bottom:2px;	
+}
+
+.calendar-calendar td .inner .view-field, .calendar-calendar td .inner .view-field a {
+	font-size:8px;
+}
+
+.calendar-calendar .inner {
+	background:white;
+	min-height:6em;
+	overflow:hidden;
+}
+
+.calendar-calendar td.week {
+	display:none;
+}
+
+.calendar-calendar .week {
+	display:none;
+}
+
+.calendar-calendar div.day {
+	float:left;
+}
+.calendar-calendar td .inner div, .calendar-calendar td .inner div a {
+	border:none;
+	background:none;
+}
+
+/******** Jcalendar overrides *********/
+div#calpopup {
+	-moz-border-radius-bottomleft:0em;
+	-moz-border-radius-bottomright:1em;
+	-moz-border-radius-topleft:0em;
+	-moz-border-radius-topright:0em;
+	border:thin solid #CCCCCC;
+}
+
+div#calpopup-body {
+	margin:0 1em 1em;
+	overflow:hidden;
+}
+
+div#calpopup-body div h2 {
+	margin-top:0;
+}
+
+#popup-close {
+	cursor:pointer;
+}
+
+div#nodelink {
+	background: #ffffff url(../images/more.jpg);
+	background-repeat:no-repeat;
+	background-position:30px -1px;
+	margin: 1em 0;
+	
+}

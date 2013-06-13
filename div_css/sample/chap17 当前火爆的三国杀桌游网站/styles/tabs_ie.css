@@ -1,0 +1,5 @@
+@charset "UTF-8";
+.tabs-nav .tabs-disabled {
+	position: relative;
+	filter: alpha(opacity=40);
+}

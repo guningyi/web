@@ -1,0 +1,459 @@
+
+
+#navigation {
+	margin: 15px 0 0 15px;
+	width: 196px;
+	background-color: #957850;
+}
+
+#navigation ul {
+	list-style-type: none;
+	font-family: georgia, arial;
+	font-weight: bold;
+	padding: 6px 0 4px 0;
+	padding-right: 13px;
+	min-height: 190px;
+	height: auto !important;  /* für moderne Browser */
+	height: 190px;  /*für den IE */	
+}
+
+#navigation ul li {
+	padding: 5px 0;
+	background-image: url(../image/nav_linie.gif);
+	background-repeat: no-repeat;
+	background-position: 0 bottom;
+}
+
+#navigation ul li a {
+	padding: 1px 0 1px 10px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	height: 1%;
+}
+
+
+
+#navigation ul li a:hover {
+	background-color: #fff;
+}
+
+
+
+
+#navigation ul li#p1 a:hover, #navigation ul li#p1.active>a,
+#navigation ul li#p693 a:hover, #navigation ul li#p693.active>a,
+#navigation ul li#p772 a:hover, #navigation ul li#p772.active>a,
+#navigation ul li#p1115 a:hover, #navigation ul li#p1115.active>a    
+ {
+	color: #e63c3c;
+	background-image: url(../image/pfeil_rot.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+#navigation ul li#p2 a:hover, #navigation ul li#p2.active>a, 
+#navigation ul li#p401 a:hover, #navigation ul li#p401.active>a,
+#navigation ul li#p807 a:hover, #navigation ul li#p807.active>a,
+#navigation ul li#p1150 a:hover, #navigation ul li#p1150.active>a
+{
+	color: #ff8c64;
+	background-image: url(../image/pfeil_orange.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+#navigation ul li#p3 a:hover, #navigation ul li#p3.active>a,
+#navigation ul li#p455 a:hover, #navigation ul li#p455.active>a,
+#navigation ul li#p861 a:hover, #navigation ul li#p861.active>a,
+#navigation ul li#p1204 a:hover, #navigation ul li#p1204.active>a
+ {
+color: #96aa63;
+	background-image: url(../image/pfeil_gruen.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+#navigation ul li#p4 a:hover, #navigation ul li#p4.active>a,
+#navigation ul li#p514 a:hover, #navigation ul li#p514.active>a,
+#navigation ul li#p920 a:hover, #navigation ul li#p920.active>a,
+#navigation ul li#p1263 a:hover, #navigation ul li#p1263.active>a
+ {
+	color: #5a8cff;
+	background-image: url(../image/pfeil_blau.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+#navigation ul li#p5 a:hover, #navigation ul li#p5.active>a, 
+#navigation ul li#p545 a:hover, #navigation ul li#p545.active>a,
+#navigation ul li#p951 a:hover, #navigation ul li#p951.active>a,
+#navigation ul li#p1304 a:hover, #navigation ul li#p1304.active>a 
+{
+	color: #c83264;
+	background-image: url(../image/pfeil_purpur.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+#navigation ul li#p6 a:hover, #navigation ul li#p6.active>a,
+#navigation ul li#p613 a:hover, #navigation ul li#p613.active>a,
+#navigation ul li#p1019 a:hover, #navigation ul li#p1019.active>a,
+#navigation ul li#p1372 a:hover, #navigation ul li#p1372.active>a
+ {
+	color: #c882e6;
+	background-image: url(../image/pfeil_violett.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+.nopic, #p6, #p613, #p1019, #p1372 {
+	background-image: none !important;
+	padding-bottom:0 !important;
+}
+
+
+/*-------Unternavigation----------*/
+
+#unternavigation {
+	margin: 9px 0 0 15px;
+	width: 196px;
+}
+.naturschutz #unternavigation {
+	background-color: #e63c3c;
+}		
+.zoobesuch #unternavigation {
+	background-color: #ff8c64;
+}	
+.wissen #unternavigation {
+	background-color: #96aa64;
+}	
+.highlights #unternavigation {
+	background-color: #5a8cff;
+}	
+.events #unternavigation {
+	background-color: #c83264;
+}	
+.spenden #unternavigation {
+	background-color: #c882e6;
+}		
+.grau #unternavigation {
+	background-color: #7a7a7a;
+}	
+
+/*------------*/
+
+#unternavigation ul {
+	list-style-type: none;
+	font-family: georgia, arial;
+	font-weight: bold;
+	padding: 6px 0 16px 0;
+	padding-right: 13px;
+}
+
+#unternavigation ul li {
+	padding: 5px 0;
+	background-image: url(../image/unav_linie.gif);
+	background-repeat: no-repeat;
+	background-position: 0 bottom;
+}
+
+#unternavigation ul li a {
+	padding: 1px 0 1px 10px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	height: 1%;
+}
+
+#unternavigation ul li a:hover {
+	color: #000;
+}
+
+
+/*------------*/
+
+#unternavigation ul ul {
+	padding: 0;
+}
+
+
+/*------------*/
+
+#unternavigation ul li ul li {
+	background-image: none;
+	font-weight: normal;
+	padding: 0 ;
+	margin-left: 10px;
+}
+
+
+#unternavigation ul li ul li a {
+	background-image: url(../image/unav_pfeil2.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+
+
+
+
+
+
+#unternavigation ul li ul li ul li {
+
+}
+
+
+
+/* ------- active firefox ---------- */
+
+
+/* Ebene 1 - active */
+#unternavigation ul li.active>a {
+	background-image: url(../image/unav_pfeil1.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+/* Ebene 2 - active */
+#unternavigation ul li ul li.active>a {
+	background-image: url(../image/unav_pfeil3.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+#unternavigation ul li ul li.pageactive>a {
+	background-image: url(../image/unav_pfeil4.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+font-weight: bold;
+}
+#unternavigation ul li ul li.folderactive>a {
+	background-image: url(../image/unav_pfeil3.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+font-weight: bold;
+}
+
+
+
+/* Ebene 3 - active */
+#unternavigation ul li ul li ul li.active>a {
+	background-image: url(../image/unav_pfeil4.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/*Sub Menu for Gecko */
+
+#navigation ul li:hover ul { display: block;}
+#navigation ul li:hover ul li ul {display: none}
+#navigation ul li:hover ul li:hover ul {display: block}
+#navigation ul li:hover ul li:hover ul li ul {display: none}
+#navigation ul li:hover ul li:hover ul li:hover ul {display: block}
+
+
+
+
+/* Sub Menu Styles for IE */
+		
+#navigation ul li.over ul { display: block;}
+#navigation ul li.over ul li ul {display: none}
+#navigation ul li.over ul li.over ul {display: block}
+#navigation ul li.over ul li.over ul li ul {display: none}
+#navigation ul li.over ul li.over ul li.over ul {display: block}
+
+
+
+* html #navigation ul li#p1.active a, * html #navigation ul li#p1 a:hover,
+* html #navigation ul li#p693.active a, * html #navigation ul li#p693 a:hover,
+* html #navigation ul li#p772.active a, * html #navigation ul li#p772 a:hover,
+* html #navigation ul li#p1115.active a, * html #navigation ul li#p1115 a:hover
+ {
+	color: #e63c3c;
+	background-image: url(../image/pfeil_rot.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+* html #navigation ul li#p2.active a, * html #navigation ul li#p2 a:hover,
+* html #navigation ul li#p401.active a, * html #navigation ul li#p401 a:hover,
+* html #navigation ul li#p807.active a, * html #navigation ul li#p807 a:hover,
+* html #navigation ul li#p1150.active a, * html #navigation ul li#p1150 a:hover
+{
+	color: #ff8c64;
+	background-image: url(../image/pfeil_orange.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+* html #navigation ul li#p3.active a, * html #navigation ul li#p3 a:hover,
+* html #navigation ul li#p455.active a, * html #navigation ul li#p455 a:hover,
+* html #navigation ul li#p861.active a, * html #navigation ul li#p861 a:hover,
+* html #navigation ul li#p1204.active a, * html #navigation ul li#p1204 a:hover
+ {
+	color: #96aa63;
+	background-image: url(../image/pfeil_gruen.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+* html #navigation ul li#p4.active a, * html #navigation ul li#p4 a:hover,
+* html #navigation ul li#p514.active a, * html #navigation ul li#p514 a:hover,
+* html #navigation ul li#p920.active a, * html #navigation ul li#p920 a:hover,
+* html #navigation ul li#p1263.active a, * html #navigation ul li#p1263 a:hover
+ {
+	color: #5a8cff;
+	background-image: url(../image/pfeil_blau.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+* html #navigation ul li#p5.active a, * html #navigation ul li#p5 a:hover,
+* html #navigation ul li#p545.active a, * html #navigation ul li#p545 a:hover,
+* html #navigation ul li#p951.active a, * html #navigation ul li#p951 a:hover,
+* html #navigation ul li#p1304.active a, * html #navigation ul li#p1304 a:hover
+{
+	color: #c83264;
+	background-image: url(../image/pfeil_purpur.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+* html #navigation ul li#p6.active a, * html #navigation ul li#p6 a:hover,
+* html #navigation ul li#p613.active a, * html #navigation ul li#p613 a:hover,
+* html #navigation ul li#p1019.active a, * html #navigation ul li#p1019 a:hover,
+* html #navigation ul li#p1372.active a, * html #navigation ul li#p1372 a:hover
+{
+	color: #c882e6;
+	background-image: url(../image/pfeil_violett.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+
+/*
+
+* html .wissen #navigation ul li.active a, * html .wissen #navigation ul li a:hover {
+	color: #96aa63;
+	background-image: url(../image/pfeil_gruen.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+* html .highlights #navigation ul li.active a, * html .highlights #navigation ul li a:hover {
+	color: #5a8cff;
+	background-image: url(../image/pfeil_blau.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+* html .naturschutz #navigation ul li.active a, * html .naturschutz #navigation ul li a:hover {
+	color: #e63c3c;
+	background-image: url(../image/pfeil_rot.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+* html .zoobesuch #navigation ul li.active a, * html .zoobesuch #navigation ul li a:hover {
+	color: #ff8c64;
+	background-image: url(../image/pfeil_orange.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+* html .events #navigation ul li.active a, * html .events #navigation ul li a:hover {
+	color: #c83264;
+	background-image: url(../image/pfeil_purpur.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+* html .spenden #navigation ul li.active a, * html .spenden #navigation ul li a:hover {
+	color: #c882e6;
+	background-image: url(../image/pfeil_violett.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-color: #fff;
+}
+
+
+*/
+
+
+
+* html #unternavigation ul li.active a {		
+	background-image: url(../image/unav_pfeil1.gif);
+	background-repeat: no-repeat;
+	background-position: 1px left;
+}
+
+
+
+* html #unternavigation ul li.active ul li.active {			
+	background-image: url(../image/unav_pfeil4.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+font-weight: bold;
+}
+
+
+* html #unternavigation ul li.active ul li a{			
+	background-image: url(../image/unav_pfeil2.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+* html #unternavigation ul li.active ul li.active ul li.active a {			
+	background-image: url(../image/unav_pfeil4.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	font-weight: bold;
+}
+* html #navigation ul li.active ul li a {
+	background-color: #045978;
+	color: #fff;
+}
+* html div#navigation ul li.active ul li.active ul li a {
+	background-color: #F7F7F7;
+	color: #2F4E6F;
+}
+* html #navigation ul li.active ul li.active ul li.active ul li a {
+	background-color: #F7F7F7;
+	color: #2F4E6F;
+}
+
+* html #navigation ul li a {height: 1%;}
+* html #navigation ul li ul li a {height: 1%;}
+* html #navigation ul li ul li ul li a {height: 1%;}

@@ -1,0 +1,84 @@
+
+
+#page_title p 				{ float: right; width: auto; }
+.button_orange_right 		{ float: right; width: 130px; display: inline; }
+.button_blue_right 			{ float: right; width: 140px; display: inline; }
+
+
+.testimonials_tile			{ width: 100%; float: left; }
+.testimonials_top 			{ width: 80%; float: left; padding: 10%; }
+.testimonials_bottom		{ width: 85%; float: left; }
+                        	
+.gray_banner_tile			{ width: 100%; float: left; }
+.gray_banner_top			{ width: 100%; float: left; }
+.gray_banner_bottom			{ width: 100%; float: left; }
+
+.gray_container_tile		{ width: 100%; float: left; }
+.gray_container_top			{ width: 100%; float: left; }
+.gray_container_bottom		{ width: 100%; float: left; }
+                        	
+.sectioned					{ width: 100%; float: left; }
+                        	
+.three_across_tile			{ width: 100%; float: left; }
+.three_across_top			{ width: 100%; float: left; }
+.three_across_bottom		{ width: 100%; float: left; }
+
+.rewards_featured_tile 		{ width: 100%; float: left; }
+.rewards_featured_top	 	{ width: 100%; float: left; }
+.rewards_featured_bottom 	{ width: 100%; float: left; }
+
+.yellow_container_tile		{ width: 100%; float: left; }
+.yellow_container_top		{ width: 100%; float: left; }
+.yellow_container_bottom	{ width: 94%; padding: 2% 3%; float: left; }
+
+.yellow_container_2_tile	{ width: 100%; float: left; }
+.yellow_container_2_top		{ width: 100%; float: left; }
+.yellow_container_2_bottom	{ width: 100%; float: left; }
+
+.two_tile					{ width: 100%; float: left; }
+.two_top					{ width: 100%; float: left; }
+.two_bottom					{ width: 100%; float: left; }
+
+.three_tile					{ width: 100%; float: left; }
+.three_top					{ width: 100%; float: left; }
+.three_bottom				{ width: 100%; float: left; }
+
+.four_tile					{ width: 100%; float: left; }
+.four_top					{ width: 100%; float: left; }
+.four_bottom				{ width: 100%; float: left; }
+
+.five_tile					{ width: 100%; float: left; }
+.five_top					{ width: 100%; float: left; }
+.five_bottom				{ width: 100%; float: left; }
+
+.post_tile, .post_top, .post_bottom, .PageInfo, .CommentHeader	{ width: 100%; float: left; }
+.PageInfo, .ContentBody, .Comments, .CommentHeader { width: 100%; float: left; }
+
+.gray_container_bottom, 
+.post_bottom				{ width: 94%; padding: 0 3%; }
+.Discussion					{ border: none !important; }
+
+.blog_links_bottom			{ width: 94%; padding: 0 3%; }
+
+.pricing_table_tile,
+.pricing_table_top,
+.pricing_table_bottom		{ float: left; }
+
+.three_col_gray_container_top		{ float: left; }
+.three_col_gray_container_tile		{ float: left; }
+.three_col_gray_container_bottom	{ float: left; }
+
+.sign_up_rewards_top				{ width: 100%; float: left; }
+.sign_up_rewards_tile				{ width: 100%; float: left; }
+.sign_up_rewards_bottom				{ width: 100%; float: left; }
+
+.profit_banner_top					{ width: 100%; float: left; }
+.profit_banner_tile					{ width: 100%; float: left; }
+.profit_banner_bottom				{ width: 100%; float: left; }
+
+.PageInfo { width: 95%; padding: 1% 2.5%; float: left; font-size: 12px; margin: 10px 0 20px; -webkit-border-radius: 5px; -moz-border-radius:10px;  }
+
+.gray_container_5_tile, .gray_container_5_top	{ *width: 100%; *float: left; }
+.gray_container_4_tile, .gray_container_4_top 	{ *width: 100%; *float: left; }
+.gray_container_5_bottom, .gray_container_4_bottom	{ *width: 94%; *padding: 2% 3%; }
+ 

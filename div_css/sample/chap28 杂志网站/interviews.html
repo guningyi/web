@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>杂志网站</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/sIFR-screen.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="css/sIFR-print.css" media="print" />
+<link type="text/css" rel="stylesheet" href="css/facebox.css" media="screen" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
+<script type="text/javascript" src="js/sifr.js"></script>
+<script type="text/javascript" src="js/sifr-addons.js" ></script>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/smooth_scroll.js"></script>
+<script type="text/javascript" src="js/jquery.filestyle.js"></script>
+<script type="text/javascript" src="js/facebox.js"></script>
+<script type="text/javascript" src="js/ajaxupload.3.6.js"></script>
+<script type="text/javascript" src="js/jquery.popupwindow.js"></script>
+<meta name="verify-v1" content="CLAqsYjgnZ+1GolnqzpMhsMhGuREKQeUum+8+ME2jS0=" />
+<script type="text/javascript" src="js/library.js"></script>
+<meta name="description" content="International Online Visual Arts Magazine" />
+<link type="text/css" rel="stylesheet" href="css/all.css" />
+<link media="all" type="text/css" rel="stylesheet" href="css/en-US.css" />
+<script type="text/javascript" src="js/en-US.js"></script>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="/interviews" id="aspnetForm">
+  <div id="main-container">
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("div.middle-line-right div:gt(0)").hide();
+            $("div.cover img:gt(0)").hide();
+
+            $("ul.cover-selector li").each(function(i) {
+                $(this).click(function() {
+                    $("ul.cover-selector li a").removeClass("active");
+                    $("ul.cover-selector li a:eq(" + i + ")").addClass("active");
+
+                    $("div.middle-line-right div").hide();
+                    $("div.cover img").hide();
+                    $("div.middle-line-right div:eq(" + i + ")").show();
+                    $("div.cover img:eq(" + i + ")").show();
+                });
+            });
+
+            $("a#pc-download").click(function() {
+                var issue = $('[id$=ddlIssues]').val();
+                if (issue != '') {
+                    window.location = '/download/' + issue + '/windows';
+                }
+                else {
+                    jQuery.facebox(_chooseissue);
+                }
+            });
+
+            $("a#mac-download").click(function() {
+                var issue = $('[id$=ddlIssues]').val();
+                if (issue != '') {
+                    window.location = '/download/' + issue + '/mac';
+                }
+                else {
+                    jQuery.facebox(_chooseissue);
+                }
+            });
+
+            $("a#details").click(function() {
+                var issue = $('[id$=ddlIssues]').val();
+                if (issue != '') {
+                    window.location = '/' + _magazine + '/' + issue;
+                }
+                else {
+                    jQuery.facebox(_chooseissue);
+                }
+            });
+
+            $("a#pc-download").click(function() {
+                var issue = $('[id$=ddlIssues]').val();
+                if (issue != '') {
+                    window.location = '/download/' + issue + '/windows';
+                }
+                else {
+                    jQuery.facebox(_chooseissue);
+                }
+            });
+
+            $("a#online").popupWindow({
+                height: 768,
+                width: 1024,
+                centerBrowser: 1,
+                windowName: 'bakonline'
+            });
+
+            $(".search-go").click(function() {
+                var q = $('[id$=txtSearch]').val();
+                window.location = '/' + _search + '/' + q;
+                return false;
+            });
+
+            $("a#online").attr("href", _onlinedomain + '?issue=' + $('[id$=ddlIssues]').val());
+            $('[id$=ddlIssues]').change(function() {
+                $("a#online").attr("href", _onlinedomain + '?issue=' + $('[id$=ddlIssues]').val());
+                return false;
+            });
+        });
+    </script>
+    <div class="top">
+      <div class="top-left"> <a id="ctl00_Header1_linkLogo" title="" class="logo" href="#">Bak</a> </div>
+    </div>
+    <div class="menu-cover">
+      <div class="menu-area">
+        <ul id="navigation">
+         <li id="navigation-1"><a id="ctl00_Header1_linkMagazine"  href="index.html"></a></li>
+          <li id="navigation-2"><a id="ctl00_Header1_linkInterviews"  href="interviews.html"></a></li>
+          <li id="navigation-3"><a id="ctl00_Header1_linkBakAtMe"  href="magazine.html"></a></li>
+          <li id="navigation-4"><a id="ctl00_Header1_linkContact"  href="interviews.html"></a></li>
+          <li id="navigation-5"><a id="ctl00_Header1_linkGoodies"  href="magazine.html"></a></li>
+          <li id="navigation-6"><a id="ctl00_Header1_linkGetRss"  href="interviews.html"></a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <input name="ctl00$Header1$txtSearch" type="text" id="ctl00_Header1_txtSearch" class="search" />
+        <input type="submit" name="ctl00$Header1$btnSearch" value="" id="ctl00_Header1_btnSearch" class="search-go" />
+        <div class="clearfix"></div>
+       
+        <div class="clearfix"></div>
+        <a id="ctl00_Header1_linkDownload" title="" class="download"></a> </div>
+      <div class="cover"> <a id="ctl00_Header1_lvAnnouncementImages_ctrl0_linkItem" href="#"><img id="ctl00_Header1_lvAnnouncementImages_ctrl0_imageItem" src="img/79292fef-14da-4bf0-ac58-ba4a05ece525.jpg" alt="79292fef-14da-4bf0-ac58-ba4a05ece525.jpg" style="border-width:0px;" /></a> <a id="ctl00_Header1_lvAnnouncementImages_ctrl1_linkItem" href="#"><img id="ctl00_Header1_lvAnnouncementImages_ctrl1_imageItem" src="img/d02220f5-3349-41d3-90cc-e574ab1221d2.jpg" alt="d02220f5-3349-41d3-90cc-e574ab1221d2.jpg" style="border-width:0px;display:none" /></a> <a id="ctl00_Header1_lvAnnouncementImages_ctrl2_linkItem"><img id="ctl00_Header1_lvAnnouncementImages_ctrl2_imageItem" src="img/3ee24ccc-4e16-4892-82a0-805a138b319d.jpg" alt="3ee24ccc-4e16-4892-82a0-805a138b319d.jpg" style="border-width:0px;display:none" /></a> </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="middle-line">
+      <div class="middle-dummy"></div>
+      <div class="middle-line-left">
+        <select name="ctl00$Header1$ddlIssues" id="ctl00_Header1_ddlIssues" class="select-issue2">
+          <option value="15">主题</option>
+          <option value="14">杂志名</option>
+          <option value="13">出版日期</option>
+        </select>
+        <ul class="issue-download">
+          <li class="pc"><a id="pc-download" title="杂志大全"></a></li>
+          <li class="mac"><a id="mac-download" title="杂志社区"></a></li>
+          <li class="online"><a id="online" title="在线杂志"></a></li>
+        </ul>
+      </div>
+      <div class="middle-line-right">
+       <div >
+          <h5 class="pink-announce">《春晓》每一位学生都值得赞美 </h5>
+          <span>《风格品位志》周迅 幸好还有你 </span> </div>
+        <div class="hidden">
+          <h5 class="pink-announce">《东西》传奇的安特卫普 </h5>
+          <span>《家庭医师》喉中异物感 半夏厚朴汤 </span> </div>
+        <div class="hidden">
+          <h5 class="pink-announce">《花溪》甜蜜的美丽攻略 </h5>
+          <span>《看世界》谁阻挠张学良回归大陆? </span> </div>
+      </div>
+      <ul class="cover-selector">
+        <li class="no1"><a class="active" href="#" title="">1</a></li>
+        <li class="no2"><a href="#" title="">2</a></li>
+        <li class="no3"><a href="#" title="">3</a></li>
+      </ul>
+    </div>
+    <div class="middle-big">
+      <script type="text/javascript">
+    // Link to Existing Account on Google Analytics
+    window.google_analytics_uacct = "UA-1761752-3";
+</script>
+      <script type="text/javascript">
+           $(document).ready(function() {
+               $(".issue-show").click(function() {
+                   var issue = $(".issue-select").val();
+                   if (issue != '') {
+                       window.location = '/' + _interviews + '/' + issue;
+                   }
+                   else {
+                       jQuery.facebox(_chooseissue);
+                   }
+               });
+
+               $("[id$=btnInterviewSearch]").click(function() {
+                   var q = $('[id$=txtInterviewSearch]').val();
+                   window.location = '/' + _search + '/' + q + '/1';
+                   return false;
+               });
+
+               // form validation
+               $('[id$=linkButtonShout]').click(function() {
+                   var msg = new Array()
+
+                   var comment = jQuery.trim($('[id$=txtInterviewComment]').val());
+                   if (comment == '') {
+                       msg.push(_commentWarning);
+                   }
+                   else {
+                       if (comment.length > 200) {
+                           msg.push(_commentLimitWarning);
+                       } 
+                   }
+
+                   if (jQuery.trim($('[id$=txtInterviewCommenter]').val()) == '') {
+                       msg.push(_nameWarning);
+                   }
+
+                   if (msg.length > 0) {
+                       jQuery.facebox(msg.join("<br />"));
+                       return false;
+                   }
+
+                   return true;
+               });
+
+               $('.shout-box').keyup(function() {
+                    var len = this.value.length;
+                    if (len >= 200) {
+                        this.value = this.value.substring(0, 200);
+                    }
+                });            
+                    
+           });
+        </script>
+      <link rel="image_src" href="img/784c1c0a-8cbc-4478-adfc-0ec1b8eea6c3.jpg" />
+      <div class="middle-big-left">
+        <h4 class="interviews">快速搜索</h4>
+        <div id="ctl00_ContentPlaceHolder1_pnlSearch" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_ContentPlaceHolder1_btnInterviewSearch')"> <span class="form-addsite3"><strong>搜索:</strong></span>
+          <div class="input-container">
+            <input name="ctl00$ContentPlaceHolder1$txtInterviewSearch" type="text" id="ctl00_ContentPlaceHolder1_txtInterviewSearch" class="issue-search" />
+          </div>
+          <input type="submit" name="ctl00$ContentPlaceHolder1$btnInterviewSearch" value="" id="ctl00_ContentPlaceHolder1_btnInterviewSearch" class="issue-go" />
+        </div>
+        <span class="form-addsite"><strong>快速查找:</strong></span>
+        <div class="input-container">
+          <select name="ctl00$ContentPlaceHolder1$ddlIssues" id="ctl00_ContentPlaceHolder1_ddlIssues" class="issue-select">
+            <option value="14">2009年12月</option>
+            <option value="13">2009年1月</option>
+            
+          </select>
+        </div>
+        <a id="ctl00_ContentPlaceHolder1_linkShow" class="issue-show"></a> <span class="interviews-in">在线会员: <strong>234</strong>
+		人</span>
+        <ul class="interview-list">
+          <li> <a id="nav_1" title="" href="#"><img src="img/be5df9eb-0a0a-49f6-b48a-d72995f81c9e.jpg" style="border-width:0px;" /></a> <a class="name" href="#" style="line-height:15px">流行时尚</a><span>###</span> </li>
+          <li class="split-list"></li>
+          <li> <a id="nav_1" title="" href="#"><img src="img/0a8ca8bb-9bd2-43f4-bf0c-0b705c600543.jpg" style="border-width:0px;" /></a> <a class="name" href="#" style="line-height:15px">电影杂志</a><span>###</span> </li>
+          <li class="split-list"></li>
+		  <li> <a id="nav_1" title="" href="#"><img src="img/abec70fd-a8be-4c49-a1be-063b7bfe3fc8.jpg" style="border-width:0px;" /></a> <a class="name" href="#" style="line-height:15px">旅游杂志</a><span>###</span> </li>
+          <li class="split-list"></li>
+		  <li> <a id="nav_1" title="" href="#"><img src="img/1e3d4e80-fee2-4749-9639-638c93c77378.jpg" style="border-width:0px;" /></a> <a class="name" href="#" style="line-height:15px">商业财经</a><span>###</span> </li>
+          <li class="split-list"></li>
+		  <li> <a id="nav_1" title="" href="#"><img src="img/60ce986e-a7f0-436e-ab21-a471b4f7dd3f.jpg" style="border-width:0px;" /></a> <a class="name" href="#" style="line-height:15px">社会新闻</a><span>###</span> </li>
+          <li class="split-list"></li>
+		  <li> <a id="nav_1" title="" href="#"><img src="img/73dc0a70-bcb9-4adf-9d60-74f1b92d2ff7.jpg" style="border-width:0px;" /></a> <a class="name" href="#" style="line-height:15px">烹饪美食</a><span>###</span> </li>
+          <li class="split-list"></li>
+		  <li> <a id="nav_1" title="" href="#"><img src="img/1e3d4e80-fee2-4749-9639-638c93c77378.jpg" style="border-width:0px;" /></a> <a class="name" href="#" style="line-height:15px">汽车杂志</a><span>###</span> </li>
+          <li class="split-list"></li>
+		  <li> <a id="nav_1" title="" href="#"><img src="img/784c1c0a-8cbc-4478-adfc-0ec1b8eea6c3.jpg" style="border-width:0px;" /></a> <a class="name" href="#" style="line-height:15px">艺术摄影</a><span>###</span> </li>
+          <li class="split-list"></li>
+		  <li> <a id="nav_1" title="" href="#"><img src="img/7959946e-58d5-4520-aeed-75162d1fcf6e.jpg" style="border-width:0px;" /></a> <a class="name" href="#" style="line-height:15px">文化生活</a><span>###</span> </li>
+          <li class="split-list"></li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="middle-left-end-2">杂志提供在线<a id="ctl00_ContentPlaceHolder1_linkMail" href="#">订阅</a>，为您带来最新的杂志信息 </div>
+      </div>
+      <div class="middle-big-right">
+        <div class="middle-big-right-1">
+      	  <h3>热门内容推荐</h3>
+          <div class="middle-right-content">
+            <div class="interview-left">
+              <p><span class="question">门里门外</span><br />
+                <br />&nbsp;&nbsp;有范加尔撑腰，合同仅剩半年的布特与拜仁提前续约俨然板上钉钉，如此一位为人低调、安静老实的老门神，对于风雨飘摇中的拜仁无异于定海神针，与其继续实验令人大失所望的伦辛，还不如成就布特终老安联的愿望。不过拜仁一直有意购入一位正值当打之年的主力门将，与弗雷的绯闻更是流传许久，即便布特最终意外离队，&nbsp;&nbsp;<a href="#">[查看]</a><br />
+                <br />
+                <span class="question">在墨尔本慢慢快活</span><br />
+                <br />
+                 Brighton是墨尔本著名富人区。沿海的沙滩建起一座座七彩的小木屋，屋主用心漆上了特别的造型，象是十分具有澳洲代表性的拳击袋鼠，国旗等等，十分有度假的风情。一路数下来，约有六七十间。&nbsp;&nbsp;<a href="#">[查看]</a><br />
+                <br />
+                <span class="question">汤唯首度破“戒”</span><br />
+                <br />　由张学友、汤唯主演的轻松浪漫爱情喜剧《月满轩尼诗》正在热拍，演员经常要吵吵闹闹，拍摄气氛十分良好。当中有一幕戏讲述汤唯误会学友，认为学友与他的巴喳阿妈鲍起静联合戏弄她，原本坐在茶餐厅的她拂袖而去，留下学友在茶餐厅不知所措，最终决定立即跑到街上与汤唯解释，不过已气昏了头的她当然完全听不入耳，因而上演在街上拉扯争执的一幕<a href="#">[查看]</a><br />
+                <br />
+                
+                <span class="question">《杜拉拉》升值记 广告植入的春天来了</span><br />
+                <br />
+                　2010年的4月，一部由畅销职场小说《杜拉拉升职记》改编的同名电影引起了太多话题，它是“杂家”徐静蕾“转型”拍摄的第一部商业电影，美女如云，帅哥有型，情色片段撩拨人心，情变话题甚嚣尘上，尤其针对影片里频频出现的植入广告的话题愈演愈烈。该片首周末票房突破4400万，两周票房过亿，观影人次突破百万，这也意味着这百万观众都经历了一次诸多植入广告的洗礼<a href="#">[查看]</a><br />
+				<br /></p>
+            </div>
+            <div class="interview-right-q">
+              
+              </div>
+            
+          </div>
+        </div>
+        <div class="foot div-foot-float">
+          <ul class="big-ul-2">
+            <li class="foot-float">导航</li>
+            <li class="foot-float"><a href="#">杂志.</a></li>
+            <li class="foot-float"><a href="#">社区.</a></li>
+            <li class="foot-float"><a href="#">联系我们.</a></li>
+            <li class="foot-float"><a href="#">站点地图.</a></li>
+            <li class="foot-float"><a href="#">客服中心.</a></li>
+            <li class="foot-float"><a href="#">在线帮助.</a></li>
+            <li class="foot-float"><a href="#">版权</a></li>
+          </ul>
+          <div class='rss-mini'> <a id="ctl00_ContentPlaceHolder1_FooterAlternative1_linkRss2" title="" href="#"><img src="img/rss.gif" alt="rss" title="" /></a> </div> 
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</form>
+</body>
+</html>

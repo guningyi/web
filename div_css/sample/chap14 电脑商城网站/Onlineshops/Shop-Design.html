@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<title>taishiji</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<script type="text/javascript" src="js/mootools.js"></script>
+<script type="text/javascript" src="js/elements.js"></script>
+<script type="text/javascript" src="js/highslide/highslide.js"></script>
+<script type="text/javascript">
+    hs.graphicsDir = 'templates/xtc4/lib/js/highslide/graphics/';
+	hs.outlineType = 'rounded-white';
+    hs.captionEval = 'this.thumb.title';
+</script>
+<script type="text/javascript" src="js/cookies.js"></script>
+<script type="text/javascript" src="js/efa_fontsize.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
+<script type="text/javascript" src="js/AJS.js"></script>
+<script type="text/javascript" src="js/AJS_fx.js"></script>
+<script type="text/javascript" src="js/gb_scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/gb_styles.css" />
+<script type="text/javascript"><!--
+var selected;
+var submitter = null;
+
+function submitFunction() {
+    submitter = 1;
+}
+function popupWindow(url) {
+  window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}  
+
+function selectRowEffect(object, buttonSelect) {
+  if (!selected) {
+    if (document.getElementById) {
+      selected = document.getElementById('defaultSelected');
+    } else {
+      selected = document.all['defaultSelected'];
+    }
+  }
+
+  if (selected) selected.className = 'moduleRow';
+  object.className = 'moduleRowSelected';
+  selected = object;
+
+  if (document.getElementById('payment'[0])) {
+    document.getElementById('payment'[buttonSelect]).checked=true;
+  } else {
+    
+  }
+}
+
+function rowOverEffect(object) {
+  if (object.className == 'moduleRow') object.className = 'moduleRowOver';
+}
+
+function rowOutEffect(object) {
+  if (object.className == 'moduleRowOver') object.className = 'moduleRow';
+}
+
+function popupImageWindow(url) {
+  window.open(url,'popupImageWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+function textCounter(field,counter,maxlimit,linecounter) {
+	
+	var fieldWidth =  parseInt(field.offsetWidth);
+	var charcnt = field.value.length;        
+	
+	if (charcnt > maxlimit) { 
+		field.value = field.value.substring(0, maxlimit);
+	} else { 
+	
+	var percentage = parseInt(100 - (( maxlimit - charcnt) * 100)/maxlimit) ;
+	document.getElementById(counter).style.width =  parseInt((fieldWidth*percentage)/100)+"px";
+	document.getElementById(counter).innerHTML="Limit: "+percentage+"%"
+	
+	setcolor(document.getElementById(counter),percentage,"background-color");
+	}
+}
+function setcolor(obj,percentage,prop){
+	obj.style[prop] = "rgb(80%,"+(100-percentage)+"%,"+(100-percentage)+"%)";
+}
+
+//--></script>
+<script type="text/javascript"><!--
+function getXmlHttpRequestObject() {
+	if (window.XMLHttpRequest) {
+		return new XMLHttpRequest();
+	} else if(window.ActiveXObject) {
+		return new ActiveXObject("Microsoft.XMLHTTP");
+	} else {
+		alert("Alte Browsergeneration!\nUm den vollen Umfang dieser Seite zu nutzen, aktualisieren Sie bitte Ihren Browser auf den Stand der aktuellen Technik.");
+	}
+}
+
+var searchReq = getXmlHttpRequestObject();
+
+function searchSuggest() {
+	if (searchReq.readyState == 4 || searchReq.readyState == 0) {
+		var str = escape(document.getElementById('txtSearch').value);
+		searchReq.open("GET", 'searchSuggest.php?search=' + str, true);
+		searchReq.onreadystatechange = handleSearchSuggest; 
+		searchReq.send(null);
+	}		
+}
+
+function handleSearchSuggest() {
+	if (searchReq.readyState == 4) {
+		var ss = document.getElementById('search_suggest')
+		ss.innerHTML = '';
+		var str = searchReq.responseText.split("\n");
+		for(i=0; i < str.length - 1; i++) {
+			var suggest = '<div class="search_suggest_inner"><div onmouseover="javascript:suggestOver(this);" ';
+			suggest += 'onmouseover="javascript:suggestOverClose(this);" ';
+			suggest += 'onmouseout="javascript:suggestOut(this);" ';
+			suggest += 'onmouseout="javascript:suggestOutClose(this);" ';
+			suggest += 'onclick="javascript:setSearch(this.innerHTML);" ';
+			suggest += 'class="suggest_link">' + str[i] + '<\/div><\/div>';
+			ss.innerHTML += suggest;
+		}
+		if (i==0) {
+			ss.style.visibility  = "hidden";
+		} else {
+			ss.style.visibility  = "visible";
+		}
+		ss.innerHTML += '<div class="closeContainer"><a onmouseover="javascript:suggestOverClose(this);" onmouseout="javascript:suggestOutClose(this);" onClick="javascript:suggestClose(this);" class="closeLink">Fenster schließen<\/a><\/div>';
+	}
+}
+function suggestClose (div_value) {
+	document.getElementById('search_suggest').innerHTML = '';
+	document.getElementById('search_suggest').style.visibility  = "hidden";
+}
+
+function suggestOver(div_value) {
+	div_value.className = 'suggest_link_over';
+}
+function suggestOverClose(div_value) {
+	div_value.className = 'suggest_link_close';
+}
+function suggestOut(div_value) {
+	div_value.className = 'suggest_link';
+}
+function suggestOutClose(div_value) {
+	div_value.className = 'suggest_link_close';
+}
+function setSearch(value) {
+  	var newvalue = value.replace(/<.*?>/gi, '');
+	var Suche =	newvalue.indexOf("&nbsp;");
+	var produktname = newvalue.substring(0,Suche);
+	document.getElementById('txtSearch').value = produktname;
+	document.getElementById('search_suggest').innerHTML = '';
+	document.getElementById('search_suggest').style.visibility  = "hidden";
+	top.location.href = "/advanced_search_result.php?keywords=" + produktname; 
+}
+
+function openInfoWindow(URL,Name,features) { 
+  window.open(URL,Name,features);
+}
+
+function updatePasswordMeter(password) {
+  var strength_descriptions = new Array();
+  strength_descriptions[0] = 'sehr unsicher';
+  strength_descriptions[1] = 'unsicher';
+  strength_descriptions[2] = 'gut';
+  strength_descriptions[3] = 'sehr gut';
+  strength_descriptions[4] = 'sicher';
+  strength_descriptions[5] = 'sehr sicher';
+
+  var strength = calculatePasswordStrength(password);
+
+  document.getElementById('password_strength_label').innerHTML = strength_descriptions[strength];
+  document.getElementById('password_bar').className = 'strength_' + strength;
+}
+
+function calculatePasswordStrength(password) {
+  var score = 0;
+
+  if (password.length >= 8)
+    score++;
+
+  if (password.match(/[a-z]/) && password.match(/[A-Z]/))
+    score++;
+
+  if (password.match(/[0-9]+/))
+    score++;
+
+  if (password.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)-]/))
+    score++;
+
+  if (password.length >= 12)
+    score++;
+
+  return score;
+}
+
+//--></script>
+<script type="text/javascript" src="js/validate/date-de-DE.js"></script>
+<script type="text/javascript" src="js/validate/validate.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	//<![CDATA[
+	if (efa_fontSize06) efa_fontSize06.efaInit();
+	//]]>
+</script>
+<div id="pageWrapHead"></div>
+<div id="pageWrapTop">
+  <div id="pageWrapBottom">
+    <div id="pageBorderTop">
+      <h1 style="display:none;"></h1>
+      <img src="img/star.gif" id="star"  /> <a href="index.html"><img src="img/spacer.gif" style="width:240px; height:90px; position:absolute; margin:30px 0 0 20px; z-index:2000;" /></a>
+      <div id="quickLinks">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="Shop-Service.html">注册</a></li>
+          <li><a href="Shop-Design.html"><strong>登入</strong></a></li>
+          <li><a href="#">帮助</a></li>
+        </ul>
+      </div>
+      <div id="cartLink"><img src="img/cart.gif"  /> <a href="#">购物车 <strong>(0)</strong></a></div>
+    </div>
+    <div id="pageBorderLR">
+      <div id="pageBorderBottom">
+        <div id="page">
+          <div id="topNavi">
+            <ul id="kwicks">
+              <li><a class="kwick module" href="Shop-Design.html"><span>台式机<br />
+                品牌机，兼容机</span></a></li>
+              <li><a class="kwick design" href="Shop-Design.html"><span>笔记本<br />
+                超低价笔记本</span></a></li>
+              <li><a class="kwick service" href="Shop-Service.html"><span>服务器<br />
+                质量保证</span></a></li>
+              <li><a class="kwick cms" href="Shop-Service.html"><span>周边配件<br />
+                鼠标，键盘，耳机</span></a></li>
+            </ul>
+          </div>
+          <div id="breadCrumb"><a href="#" class="headerNavigation">首页</a> &raquo; <a href="#" class="headerNavigation">服务器</a>
+            <div id="searchContainer">
+              <div class="sd">搜索</div>
+                <input type="text" name="keywords" id="txtSearch" onkeyup="searchSuggest();" />
+                <div id="search_suggest"></div>
+                <input type="image" src="img/searchContainerButton.png" alt="Suchen" title=" Suchen " id="go" />
+            </div>
+          </div>
+          <div id="content" class="clear">
+            <div id="leftCol">
+              <div class="box"> <img src="img/boxIconVorteile.gif" style="position:absolute; margin:-5px 0 0 -8px;"  />
+                <div style="background:url(img/boxHeaderVorteile.jpg) no-repeat; padding-bottom:5px;"> <span class="boxHead">导购分类</span> </div>
+                <div class="boxContent">
+                  <ul>
+                  <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">台式机</li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">家用台式机</li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">商用台式机</li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">游戏台式机</li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">一体机</li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">行业台式机</li>
+                    
+                  </ul>
+                </div>
+              </div>
+              <div class="box"> <img src="img/boxIconFav.gif" style="position:absolute; margin:-12px 0 0 -8px;" alt="" />
+                <div style="background:url(img/boxHeaderVorteile.jpg) no-repeat; padding-bottom:5px;"> <span class="boxHead">业内动态</span> </div>
+                <div class="boxContent">
+                  <ul>
+                    <li style="background:url(/templates/xtc4/img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">2010.03.16 - 品牌服务器全线降价 <a href="#">详细...</a></li>
+                    <li style="background:url(/templates/xtc4/img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">2010.03.12 - IDF2010: 小巧的台式机将成为未来主流  <a href="#">详细...</a></li>
+                    <li style="background:url(/templates/xtc4/img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">2010.03.10 - 同方S7650双核独显实用娱乐电脑仅售3700 <a href="#">详细...</a></li>
+                    <li style="background:url(/templates/xtc4/img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">2010.03.09 - 为啥全球最薄 联想A3一体机拆机解析  <a href="#">详细...</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div style="background:url(img/greenBox_01.gif) no-repeat; height:28px; padding-top:5px; margin-top:30px;"><img src="img/boxIconMail.gif"  style="position:absolute; margin:-15px 0 0 -9px;" /> <span class="greenBoxHead">联系客服</span></div>
+              <div style="background:url(img/greenBox_02.gif) no-repeat top #ddefb5  ; padding:10px 10px; height:173px; font-size:12px; font-weight:normal; line-height:16px;"> <strong>有遇到什么困难吗？</strong><br />
+                如果有遇到难题，可以联系我们的客服<br />
+                <br />
+                <strong>联系方式:</strong><br />
+                客服001<br />                
+                电话: 021-12345678<br />
+                <span style="font-size:11px;">(上午9:00~下午17:00)</span><br />
+                E-Mail: <a href="mailto:123456@163.com">123456@163.com</a> </div>
+              <div style="background:url(img/greenBox_03.gif) no-repeat top; height:9px; margin-bottom:40px;"></div>
+            </div>
+            <div id="rightCol">
+              <div id="rightColInner">
+                <div class="h1bg">
+                  <h2>推荐商品</h2>
+                </div>
+                <div id="pi">
+                  <div id="accordion"> <span class="toggler atStart">戴尔Studio XPS 8000（S210280CN）</span>
+                    <div class="element atStart">
+                      <div style="padding: 10px 0 10px 0;"> <a href="#" target="_blank" title="Referenz: www.alpenfl&uuml;stern.de" rel="gb_pageset[referenzen]"><img src="img/alpenDesign.jpg" height="300" alt=""/></a> </div>
+                    </div>
+                    <span class="toggler atStart">戴尔Inspiron 545s（S210223NCNW）</span>
+                    <div class="element atStart">
+                      <div style="padding: 10px 0 10px 0; height:300px;"> <a href="#" target="_blank" title="Referenz: www.werbeartikel-fuxx.de" rel="gb_pageset[referenzen]"><img src="img/werbefuxxDesign.jpg" height="300" alt=""/></a> </div>
+                    </div>
+                    <span class="toggler atStart">HP 黑幻 HPE 135cn</span>
+                    <div class="element atStart">
+                      <div style="padding: 10px 0 10px 0;"> <img src="img/docanimalDesign.jpg" height="300" alt=""/> </div>
+                    </div>
+                    <span class="toggler atStart">联想IdeaCentre K320c（锋行KING 飚速版）</span>
+                    <div class="element atStart">
+                      <div style="padding: 10px 0 10px 0;"> <a href="#" target="_blank" title="Referenz: www.baeren-paradies-dessau.de" rel="gb_pageset[referenzen]"><img src="img/baerenDesign.jpg" height="300" alt=""/></a> </div>
+                    </div>
+                    <span class="toggler atStart">HP pavilion P6335cn </span>
+                    <div class="element atStart">
+                      <div style="padding: 10px 0 10px 0;"> <a href="#" target="_blank" title="Referenz: www.star-bijou.com" rel="gb_pageset[referenzen]"><img src="img/starbijouDesign.jpg" height="300" alt=""/></a> </div>
+                    </div>
+                    <span class="toggler atStart">联想IdeaCentre K310（锋行KING 至尊版）</span>
+                    <div class="element atStart">
+                      <div style="padding: 10px 0 10px 0;"> <a href="#" target="_blank" title="Referenz: www.jovial-place.de" rel="gb_pageset[referenzen]"><img src="img/jovialplaceDesign.jpg" height="300" alt=""/></a> </div>
+                    </div>
+                    <span class="toggler atStart">戴尔Vostro 成就 220s 超薄塔式（T220115CN）</span>
+                    <div class="element atStart">
+                      <div style="padding: 10px 0 10px 0;"> <img src="img/officeagentDesign.jpg" height="300" alt=""/> </div>
+                    </div>
+                    <span class="toggler atStart">戴尔Inspiron 灵越 580s（I580D-138）</span>
+                    <div class="element atStart">
+                      <div style="padding: 10px 0 10px 0; height:300px;"><a href="#" target="_blank"  rel="gb_pageset[referenzen]"><img src="img/GulaschBaronDesign.jpg" height="300" alt=""/></a></div>
+                    </div>
+                    <span class="toggler atStart">联想启天 M6900 (启天 M6900)</span>
+                    <div class="element atStart">
+                      <div style="padding: 10px 0 10px 0; height:300px;"> <img src="img/hsdDesign.jpg" height="300" alt=""/> </div>
+                    </div>                                        
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div class="h1bg">
+                  <h2>新品推荐</h2>
+                </div>
+                <div style="width:610px; padding-top:30px;" class="float">
+                  <div class="NPBox mr10">
+                    <div class="NPBoxImg"> <a href="#" class="border" ><img src="img/001.jpg" /></a> </div>
+                    <a href="#" class="productsLink">联想扬天 A4600R</a>
+                    <div class="priceContainer"> RMB:3550<br />
+                      <span class="tax">立减10%</span><br />
+                      </div>
+                    <a href="#"><img src="img/button_buy_now.gif"  /></a> </div>
+                  <div class="NPBox mr10">
+                    <div class="NPBoxImg"> <a href="#" class="border"><img src="img/002.jpg"  /></a> </div>
+                    <a href="#" class="productsLink">联想扬天 M5300N </a>
+                    <div class="priceContainer"> RMB:3850<br />
+                      <span class="tax">立减15%</span><br />
+                      </div>
+                    <a href="#"><img src="img/button_buy_now.gif"  /></a> </div>
+                  <div class="NPBox">
+                    <div class="NPBoxImg"> <a href="#" class="border" ><img src="img/003.jpg" /></a> </div>
+                    <a href="#" class="productsLink">联想扬天 M6600N </a>
+                    <div class="priceContainer"> RMB:4200<br />
+                      <span class="tax">立减8%</span><br />
+                      </div>
+                    <a href="#"><img src="img/button_buy_now.gif" alt="Premium Buttonset" /></a> </div>
+                </div>
+                <div style="width:610px; padding-top:30px;" class="float"> </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:0 0px; margin-top:30px;"> <img src="img/beliebtesteSuchbegriffe.gif" alt="beliebteste Suchbegriffe" /><br />
+            <span class="tCCTag1"><a href="#">IBM</a></span> 
+			<span class="tCCTag3"><a href="#">DELL(戴尔)</a></span> 
+			<span class="tCCTag5"><a href="#">HP(惠普)</a></span> 
+			<span class="tCCTag2"><a href="#">lenovo(联想)</a></span> 
+			<span class="tCCTag5"><a href="#">浪潮</a></span> 
+			<span class="tCCTag3"><a href="#">ASUS(华硕)</a></span> 
+			<span class="tCCTag4"><a href="#">Sun</a></span> 
+			<span class="tCCTag3"><a href="#">Oxygen(强氧)</a></span> 
+			<span class="tCCTag5"><a href="#">Founder(方正)</a></span> 
+			<span class="tCCTag3"><a href="#">TigerPower</a></span> 
+			<span class="tCCTag4"><a href="#">清华同方</a></span> 
+			<span class="tCCTag1"><a href="#">Apple（苹果）</a></span> 
+			<span class="tCCTag4"><a href="#">Great Wall（长城）</a></span> 
+			<span class="tCCTag4"><a href="#">Dawning（曙光）</a></span> 
+			<span class="tCCTag5"><a href="#">PowerLeader（宝德）</a></span> </div>
+        </div>
+      </div>
+    </div>
+    <div id="pageFooter">
+      <div id="footerLinks" class="float">
+        <div class="footerContainer">
+          <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">台式机</a></li>
+            <li><a href="#">笔记本</a></li>
+            <li><a href="#">服务器</a></li>
+            <li><a href="#">电脑配件</a></li>
+          </ul>
+        </div>
+        <div class="footerContainer">
+          <ul>
+            <li><a href="#">数码相机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">MP3 / MP4</a></li>
+            <li><a href="#">DIY硬件</a></li>
+            <li><a href="#">软件</a></li>
+          </ul>
+        </div>
+        <div class="footerContainer">
+          <ul>
+            <li><a href="#"><img src="img/socialIcons/rss.gif" alt="RSS-Feed"/> 订阅免费新闻</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">招聘信息</a></li>
+            <li><a href="#">合作渠道</a></li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footerContainerCopyright"> Copyright &copy; 2008-2010 by <a href="#">全面攒机网</a> | 保留一切版权.
+          <div class="footerContainerSocial"> 
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/digg.png" /></a> 
+          
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/delicious.png"  style="margin-left:5px;" /></a> 
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/technorati.png" style="margin-left:5px;"/></a> 
+          
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/wong.png" style="margin-left:5px;" /></a>       
+         
+          
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/google.png" style="margin-left:5px;" /></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright">全面攒机网 &copy; 2010 <a href="#" target="_blank">全面攒机网</a></div>
+</body>
+</html>

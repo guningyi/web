@@ -1,0 +1,40 @@
+/* LEXIKON */
+.lexikon_keyword { color:#bf5000; padding:0 3px; background:url(../img/dottedBorder2.gif) bottom repeat-x; }
+
+/* PRODUCTS SITEMAP */
+#siteAlphabet {text-align: left; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px; list-style-type:none; height:22px; font-size:12px;}
+
+ul#siteAlphabet li {background-color:#f2f2f2; float:left; padding: 0px 0px 0px 2px; margin: 0px 0px 0px 2px;}
+ul#siteAlphabet a, ul#siteAlphabet a:link, ul#siteAlphabet a:visited {line-height:25px; font-weight:bold; text-decoration:none; margin:0; padding:0;}
+ul#siteAlphabet a:hover {color:#999999; text-decoration:none; }
+ul#siteAlphabet a.active {font-weight:bold; color:#999999; border:solid 1px #CCCCCC;}
+#siteName {font-weight:normal; background-color:#ffffff; font-size:12px;}
+
+table#password_bar {
+  width: 300px;
+  border-collapse: collapse;
+}
+
+#password_bar #negative_bar {height: 10px;}
+#password_bar.strength_0 #positive_bar {width: 0px;}
+#password_bar.strength_1 #positive_bar {width: 20%; background: #a71528;}
+#password_bar.strength_2 #positive_bar {width: 40%; background: #fec72d;}
+#password_bar.strength_3 #positive_bar {width: 60%; background: #6b9fd6;}
+#password_bar.strength_4 #positive_bar {width: 80%; background: #17d114;}
+#password_bar.strength_5 #positive_bar {width: 100%; background: #038001;}
+
+#password_bar #negative_bar {background: #ddd;}
+#password_bar.strength_0 #negative_bar {width: 100%;}
+#password_bar.strength_1 #negative_bar {width: 80%;}
+#password_bar.strength_2 #negative_bar {width: 60%;}
+#password_bar.strength_3 #negative_bar {width: 40%;}
+#password_bar.strength_4 #negative_bar {width: 20%;}
+#password_bar.strength_5 #negative_bar {width: 0px;}
+
+#password_bar #password_strength_label {text-align: right;}
+#password_bar.strength_0 #password_strength_label {color: #ddd;}
+#password_bar.strength_1 #password_strength_label {color: #a71528;}
+#password_bar.strength_2 #password_strength_label {color: #fec72d;}
+#password_bar.strength_3 #password_strength_label {color: #6b9fd6;}
+#password_bar.strength_4 #password_strength_label {color: #17d114;}
+#password_bar.strength_5 #password_strength_label {color: #038001;}

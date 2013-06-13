@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<script type="text/javascript" src="js/mootools.js"></script>
+<script type="text/javascript" src="js/elements.js"></script>
+<script type="text/javascript" src="js/highslide/highslide.js"></script>
+<script type="text/javascript">
+    hs.graphicsDir = 'templates/xtc4/lib/js/highslide/graphics/';
+	hs.outlineType = 'rounded-white';
+    hs.captionEval = 'this.thumb.title';
+</script>
+<script type="text/javascript" src="js/cookies.js"></script>
+<script type="text/javascript" src="js/efa_fontsize.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
+<script type="text/javascript" src="js/AJS.js"></script>
+<script type="text/javascript" src="js/AJS_fx.js"></script>
+<script type="text/javascript" src="js/gb_scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/gb_styles.css" />
+
+<script type="text/javascript"><!--
+var selected;
+var submitter = null;
+
+function submitFunction() {
+    submitter = 1;
+}
+function popupWindow(url) {
+  window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}  
+
+function selectRowEffect(object, buttonSelect) {
+  if (!selected) {
+    if (document.getElementById) {
+      selected = document.getElementById('defaultSelected');
+    } else {
+      selected = document.all['defaultSelected'];
+    }
+  }
+
+  if (selected) selected.className = 'moduleRow';
+  object.className = 'moduleRowSelected';
+  selected = object;
+
+// one button is not an array
+  if (document.getElementById('payment'[0])) {
+    document.getElementById('payment'[buttonSelect]).checked=true;
+  } else {
+    //document.getElementById('payment'[selected]).checked=true;
+  }
+}
+
+function rowOverEffect(object) {
+  if (object.className == 'moduleRow') object.className = 'moduleRowOver';
+}
+
+function rowOutEffect(object) {
+  if (object.className == 'moduleRowOver') object.className = 'moduleRow';
+}
+
+function popupImageWindow(url) {
+  window.open(url,'popupImageWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+
+function textCounter(field,counter,maxlimit,linecounter) {
+	// text width//
+	var fieldWidth =  parseInt(field.offsetWidth);
+	var charcnt = field.value.length;        
+	// trim the extra text
+	if (charcnt > maxlimit) { 
+		field.value = field.value.substring(0, maxlimit);
+	} else { 
+	// progress bar percentage
+	var percentage = parseInt(100 - (( maxlimit - charcnt) * 100)/maxlimit) ;
+	document.getElementById(counter).style.width =  parseInt((fieldWidth*percentage)/100)+"px";
+	document.getElementById(counter).innerHTML="Limit: "+percentage+"%"
+	// color correction on style from CCFFF -> CC0000
+	setcolor(document.getElementById(counter),percentage,"background-color");
+	}
+}
+function setcolor(obj,percentage,prop){
+	obj.style[prop] = "rgb(80%,"+(100-percentage)+"%,"+(100-percentage)+"%)";
+}
+
+//--></script>
+
+
+<script type="text/javascript">
+function getXmlHttpRequestObject() {
+	if (window.XMLHttpRequest) {
+		return new XMLHttpRequest();
+	} else if(window.ActiveXObject) {
+		return new ActiveXObject("Microsoft.XMLHTTP");
+	} else {
+		alert(".......");
+	}
+}
+
+//Our XmlHttpRequest object to get the auto suggest
+var searchReq = getXmlHttpRequestObject();
+
+//Called from keyup on the search textbox.
+//Starts the AJAX request.
+function searchSuggest() {
+	if (searchReq.readyState == 4 || searchReq.readyState == 0) {
+		var str = escape(document.getElementById('txtSearch').value);
+		searchReq.open("GET", 'searchSuggest.php?search=' + str, true);
+		searchReq.onreadystatechange = handleSearchSuggest; 
+		searchReq.send(null);
+	}		
+}
+
+//Called when the AJAX response is returned.
+function handleSearchSuggest() {
+	if (searchReq.readyState == 4) {
+		var ss = document.getElementById('search_suggest')
+		ss.innerHTML = '';
+		var str = searchReq.responseText.split("\n");
+		for(i=0; i < str.length - 1; i++) {
+			//Build our element string.  This is cleaner using the DOM, but
+			//IE doesn't support dynamically added attributes.
+			var suggest = '<div class="search_suggest_inner"><div onmouseover="javascript:suggestOver(this);" ';
+			suggest += 'onmouseover="javascript:suggestOverClose(this);" ';
+			suggest += 'onmouseout="javascript:suggestOut(this);" ';
+			suggest += 'onmouseout="javascript:suggestOutClose(this);" ';
+			suggest += 'onclick="javascript:setSearch(this.innerHTML);" ';
+			suggest += 'class="suggest_link">' + str[i] + '<\/div><\/div>';
+			ss.innerHTML += suggest;
+		}
+		if (i==0) {
+			ss.style.visibility  = "hidden";
+		} else {
+			ss.style.visibility  = "visible";
+		}
+		//Schließen link einfügen
+		ss.innerHTML += '<div class="closeContainer"><a onmouseover="javascript:suggestOverClose(this);" onmouseout="javascript:suggestOutClose(this);" onClick="javascript:suggestClose(this);" class="closeLink">Fenster schließen<\/a><\/div>';
+	}
+}
+// Close Function
+function suggestClose (div_value) {
+	document.getElementById('search_suggest').innerHTML = '';
+	document.getElementById('search_suggest').style.visibility  = "hidden";
+}
+
+//Mouse over function
+function suggestOver(div_value) {
+	div_value.className = 'suggest_link_over';
+}
+function suggestOverClose(div_value) {
+	div_value.className = 'suggest_link_close';
+}
+//Mouse out function
+function suggestOut(div_value) {
+	div_value.className = 'suggest_link';
+}
+function suggestOutClose(div_value) {
+	div_value.className = 'suggest_link_close';
+}
+//Click function
+function setSearch(value) {
+	// HTML-TAGS entfernen
+  	var newvalue = value.replace(/<.*?>/gi, '');
+	//Kategorienamen entfernen (fängt mit &nbsp; an)
+	var Suche =	newvalue.indexOf("&nbsp;");
+	var produktname = newvalue.substring(0,Suche);
+	document.getElementById('txtSearch').value = produktname;
+	document.getElementById('search_suggest').innerHTML = '';
+	document.getElementById('search_suggest').style.visibility  = "hidden";
+	//top.location.href = "/advanced_search_result.php?keywords=" + produktname; 
+}
+/* End Suggest Code */	
+
+function openInfoWindow(URL,Name,features) { 
+  window.open(URL,Name,features);
+}
+
+function updatePasswordMeter(password) {
+  var strength_descriptions = new Array();
+  strength_descriptions[0] = 'sehr unsicher';
+  strength_descriptions[1] = 'unsicher';
+  strength_descriptions[2] = 'gut';
+  strength_descriptions[3] = 'sehr gut';
+  strength_descriptions[4] = 'sicher';
+  strength_descriptions[5] = 'sehr sicher';
+
+  var strength = calculatePasswordStrength(password);
+
+  document.getElementById('password_strength_label').innerHTML = strength_descriptions[strength];
+  document.getElementById('password_bar').className = 'strength_' + strength;
+}
+
+function calculatePasswordStrength(password) {
+  var score = 0;
+
+  // Length at least 8 chars long
+  if (password.length >= 8)
+    score++;
+
+  // both lower and uppercase chars
+  if (password.match(/[a-z]/) && password.match(/[A-Z]/))
+    score++;
+
+  // at least one num char
+  if (password.match(/[0-9]+/))
+    score++;
+
+  // at least one special char
+  if (password.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)-]/))
+    score++;
+
+  // Length at least 12 chars long
+  if (password.length >= 12)
+    score++;
+
+  return score;
+}
+
+//--></script>
+<script type="text/javascript" src="js/validate/date-de-DE.js"></script>
+<script type="text/javascript" src="js/validate/validate.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	//<![CDATA[
+	if (efa_fontSize06) efa_fontSize06.efaInit();
+	//]]>
+</script>
+<div id="pageWrapHead"></div>
+<div id="pageWrapTop">
+  <div id="pageWrapBottom">
+    <div id="pageBorderTop"><img src="img/star.gif" id="star" alt="" /><a href="#"><img src="img/spacer.gif" alt="xt-module.de" style="width:240px; height:90px; position:absolute; margin:30px 0 0 20px; z-index:2000;" /></a>
+      <div id="quickLinks">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="#">注册</a></li>
+          <li><a href="#"><strong>登入</strong></a></li>
+          <li><a href="#">帮助</a></li>
+        </ul>
+      </div>
+      <div id="cartLink"><img src="img/cart.gif" alt="0" /> <a href="#" >购物车 <strong>(0)</strong></a></div>
+    </div>
+    <div id="pageBorderLR">
+      <div id="pageBorderBottom">
+        <div id="page">
+          <div id="topNavi">
+            <ul id="kwicks">
+              <li><a class="kwick module" href="Shop-Design.html"><span>台式机<br />
+              品牌机，兼容机</span></a></li>
+              <li><a class="kwick design" href="Shop-Design.html"><span>笔记本<br />
+              超低价笔记本</span></a></li>
+              <li><a class="kwick service" href="Shop-Service.html"><span>服务器<br />
+              质量保证</span></a></li>
+              <li><a class="kwick cms" href="Shop-Service.html"><span>周边配件<br />
+              鼠标，键盘，耳机</span></a></li>
+            </ul>
+          </div>
+          <div id="breadCrumb"><a href="#" class="headerNavigation">首页 &gt;&gt;</a>
+            <div id="searchContainer">
+              <div class="sd">Seite durchsuchen</div>
+                <input type="text" name="keywords" id="txtSearch" style="color:#999999" onkeyup="searchSuggest();" value="输入查找内容" />
+                <div id="search_suggest"></div>
+                <input type="image" src="img/searchContainerButton.png" alt="搜索" title=" 搜索 " id="go" />
+            </div>
+          </div>
+          <div id="content" class="clear">
+            <div id="rightCol_full">
+              <div id="rightColInner">
+                <div class="float">
+                  <div  style="width:530px; float:left;"> 
+				  <a href="#"><img src="img/indexModule.png" alt="" /></a>
+				  <div>
+				  	<h4>AM3平台主板 技嘉M720-ES3售价469元<span style="font-size:12px;"><a href="#">[查看]</a></span></h4>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;技嘉为我们带来一款基于NVIDIA nForce 720D芯片的廉价AM3平台主板，技嘉 M720 ES3，这款主板基于NVIDIA nForce 720D芯片组，支持AM3接口的处理器。主板采用... </p>
+				  </div>
+				  <div>
+				  	<h4>24寸高分辨IPS显示器 惠普ZR24W报3800<span style="font-size:12px;"><a href="#">[查看]</a></span></h4>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;惠普为我们带来一款基于S-IPS液晶面板的高端显示器，惠普 ZR24W，这款显示器采用24.1英寸的S-IPS液晶面板，采用16:10的屏幕比例，拥有水平、垂直各178度的可旋转...</p>
+				  </div>
+				  <div>
+				  	<h4>影驰GT240黑将版X5仅799!<span style="font-size:12px;"><a href="#">[查看]</a></span></h4>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;自NVIDIA发布Fermi以来，高端高性能一直是它的标签。与高端市场不同，中端市场往往更加注重性价比。搭配更高频率GDDR5显存的GT240，拥有更大的显存带宽非常不错...</p>
+				  </div>
+				  	
+				  <div>
+				  	<h4>联想ThinkPad X201i新品仅7299<span style="font-size:12px;"><a href="#">[查看]</a></span></h4>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;ThinkPad X200可谓成就一个经典，12英寸轻薄便携的机身，碳纤维的坚固外观，浓厚的商务气息，人性化的细节设计，均衡的配置等等，备受广大商务用户的青睐。拥有众多...</p>
+				  </div>	
+				  <div>
+				  	<h4>轻薄低压本华硕UL30A暴降500<span style="font-size:12px;"><a href="#">[查看]</a></span></h4>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;在13英寸的笔记本领域，轻薄之争可谓是相当的白热化，虽然各大厂商争得头破血流，但大部分厂商还是不约而同的采用了超低压CULV处理器，而一直在轻薄上网本名列潜力...</p>
+				  </div>	
+				  <!--图片1 改成业界新闻-->	
+                    <br />
+                    <a href="#"><img src="img/indexDesign.png" alt="" /></a>
+                    <div id="newsContainer">
+                      <div class="news_header"><a href="#">款超值320GB移动硬盘推荐</a><br />
+                        <span class="date">2010.06.30 12:15:36</span></div>
+                      据了解，此次AMD与七喜电脑携手举办的广东地区产品巡展活动将持续整个三月，活动将分别在佛山市区、佛山南海、东莞虎门、广州花都、江门新会、中山、惠州、肇庆等8个地区核心电脑城，以及省内多所重要高校举行。活动将辐射各大重要周边区域市场，影响周边区域渠道经销商和包括大学生在内的众多终端消费者。 - <a href="#">成功人士</a> <br />
+                      <br />
+                      <div class="news_header"><a href="#">Comm100 成功进驻中国 开启国内客服新时代</a><br />
+                        <span class="date">2010.01.12 9:15:26</span></div>
+                     Comm100，全球领先的客户服务软件供应商，宣布本周正式进入中国市场，免费为国内的中小企业提供高品质的客户服务软件和本地化的技术支持，帮助企业创造和留住。2009年8月发布以来，在短短的几个月内，已有20,000家企业注册使用软件
+ - <a href="#">可爱兔子</a> <br />
+                      <br />
+                      <div class="news_header"><a href="#">5000元搞定金属外壳本 联想B450L</a><br />
+                        <span class="date">2010.02.06 14:36:01</span></div>
+                     很多时尚的年轻人对生活品质要求非常高，同样对于数码产品的性能之外，外观也是考虑的一个因素，而且是一个非常重要的因素。现在MM给各位推荐1款非常不错的本本，亮丽的金属外壳，十分时尚。 - <a href="#">Lisa</a> <br />
+                      <br />
+                      <div class="news_header"><a href="#">3大关键词/10大厂商！09音箱行业综述</a><br />
+                        <span class="date">2010.05.06 18:57:11</span></div>
+                     时间似乎过的太快，仿佛昨日我们还在谈论着2008年年底的金融危机。而到了今天，2009年也已经过去。而在去年的这个时候，面对着金融危机给国内多媒体音箱市场带来的冲击，我们曾说过“危机与突破并存”。那么，一年之后市场如何呢？ - <a href="#">豆丁</a> <br />
+                      <br />
+                    </div>
+                  </div>
+                  <div style="width:296px; float:right;">
+                    <div class="alignRight" style="text-align:center;background-color:#F2F2F2;color:#A83600">
+					<h4>商品快讯</h4></div>
+					<!-- title -->
+                    <div class="newProductsDefault"> 
+						<div class="shows"><img src="img/pc/001.bmp" /></div>
+						<div class="content">
+						   <a href="#" class="productLink">联想G455A-M320(H)</a><br />
+                           特价<strong>3900.00元</strong><br />
+						   <del>原价4199.00元</del><br />
+                           <a href="#"><small>查看详细</small></a> 
+					  </div>
+                    </div>
+					<div class="newProductsDefault"> 
+					    <div class="shows"><img src="img/pc/hp002.bmp" /></div>
+						<div class="content">
+						   <a href="#" class="productLink">惠普4321S(WP413PA)</a><br />
+                           现价<strong>5080.00元</strong><br />
+						   <del>原价5699.00元</del><br />
+                           <a href="#"><small>查看详细</small></a> 
+					  </div>
+                    </div>
+					<div class="newProductsDefault"> 
+					    <div class="shows"><img src="img/pc/003.bmp" /></div>
+						<div class="content">
+						   <a href="#" class="productLink">联想Y460A-ITH(白)</a><br />
+                           现价<strong>5650.00元</strong><br />
+						   <del>原价5999.00元</del><br />
+                           <a href="#"><small>查看详细</small></a> 
+					  </div>
+                    </div>
+					<div class="newProductsDefault"> 
+					    <div class="shows"><img src="img/pc/004.bmp" /></div>
+						<div class="content">
+						   <a href="#" class="productLink">惠普4411S(WH485PA)酒红色</a><br />
+                           现价<strong>5298.00元</strong><br />
+						   <del>原价6699.00元</del><br />
+                           <a href="#"><small>查看详细</small></a> 
+					  </div>
+                    </div>
+					<br />
+                    <div class="alignRight" style="text-align:center;background-color:#F2F2F2;color:#A83600"><h4>电脑设备/组网设备</h4></div>
+                    <div class="newProductsDefault"> 
+					    <div class="shows"><img src="img/pc/010.bmp" /></div>
+						<div class="content">
+						   <a href="#" class="productLink">USB暖手鼠标垫</a><br />
+                           现价<strong>19.00元</strong><br />
+						   <del>原价25.00元</del><br />
+                           <a href="#"><small>查看详细</small></a> 
+					  </div>
+                    </div>
+					<div class="newProductsDefault"> 
+					    <div class="shows"><img src="img/pc/011.bmp" /></div>
+						<div class="content">
+						   <a href="#" class="productLink">索尼(SONY)音箱SRS-D25</a><br />
+                           现价<strong>480.00元</strong><br />
+						   <del>原价580.00元</del><br />
+                           <a href="#"><small>查看详细</small></a> 
+					  </div>
+                    </div>
+					<div class="newProductsDefault"> 
+					    <div class="shows"><img src="img/pc/012.bmp" /></div>
+						<div class="content">
+						   <a href="#" class="productLink">双飞燕天遥G7-630无线鼠标</a><br />
+                           现价<strong>125.00元</strong><br />
+						   <del>原价100.00元</del><br />
+                           <a href="#"><small>查看详细</small></a> 
+					  </div>
+                    </div>
+					<br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  <!--footer-->
+          <div style="padding:0 0px; margin-top:30px;"> <img src="img/beliebtesteSuchbegriffe.gif" alt="beliebteste Suchbegriffe" /><br />
+            <span class="tCCTag1"><a href="#">IBM</a></span> 
+			<span class="tCCTag3"><a href="#">DELL(戴尔)</a></span> 
+			<span class="tCCTag5"><a href="#">HP(惠普)</a></span> 
+			<span class="tCCTag2"><a href="#">lenovo(联想)</a></span> 
+			<span class="tCCTag5"><a href="#">浪潮</a></span> 
+			<span class="tCCTag3"><a href="#">ASUS(华硕)</a></span> 
+			<span class="tCCTag4"><a href="#">Sun</a></span> 
+			<span class="tCCTag3"><a href="#">Oxygen(强氧)</a></span> 
+			<span class="tCCTag5"><a href="#">Founder(方正)</a></span> 
+			<span class="tCCTag3"><a href="#">TigerPower</a></span> 
+			<span class="tCCTag4"><a href="#">清华同方</a></span> 
+			<span class="tCCTag1"><a href="#">Apple（苹果）</a></span> 
+			<span class="tCCTag4"><a href="#">Great Wall（长城）</a></span> 
+			<span class="tCCTag4"><a href="#">Dawning（曙光）</a></span> 
+			<span class="tCCTag5"><a href="#">PowerLeader（宝德）</a></span></div>
+        </div>
+      </div>
+    </div>
+    <div id="pageFooter">
+      <div id="footerLinks" class="float">
+        <div class="footerContainer">
+          <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">台式机</a></li>
+            <li><a href="#">笔记本</a></li>
+            <li><a href="#">服务器</a></li>
+            <li><a href="#">电脑配件</a></li>
+          </ul>
+        </div>
+        <div class="footerContainer">
+          <ul>
+            <li><a href="#">数码相机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">MP3 / MP4</a></li>
+            <li><a href="#">DIY硬件</a></li>
+            <li><a href="#">软件</a></li>
+          </ul>
+        </div>
+        <div class="footerContainer">
+          <ul>
+            <li><a href="#"><img src="img/socialIcons/rss.gif" alt="RSS-Feed"/> 订阅免费新闻</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">招聘信息</a></li>
+            <li><a href="#">合作渠道</a></li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+        </div>
+       <div class="footerContainerCopyright"> Copyright &copy; 2008-2010 by <a href="#">全面攒机网</a> | 保留一切版权.
+          <div class="footerContainerSocial"> 
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/digg.png" /></a> 
+          
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/delicious.png"  style="margin-left:5px;" /></a> 
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/technorati.png" style="margin-left:5px;"/></a> 
+          
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/wong.png" style="margin-left:5px;" /></a>       
+         
+          
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/google.png" style="margin-left:5px;" /></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright">全面攒机网 &copy; 2010 <a href="#" target="_blank">全面攒机网</a></div>
+</body>
+</html>

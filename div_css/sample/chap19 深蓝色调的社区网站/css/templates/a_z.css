@@ -1,0 +1,85 @@
+/*
+@description Department A-Z CSS
+
+@author	Bryan Gullan
+@created 2007-09-04
+
+*/
+
+div#letters-block {
+	float:left;
+	width:33%;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+.a-to-z h2 {
+	text-transform:uppercase;
+	clear:both;
+}
+
+.a-z {
+	float:left;
+	width:80%;
+	height: 13em;
+	padding: 1em;
+	background-color: #002147;
+}
+	.a-z ol {
+		list-style: none;
+		padding: 0; margin: 0;
+		font-weight:bold;
+		font-size:1.2em;
+		background-color: #002147;
+	}
+		#primary-content .a-z li, #primary-content .a-z li a,
+		#tertiary-content .a-z li, #tertiary-content .a-z li a,
+		.rightboxes .a-z li, .rightboxes .a-z li a {
+			outline: none;
+			display: inline;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align: center;
+			color: #fff;
+			background-color: #002147;
+			display: block;
+			float: left;
+			width:16%;
+			/*width: 2em;*/
+			height: 2.2em;
+			line-height: 2.2em;
+			padding: 0;
+			margin: 0;
+			font-family: "Trebuchet MS", Helvetica, Verdana, Arial, sans-serif;
+			font-weight: bold;
+		}
+		#primary-content .a-z li a,
+		#tertiary-content .a-z li a,
+		.rightboxes .a-z li a {
+			width:100%;
+		}
+		#primary-content .a-z li.unlinked,
+		#tertiary-content .a-z li.unlinked,
+		.rightboxes .a-z li.unlinked {
+			width:16%;
+			color: #aaa;
+		}
+		#primary-content .a-z li a:hover, #primary-content .a-z li a.current,
+		#tertiary-content .a-z li a:hover, #tertiary-content .a-z li a.current,
+		.rightboxes .a-z li a:hover, #rightboxes .a-z li a.current {
+			background-color: #fff;
+			color: #002147;
+		}
+
+div.a-z-list {
+	clear:both;
+}
+
+#tertiary-content .a-z, .rightboxes .a-z {
+	margin-bottom:30px;
+	width:90%;
+}
+.rightboxes .a-z, .rightboxes .a-z ol, .rightboxes .a-z li, .rightboxes .a-z li a  {
+	background-color:transparent;
+	overflow:hidden;
+}

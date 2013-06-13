@@ -1,0 +1,42 @@
+#pager {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#pager UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#pager UL LI {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#pager UL LI SPAN {
+	PADDING-RIGHT: 4px; DISPLAY: block; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 0px 4px 0px 0px; COLOR: #999; PADDING-TOP: 2px
+}
+#pager UL LI A {
+	BORDER-RIGHT: #c1c1c1 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #c1c1c1 1px solid; DISPLAY: block; PADDING-LEFT: 6px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 4px; MARGIN: 0px 4px 0px 0px; BORDER-LEFT: #c1c1c1 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #c1c1c1 1px solid; LETTER-SPACING: 0ex; TEXT-ALIGN: center
+}
+#pager UL LI A:link {
+	BORDER-RIGHT: #c1c1c1 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #c1c1c1 1px solid; DISPLAY: block; PADDING-LEFT: 6px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 4px; MARGIN: 0px 4px 0px 0px; BORDER-LEFT: #c1c1c1 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #c1c1c1 1px solid; LETTER-SPACING: 0ex; TEXT-ALIGN: center
+}
+#pager UL LI A:visited {
+	BORDER-RIGHT: #c1c1c1 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #c1c1c1 1px solid; DISPLAY: block; PADDING-LEFT: 6px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 4px; MARGIN: 0px 4px 0px 0px; BORDER-LEFT: #c1c1c1 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #c1c1c1 1px solid; LETTER-SPACING: 0ex; TEXT-ALIGN: center
+}
+#pager UL LI A:active {
+	BORDER-RIGHT: #c1c1c1 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #c1c1c1 1px solid; DISPLAY: block; PADDING-LEFT: 6px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 4px; MARGIN: 0px 4px 0px 0px; BORDER-LEFT: #c1c1c1 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #c1c1c1 1px solid; LETTER-SPACING: 0ex; TEXT-ALIGN: center
+}
+#pager UL LI A:hover {
+	BORDER-RIGHT: #1172c5 1px solid; BORDER-TOP: #1172c5 1px solid; BORDER-LEFT: #1172c5 1px solid; BORDER-BOTTOM: #1172c5 1px solid
+}
+#pager UL LI A.currentpage {
+	BORDER-RIGHT: #1172c5 1px solid; BORDER-TOP: #1172c5 1px solid; BORDER-LEFT: #1172c5 1px solid; COLOR: #fff; BORDER-BOTTOM: #1172c5 1px solid; BACKGROUND-COLOR: #1172c5
+}
+#pager UL LI A.currentpage:link {
+	BORDER-RIGHT: #1172c5 1px solid; BORDER-TOP: #1172c5 1px solid; BORDER-LEFT: #1172c5 1px solid; COLOR: #fff; BORDER-BOTTOM: #1172c5 1px solid; BACKGROUND-COLOR: #1172c5
+}
+#pager UL LI A.currentpage:visited {
+	BORDER-RIGHT: #1172c5 1px solid; BORDER-TOP: #1172c5 1px solid; BORDER-LEFT: #1172c5 1px solid; COLOR: #fff; BORDER-BOTTOM: #1172c5 1px solid; BACKGROUND-COLOR: #1172c5
+}
+#pager UL LI A.currentpage:active #pager UL LI A.currentpage:hover {
+	BORDER-RIGHT: #1172c5 1px solid; BORDER-TOP: #1172c5 1px solid; BORDER-LEFT: #1172c5 1px solid; COLOR: #fff; BORDER-BOTTOM: #1172c5 1px solid; BACKGROUND-COLOR: #1172c5
+}
+#pager #results {
+	FONT-SIZE: 0.8em; FLOAT: left; MARGIN: 10px 0px 0px; COLOR: #999
+}

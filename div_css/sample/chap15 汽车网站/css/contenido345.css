@@ -1,0 +1,963 @@
+#container_contenido{
+	position:relative;
+	/*width:744px;/*46.38em*/
+	z-index:13;
+	background:#ffffff;
+	/*padding:2px 1px;0.13em 0.06em*/
+}
+#titulo{/*titulo*/
+	color:#276015;
+	font-weight:normal;
+	font-size:1.56em;/* 25px*/	
+	font-family: Trebuchet MS; 
+	text-align:left;
+	margin-top:0px;
+	margin-bottom:16px;
+	overflow:visible;
+}
+#subtitulo{/*subtitulo*/
+	color:#66ab05;
+	font-size: 0.88em;/*14px*/	
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	text-align:left;
+	margin-bottom:25px;
+	text-transform: uppercase;
+	line-height:1.125em;
+}
+*:first-child+html #subtitulo{/*subtitulo*/
+	line-height:1.563em;
+}
+.seccionTituloGris{/*titulo seccion gris*/
+	color:#707070;
+	font-size: 1.5em;/*17px*/	
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	text-align:left;
+	line-height:1.063em;
+	overflow:visible;
+}
+*:first-child+html .seccionTituloGris{
+	line-height:1.65em;
+}
+.seccionTituloVerde{/*titulo seccion verde*/
+	color:#66ab05;
+	font-size: 1em;/*13px*/	
+	font-family: Trebuchet MS; 
+	font-weight:  normal;
+	text-align:left;
+	line-height:1.125em;
+}
+*:first-child+html .seccionTituloVerde{
+	line-height:1.65em;
+}
+.seccionContenido{
+	margin-bottom:17px;/*1.06em*/	
+	font-weight:normal;
+	font-family: Trebuchet MS; 
+	color:#707070;
+	text-align:justify;
+	line-height:1.25em;/*18px=1.125em*/
+	font-size: 0.75em;/*12px*/
+	vertical-align:middle;
+}
+*:first-child+html .seccionContenido .fondosup{vertical-align:top;}
+.seccionContenidoBullet{
+	margin-bottom:17px;/*1.06em*/	
+	font-weight:normal;
+	font-family: Trebuchet MS; 
+	color:#707070;
+	text-align:justify;
+	line-height:1.25em;/*18px=1.125em*/
+	font-size: 0.75em;/*12px*/
+}
+.dosColumnaIgualIzquierdaContenido, .dosColumnaIgualDerechaContenido{
+	position:relative;
+	float:left;
+	width:363px;/*22.69em*/
+}
+.dosColumnaIgualIzquierdaContenido{z-index:10;}
+.dosColumnaIgualDerechaContenido{margin-left:13px;/*1.00em*/z-index:20;}
+.dosColumnaDisIzquierdaContenido, .dosColumnaDisDerechaContenido{position:relative;	float:left;}
+.dosColumnaDisIzquierdaContenido{width:490px;/*30.63em*/z-index:10;}
+.dosColumnaDisDerechaContenido{
+	width:237px;/*14.81em*/
+	margin-left:11px;/*1.00em*/
+	z-index:20;
+}
+/*los--Li se usan en listado_imagenes*/
+.tresColumnaIzquierdaContenido, .tresColumnaCentroContenido, .tresColumnaDerechaContenido,.tresColumnaIzquierdaContenidoLi, .tresColumnaCentroContenidoLi, .tresColumnaDerechaContenidoLi{
+	position:relative;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.tresColumnaCentroContenidoLi, .tresColumnaDerechaContenidoLi{padding-left:14px;}
+.tresColumnaIzquierdaContenido, .tresColumnaCentroContenido, .tresColumnaDerechaContenido{width:237px;/*14.81em*/}
+.tresColumnaIzquierdaContenidoLi, .tresColumnaCentroContenidoLi, .tresColumnaDerechaContenidoLi{
+	width:237px; 
+	list-style-type: none;
+	list-style-position: outside;
+	margin:0;
+}
+.tresColumnaIzquierdaContenidoLi{padding:0;}
+.tresColumnaCentroContenido, .tresColumnaDerechaContenido{margin-left:13px;/*1.00em*/}
+.tresColumnaIzquierdaContenido,.tresColumnaIzquierdaContenidoLi{z-index:10;}
+.tresColumnaCentroContenido,.tresColumnaCentroContenidoLi{z-index:20;}
+.tresColumnaDerechaContenido,.tresColumnaDerechaContenidoLi{z-index:30;}
+.colizqContenido{
+	z-index:10;
+	position:relative;
+	float:left;
+}
+.colderContenido{
+	margin-left:13px;/*1.00em*/
+	z-index:20;
+	position:relative;
+	float:left;
+}
+.unaColumnaContenido{text-align:center;}
+/*imagenes*/
+.img_princip_arr,.img_princip_abj{
+	margin-bottom:17px;/*1.06em*/
+	border-color:transparent; 
+	width: 100%;
+}
+/*piefoto 15pt/18pt */
+.piefotoContenido{
+	color:#707070;
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	margin-top:5px;/*0.31em*/
+	margin-bottom:20px;/*1.25em*/
+	text-align:left;
+}
+ /*ANTES el piefotoContenido font-size:1.25em;15pt,line-height:1.2em;18pt*/
+.centrada .piefotoContenido{ font-size:0.94em;/*11pt*/ line-height:1.2em;/*13pt*/ }
+.seccionContenido .centrado .piefotoContenido{ font-size:0.94em;/*11pt*/ line-height:1.2em;/*13pt*/ }
+.seccionContenido .piefotoContenido{ font-size:0.94em;/*11pt*/ line-height:1.2em;/*13pt*/ }
+*:first-child+html .piefotoContenido .fondosup{vertical-align:top;}
+.izquierda, .derecha{
+	margin-bottom:16px;/*1.00em*/
+	border: none;
+	border-color:transparent;
+	width: 100%;
+}
+.izquierda{/*margin-right: 16px;1.00em*/}
+/* para que el texto abrace a la imagen*/
+.imgIzqContenidoAbrazado{
+	float:left;
+	margin-right:16px;/*1.00em*/
+	margin-bottom:16px;/*1.00em*/
+	border-color:transparent;
+}
+.imgDerContenidoAbrazado{
+	float:right;
+	/*margin-left:1.00em; 16px*/
+	margin-left:13px;/*1.00em*/
+	margin-bottom:16px;/*1.00em*/
+	border-color:transparent;
+}
+.centrada, .centrada100{
+	display: block;
+	margin: auto;
+	border:none;
+}
+.centrada100{width: 100%;}
+/*color texto resaltado azulon #0765c5*/
+.textocorrido{
+	position:relative;
+	z-index:15;
+	font-weight:normal;
+	font-family: Trebuchet MS; 
+	color:#707070;
+	overflow:visible;
+}
+.tituloTxtCorridoSinLinea{/*titulo texto corrido*/
+	color:#707070;
+	font-size: 1.56em;/*17px*/	
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	text-align:justify;
+	margin-top:42px;
+	overflow:visible;
+}
+.tituloTxtCorridoConLinea{/*titulo texto corrido*/
+	color:#707070;
+	font-size: 1.56em;/*17px*/	
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	text-align:justify;
+	margin-top:10px;
+	overflow:visible;
+}
+.titSeccionTextocorrido{/*titulo seccion texto corrido*/
+	color:#707070;
+	font-size: 1.5em;/*14px*/	
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	text-align:justify;
+	margin-top:5px;
+	overflow:visible;
+}
+a.enlace_texto:link{color: #0765c5;text-decoration: none;}
+a.enlace_texto:visited{color: #003174;text-decoration: none;}
+a.enlace_texto:hover{color: #0765c5;text-decoration: underline;}
+a.enlace_texto:focus, a.enlace_texto:active{color: #0765c5;	text-decoration: underline;}
+.negrita_texto{color: #262626;}
+/*-------------------------------
+LINEAS OPCIONALES
+	lineadivisoria, se utiliza para separación de 42px (menu_adicional, texto_corrido, nota_asterisco)
+	linea
+--------------------------------*/
+.lineadivisoria{/*para txtcorrido o menu*/
+	width:743px;
+	position:relative;
+	height:1px;
+	visibility: visible;
+	z-index: 23;
+	background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/linea.gif);
+	margin-top:42px;
+	line-height:0px;
+	font-size: 0px;
+}
+.linea,.lineaSinTitulo, .img_separador{
+	position:relative;
+	height:1px;
+	width:100%;
+	visibility: visible;
+	z-index: 23;
+	background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/linea.gif);
+	line-height: 0px;
+	font-size: 0px;
+}
+.lineaSinTitulo{margin:0 0 20px 0;}
+/* Notas de seccion y texto corrido*/
+.notas{
+	margin-bottom:5px;
+	position:relative;
+	width:100%;
+	height:auto;
+	color:#707070;
+	font-size: 0.69em;/*11px*/
+	text-align: left;
+	/*line-height: 1.2em;/*0.813em;/*13px*/
+	margin-top: 42px;/*2.63em*/	
+	font-family: Trebuchet MS; 
+	text-align: justify !important;
+	padding-bottom:1em;
+}
+.nota{margin-top:0;/*0.31em*/}
+*:first-child+html .nota{line-height: 1.56em;}
+* html .nota{line-height: 1.56em;}
+.nota_asterisco, .nota_asterisco_verde{vertical-align:top;font-size:0.65em;/*8px*/ text-decoration:none;}
+*:first-child+html .subtitulosnp .nota_asterisco{vertical-align:top; margin-top:10px;} 
+* html .subtitulosnp .nota_asterisco{vertical-align:top; margin-top:10px;}
+.nota_asterisco_verde{color:#66ab05;margin-top: 5px;/*0.31em*/}
+.nota_asterisco{color:#707070;}
+a:link .nota_asterisco, a:link .nota_asterisco_verde{text-decoration:none;}
+/*---------------------------------------------
+Flash
+----------------------------------------------*/
+.cont_accesible{
+	color:#0765c5;
+	font-size: 0.94em;/*15px*/		
+	font-family: Trebuchet MS; 
+	text-decoration:none;
+	font-weight: normal;
+	margin-top:5px;/*0.31em*5px*/
+	margin-bottom:25px;/*1.56em*25px*/
+	text-align:left;
+	line-height: 1.125em;/*18px*/
+}
+.cont_accesible:link{text-decoration: none;}
+.cont_accesible:hover{text-decoration:underline;}
+.cont_accesible:focus{text-decoration:underline;}
+/*--------------------------------------------
+	CONTENIDO ADICIONAL
+----------------------------------------------*/
+.contentadicional{
+	/*width: 743px;*/
+	position:relative;
+}
+/*Borde del contenido adicional*/
+#container_contenidoAdi{
+	position:relative;
+	width:100%;/*732px45.75em*/
+	z-index:13;
+	background:#ffffff;
+	padding:1px 1px;/*0.19em 0.19em*/ 
+	border-left: thin solid #e8e8e8;
+	border-right: thin solid #e8e8e8;
+}
+*:first-child+html #container_contenidoAdi{width:99%;}
+* html #container_contenidoAdi{width:98%; padding:3px 3px;}
+#contentborde{
+	position:relative;
+	width:99.8%;/*743px46.44em*/
+	background:#e8e8e8;
+	z-index:25;
+}
+*:first-child+html #contentborde{width:99.5%;}
+* html #contentborde{width:99%;}
+.bordetop div { background: url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/tl.jpg) no-repeat top left; }
+.bordetop { background: url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/tr.jpg) no-repeat top right; }
+.bordebot div { background: url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/bl.jpg) no-repeat bottom left; }
+.bordebot { background: url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/br.jpg) no-repeat bottom right; }
+.bordetop div, .bordetop, .bordebot div, .bordebot {width: 100.3%;height:1px;/*0.13em*/}
+*:first-child+html .bordetop div,*:first-child+html .bordetop,*:first-child+html .bordebot div,*:first-child+html .bordebot{width: 100%;height:1px;}
+* html .bordetop div,* html .bordetop,* html .bordebot div,* html .bordebot {
+	height:0px;
+	font-size:0;
+	line-height:0px;
+	font-size:0px;
+	visibility:visible;
+	position:relative;
+	width: 99%;
+}
+/*Fin dibujar borde del contenido adicional*/
+.tituloAdi{
+	color:#276015;
+	font-weight:normal;
+	font-size: 1.56em;/*25px*/	
+	font-family: Trebuchet MS; 
+	text-align:justify;
+	margin-top:0em;
+	margin-bottom:16px;/*1.00em*/
+	width: 90%;/*40.63em*/
+	line-height: 1.563em;/*25px*/
+}
+.titcontadi{
+	color:#707070;
+	font-weight:normal;
+	font-size:0.94em;/*15px*/		
+	font-family:Trebuchet MS; 
+	text-align:justify;
+	margin-top:30px;/*1.88em*/
+	margin-left:10px;/*0.63em*/
+	margin-bottom:16px;/*1.00em*/
+	width:88%;
+	text-transform:uppercase;
+	float:left;
+}
+*:first-child+html .titcontadi{line-height: 1.688em;}
+#btnCerrar{
+	background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/btn_cerrar.png) no-repeat;
+	height:32px;/*2.00em*/
+	width:32px;/*2.00em*/
+	float:right;
+	margin:20px;/*1.56em*/
+}
+#bcerrar{height:1px; width:1px; /**/visibility:hidden;}
+a#btnCerrar:link,a#btnCerrar:visited{background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/btn_cerrar.png) no-repeat;}
+a#btnCerrar:focus,a#btnCerrar:hover,a#btnCerrar:active{background: url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/btn_cerrar_rollover.png) no-repeat;}
+.seccion_cont_adicional{
+	width:100%;
+	position:relative; 
+	color:#707070;
+	font-weight:normal;
+	font-size:0.75em;/*12px*/
+	font-family:Trebuchet MS; 
+	text-align:justify;
+	margin-bottom:16px;/*1.00em*/
+	margin-left:10px;/*0.63em*/
+}
+/*--------------------------------
+MENU ADICIONAL
+---------------------------------*/
+/*ul menu azul para contenido345*/
+.menu{
+	position:relative;
+	margin:0 0 10px 0;
+	list-style-type:none;
+	list-style-position:outside;
+	float:left;
+	padding:0;
+}
+/*ul menu azul para contenido_adicional*/
+ul.menu_cont_adi{
+	position:relative;
+	list-style-type:none;
+	list-style-position:outside;
+	margin:-2px 0 0 10px;
+	padding:0;
+	z-index:40;
+}
+/*elementos li del menu azul*/
+.menuaso_cont,.menuaso_cont_last,.menuaso_adi{
+	float:left;
+	position:relative;
+	list-style-type:none;
+	list-style-position:outside;
+}
+.menuaso_cont{border-right:thin solid #707070;}
+ul.menu li.menuaso_cont_last{border-right:thin solid #707070;}
+.menuasoB,.menuvisiB,.menuvisipriB,.txtcomuncont_adi,.menuasopriB{border-right: thin solid #707070; padding-right:10px; padding-left:10px;}
+.menuaso,.menuvisi,.menuvisipriB,.menuasoB,.menuvisiB,.menuasopri,.menuasopriB{color:#0765c5;}
+.txtcomuncont,.txtcomuncont_adi{color:#707070;}
+.txtcomuncont{margin-top:4px; padding-right:10px;}
+.menuaso,.menuvisi{padding-right:10px; padding-left:10px;}
+.menuasopri{padding-right:10px;}
+.menuaso,.menuasopri,.menuvisi,.menuvisipriB,.menuasopriB,.menuasoB,.menuasopriB,.menuvisiB,.txtcomuncont,.txtcomuncont_adi{
+	font-family:trebuchet MS;
+	text-align:left;
+	font-weight:normal;
+	text-decoration:none;
+	text-transform:uppercase;
+	line-height:0.875em;/*14px*/
+	font-size:0.75em;/*12px*/
+}
+*:first-child+html ul.menu li.menuaso_cont_last div.txtcomuncont{ margin-top:2px; line-height:1.32em;}
+*:first-child+html ul.menu li.menuaso_cont div.txtcomuncont{
+	margin-top:2px;
+	line-height: 1.125em;
+}
+/*imagen menu*/
+.menuasopriB,.menuvisipriB,.txtcomuncont_adi{padding-left:0px;}
+.menuaso_adi img{margin:-10px 0 0 10px;}
+/*enlace al otros contenidos adicionales*/
+a.menuasopriB:link,a.menuasopri:link,a.menuaso:link, a.menuasoB:link{text-decoration: none;}
+a.menuasopriB:visited,a.menuasopri:visited,a.menuaso:visited,a.menuasoB:visited{ color: #003174 !important; text-decoration:none !important; }
+a.menuasopriB:focus,a.menuasopri:focus,a.menuaso:focus,a.menuasoB:focus { color: #0765c5 !important; text-decoration:underline !important; }
+a.menuasopriB:hover,a.menuasopri:hover,a.menuaso:hover,a.menuaso:active,a.menuasoB:hover,a.menuasoB:active { color: #0765c5 !important; text-decoration:underline !important; }
+/*contenido_adicional en el que me encuentro*/
+a.menuvisipriB:link,a.menuvisi:link,a.menuvisiB:link{text-decoration:underline;}
+a.menuvisipriB:visited,a.menuvisi:visited,a.menuvisiB:visited{ color: #003174 !important; text-decoration:underline !important; }
+a.menuvisipriB:focus,a.menuvisipriB:hover,a.menuvisipriB:active,a.menuvisi:focus,a.menuvisi:hover,a.menuvisi:active,a.menuvisiB:focus,a.menuvisiB:hover,a.menuvisiB:active { color: #0765c5 !important; text-decoration:underline !important; }
+/*Estilos para IBERDROLA o IBERDROLA RENOVABLES*/
+.corporativa{/*color:#4a9024;*/text-transform: uppercase;}
+/*-----------------------------------------
+		Galería de Imagenes
+-------------------------------------------*/
+/*INICIO NEW*/
+.encabezado{position:relative;float:right;padding:0 0 15px 0;}
+.pag-migas, h2.pag-head{font-size: 0.75em;/*12px*/}
+.pag-migas345, h2.pag-head345{font-size:0.69em;/* 11px*/}
+h2.pag-head, .pag-migas, .pag-migas345, h2.pag-head345{
+	float:left;
+	color:#ff7800;
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	text-align:right;
+	margin:0;
+	vertical-align:middle;
+	padding-top:3px;
+}
+h2.pag-head, h2.pag-head345{background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/puntos_paginacion.jpg); background-repeat:no-repeat; background-position:right;}
+h2.pag-head345{padding:3px 15px 0 0;}
+h2.pag-head{padding:3px 18px 0 0;}
+.puntos{
+	font-size:0.75em;
+	color:#707070;
+	font-family:Trebuchet MS; 
+	font-weight:normal;
+	text-align:center;
+	margin:0;
+	float:left;
+	padding:5px 1px 0 1px;
+}
+p.pag-migas345{padding:3px 0  0 5px;}
+p.pag-migas{padding:3px 0  0 10px;}
+ul.pag-migas, ul.pag-migas345{list-style:none; list-style-position:outside; margin:0px; padding:0px;}
+ul.pag-migas li, ul.pag-migas345 li{
+	float:left;
+	padding-left:3px; 
+	text-align:right;
+}
+li.unidades a,li.unidades a:link,li.unidades a:visited{
+	border:1px solid #707070;
+	line-height:1.9em;/*18px*/
+	text-decoration:none; 
+	padding:0 4px 0 4px;
+	color:#707070;
+}
+li.unidades a.activo{border:1px solid #ff7800;color:#ff7800;}
+.activo,a.activo:link,a.activo:visited,a.activo:focus,a.activo:hover{border:1px solid #ff7800;color:#ff7800;}
+li.unidades a:focus,li.unidades a:hover{border:1px solid #ff7800;color:#ff7800;}
+.sig,.ult,.ant{padding-top:3px;}
+.sig a,.ult a, .ant a,
+.sig a:link,.ult a:link, .ant a:link,
+.sig a:visited,.ult a:visited, .ant a:visited{text-decoration:none; padding: 0 3px 0 3px;color:#707070;}
+.sig a:focus,.ult a:focus, .ant a:focus,
+.sig a:hover,.ult a:hover, .ant a:hover{text-decoration:none; padding: 0 3px 0 3px;color:#ff7800;}
+.sig a{border-right:1px solid #707070; padding-right:3px;}
+/*FIN NEW*/
+.galeriapaginas{
+	/*width:363px;22.69em*/
+	position:relative;
+	float:left;
+}
+*:first-child+html .galeriapaginas{padding-left:13px;}
+* html .galeriapaginas{padding-left:13px;}
+.piefotoContenidoGaleria{
+	color:#707070;
+	font-size:0.94em;/*15px*/	
+	font-family:Trebuchet MS; 
+	font-weight:normal;
+	margin-top:5px;/*0.31em*/
+	margin-bottom:25px;/*1.56em*/
+	text-align:left;
+	line-height:1.125em;/*18px*/
+	text-align:left;
+}
+a img{border:none;}
+div#contenedorCarrusel{/*width:363px;*/	font-family:Trebuchet ms;}
+ul#listaImagenes{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+ul#listaImagenes li.listacarrusel{
+	margin:0px;
+	padding:0px;
+}
+ul#paginadorImagenes,ul#paginadorListado{display:none;}
+ul#paginadorImagenes,ul#paginadorListado{color:#FF7800;text-align:right;}
+ul#paginadorImagenes,ul#paginadorListado{
+	color:#FF7800;
+	text-align:right;
+	margin-top:10px;
+	float:right;
+}
+.lineagal{
+	margin-top:10px;
+	height:1px;
+	/*width:363px;*/
+	background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/linea.gif);
+	line-height:0px;
+	font-size:0px;
+	visibility:visible;
+	position:relative;
+}
+.lineapag{
+	margin-top:10px;
+	height:1px;
+	width:99%;
+	background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/linea.gif);
+	line-height:0px;
+	font-size:0px;
+	visibility:visible;
+	position:relative;
+}
+ul#paginadorImagenes li, ul#paginadorListado li{
+	/*display:inline;*/
+	margin:0px;
+	padding:0px 3px 0px 4px;
+	float:left;
+	text-align:left;
+	list-style:none;
+	font-family:Trebuchet ms;
+}
+ul#paginadorImagenes li.borde,ul#paginadorListado li.borde{
+	background-image:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/bordegaleria.gif);
+	background-repeat:no-repeat;
+}
+ul#paginadorImagenes li.bordeactivo,ul#paginadorListado li.bordeactivo{
+	background-image:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/bordegaleriaactivo.gif);
+	background-repeat:no-repeat;
+}
+ul#paginadorImagenes li.ultimaflecha,ul#paginadorListado li.ultimaflecha{width:auto;}
+*:first-child+html ul#paginadorListado li.ultimaflecha{padding:4px 3px 0px 3px;}
+* html ul#paginadorListado li.ultimaflecha{padding:4px 3px 0px 3px;}
+ul#paginadorImagenes li.ultimaflecha a#moverSiguiente{padding:0;}
+*:first-child+html ul#paginadorImagenes li.ultimaflecha a#moverSiguiente{vertical-align:bottom;}
+* html ul#paginadorImagenes li.ultimaflecha a#moverSiguiente{vertical-align:bottom;}
+a#moverAnterior{padding:0 0 0 3px;}
+ul#paginadorImagenes li a,ul#paginadorListado li a{
+	text-decoration:none;
+	color:#0765C5;
+	font-size:0.75em;/*12px*/
+}
+ul#paginadorImagenes li a.activo,ul#paginadorListado li a.activo{
+	text-decoration:none;
+	color:#FF7800;
+	/*font-size:0.94em;/*15px*/
+}
+ul#paginadorImagenes li a:hover,ul#paginadorListado li a:hover{
+	text-decoration:none;
+	color:#FF7800;
+	/*font-size:0.94em;/*15px*/
+}
+ul#paginadorImagenes li a span,ul#paginadorListado li a span{
+	color:#0765C5;
+	font-size:0.75em;/*12px*/
+}
+ul#paginadorImagenes font,ul#paginadorListado font{
+	color:#FF7800;
+	font-size:0.75em;/*12px*/
+}
+ul#paginadorImagenes .font,ul#paginadorListado .font{
+	color:#FF7800;
+	font-size:0.75em;/*12px*/
+}
+ul#paginadorImagenes li span.numeracion,ul#paginadorListado li span.numeracion{
+	color:#0765C5;
+	font-family:Trebuchet ms;
+	/*font-size:0.94em;*15px*/
+	font-style:normal;
+}
+ul#paginadorImagenes li span,ul#paginadorListado li span{
+	/*color:#0765C5;*/
+	font-family:Trebuchet ms;
+	/*font-size:0.94em;/*15px*/
+	font-style:normal;
+}
+a#numimgs{
+	text-decoration:none;
+	color:#0765C5;
+	margin-left:5px;
+}
+a#numimgs:hover{
+	text-decoration:none;
+	color:#FF7800;
+	/*font-size:0.94em;/*15px*/
+}
+ul#paginadorImagenes li a.naranja,ul#paginadorListado li a.naranja{
+	color:#FF7800;
+}
+/**********************************NOTAS DE PRENSA***********************************************/
+.np_fecha{
+	color:#276015;
+	/*font-weight:bold;*/
+	font-size:1.56em;/*25px*/	
+	font-family:Trebuchet MS; 
+	text-align:left;
+	margin-top:0px;
+	margin-bottom:16px;
+	line-height:1.56em;/*25px*/
+}
+#np_titulo{
+	color:#66ab05;
+	font-weight:normal;
+	font-size:0.875em;/*14px*/	
+	font-family:Trebuchet MS; 
+	text-align:left;
+	margin-top:0px;
+	margin-bottom:25px;
+	line-height:1.25em;/*18px=1.125em*/
+}
+.subtitulosnp{
+	margin:0;
+	padding:0;
+	line-height:1.125em;/*18px=1.125em*/
+}
+*:first-child+html .subtitulosnp{vertical-align:top; line-height:1.3em;}
+* html .subtitulosnp{line-height:1.3em; vertical-align:top;}
+div.subtitnp ul.nivel1 li{
+	margin:0 0 0 0;
+	margin-bottom:10px;
+	padding:0;
+	font-size:0.75em;/*12px*/	
+	font-family: Trebuchet MS; 
+	text-align:justify;
+	list-style-position:outside;
+	color:#707070;
+	font-weight:normal;
+}
+.subtitnp{margin-bottom:25px;}
+/*NUBE TAGS EN NOTAS*/
+.tagsNP{width:100%; color:#66AB05; font-family:Trebuchet MS; font-size:0.75em;/*12pt*/ font-weight:normal; line-height:1.5em;/*18pt*/ padding:30px 0 0 0;}
+.nt{list-style:none; margin:0; padding:0;}
+.nt li{float:left; margin-left:5px;}
+.tituloTags{color:#276015; float:left;}
+/*--------------------------------------LISTADO IMAGENES----------------------------------------*/
+/*TAGS EN Listado de Imagenes*/
+.tagsListImg{width:100%; font-family:Trebuchet MS; font-size:0.81em;/*13pt*/ font-weight:normal; line-height:1.31em;/*17pt*/ margin: 21px 0px 0px 0px; float:left; text-align: left; padding:0px;}
+.tituloTagsListImgs{color:#276015; float:left; margin:0px; padding:0px;}
+.lisTagsImgs{list-style:none; margin:0; padding:0;}
+.lisTagsImgs li{margin: 0px 0px 0px 5px; float:left; color:#262626; padding: 0px;}
+.titularlia{color:#262626;	font-family:Trebuchet MS; font-size:0.75em;/*12px;*/ font-weight:normal; text-align:left; text-decoration:none; margin-top:15px;}
+a.maslisnp{float: left !important; padding-bottom: 4px !important; }
+*:first-child+html a.maslisnp{margin-bottom: 4px !important;}
+/*FIN TAGS EN Listado de Imagenes*/
+.container_contenido{
+	position:relative;
+	/*width:743px;/*46.38em;*/
+	z-index:13;
+	background:#ffffff;
+	/*padding:2px 1px;0.13em 0.06em*/
+}
+.container_contenido_completo{
+	position:relative;
+	width:985px;/*46.38em;*/
+	z-index:13;
+	background:#ffffff;
+	/*padding:2px 1px;0.13em 0.06em*/
+}
+/*Cuatro columnas*/
+.cuatroColumnaIzquierdaContenidoLi, .cuatroColumnaCentroContenidoLi, .cuatroColumnaDerechaContenidoLi{
+	list-style-type:none;
+	list-style-position:outside;
+	width:237px;
+	list-style-type:none;
+	list-style-position: outside;
+	margin:0;
+}
+.cuatroColumnaIzquierdaContenidoLi{padding:0;}
+.cuatroColumnaCentroContenidoLi, .cuatroColumnaDerechaContenidoLi{padding:0px 0px 0px 10px;}
+.cuatroColumnaIzquierdaContenido, .cuatroColumnaCentroContenido, .cuatroColumnaDerechaContenido,.cuatroColumnaIzquierdaContenidoLi, .cuatroColumnaCentroContenidoLi, .cuatroColumnaDerechaContenidoLi{
+	position:relative;
+	float:left;
+}
+.cuatroColumnaIzquierdaContenido, .cuatroColumnaCentroContenido, .cuatroColumnaDerechaContenido{width:237px;/*14.81em*/}
+.cuatroColumnaCentroContenido, .cuatroColumnaDerechaContenido{padding-left:12px;/*1.00em*/}
+.cuatroColumnaIzquierdaContenido,.cuatroColumnaIzquierdaContenidoLi{z-index:10;}
+.cuatroColumnaCentroContenido,.cuatroColumnaCentroContenidoLi{z-index:20;}
+.cuatroColumnaDerechaContenido,.cuatroColumnaDerechaContenidoLi{z-index:30;}
+/*BLOQUE IMG*/
+.titular_bloque{
+	margin-top:26px;
+	margin-bottom:24px;
+	color:#276015;
+	font-size:0.875em;/*14px*/
+	font-family:Trebuchet MS; 
+	text-align:justify;
+	text-align:left;
+	line-height:1.063em;/*17px*/
+	font-weight:normal;
+	text-decoration:none;
+}
+.dimpes{
+	color:#707070;
+	font-family:Trebuchet MS;
+	line-height:1.063em;
+}
+.lisdescarga{
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#276015;
+	font-size:0.875em;/*14px*/
+	font-family:Trebuchet MS; 
+	text-align:justify;
+	text-align:left;
+	line-height:1.063em;/*17px*/
+	font-weight:bold;
+	text-decoration:none;
+}
+.descripcion_bloque{
+	margin-top:9px;
+	color:#707070;
+	font-size:0.75em;/*12px*/
+	font-family:Trebuchet MS; 
+	text-align:justify;
+	text-align:left;
+	line-height:1.163em;/*17px=1.063em*/
+	font-weight:normal;
+	text-decoration:none;
+}
+.bloqueimg_descarga{
+	list-style-type:none;
+	list-style-position:outside;
+	margin-top:0px;
+	margin-bottom:24px;
+	text-align:left;
+	margin-left:0px;
+}
+.lineaListado{padding-left:5px; list-style-type:none; list-style-position:outside;}
+.descargas-pdf, .bloqueimg, .lineaListado{list-style-type:none; list-style-position:outside; margin:0px; padding:0px; float:left;}
+.bloqueimgenl, .bloqueimgenlover, .bloqueimgenloverNew, .bloqueimg{margin-top:20px; margin-bottom:24px; text-decoration:none;}
+a.bloqueimgenl:link span.titular_bloque{color:#276015; text-decoration:none;}
+a.bloqueimgenl:visited span.titular_bloque{color:#123100; text-decoration:none;}
+a.bloqueimgenl:focus span.titular_bloque{ color:#276015 !important; text-decoration:underline !important; }
+a.bloqueimgenl:hover span.titular_bloque{ color:#276015 !important; text-decoration:underline !important; }
+/*Arreglo rollover, ya que si el enlace en nueva ventana...*/
+a.bloqueimgenlNew:link span.titular_bloque{color:#276015; text-decoration:none;}
+a.bloqueimgenlNew:visited span.titular_bloque{color:#123100; text-decoration:none;}
+a.bloqueimgenlNew:focus span.titular_bloque{ color: #276015 !important; text-decoration:underline !important; }
+a.bloqueimgenlNew:hover span.titular_bloque{ color: #276015 !important; text-decoration:underline !important; }
+* html span.titular_bloque:link {color:#276015; text-decoration:none;}
+* html span.titular_bloque:visited{color:#123100; text-decoration:none;}
+* html span.titular_bloque:focus{color: #276015 !important; text-decoration:underline !important; }
+* html span.titular_bloque:hover{color: #276015 !important; text-decoration:underline !important; }
+/*Si el usuario introduce la img para el over*/
+.bloqueimgenlover{color:#276015; text-decoration:none;}
+a.bloqueimgenlover:link span.titular_bloque{color:#276015; text-decoration:none;}
+a.bloqueimgenlover:visited span.titular_bloque{color:#123100; text-decoration:none;}
+a.bloqueimgenlover:focus span.titular_bloque{ color: #276015 !important; text-decoration:underline !important; }
+a.bloqueimgenlover:hover span.titular_bloque{ color: #276015 !important; text-decoration:underline !important; }
+/*Arreglo rollover, ya que si el enlace en nueva ventana...*/
+.bloqueimgenloverNew{color:#276015; text-decoration:none;}
+a.bloqueimgenloverNew:link span.titular_bloque{color:#276015; text-decoration:none;}
+a.bloqueimgenloverNew:visited span.titular_bloque{color:#123100; text-decoration:none;}
+a.bloqueimgenloverNew:focus span.titular_bloque{ color:#276015 !important; text-decoration:underline !important; }
+a.bloqueimgenloverNew:hover span.titular_bloque{ color:#276015 !important; text-decoration:underline !important; }
+* html span.titular_bloque:link {color:#276015;text-decoration:none;}
+* html span.titular_bloque:visited{color:#123100; text-decoration:none;}
+* html span.titular_bloque:focus{ color:#276015 !important; text-decoration:underline !important; }
+* html span.titular_bloque:hover{ color:#276015 !important; text-decoration:underline !important; }
+/*Se usan las imagenes por defecto*/
+a.bloqueimgenldef{text-decoration:none;}
+.imgdef{height:1px;width:1px;}/*si se desabilitean las css aparecera la imagen por defecto*/
+.imgover{
+	height:144px;
+	width:236px;
+	background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/web_pordefecto.jpg) no-repeat;
+	padding:0;
+	display:block;
+	margin:0;
+}
+*:first-child+html .imgover{margin-top:-10px;}
+* html .imgover{margin-top:-10px;}
+a.bloqueimgenldef:link .imgover,a.bloqueimgenldef:visited .imgover{background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/web_pordefecto.jpg) no-repeat;}
+a.bloqueimgenldef:focus .imgover{background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/web_pordefecto_rollover.jpg) no-repeat;}
+a.bloqueimgenldef:hover .imgover,a.bloqueimgenldef:active .imgover{background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/web_pordefecto_rollover.jpg) no-repeat;cursor:pointer;}
+a.bloqueimgenldef:link span.titular_bloque{color:#276015;text-decoration:none;}
+a.bloqueimgenldef:visited span.titular_bloque{color:#123100; text-decoration:none;}
+a.bloqueimgenldef:hover span.titular_bloque{ color:#276015 !important; text-decoration:underline !important; }
+a.bloqueimgenldef:focus span.titular_bloque{ color:#276015 !important; text-decoration:underline !important; }
+/*enlacesverdes*/
+a.verde_enlace{
+	font-size:0.813em;/*13px*/	
+	font-family:Trebuchet MS; 
+	color:#707070;	
+	font-weight:normal;
+	text-decoration:none;
+}
+span.verdemas{color:#276015; text-decoration:none;}
+a.verde_enlace:link span.verdemas{color:#276015; text-decoration:none;}
+a.verde_enlace:visited span.verdemas{color:#123100; text-decoration:none;}
+a.verde_enlace:hover span.verdemas{ color:#276015 !important; text-decoration:underline !important; }
+a.verde_enlace:focus span.verdemas{ color:#276015 !important; text-decoration:underline !important; }
+.negrita_texto{	color:#262626;}
+.img_listado{
+	border:none;
+	border-color:transparent;
+	/*height:124px;*/
+	/*width:234px;*/
+}
+/*division entre bloque_imagen*/
+.linea_bloque{
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+	height:1px;
+	width:98%;
+	visibility: visible;
+	z-index:23;
+	background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/linea.gif);
+	line-height:0px;
+	font-size:0px;
+	visibility:visible;
+}
+/*---Galería de Listado de Imagenes------*/
+.paginas{width:100%;}
+.capa10{height:20px; width:100%;}
+/*Listado bullets auto*/
+.seccionTrimestre,.seccionTrimestreUno{/*titulo seccion gris*/
+	color:#707070;
+	font-size:1.0em;/*17px*/	
+	font-family:Trebuchet MS; 
+	font-weight:normal;
+	text-align:left;
+}
+.seccionTrimestre{margin-top:40px;}
+/*Listado imagenes auto (np)*/
+.linea_bloque_auto{
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+	height:1px;
+	width:100%;
+	visibility:visible;
+	z-index:23;
+	background:url(http://www.iberdrola.es/webibd/gc/prod/en/admin/img/linea.gif);
+	margin-left:0px;
+	margin-top:15px;
+	margin-bottom:30px;
+	line-height:0px;
+	font-size:0px;
+}
+.titularnp{
+	color:#262626;
+	font-family:Trebuchet MS;
+	font-size:0.75em;/*12px;*/
+	font-weight:normal;
+	text-align:left;
+	text-decoration:none;
+	/*line-height:1.063em;/*17px*/
+	margin-bottom:24px;
+	margin-top:15px;
+}
+*:first-child+html .titularnp{margin-top:5px;}
+* html .titularnp{margin-top:5px;}
+#btnmasnp{height:1px; width:1px; /**/visibility:hidden;}
+.descripcion_bloque_auto{
+	margin-top:20px;
+	color:#707070;
+	font-size:0.75em;/*12px*/
+	font-family:Trebuchet MS; 
+	text-align:justify;
+	text-align:left;
+	font-weight:normal;
+	text-decoration:none;
+}
+#television_stv {
+	border:none;
+}
+.television_stv_right {
+    text-align:right;
+}
+.television_stv_center {
+    text-align:center;
+}
+.pie_video, .pie_video_left, .pie_videoright{
+	color:#707070;
+	font-family:Trebuchet MS;
+	font-size:1.2em;
+	font-weight:normal;
+	line-height:1.125em;
+	margin-bottom:20px;
+	margin-top:5px;
+	text-decoration:none;
+}
+.pie_video_left{
+	text-align:left;
+}
+.pie_video_right{
+	text-align:right;
+}
+/*---Agregadores------*/
+h2.agregad{
+	color:#707070;
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	text-align:left;
+	vertical-align:middle;
+	font-size: 0.75em;
+} 
+
+div.content_contenido h2.agregad{
+	color:#707070;
+	font-family: Trebuchet MS; 
+	font-weight: normal;
+	text-align:left;
+	vertical-align:middle;
+	font-size: 0.75em;
+	margin-left:5em;
+	margin-top:-2.5em;
+} 
+div.content_contenido ul.listaAgregadores{
+	margin:0px;
+	padding-left:0;
+	margin-left:3.8em;
+}
+
+ul.listaAgregadores{
+	margin:0px;
+	padding-left:0;
+}
+li.elemListaAgregadores{
+	margin:0px;
+	padding: 0px;
+	display: inline;	
+	text-decoration:none;
+}
+
+#idDelicious, #idMeneame, #idFacebook, #idYahoo, #idMail{
+	padding:0px 0px 0px 10px;
+	text-decoration:none;
+}
+#idTwitter{
+	padding:0px 0px 0px 0px;
+	text-decoration:none;
+}

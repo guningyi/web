@@ -1,0 +1,54 @@
+#overlay {
+	DISPLAY: none;
+	Z-INDEX: 5000;
+	LEFT: 0px;
+	WIDTH: 100%;
+	POSITION: absolute;
+	TOP: 0px;
+	HEIGHT: 100%;
+	BACKGROUND-COLOR: #000;
+	moz-opacity: 0.8;
+	opacity: .80
+}
+UNKNOWN {
+	POSITION: fixed
+}
+#message {
+	BORDER-TOP: #74a8f5 8px solid;
+	BORDER-BOTTOM: #666 2px solid;
+	POSITION: relative;
+	BACKGROUND-COLOR: #fff
+}
+#close {
+	PADDING-RIGHT: 12px;
+	DISPLAY: block;
+	PADDING-LEFT: 0px;
+	RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	WIDTH: 68px;
+	PADDING-TOP: 11px;
+	POSITION: absolute;
+	TOP: 0px
+}
+#close IMG {
+	BORDER-TOP-WIDTH: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	BORDER-LEFT-WIDTH: 0px;
+	FLOAT: left;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	WIDTH: 68px;
+	PADDING-TOP: 0px;
+	HEIGHT: 19px;
+	BORDER-RIGHT-WIDTH: 0px
+}
+#messagecontent {
+	PADDING-RIGHT: 120px;
+	PADDING-LEFT: 8px;
+	FONT-SIZE: 1.1em;
+	PADDING-BOTTOM: 8px;
+	COLOR: #444;
+	PADDING-TOP: 8px
+}

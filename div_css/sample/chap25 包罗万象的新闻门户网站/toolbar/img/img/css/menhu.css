@@ -1,0 +1,118 @@
+﻿.tit-red {
+	font-size: 12px;
+	line-height: 120%;
+	color: #993333;
+}
+.h {
+	line-height: 23px;
+}
+.global {
+	font-size: 11px;
+	color: 646464;
+	font-family: "Arial", "Helvetica", "sans-serif";
+
+
+}
+.t {
+	font-size: 12px;
+
+}
+.mt {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+
+
+}
+.v {  font-family: "Verdana"; font-size: 9px}
+.c {  font-size: 12px; line-height: 20px; color: #000000}
+.ht {
+	font-size: 12px;
+	;
+	clip:   rect(   );
+	letter-spacing: 2px;
+}
+.tt {
+	font-size: 13px;
+	line-height: 20px;
+}
+.bg {
+	background-repeat: repeat-x;
+	background-position: left bottom;
+
+}
+.tit-bule {
+	font-size: 12px;
+	line-height: 120%;
+	color: #005789;
+
+}
+.float_R{
+	float:right;
+	text-align:left;
+	margin: 3px auto auto auto;
+}
+A:link,A:visited,A:hover,A:active {
+	FONT-SIZE: 12px; COLOR: #0000cc; FONT-FAMILY: "宋体";
+}
+
+#paging{text-align:center;letter-spacing:1px;color: #669999;font-size: 11px;}
+#paging .pn{color: #000000;text-decoration: none;}
+#paging .on{color: #0066CC;font-weight: bold;border:1px #cccccc solid;padding:1px 2px 1px 3px;}
+#paging a{color: #0066CC;text-decoration: underline;}
+#paging a:hover{color: #0099FF;text-decoration: none;}
+
+
+.inputS {
+	height: 17px;
+	width: 200px;
+	font-family: Arial, Helvetica, sans-serif, "宋体";
+	font-size: 10px;
+}
+.isearch {
+	height: 19px;
+	font-size: 10px;
+}
+
+/*精準*/
+img {border:none;}
+#my_ad{
+	width: 190px;
+	height: 219px;
+	margin-top:20px;
+	background: url(http://www.104.com.tw/jobbank/bank/img/ad_myad_bg.gif) no-repeat;
+	padding-top:59px;
+	padding-bottom:2px;
+	text-align:center
+}
+#my_ad p{margin:0px;padding-bottom:8px;}
+
+/*知識+*/
+#knowledge{width:190px; background-color:#eeb34c;margin-top:20px;margin-bottom:20px;}
+#knowledge p{margin:0px;line-height: 18px;}
+ 
+#knowledge p.Q_t{	font-weight: bold; padding-left:10px; padding-right:10px; padding-bottom:3px;}
+#knowledge p.Q_t a{color:8d2902;font-size: 13px;}
+#knowledge p.Q_t a:hover{text-decoration: none;}
+ 
+#knowledge p.A_t{font-size: 12px;color: #674202;padding-left:17px;padding-right:10px;padding-top:1px;padding-bottom:5px;}
+#knowledge p.A_t a{color: #674202;text-decoration: none;}
+#knowledge p.A_t a:hover{text-decoration: underline;}
+ 
+#knowledge p.bottom{
+	background-image: url(../img/ill_bottom.gif);
+	height: 25px;
+	text-align:right;
+	margin-top:10px;
+	padding-right:10px;
+	background-position: bottom;
+}
+#knowledge p.bottom a{
+	color: #000;
+	text-decoration: none;
+}
+#knowledge p.bottom a:hover{
+	text-decoration: underline;
+}
+
+form {margin:0px;}

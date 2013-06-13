@@ -1,0 +1,99 @@
+/* importieren aller Screen-CSS
+------------------------------------------------- */
+@import url(layout.css);
+@import url(basics.css);
+@import url(navigation.css);
+@import url(niftycorners.css);
+@import url(jquery_lightbox.css);
+
+
+
+/* hack intranet, damit inhalt nicht nach unten kommt */
+* html .bd_imgintranet #links {
+position: absolute;
+}
+*+html .bd_imgintranet #links {
+position: absolute;
+}
+* html .bd_imgintranet #inhalt {
+min-height: 450px;
+	height: auto !important; 
+	height: 450px; 
+}
+*+html .bd_imgintranet #inhalt {
+min-height: 450px;
+	height: auto !important; 
+	height: 450px; 
+}
+
+	
+
+
+#result {
+clear: both;
+}
+
+.tabelle_pflanzen {
+display:none
+}
+
+#rahmen_zwei {
+clear: left;
+float: left;
+display: block;
+}
+.boxenhoehe1, .boxenhoehe2 {
+min-height:200px;
+height:auto !important;  /* für moderne Browser */
+height:200px;  /*für den IE */
+}
+
+
+#zweispalten {
+float:left;
+width: 620px;
+}
+
+#zweispalten_links {
+float: left;
+width: 378px;
+}
+
+* html #zweispalten_links {
+width: 368px;
+}
+
+#zweispalten_rechts {
+padding-left: 17px;
+width: 225px;
+float: right;
+}
+
+#zweispalten_rechts .bilder_lupe {
+margin-left: -17px;
+}
+
+/*
+* html #zweispalten_rechts {
+line-height: 13px !important;
+}
+
+*+html #zweispalten_rechts {
+line-height: 13px;
+}
+*/
+
+.bodycontent #zweispalten {
+width: 630px;
+} 
+
+.bodycontent #zweispalten_links {
+border: 2px solid #9bb973;
+padding-bottom: 40px;
+} 
+
+.bodycontent #zweispalten_rechts {
+background-color: #e1fabf;
+padding-bottom: 40px;
+height: 1000px;
+}

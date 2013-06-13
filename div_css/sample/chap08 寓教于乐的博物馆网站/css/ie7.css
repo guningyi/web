@@ -1,0 +1,36 @@
+#rss input {
+ margin-left: 7px;
+ position: relative; 
+}
+#rss button {
+	left:3px;
+	top: -4px;
+	}
+#header{
+	height: 52px;
+	padding-top: 0px;
+}
+
+#submenu {
+	position: relative;
+	z-index: 2;
+	}
+ul#main_menu{
+	height: 32px;
+	position: absolute;
+	bottom: 0px; 
+	right: 4px;
+	z-index: 5;
+	
+	}
+#main_menu a {
+	border: none;
+}
+#submenu {
+	position: relative;
+	z-index: 2;	
+	}
+#blog-content {
+	padding-top:10px;
+}
+

@@ -1,0 +1,138 @@
+
+.MultiBoxContainer {
+	position: absolute;
+	border: 12px solid #e12b29;
+	background-color: #FFF;
+	display: none;
+	z-index: 100;
+	text-align: left;
+	/*overflow: hidden;*/
+}
+
+.MultiBoxLoading {
+	background: url(../img/loader.gif) no-repeat center;
+}
+
+.MultiBoxContent {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.MultiBoxClose {
+	position: absolute;
+	top: -23px;
+	right: -23px;
+	background: url(../img/close.png) no-repeat;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+
+.MultiBoxControlsContainer {
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+}
+
+.MultiBoxControls {
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-color: #e12b29;
+}
+
+
+.MultiBoxPrevious {
+	position: absolute;
+	background: url(../img/left.png) no-repeat;
+	width: 24px;
+	height: 24px;
+	left: 0px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.MultiBoxNext {
+	position: absolute;
+	background: url(../img/right.png) no-repeat;
+	width: 24px;
+	height: 24px;
+	right: 0px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.MultiBoxNextDisabled {
+	cursor: default;
+	background: url(../img/rightDisabled.png) no-repeat;
+}
+
+.MultiBoxPreviousDisabled {
+	cursor: default;
+	background: url(../img/leftDisabled.png) no-repeat;
+}
+
+.MultiBoxTitle {
+	position: relative;
+	margin: 10px 0 0 35px;
+	float: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	font-weight: bold;
+	text-align: left;
+}
+
+.MultiBoxNumber {
+	position: relative;
+	width: 50px;
+	margin: 10px 35px 0 0;
+	float: right;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	text-align: right;
+}
+
+.MultiBoxDescription {
+	clear: left;
+	position: relative;
+	margin: 0 35px 0 35px;
+	padding-top: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	text-align: left;
+}
+
+a.mBox, a:link.mBox, a:visited.mBox, a:hover.mBox, a:active.mBox{
+	display:block;
+	float:left;
+	margin:0 10px 10px 0;
+	border-bottom:none !important;
+}
+
+a.mBox img{
+	display:block;
+}
+
+.Overlay{
+	background:url(../img/MagIcon.png) no-repeat;
+	position:absolute;
+	right:-3px;
+	bottom:-3px;
+	z-index:1;
+	display:block;
+	width:17px;
+	height:17px;
+}
+
+
+.hp .Overlay{
+	right:1px;
+}
+/*************************************************************/
+

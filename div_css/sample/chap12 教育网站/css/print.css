@@ -1,0 +1,15 @@
+@import url("typography.css");
+#sub-nav, #global-nav, #main-nav, .assist-text, #site-info {
+	display:none
+}
+.print {
+	display: inline;
+}
+h1#logo .print {
+	height: 100px;
+	width: 200px;
+}
+h1#logo {
+	text-indent: 0;
+	overflow: hidden;
+}

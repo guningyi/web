@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cn">
+<head profile="http://purl.org/uF/2008/03/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>list</title>
+<link rel="search" type="application/opensearchdescription+xml" href="tool/opensearch.xml" title="Last.fm" />
+<meta http-equiv="content-language" content="zh" />
+<meta name="robots" content="NOODP" />
+
+<link type="text/html" rel="alternate" hreflang="cn" href="events.html" />
+<!--[if LT IE 7]>
+            <link rel="stylesheet" href="css/ie/ie6.css" type="text/css" />
+        <![endif]-->
+<link rel="stylesheet" href="css/eventhome/overview.css" type="text/css" />
+<link rel="stylesheet" href="css/master.css" type="text/css" />
+<script type="text/javascript" src="js/lib/prototype.js"></script>
+<script type="text/javascript" src="js/lib/scriptaculous.js"></script>
+<script type="text/javascript" src="js/lib/ufo.js"></script>
+<script type="text/javascript" src="js/lib/sm2-min.js"></script>
+<script type="text/javascript" src="js/LFM.js"></script>
+<script type="text/javascript" src="js/console.js"></script>
+<script type="text/javascript" src="js/components.js"></script>
+<script type="text/javascript" src="js/flash.js"></script>
+<script type="text/javascript" src="js/dialog.js"></script>
+<script type="text/javascript" src="js/form/typeahead.js"></script>
+<script type="text/javascript">
+            document.observe("dom:loaded", function () {if (typeof ieHover !== 'undefined') {ieHover.setUp();}});
+        </script>
+</head>
+<body class="a-overview">
+<script src="js/lib/omniture.js"></script>
+<script>
+document.fire("omniture:load");
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+if (s) {
+s.pageName="Events/Overview/";
+s.server="";
+s.channel="";
+s.pageType="other";
+
+s.prop1="events";       // namespace
+s.prop2="overview";       // controller
+s.prop3="";       // action
+
+
+
+s.prop10="Anonymous";       // logged in/out
+
+s.prop12="cn.last.fm";        // url extension
+
+s.prop13="";        // Member user id
+
+s.prop14="";        // Ad source
+s.prop15="";        // Ad id
+s.prop16="";        // Ad size
+s.prop18=s.getTimeParting('h',0,2010);     // Set hour
+s.prop19=s.getTimeParting('d',0,2010);     // Set day
+
+
+
+
+
+s.prop32 = ""; // TODO: 1st day of visit
+s.prop33 = "zh"; // User language
+
+
+
+
+
+/* Success Events */
+s.events="";
+
+/* E-commerce Variables */
+// s.campaign="";
+s.state="";
+s.zip="";
+s.products="";
+s.purchaseID="";
+s.eVar1="cn"; // Country
+s.eVar2 = s.pageName; // Page name
+s.eVar3=""; // channel
+
+
+s.eVar10="Anonymous";       // logged in/out
+
+
+
+
+
+s.eVar26=""; // OnClick Location
+s.eVar27=""; // Download Platform
+s.eVar28=""; // Buy/Download Location
+
+s.eVar29=""; // TODO: 1st day of visit
+s.eVar30=s.prop12;        // url extension
+
+s.eVar31=s.getNewRepeat();          // new/repeat visitor
+s.eVar32=s.getDaysSinceLastVisit(); // Days since last visit
+
+s.eVar33="";        // Ad source
+s.eVar34="";        // Ad id
+s.eVar35="";        // Ad size
+
+s.eVar36=""; // Member user id
+
+s.eVar37=s.prop33; // User language
+
+
+
+s.events = s.events ? s.events + ',event12' : 'event12'; // Page view event
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code = s.t(); if (s_code) document.write(s_code);
+}
+
+</script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.11. -->
+<div id="fauxHeaderContainer" class="clearit">
+  <div id="fauxHeader"></div>
+</div>
+<div id="page" class="">
+  <div class="fixed full">
+   
+    <div id="header" class="clearit">
+      <div id="headerWrapper"><a href="index.html" id="lastfmLogo">美食</a>
+        <ul id="primaryNav">
+ <li id="musicNav" class="navItem"> <a href="dian.html" class="nav-link">餐厅</a> </li>
+          <li id="listenNav" class="navItem"> <a href="events.html" class="nav-link">美食</a> </li>
+          <li id="eventsNav" class="navItem"> <a href="dian.html" class="nav-link">活动</a> </li>
+          <li id="chartsNav" class="navItem"> <a href="events.html" class="nav-link">博客</a> </li>
+          <li id="communityNav" class="navItem"> <a href="dian.html" class="nav-link">论坛</a> </li>        </ul>
+        <div id="profileLinks">
+          <ul>
+            <li id="loginLink" class="profileItem"> <a href="#" class="profile-link"><strong>登录</strong></a> </li>
+            <li id="signupLink" class="profileItem"> <a href="#" class="profile-link"><strong>注册</strong></a> </li>
+          </ul>
+        </div>
+        <form id="siteSearch" method="get" class="autocomplete">
+          <img src="img/clear.gif" width="16" height="16" id="siteSearchProgress" style="display: none;" />
+          <input id="siteSearchBox" type="text" name="q" autocomplete="off" placeholder="美食搜索" size="26" />
+          <input type="hidden" name="from" value="ac" />
+          <button id="siteSearchSubmit" type="submit" class="submit" title="搜索"></button>
+        </form>
+        <div id="headerPromo"> </div>
+      </div>
+      <!-- #headerWrapper -->
+    </div>
+    <!-- #header -->
+
+    <!-- Adserving start -->
+    <div id="LastAd_Skin" class="LastAd">
+      <div align="center">
+        <script type="text/javascript">
+                if(typeof writeSkin == 'function') writeSkin();
+            </script>
+      </div>
+    </div>
+
+    <!-- Adserving end -->
+   
+    <script>
+
+    $("langSelector").className = "js";
+    LFM.set("Page", {
+        navDropDown: new LFM.Display.DropDown(
+            "headerLangToggle",
+            "headerLangToggle",
+            "langSelector",
+            {
+                align: "right",
+                onShow: function (dropdown) {
+                    dropdown.ddbody.setStyle({
+                        top: (dropdown.ddbody.getStyle("top").toPixels() + 3) + "px"
+                    });
+                },
+                trackToggle: true,
+                trackItemClick: true
+            }
+        )
+    });
+
+</script>
+    <div id="content" class="clearit">
+      <div class="fullWidth clearit"> <a id="addEventButton" class="lfmButton lfmBigButton  
+" href="#"><strong>添加新餐馆</strong></a>
+        <h1 id="eventsLandingTitle"> 在 <span class="locality">上海</span>, 的餐馆 </h1>
+         
+        <div class="clearit" style="clear: left;">
+          <ul class="filterTags clearit" id="eventTags">
+             <li> <a href="#" class="all selected" ><span>全部</span></a> </li>
+        <li> <a href="#" ><span>中式料理</span></a> </li>
+        <li> <a href="#" ><span>韩国料理</span></a> </li>
+        <li> <a href="#"><span>日本料理</span></a> </li>
+        <li> <a href="#"><span>泰国料理</span></a> </li>
+        <li> <a href="#"><span>法国料理</span></a> </li>
+        <li> <a href="#"><span>意大利菜</span></a> </li>
+        <li> <a href="#"><span>墨西哥菜</span></a> </li>
+        <li> <a href="#"><span>巴西料理</span></a> </li>
+        <li> <a href="#"><span>铁板烧</span></a> </li>
+          </ul>
+        </div>
+        <form method="get" id="eventSearchForm" class="eventSearchFormHome clearit">
+          <fieldset>
+          <select name="by">
+            <option value="event">中餐</option>
+            <option value="venue">西餐</option>
+            <option value="tag">快餐</option>
+          </select>
+          <input type="text" name="q" results="10" />
+          <input type="submit" value="搜索" id="submit" class="confirmButton" />
+          </fieldset>
+          <p class="advanced"><a href="#">高级搜索</a></p>
+        </form>
+        <!-- #eventSearchForm -->
+        <form action="/events" id="jumpToDate">
+          <select name="startdate" class="jumpto">
+            <option value="2010-04-30">本周末</option>
+            <option value="2010-05-03">下周</option>
+          </select>
+          <input type="submit" value="确定" />
+          <a href="#" id="datePicker" class="icon"><img class="icon cal_icon" width="13" height="14" src="img/clear.gif" /><span>或选择另一日期...</span></a>
+          <div id="calendar" class="interactive">
+            <table class="controls">
+              <tr>
+                <td class="prev" width="50%"><a href="#" >&nbsp;</a></td>
+                <td class="next" align="right" width="50%"><a href="#" >&nbsp;</a></td>
+              </tr>
+            </table>
+            <table class="month-2010-05 calendar first" cellspacing="0">
+              <caption>
+              <a href="#month-05-2010">5月 2010</a>
+              </caption>
+              <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">一</th>
+                  <th scope="col">二</th>
+                  <th scope="col">三</th>
+                  <th scope="col">四</th>
+                  <th scope="col">五</th>
+                  <th scope="col" class="weekend">六</th>
+                  <th scope="col" class="weekend">日</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="         weekend         " id="c0-01-05-2010"><span>1</span></td>
+                  <td class="gig weekend" id="c0-02-05-2010"><a href="#"><span>2</span></a></td>
+                </tr>
+                <tr>
+                  <td class="                " id="c0-03-05-2010"><span>3</span></td>
+                  <td class="                " id="c0-04-05-2010"><span>4</span></td>
+                  <td class="                " id="c0-05-05-2010"><span>5</span></td>
+                  <td class="                " id="c0-06-05-2010"><span>6</span></td>
+                  <td class="festival" id="c0-07-05-2010"><a href="#"><span>7</span></a></td>
+                  <td class="         weekend         " id="c0-08-05-2010"><span>8</span></td>
+                  <td class="         weekend         " id="c0-09-05-2010"><span>9</span></td>
+                </tr>
+                <tr>
+                  <td class="                " id="c0-10-05-2010"><span>10</span></td>
+                  <td class="                " id="c0-11-05-2010"><span>11</span></td>
+                  <td class="                " id="c0-12-05-2010"><span>12</span></td>
+                  <td class="                " id="c0-13-05-2010"><span>13</span></td>
+                  <td class="gig" id="c0-14-05-2010"><a href="#"><span>14</span></a></td>
+                  <td class="         weekend         " id="c0-15-05-2010"><span>15</span></td>
+                  <td class="         weekend         " id="c0-16-05-2010"><span>16</span></td>
+                </tr>
+                <tr>
+                  <td class="                " id="c0-17-05-2010"><span>17</span></td>
+                  <td class="                " id="c0-18-05-2010"><span>18</span></td>
+                  <td class="                " id="c0-19-05-2010"><span>19</span></td>
+                  <td class="                " id="c0-20-05-2010"><span>20</span></td>
+                  <td class="                " id="c0-21-05-2010"><span>21</span></td>
+                  <td class="         weekend         " id="c0-22-05-2010"><span>22</span></td>
+                  <td class="         weekend         " id="c0-23-05-2010"><span>23</span></td>
+                </tr>
+                <tr>
+                  <td class="                " id="c0-24-05-2010"><span>24</span></td>
+                  <td class="                " id="c0-25-05-2010"><span>25</span></td>
+                  <td class="gig" id="c0-26-05-2010"><a href="#"><span>26</span></a></td>
+                  <td class="                " id="c0-27-05-2010"><span>27</span></td>
+                  <td class="                " id="c0-28-05-2010"><span>28</span></td>
+                  <td class="         weekend         " id="c0-29-05-2010"><span>29</span></td>
+                  <td class="         weekend         " id="c0-30-05-2010"><span>30</span></td>
+                </tr>
+                <tr>
+                  <td class="                " id="c0-31-05-2010"><span>31</span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                  <td class="noday"><span>
+                    <!-- -->
+                    </span></td>
+                </tr>
+              </tbody>
+            </table>
+            <script type="text/javascript">
+  $('calendar').style.display = 'none';
+</script>
+          </div>
+        </form>
+      </div>
+      <div class="leftCol">
+        <div class="leftColWrapper">
+          <table class="eventsMedium" id="eventResults">
+            <tbody>
+              <tr class="day" id="day-02-05-2010">
+                <th colspan="4">GUSTO意大利餐厅</th>
+              </tr>
+              <tr class="gig first future" id="r29_1506186">
+                <td class="summary"><a href="#"><strong><img height="34" width="34" alt="" src="img/6020224.jpg" />美丽、简约的色彩呈现在GUSTO餐厅的店堂，墙上挂着具有复古的“残虚画像”仿佛引领您走进古罗马文化时期。</strong>
+                  </a> </td>
+                <td class="location"><span class="adr"> <strong>意大利餐厅</strong> <br />
+                  <span class="locality">上海</span>, <span class="country-name">长宁</span> </span>
+                 </td>
+                <td class="info"><p> 8 人点评 <br />
+                    <span class="shoutCount"> <a href="#" class="icon"> <img class="icon comment_icon" width="13" height="11" src="img/clear.gif" /><span>1 条回复</span> </a></span> <br />
+                  </p></td>
+                <td class="icon"></td>
+              </tr>
+              <tr class="day" id="day-07-05-2010">
+                <th colspan="4">麦嘉度意大利餐厅</th>
+              </tr>
+              <tr class="gig future" id="r29_1506202">
+                <td class="summary"><a href="#"><strong><img height="34" width="34" alt="" src="img/11981481.jpg" />依水而建的亲水平台与现代唯美时尚融为一体。</strong></a> </td>
+                <td class="location"><span class="adr"> <strong>意大利餐厅</strong> <br />
+                  Shanghai, <span class="locality">上海</span>, <span class="country-name">虹口</span> </span>
+               </td>
+                <td class="info"><p> 5 人点评 <br />
+                    <span class="shoutCount" > <a href="#" class="icon"> <img class="icon comment_icon" width="13" height="11" src="img/clear.gif" /><span>添加回复</span> </a></span> <br />
+                  </p></td>
+                <td class="icon"></td>
+              </tr>
+              
+              <tr class="day" id="day-14-05-2010">
+                <th colspan="4"> Bistro周 西餐厅 </th>
+              </tr>
+              <tr class="gig future" id="r29_1417280">
+                <td class="summary"><a href="#"><strong><img height="34" width="34" alt="" src="img/35454973.jpg" />CHEF周主创的新概念法意料理是本店独有的特色，一直备受各国食客的赞扬。</strong></a> </td>
+                <td class="location"><span class="adr"> <strong>意大利餐厅</strong> <br />
+                  <span class="locality">上海</span>, <span class="country-name">长宁</span> </span>
+                  </td>
+                <td class="info"><p> 3 人点评 <br />
+                    <span class="shoutCount"> <a href="#" class="icon"> <img class="icon comment_icon" width="13" height="11" src="img/clear.gif" /><span>1 条回复</span> </a></span> <br />
+                  </p></td>
+                <td class="icon"></td>
+              </tr>
+              
+              <tr class="day" id="day-26-05-2010">
+                <th colspan="4"> Sin 餐厅 </th>
+              </tr>
+              <tr class="gig future hasposter" id="r29_1491128">
+                <td class="summary"><a href="#"><strong><img height="34" width="34" alt="" src="img/24281213.jpg" />SIN Restaurant的诞生必然会让SIN再度成为申城潮流焦点。</strong>
+                  </a> </td>
+                <td class="location"><span class="adr"> <strong>Shanghai Mao Live…</strong> <br />
+                  Shanghai, <span class="locality">上海</span>, <span class="country-name">静安</span> </span>
+                  </td>
+                <td class="info"><p> 9 人点评 <br />
+                    <span class="shoutCount" > <a href="#" class="icon"> <img class="icon comment_icon" width="13" height="11" src="img/clear.gif" /><span>7 条回复</span> </a></span> <br />
+                  </p></td>
+                <td class="icon"></td>
+              </tr>
+              <tr class="day" id="day-03-07-2010">
+                <th colspan="4"> COLABO意大利餐厅(古北店)</th>
+              </tr>
+              <tr class="gig future" id="r29_1510516">
+                <td class="summary"><a href="#"><strong><img height="34" width="34" alt="" src="img/101056.jpg" />店堂设计具有开放、透明感；服务风格热情、给人宾至如归感；菜肴口味清淡，注重健康感。95%以上是居住在周围的外籍顾客。</strong><br />
+                 </a> </td>
+                <td class="location"><span class="adr"> <strong>意大利餐厅</strong> <br />
+                  <span class="locality">上海</span>, <span class="country-name">长宁</span> </span>
+                  </td>
+                <td class="info"><p> 1 人点评 <br />
+                    <span class="shoutCount" > <a href="#" class="icon"> <img class="icon comment_icon" width="13" height="11" src="img/clear.gif" /><span>添加回复</span> </a></span> <br />
+                  </p></td>
+                <td class="icon"></td>
+              </tr>
+              <tr class="day" >
+                <th colspan="4"> 雅鑫商务酒店·紫舍西餐厅 </th>
+              </tr>
+              <tr class="gig future" id="r29_1478911">
+                <td class="summary"><a href="#"><strong><img height="34" width="34" alt="" src="img/26515847.jpg" />上海雅鑫商务酒店位于2010年世界博览会馆址内的商务型酒店，拥有各类商务客房，是2010年上海世博会中外贵宾住宿的合作酒店</strong>
+                  </a> </td>
+                <td class="location"><span class="adr"> <strong>意大利餐厅</strong> <br />
+                  <span class="locality">上海</span>, <span class="country-name">浦东新区</span> </span>
+                </td>
+                <td class="info"><p> 1 人点评 <br />
+                    <span class="shoutCount" title="共有 0 条留言"> <a href="#" class="icon"> <img class="icon comment_icon" width="13" height="11" src="img/clear.gif" /><span>添加回复</span> </a></span> <br />
+                  </p></td>
+                <td class="icon"></td>
+              </tr>
+              <tr class="day" id="day-24-10-2010">
+                <th colspan="4"> COLABO意大利餐厅(衡山店)</th>
+              </tr>
+              <tr class="gig last future" id="r29_1478913">
+                <td class="summary"><a href="#"><strong><img height="34" width="34" alt="" src="img/26515847.jpg" />近百年法国南部风格的花园洋房，悠闲宁静的庭园。</strong><br />
+                  VAMPS</a> </td>
+                <td class="location"><span class="adr"> <strong>意大利餐厅</strong> <br />
+                  <span class="locality">上海</span>, <span class="country-name">长宁</span> </span>
+                  <div class="geo"> <span class="latitude">31.213802</span> <span class="longitude">121.414343</span> </div></td>
+                <td class="info"><p> 3 人点评 <br />
+                    <span class="shoutCount" title="共有 0 条留言"> <a href="#" class="icon"> <img class="icon comment_icon" width="13" height="11" src="img/clear.gif" /><span>添加回复</span> </a></span> <br />
+                  </p></td>
+                <td class="icon"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- .leftColWrapper -->
+      </div>
+      <!-- .leftCol -->
+      <div class="rightCol">
+        <!-- Adserving start -->
+        <div id="LastAd_TopRight" class="LastAd">
+          <div align="center">
+            <img src="img/300250.jpg" />
+          </div>
+        </div>
+        <!-- Adserving end -->
+        <h2 class="heading"><span class="h2Wrapper">赞助商专区</span></h2>
+        <div id="eventPosters">
+          <ul>
+            <li class="vevent gig first last future hasposter largePoster clearit"> <a href="#"> <img class="posterImg" width="126" alt="" src="img/001.jpg" /> </a> <img src="img/tape.png" class="theTape transparent_png" width="36" height="17" /> </li>
+          </ul>
+        </div>
+        <div id="photos_790804415" class="clearit progress">
+        <img src="img/300250.jpg" />
+        </div>
+        
+        <h2 class="heading"><span class="h2Wrapper">试吃活动</span></h2>
+        <ul class="eventsSmall">
+          <li class="vevent gig first last future hasposter"> <a href="#" class="url"><strong class="summary">Le pasta 乐帕西特</strong> </a> <small class="location adr"> <span class="locality">上海</span>, <span class="country-name">虹口</span> </small>
+            <p class="info"><span class="shoutCount"> <a href="#" class="icon"> <img class="icon comment_icon" width="13" height="11" src="img/clear.gif" /><span>4 条点评</span> </a> </span> | 19 个参加名额</p>
+          </li>
+        </ul>
+      </div>
+      <!-- .rightCol -->
+      <!-- Adserving start -->
+      <div id="LastAd_Mid" class="LastAd">
+        <div align="center">
+          <table width="99%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="img/Mini-Footer1.gif" border="0" /></td>
+            <td><img src="img/Mini-Footer2.gif" border="0" /></td>
+            <td><img src="img/Mini-Footer3.gif" border="0" /></td>
+            <td><img src="img/Mini-Footer4.gif" border="0" /></td>
+          </tr>
+        </table>
+        </div>
+      </div>
+      <!-- Adserving end -->
+    </div>
+    <!-- #content -->
+    <div id="LastFooter">
+      <ul id="footerStuff" class="clearit">
+        <li></li>
+        <li>
+          <p id="uploadYourMusic"> <strong>您喜欢做菜吗？上传到美食网吧！</strong><br />
+          <a href="#">大厨</a>或<a href="#">美食家</a> </p>
+        </li>
+      </ul>
+      <!-- #footerStuff -->
+      <div id="footer_content">
+         <ul id="footerLinks" class="clearit">
+        <li class="first">
+          <dl>
+            <dt>关于我们</dt>
+            <dd><a href="#">联系我们</a></dd>
+            <dd><a href="#">关于我们</a></dd>
+            <dd><a href="#">网站团队</a></dd>
+            <dd><a href="#">事业发展</a></dd>
+            <dd><a href="#">传媒资源</a></dd>
+            <dd><a href="#">广告宣传</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>获取帮助</dt>
+            <dd><a href="#">常见问题</a></dd>
+            <dd><a href="#">烹饪技巧</a></dd>
+            <dd><a href="#">美食知识</a></dd>
+            <dd><a href="#">营养学</a></dd>
+            <dd><a href="#">食物搭配</a></dd>
+            <dd><a href="#">美食美容</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>加入美食阵营</dt>
+            <dd><a href="#">注册</a></dd>
+            <dd><a href="#">查找美食用户</a></dd>
+            <dd><a href="#">查找美食小组</a></dd>
+            <dd><a href="#">美食论坛</a></dd>
+            <dd><a href="#">社区准则</a></dd>
+            <dd><a href="#">美食版主</a></dd>
+            <dd><a href="#">美食联谊</a></dd>
+          </dl>
+        </li>
+        <li class="last">
+          <dl>
+            <dt>更多操作</dt>
+            <dd><a href="#">下载优惠券</a></dd>
+            <dd><a href="#">下载试吃券</a></dd>
+            <dd><a href="#">手机版美食网</a></dd>
+            <dd><a href="#">更多应用程序</a></dd>
+            <dd><a href="#">申请VIP会员</a></dd>
+            <dd><a href="#">指南</a></dd>
+            <dd><a href="#">美食榜单</a></dd>
+            <dd><a href="#">订餐</a></dd>
+          </dl>
+        </li>
+      </ul>
+        <!-- #footerLinks -->
+        <div id="justCantGetEnough" class="clearit">
+          <p> <strong>美食网站点导航：</strong> <a href="#">博客</a> | <a href="#">搜索餐厅</a> | <a href="#">寻找美食</a> | <a href="#">VIP（付费用户贵宾区）</a> </p>
+      </div>
+      <div id="legalities">
+        <p id="copy"> &copy; 2010 美食网版权所有 | <a href="#" target="_blank">使用条款</a>和<a href="#" target="_blank">隐私权政策</a> | <span class="date">2009 年 8 月更新</span><br />
+        </p>
+        </div>
+        <!-- #legalities -->
+      </div>
+    </div>
+    <!-- #LastFooter -->
+    <script type="text/javascript" src="js/dw.js"></script>
+  </div>
+</div>
+</body>
+</html>

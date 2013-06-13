@@ -1,0 +1,38 @@
+@charset "UTF-8";
+ 
+.tabs-hide {
+	display: none;
+}
+.tabs-nav:after { 
+	display: block;
+	clear: both;
+	content: " ";
+}
+.tabs-nav a {
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	white-space: nowrap; 
+}
+.tabs-nav .tabs-selected a,
+.tabs-nav .tabs-selected a:link,
+.tabs-nav .tabs-selected a:visited,
+.tabs-nav .tabs-selected a:active,
+.tabs-nav .tabs-selected a:hover {
+	background-position: 0 -100px !important;
+	outline: 0; 
+}
+.tabs-nav .tabs-selected a:link,
+.tabs-nav .tabs-selected a:visited{ 
+	cursor: text;
+}
+.tabs-nav a:hover,
+.tabs-nav a:focus,
+.tabs-nav a:active {
+	cursor: pointer;
+	background-position: 0 -50px !important;
+}
+
+#tabs-watch-font-size{
+	display:none !important;
+}

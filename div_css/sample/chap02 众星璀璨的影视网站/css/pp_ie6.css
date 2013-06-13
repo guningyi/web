@@ -1,0 +1,134 @@
+body {font-size: 75.5%;}
+/* footer fix */
+#substratum { _width: 99.8%; }
+
+.button, a.button, .button:visited, a.button:visited { display: inline-block;  }
+a.button:hover, .button:hover, .button:visited:hover { display: inline-block;   }
+a.button:active, .button:active {  }
+.button.off { display: inline-block; }
+
+
+#header {border-width: 0 !important;}
+#summit #hdr #search .options .srch {width: 270px !important;padding: 4px 4px 5px 4px;}
+#summit #hdr #search .options .icon { margin-right:2px;}
+#summit #hdr #showtix .optiontix .srchtix {width: 8.86em !important;}
+#summit #hdr #search .options .submit {padding: 5px 24px 5px 8px !important;background-position-y:7px;}
+#summit #hdr #showtix .optiontix .submit {padding: 0.42em 0.42em 0.33em 0.42em !important;}
+#summit #localnav { height:1%;}
+#summit #globalnavi {height:1%; padding:0;}
+#summit #globalnavi #aolmain {padding:0.4em 0 0.4em 0.4em;}
+
+#summit #moviepulldown a { padding: 4px 5px;}
+#summit #moviepulldown li {height:1%; line-height:1em;}
+.featuredcast .crew td p {height: 4.58em; min-height: 4.58em; max-height: 100%;}
+.showtimes .spotlight {background: #ffffde; color: #635d52; display: block; clear: both; border-top: 1px solid #dedbce; border-left: 1px solid #dedbce; padding: 3px 0px 3px 0px; margin-top: 7px; width: 95%;}
+* html div.explore .title p, * html div.explore .awards p { margin-left: -60px; }
+.sponsor .body .sponsor { height: 7.50em; min-height: 7.50em; max-height: 100%; }
+* html div.sponsor .body .first { border-left: 0.08em solid #fff; }
+* html div.advertorial .body { height: 10.00em !important; min-height: 10.00em !important; max-height: 100% !important;}
+
+.b1 .advertorial .body { width: 15.00em; }
+.s7 .b1 .advertorial .body { width: 24.00em; }
+
+.headline { height:1%; }
+.dsvertical .headline { height:auto; }
+
+.maincard { _background-image: none; _padding: 0px; }
+.maincard .visualinfobox { _background-image: none; }
+.maincard .maincardtop, .maincard .visualinfotop { _display: none;}
+.maincard .maincardbottom, .maincard .visualinfobottom { _display: none; }
+
+.getmovie .block { *margin: 0 0 0.6666em 0.58em; }
+.celeb .sidecard { text-align: center; width: 12.333em; min-width:150px; }
+div.aTOzsearch_bx form input { *margin-left:-4px; }
+div.qksrch_lnk_outr, div.qksrch_nput_outr { *padding: 0; }
+.paginav .results { *margin: 1.0833em 0 -0.0833em 0; *padding: 0; }
+.paginav .navi {  *margin: 0.75em 0 -0.0833em 0; *padding: 0; }
+.similar-movies .movie { *width: 11.8333em;   }
+.similar-movies .movie span.release-status { *margin-right: 0.06em;  }
+.maincritic .average {  *margin-top: -2em; }
+.trailerclip  .playme { margin: -40px 4px 0 0; }
+.criticreview .supbody { height: 0%; }
+.sortnav ul li a {  padding: 0.3em 0 ; }
+.sortnav ul li.chosen { margin-top: 0em; padding:0em 0 0.3em 0.1em; background: transparent url(../image/bg_round_corner_left.gif) no-repeat scroll left 0; }
+.sortnav ul li.chosen p { display: inline; padding:0.1em 0.3em 0.3em 0.2em; }
+.filmography .row { padding: 1em 0.7em;  }
+.movie-photo { height: 20em; }
+.critictrack { *height: 1%;  *padding: 0.75em; *margin-left: -2px;}
+.trailerpage .recentcomments .body .comment .reviewimage { _margin: 0pt 0 0.8333em 0pt;}
+.showtimes .theaterlisting .makefav { display: inline-block; }
+a.makefav, a.addtofav {height:1%;zoom:1;width:90%; }
+
+/*moviefone top5 homepage modules*/
+.top5combo .headline {border-bottom:solid 6px #cfcfcf;margin: 0 auto;width: 290px;}
+.top5 .headline {border-bottom:solid 3px #cfcfcf;}
+
+
+/*unscripted styles*/
+
+.unscriptedContainer .mainModule{
+	width:100%;	
+}
+.unscriptedRecent{
+	background-color:#fff;
+}
+.unscriptedRecent .sortContainer{
+	padding-left:0.83em;
+	padding-right:0;
+	width:97.8%;	
+}
+.unscriptedRecent .vidHolder{ 
+	width:97.8%;	
+}
+.unscriptedRecent .recentUnscriptedFooter{
+	width:97.8%;	
+}
+.unscriptedRecent .recentUnscriptedFooter form{
+	background:#fff;
+}
+
+.unscriptedBody .trailerpage .playerblock .body .player {margin:0;}
+
+/*trailer asset styles*/
+.trailerAssetPage #j .jgroup .j5 { margin-right: 10px;}
+.trailerAssetPage #j .jgroup .j4 { margin-left: 40px; }
+
+/*snagfeed module*/
+ .snagfeed {width:326px;}
+ 
+ .noMoviesFound {padding: 1em 1em 2em 1em;}
+ 
+ /*the popup*/
+.top5popup td#topleft {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.aolcdn.com/ch_movies/mf_homepage_pop_lefttop',sizingMethod='crop');}
+.top5popup td.top {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.aolcdn.com/ch_movies/mf_homepage_pop_top-repeat',sizingMethod='scale');}
+.top5popup td#topright {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.aolcdn.com/ch_movies/mf_homepage_pop_righttop',sizingMethod='crop');}
+.top5popup td.left {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.aolcdn.com/ch_movies/mf_homepage_pop_left-repeat',sizingMethod='scale');width:14px;}
+.top5popup td.right {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.aolcdn.com/ch_movies/mf_homepage_pop_right-repeat',sizingMethod='scale');}
+.top5popup td#bottomleft {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.aolcdn.com/ch_movies/mf_homepage_pop_leftbottom',sizingMethod='scale');}
+.top5popup td.bottom {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.aolcdn.com/ch_movies/mf_homepage_pop_bottom-repeat',sizingMethod='scale');}
+.top5popup td#bottomright {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.aolcdn.com/ch_movies/mf_homepage_pop_rightbottom',sizingMethod='crop');}
+/*end of popup*/
+
+.movie-photos-content {padding-bottom: 14px;border-bottom: solid 1px #E6E6E6;}
+.movie-photos-content .sources .inner { width: 99%;}
+
+.celebArrow a.disable {filter:alpha(opacity=10);}
+.topdyn .headline .cont { width: 210px;margin-bottom: 10px;}
+.celebArrow a.next,.celebArrow a.prev {border: 0;}
+
+.clipMod .body .round .leftbottom {background-position: 0px -7px;}
+.clipMod .body .round .rightbottom {background-position: -12px -7px;}
+.clipMod .body .info { margin: 1em 0 0 1em;}
+.clipMod .body .info h2 {height:1%;}
+.clipMod .body .otherlinks h3 {margin:0;}
+
+.breakingnews .rs { padding:0 1em; }
+.breakingnews .rs p { margin-top: 0.25em;}
+
+#median .advanced .advancedbox { background-color:transparent; margin-bottom:0;}
+.advsrch {height:1%;background-color: #fff;margin:0;}
+.advsrch .header h2 {padding-left:12px;}
+
+.breakingnews .rs { padding-top:0.25em; }
+
+div#newsFooter .copyright, .mainreviews .reviewblock div {height:1%;}

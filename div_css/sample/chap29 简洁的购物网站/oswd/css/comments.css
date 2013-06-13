@@ -1,0 +1,66 @@
+#designcomments {
+	CLEAR: both; MARGIN: 0px 0px 30px; WIDTH: 529px
+}
+#designcomments #dcname {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 16px 20px 0px; PADDING-TOP: 0px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px
+}
+#designcomments H2 {
+	MARGIN-TOP: 0px; BORDER-BOTTOM: #c1c1c1 1px solid
+}
+#designcomments #dcaddcomment FORM {
+	FLOAT: left; MARGIN: 0px; COLOR: #434343
+}
+#designcomments #dcaddcomment {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 20px; PADDING-TOP: 0px
+}
+#contentsection #designcomments #dcaddcomment H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 35px 0px; PADDING-TOP: 0px
+}
+#designcomments #dcaddcomment P {
+	MARGIN: 20px 0px
+}
+#designcomments #dcaddcomment FORM {
+	WIDTH: 490px
+}
+#designcomments .dccomment {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/img/postbg.gif); MARGIN: 30px 0px 30px 20px; OVERFLOW: hidden; WIDTH: 489px; BACKGROUND-REPEAT: repeat-y
+}
+#designcomments .dccomment .dcdate {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 80px; PADDING-TOP: 8px; HEIGHT: 65px; BACKGROUND-COLOR: #fff
+}
+#designcomments .dcmonthyear {
+	FONT-SIZE: 11px; FLOAT: left; WIDTH: 30px; COLOR: #85c329; LINE-HEIGHT: 95%; LETTER-SPACING: 0.06em; TEXT-ALIGN: left
+}
+#designcomments .dcday {
+	FONT-SIZE: 28px; FLOAT: left; MARGIN: -6px 4px 0px 0px; WIDTH: 30px; COLOR: #85c329; TEXT-ALIGN: center
+}
+#designcomments .dctime {
+	CLEAR: both; DISPLAY: block; FONT-SIZE: 12px; WIDTH: 80px; COLOR: #939393; LETTER-SPACING: 0.02em
+}
+#designcomments .dccomment .dcmain {
+	BORDER-RIGHT: #fff 1px solid; BACKGROUND-POSITION: left top; BORDER-TOP: #fff 1px solid; BACKGROUND-IMAGE: url(/img/avatar.gif); MARGIN: 0px 0px 0px 105px; BORDER-LEFT: #fff 1px solid; WIDTH: 371px; BORDER-BOTTOM: #fff 1px solid; BACKGROUND-REPEAT: no-repeat
+}
+#designcomments .dccomment .dcmain .dcfui {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 1px 0px 24px 75px; COLOR: #c1c1c1; PADDING-TOP: 0px
+}
+#designcomments .dccomment .dcmain H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 1.2em; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 0px 75px; PADDING-TOP: 0px
+}
+#designcomments .dccomment .dcmain H3 A {
+	COLOR: #74a8f5; TEXT-DECORATION: none
+}
+#designcomments .dccomment .dcmain H3 A:link {
+	COLOR: #74a8f5; TEXT-DECORATION: none
+}
+#designcomments .dccomment .dcmain H3 A:visited {
+	COLOR: #74a8f5; TEXT-DECORATION: none
+}
+#designcomments .dccomment .dcmain H3 A:hover {
+	COLOR: #fb9622
+}
+#designcomments .dccomment .dcmain H3 A:active {
+	COLOR: #fb9622
+}
+#designcomments .dccomment .dcmain P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.75em; PADDING-BOTTOM: 0px; MARGIN: 0px; TEXT-INDENT: 0px; LINE-HEIGHT: 160%; PADDING-TOP: 0px; BACKGROUND-COLOR: #fff
+}

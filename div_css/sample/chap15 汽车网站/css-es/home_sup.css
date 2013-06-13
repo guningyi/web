@@ -1,0 +1,39 @@
+div#contenidosinflash{
+	display: none;
+}
+
+/* Estilos para el flash de la home cuando no hay javascript*/
+div.contentsinflash{
+	/*height:11.25em; */
+	width:94%;
+	font-family: "Trebuchet MS", verdana, sans-serif;
+	margin:0px;
+	padding:20px 30px 20px 30px;
+	background-image: url(../img/fondo_flash.gif);
+	background-repeat: no-repeat;
+	float:left;	
+}
+div.contentsinflash h2{
+	color:#707070;
+	font-size: 1.25em;
+	margin:0px 0px 5px 0px;
+	padding:0px 0px 2px 10px;
+	border-bottom:1px solid #276015;
+	width: 90%;
+}
+div.contentsinflash p{
+	color:#262626;
+	margin:0px;
+	padding:0px 0px 0px 10px;
+}
+div.contentsinflash p span{
+	text-transform: uppercase;
+	font-size: 0.688em;
+}
+div.contentsinflash p a{
+	text-decoration: none;
+	color:#276015;
+	font-size: 0.813em;
+	font-weight: bold;
+}
+/*Fin  Estilos para el flash de la home cuando no hay javascript*/

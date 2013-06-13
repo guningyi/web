@@ -1,0 +1,175 @@
+/* Style sheet for quick search and matching results control*/
+
+/* Note: qsnavcontent has 15px less top padding to compensate for
+         the 8px added to the bottom of the fnav component */
+
+/*  seach input box  */
+#searchInputBox
+{
+	width:274px;
+	float:left;
+}
+.mainSearchButton
+{
+	float:left;
+}
+.applySearchButton
+{
+	float:right;
+}
+.searchRadioHide
+{
+	display:none;
+}
+#qstypeof
+{
+	margin-top:1px;
+	z-index:2;
+	position:absolute;
+	width:auto;
+}
+#searchNewSearchBox
+{
+	
+}
+#searchNewSearchBox > label
+{
+	cursor:pointer
+}
+#searchWithinResultsBox
+{
+	margin-left:4px;
+}
+.searchType
+{
+	padding:2px 6px;
+	color:#777;
+	float:left;
+	position:relative;
+	top:-2px;
+	cursor:pointer;
+	border:1px #b3b3b3 solid;
+	border-top:none;
+	background:none;
+}
+.searchTypeOn
+{
+	background:#fff;
+	color:#000;
+}
+
+#searchWithinResultsBox > label
+{
+	cursor:pointer
+}
+
+/*  quick search nav   */
+ 
+#qsnavcontent
+{
+	background: #EEE;
+	margin: 0;
+	padding: 0 0 5px 33px;
+	border-bottom:1px solid #CCCCCC;
+}
+	
+#qsnavcontent p 
+{
+	margin: 15px 0 0 0;
+	font-size: 12px;
+}
+
+#qsnavcontent input,
+#qsnavcontent label
+{
+	display: inline;
+	vertical-align: middle;
+}
+
+#qsnavcontent ul
+{
+	margin: 0;
+}
+
+#qsnavcontent li
+{
+	list-style: none;
+	display: inline;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+#qsleft	
+{
+	position: absolute;
+	left: 33px;
+}
+
+#qsright ul
+{
+	position: relative;
+	left: 277px;
+	width: 440px;
+}
+
+.qsopt
+{
+	width: 710px;
+	position: relative;
+	margin: 5px 0 0 0;
+	padding:0;
+}
+
+.qsrow
+{
+	width: 675px;
+	position: relative;
+	margin: 7px 0 0 0;
+	padding: 7px 0 0 0;
+	border-top: 1px solid #D3D3D3;
+}
+
+.qsbrand
+{
+	float: left;
+	width: 168px;
+	margin-top: -5px;
+}
+
+.qsbrand p
+{
+	color: #666;
+}
+
+.qsbrand select
+{
+	width: 163px;
+	margin: 0 0 15px 0;
+}
+
+#browseralert 
+{
+	padding: 10px 0 10px 33px;
+	font: 11px verdana, helvetica, arial, geneva, sans-serif;
+	color: #fff;
+	background-color: #F00;
+}
+
+#browseralert a
+{
+	color: #fff;
+	text-decoration: underline;
+}
+
+#browseralert a:hover,
+#browseralert a:visited:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+.line
+{
+	border-bottom-color:#D3D3D3;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}

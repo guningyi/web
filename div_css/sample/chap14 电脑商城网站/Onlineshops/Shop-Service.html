@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<title>fuwuqi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<script type="text/javascript" src="js/mootools.js"></script>
+<script type="text/javascript" src="js/elements.js"></script>
+<script type="text/javascript" src="js/highslide/highslide.js"></script>
+<script type="text/javascript">
+    hs.graphicsDir = 'templates/xtc4/lib/js/highslide/graphics/';
+	hs.outlineType = 'rounded-white';
+    hs.captionEval = 'this.thumb.title';
+</script>
+<script type="text/javascript" src="js/cookies.js"></script>
+<script type="text/javascript" src="js/efa_fontsize.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
+<script type="text/javascript" src="js/AJS.js"></script>
+<script type="text/javascript" src="js/AJS_fx.js"></script>
+<script type="text/javascript" src="js/gb_scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/gb_styles.css" />
+<script type="text/javascript"><!--
+var selected;
+var submitter = null;
+
+function submitFunction() {
+    submitter = 1;
+}
+function popupWindow(url) {
+  window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}  
+
+function selectRowEffect(object, buttonSelect) {
+  if (!selected) {
+    if (document.getElementById) {
+      selected = document.getElementById('defaultSelected');
+    } else {
+      selected = document.all['defaultSelected'];
+    }
+  }
+
+  if (selected) selected.className = 'moduleRow';
+  object.className = 'moduleRowSelected';
+  selected = object;
+
+// one button is not an array
+  if (document.getElementById('payment'[0])) {
+    document.getElementById('payment'[buttonSelect]).checked=true;
+  } else {
+    //document.getElementById('payment'[selected]).checked=true;
+  }
+}
+
+function rowOverEffect(object) {
+  if (object.className == 'moduleRow') object.className = 'moduleRowOver';
+}
+
+function rowOutEffect(object) {
+  if (object.className == 'moduleRowOver') object.className = 'moduleRow';
+}
+
+function popupImageWindow(url) {
+  window.open(url,'popupImageWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+function textCounter(field,counter,maxlimit,linecounter) {
+	// text width//
+	var fieldWidth =  parseInt(field.offsetWidth);
+	var charcnt = field.value.length;        
+	// trim the extra text
+	if (charcnt > maxlimit) { 
+		field.value = field.value.substring(0, maxlimit);
+	} else { 
+	var percentage = parseInt(100 - (( maxlimit - charcnt) * 100)/maxlimit) ;
+	document.getElementById(counter).style.width =  parseInt((fieldWidth*percentage)/100)+"px";
+	document.getElementById(counter).innerHTML="Limit: "+percentage+"%"
+	setcolor(document.getElementById(counter),percentage,"background-color");
+	}
+}
+function setcolor(obj,percentage,prop){
+	obj.style[prop] = "rgb(80%,"+(100-percentage)+"%,"+(100-percentage)+"%)";
+}
+
+//--></script>
+<script type="text/javascript"><!--
+function getXmlHttpRequestObject() {
+	if (window.XMLHttpRequest) {
+		return new XMLHttpRequest();
+	} else if(window.ActiveXObject) {
+		return new ActiveXObject("Microsoft.XMLHTTP");
+	} else {
+		alert("......");
+	}
+}
+
+var searchReq = getXmlHttpRequestObject();
+
+//Called from keyup on the search textbox.
+//Starts the AJAX request.
+function searchSuggest() {
+	if (searchReq.readyState == 4 || searchReq.readyState == 0) {
+		var str = escape(document.getElementById('txtSearch').value);
+		searchReq.open("GET", 'searchSuggest.php?search=' + str, true);
+		searchReq.onreadystatechange = handleSearchSuggest; 
+		searchReq.send(null);
+	}		
+}
+
+//Called when the AJAX response is returned.
+function handleSearchSuggest() {
+	if (searchReq.readyState == 4) {
+		var ss = document.getElementById('search_suggest')
+		ss.innerHTML = '';
+		var str = searchReq.responseText.split("\n");
+		for(i=0; i < str.length - 1; i++) {
+			//Build our element string.  This is cleaner using the DOM, but
+			//IE doesn't support dynamically added attributes.
+			var suggest = '<div class="search_suggest_inner"><div onmouseover="javascript:suggestOver(this);" ';
+			suggest += 'onmouseover="javascript:suggestOverClose(this);" ';
+			suggest += 'onmouseout="javascript:suggestOut(this);" ';
+			suggest += 'onmouseout="javascript:suggestOutClose(this);" ';
+			suggest += 'onclick="javascript:setSearch(this.innerHTML);" ';
+			suggest += 'class="suggest_link">' + str[i] + '<\/div><\/div>';
+			ss.innerHTML += suggest;
+		}
+		if (i==0) {
+			ss.style.visibility  = "hidden";
+		} else {
+			ss.style.visibility  = "visible";
+		}
+		//Schließen link einfügen
+		ss.innerHTML += '<div class="closeContainer"><a onmouseover="javascript:suggestOverClose(this);" onmouseout="javascript:suggestOutClose(this);" onClick="javascript:suggestClose(this);" class="closeLink">Fenster schließen<\/a><\/div>';
+	}
+}
+// Close Function
+function suggestClose (div_value) {
+	document.getElementById('search_suggest').innerHTML = '';
+	document.getElementById('search_suggest').style.visibility  = "hidden";
+}
+
+//Mouse over function
+function suggestOver(div_value) {
+	div_value.className = 'suggest_link_over';
+}
+function suggestOverClose(div_value) {
+	div_value.className = 'suggest_link_close';
+}
+//Mouse out function
+function suggestOut(div_value) {
+	div_value.className = 'suggest_link';
+}
+function suggestOutClose(div_value) {
+	div_value.className = 'suggest_link_close';
+}
+//Click function
+function setSearch(value) {
+	// HTML-TAGS entfernen
+  	var newvalue = value.replace(/<.*?>/gi, '');
+	//Kategorienamen entfernen (fängt mit &nbsp; an)
+	var Suche =	newvalue.indexOf("&nbsp;");
+	var produktname = newvalue.substring(0,Suche);
+	document.getElementById('txtSearch').value = produktname;
+	document.getElementById('search_suggest').innerHTML = '';
+	document.getElementById('search_suggest').style.visibility  = "hidden";
+	//zum Suchergebnis weiterleiten
+//	top.location.href = "http://www.xt-module.de/neushop/advanced_search_result.php?keywords=" + produktname; 
+	top.location.href = "/advanced_search_result.php?keywords=" + produktname; 
+}
+/* End Suggest Code */	
+
+function openInfoWindow(URL,Name,features) { 
+  window.open(URL,Name,features);
+}
+
+function updatePasswordMeter(password) {
+  var strength_descriptions = new Array();
+  strength_descriptions[0] = 'sehr unsicher';
+  strength_descriptions[1] = 'unsicher';
+  strength_descriptions[2] = 'gut';
+  strength_descriptions[3] = 'sehr gut';
+  strength_descriptions[4] = 'sicher';
+  strength_descriptions[5] = 'sehr sicher';
+
+  var strength = calculatePasswordStrength(password);
+
+  document.getElementById('password_strength_label').innerHTML = strength_descriptions[strength];
+  document.getElementById('password_bar').className = 'strength_' + strength;
+}
+
+function calculatePasswordStrength(password) {
+  var score = 0;
+
+  // Length at least 8 chars long
+  if (password.length >= 8)
+    score++;
+
+  // both lower and uppercase chars
+  if (password.match(/[a-z]/) && password.match(/[A-Z]/))
+    score++;
+
+  // at least one num char
+  if (password.match(/[0-9]+/))
+    score++;
+
+  // at least one special char
+  if (password.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)-]/))
+    score++;
+
+  // Length at least 12 chars long
+  if (password.length >= 12)
+    score++;
+
+  return score;
+}
+
+//--></script>
+<script type="text/javascript" src="js/validate/date-de-DE.js"></script>
+<script type="text/javascript" src="js/validate/validate.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	//<![CDATA[
+	if (efa_fontSize06) efa_fontSize06.efaInit();
+	//]]>
+</script>
+<div id="pageWrapHead"></div>
+<div id="pageWrapTop">
+  <div id="pageWrapBottom">
+    <div id="pageBorderTop">
+      <h1 style="display:none;">虚拟主机 服务器租用 服务器技术 国外服务器</h1>
+      <img src="img/star.gif" id="star" alt="" /> <a href="index.html"><img src="img/spacer.gif" alt="" style="width:240px; height:90px; position:absolute; margin:30px 0 0 20px; z-index:2000;" /></a>
+      <div id="quickLinks">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="Shop-Service.html">注册</a></li>
+          <li><a href="Shop-Design.html"><strong>登入</strong></a></li>
+          <li><a href="Shop-Service.html">帮助</a></li>
+        </ul>
+      </div>
+      <div id="cartLink"><img src="img/cart.gif" alt="0" /> <a href="#">购物车 <strong>(0)</strong></a></div>
+    </div>
+    <div id="pageBorderLR">
+      <div id="pageBorderBottom">
+        <div id="page">
+          <div id="topNavi">
+          <ul id="kwicks">
+              <li><a class="kwick module" href="Shop-Design.html"><span>台式机<br />
+              品牌机，兼容机</span></a></li>
+              <li><a class="kwick design" href="Shop-Design.html"><span>笔记本<br />
+              超低价笔记本</span></a></li>
+              <li><a class="kwick service" href="Shop-Service.html"><span>服务器<br />
+              质量保证</span></a></li>
+              <li><a class="kwick cms" href="Shop-Service.html"><span>周边配件<br />
+              鼠标，键盘，耳机</span></a></li>
+            </ul>
+          </div>
+          <div id="breadCrumb"><a href="#" class="headerNavigation">首页</a> &raquo; <a href="#" class="headerNavigation">商品列表</a>
+            <div id="searchContainer">
+              <div class="sd">搜索</div>
+              <input type="text" name="keywords" id="txtSearch" onkeyup="searchSuggest();" />
+              <div id="search_suggest"></div>
+              <input type="image" src="img/searchContainerButton.png" alt="搜索" title="搜索" id="go" />
+            </div>
+          </div>
+          <div id="content" class="clear">
+            <div id="leftCol">
+              <div class="box"> <img src="img/boxIconVorteile.gif" style="position:absolute; margin:-5px 0 0 -8px;" alt="" />
+                <div style="background:url(img/boxHeaderVorteile.jpg) no-repeat; padding-bottom:5px;"> <span class="boxHead">增值服务</span> </div>
+                <div class="boxContent">
+                  <ul>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">一年免费保修</li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">三年有偿保修</li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">全球免费咨询热线服务</li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">7X24小时全程服务</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box"> <img src="img/boxIconFav.gif" style="position:absolute; margin:-12px 0 0 -8px;" alt="" />
+                <div style="background:url(img/boxHeaderVorteile.jpg) no-repeat; padding-bottom:5px;"> <span class="boxHead">本站新闻</span> </div>
+                <div class="boxContent">
+                  <ul>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">关于CN域名注册资料变更的通知<a href="#">详细...</a></li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">关于落实对已注册国内域名开展实名制清查的紧急通知  <a href="#">详细...</a></li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">CNNIC“提醒域名持有者尽快履行网站备案手续”的公告  <a href="#">详细...</a></li>
+                    <li style="background:url(img/dottedBorder1.gif) bottom repeat-x; line-height:14px; padding:6px 0;">关于规范域名注册信息的通告  <a href="#">详细...</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div style="background:url(img/greenBox_01.gif) no-repeat; height:28px; padding-top:5px; margin-top:30px;"><img src="img/boxIconMail.gif" alt="" style="position:absolute; margin:-15px 0 0 -9px;" /> <span class="greenBoxHead">常见问题</span></div>
+              <div style="background:url(img/greenBox_02.gif) no-repeat top #ddefb5  ; padding:5px 10px; height:173px; font-size:12px; font-weight:normal; line-height:16px;"> <strong>什么是服务器租用？</strong><br />
+                是指用户无须自己购买主机，只需根据自己业务的需要.....<br />
+                <br />
+                <strong>整机租用与虚拟主机有什么区别？</strong><br />
+                虚拟主机依托于一台（计算机）服务器，多个网站可以在这台服务器上共享资源......<br />
+                <br />
+                如有需要，请发邮件给我们<br />
+                <span style="font-size:10px;">(发邮件时说明一定要详细哦)</span><br />
+                E-Mail: <a href="#">123@wer.com</a> </div>
+              <div style="background:url(img/greenBox_03.gif) no-repeat top; height:9px; margin-bottom:40px;"></div>
+            </div>
+            <div id="rightCol">
+              <div id="rightColInner">
+                <div class="h1bg">
+                  <h3>服务器租用产品:经济商务系列，至强商务系列</h3>
+                </div>
+                <div style="width:610px; padding-top:30px;" class="float">
+                  <div class="NPBox mr10">
+                    <div class="NPBoxImg"> <a href="#" title="1U 经济商务Ⅰ型"><img src="img/cp1.jpg" /></a> </div>
+                    <a href="#" class="productsLink">1U 经济商务Ⅰ型</a>
+                    <div class="priceContainer"> <span class="ab">年付</span> 7999 元<br />
+                      <span class="tax">CPU :  Intel® Pentium® Dual-Core E5200(双核,64位处理器) </span><br />
+					  <span class="tax">内存 :  DDRII800 1G高速内存 </span><br />
+                      <small> <a href="#">详细介绍</a>
+                      </small>
+					</div>
+                    <a href="#"><img src="img/button_buy_now.gif" alt="加入购物车" /></a>
+				  </div>
+                  <div class="NPBox mr10">
+                    <div class="NPBoxImg"> <a href="#" title="1U 经济商务Ⅱ型"><img src="img/cp2.jpg" /></a> </div>
+                    <a href="#" class="productsLink">1U 经济商务Ⅱ型</a>
+                    <div class="priceContainer"><span class="ab">年付</span> 9900元<br />
+                      <span class="tax">CPU :  Intel Core2 Duo E7400 双核处理器 </span><br />
+					  <span class="tax">内存 :  4GB DDR2-800 双通道内存  </span>
+                      <small> <a href="#">详细介绍</a>
+                      </small>
+					  </div>
+                    <a href="#"><img src="img/button_buy_now.gif" alt="加入购物车" /></a> </div>
+                  <div class="NPBox">
+                    <div class="NPBoxImg"> <a href="#" title="1U 经济商务Ⅲ型"><img src="img/cp3.jpg" /></a> </div>
+                    <a href="#" class="productsLink">1U 经济商务Ⅲ型</a>
+                    <div class="priceContainer"> <span class="ab">年付</span>11999元<br />
+                      <span class="tax">CPU:Intel Core 2 Quad Q8200 四核处理器 </span><br />
+					  <span class="tax">内存:4GB DDR2-800 双通道内存</span>
+                      <small> <a href="#">详细介绍</a>
+                      </small>
+                      </div>
+                    <a href="#"><img src="img/button_buy_now.gif" alt="加入购物车" /></a> </div>
+                </div>
+                <div style="width:610px; padding-top:30px;" class="float">
+                  <div class="NPBox mr10">
+                    <div class="NPBoxImg"> <a href="#" title="2U 至强商务Ⅰ型"><img src="img/cp1.jpg" /></a> </div>
+                    <a href="#" class="productsLink">2U 至强商务Ⅰ型</a>
+                    <div class="priceContainer"><span class="ab">年付</span> 15999元<br />
+                      <span class="tax">CPU:Intel Xeon 3210 四核处理器</span><br />
+					  <span class="tax">内存:4GB DDRII-800双通道内存</span><br />
+                      <small> <a href="#">详细介绍</a>
+                      </small></div>
+                    <a href="#"><img src="img/button_buy_now.gif" alt="加入购物车" /></a> </div>
+                  <div class="NPBox mr10">
+                    <div class="NPBoxImg"> <a href="#" title="2U 至强商务Ⅱ型"><img src="img/cp1.jpg" /></a> </div>
+                    <a href="#" class="productsLink">2U 至强商务Ⅱ型</a>
+                    <div class="priceContainer"><span class="ab">年付</span> 21000元<br />
+                      <span class="tax">CPU :  两颗四核至强处理器  </span><br />
+					  <span class="tax">内存 : 双通道内存   </span><br />
+                      <small> <a href="#">详细介绍</a>
+                      </small></div>
+                    <a href="#"><img src="img/button_buy_now.gif" alt="加入购物车" /></a> </div>
+                  <div class="NPBox">
+                    <div class="NPBoxImg"> <a href="#" title="专享II型主机"><img src="img/cp1.jpg" /></a> </div>
+                    <a href="#" class="productsLink">专享II型主机</a>
+                    <div class="priceContainer"><span class="ab">年付</span> 7199元<br />
+                      <span class="tax">CPU : Intel Xeon 2.40GHz </span><br />
+					  <span class="tax">硬盘 :  独立硬盘空间 </span><br />
+                      <small> <a href="#">详细介绍</a>
+                      </small></div>
+                    <a href="#"><img src="img/button_buy_now.gif" alt="加入购物车" /></a> </div>
+                </div>
+                <div style="width:610px; padding-top:30px;" class="float"> </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:0 0px; margin-top:30px;"> 
+		  	<img src="img/beliebtesteSuchbegriffe.gif" alt="beliebteste Suchbegriffe" /><br />
+            <span class="tCCTag1"><a href="#">IBM</a></span> 
+			<span class="tCCTag3"><a href="#">DELL(戴尔)</a></span> 
+			<span class="tCCTag5"><a href="#">HP(惠普)</a></span> 
+			<span class="tCCTag2"><a href="#">lenovo(联想)</a></span> 
+			<span class="tCCTag5"><a href="#">浪潮</a></span> 
+			<span class="tCCTag3"><a href="#">ASUS(华硕)</a></span> 
+			<span class="tCCTag4"><a href="#">Sun</a></span> 
+			<span class="tCCTag3"><a href="#">Oxygen(强氧)</a></span> 
+			<span class="tCCTag5"><a href="#">Founder(方正)</a></span> 
+			<span class="tCCTag3"><a href="#">TigerPower</a></span> 
+			<span class="tCCTag4"><a href="#">清华同方</a></span> 
+			<span class="tCCTag1"><a href="#">Apple（苹果）</a></span> 
+			<span class="tCCTag4"><a href="#">Great Wall（长城）</a></span> 
+			<span class="tCCTag4"><a href="#">Dawning（曙光）</a></span> 
+			<span class="tCCTag5"><a href="#">PowerLeader（宝德）</a></span> </div>
+        </div>
+      </div>
+    </div>
+    <div id="pageFooter">
+      <div id="footerLinks" class="float">
+        <div class="footerContainer">
+          <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">台式机</a></li>
+            <li><a href="#">笔记本</a></li>
+            <li><a href="#">服务器</a></li>
+            <li><a href="#">电脑配件</a></li>
+          </ul>
+        </div>
+        <div class="footerContainer">
+        <ul>
+            <li><a href="#">数码相机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">MP3 / MP4</a></li>
+            <li><a href="#">DIY硬件</a></li>
+            <li><a href="#">软件</a></li>
+          </ul>
+        </div>
+        <div class="footerContainer">
+          <ul>
+            <li><a href="#"><img src="img/socialIcons/rss.gif" alt="RSS-Feed"/> 订阅免费新闻</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">招聘信息</a></li>
+            <li><a href="#">合作渠道</a></li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+        </div>
+               <div class="footerContainerCopyright"> Copyright &copy; 2008-2010 by <a href="#">全面攒机网</a> | 保留一切版权.
+          <div class="footerContainerSocial"> 
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/digg.png" /></a> 
+          
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/delicious.png"  style="margin-left:5px;" /></a> 
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/technorati.png" style="margin-left:5px;"/></a> 
+          
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/wong.png" style="margin-left:5px;" /></a>       
+         
+          
+          <a rel="nofollow" style="text-decoration:none;" href="#" ><img src="img/socialIcons/google.png" style="margin-left:5px;" /></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright">全面攒机网 &copy; 2010 <a href="#" target="_blank">全面攒机网</a></div>
+</body>
+</html>

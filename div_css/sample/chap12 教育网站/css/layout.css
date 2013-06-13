@@ -1,0 +1,201 @@
+#container {
+	width:760px;
+	text-align:left;
+	margin:auto;
+	position:relative
+}
+#main {
+	clear:both;
+	padding-top:1px;
+	overflow:hidden;
+	position:relative
+}
+#page-header {
+	float:right;
+	clear:both;
+	width:565px;
+	margin-top:10px;
+}
+#main-content {
+	width:393px;
+	float:left;
+	margin-top:5px;
+	display:inline;
+}
+#sub-nav {
+	width:195px;
+	float:left;
+	padding-top:30px;
+	padding-bottom:255px;
+}
+.section #sub-nav {
+	padding-top:49px
+}
+#sub-content {
+	width:152px;
+	float:right;
+	margin:20px 0 0 0;
+	display:inline
+}
+#site-info {
+	clear:both;
+	margin:10px 0 5px 0
+}
+/* Home page */
+#main-panels {
+	position:relative;
+	overflow:hidden;
+}
+#slideshow {
+	border-bottom:1px solid #fff;
+	width:375px;
+	height:170px;
+	background:#fff;
+	border-top:1px solid #ccc
+}
+#inner-mainp {
+	overflow:hidden
+}
+#gardens-panel {
+	width:375px;
+	float:left;
+	padding-bottom:10px
+}
+#gardens-panel-content {
+	padding:0 18px 15px 18px
+}
+#news-events {
+	width:373px;
+	float:right
+}
+#sub-panels {
+	clear:both;
+	margin-top:12px
+}
+.sub-panel {
+	float:left;
+	width:169px;
+	margin:0 16px 10px 0
+}
+.sub-panel.last {
+	margin-right:0
+}
+.gardenp {
+	width:107px;
+	float:left;
+	margin:10px 8px 0 0
+}
+.lastgp {
+	margin-right:0
+}
+#morenews {
+	position:absolute;
+	bottom:0;
+	right:0
+}
+/* Alernative style for one column content page */
+body.col1 #sub-content {
+	display:none;
+}
+body.col1 #main-content {
+	width:565px
+}
+/* Alernative style for full width content page */
+body.full-width #main-content {
+	width:760px
+}
+body.full-width #page-header {
+	width:760px;
+}
+/* Alernative style for landing page */
+body.section #main-content {
+	width:565px;
+}
+/*============================ BANNER =========================*/
+
+#header {
+	height:134px;
+	position:relative
+}
+#logo {
+	position:absolute;
+	width:165px;
+	height:85px;
+	top:25px;
+	left:17px
+}
+#logo a {
+	overflow: hidden;
+	font-size: 1px;
+	width:165px;
+	height:0;
+	padding-top:85px;
+	position: absolute;
+	top:0px;
+}
+/* Header Spirit link */
+#spirit_link {
+	position:absolute;
+	width:253px;
+	height:88px;
+	top:40px;
+	left:205px
+}
+#spirit_link a {
+	overflow: hidden;
+	font-size: 1px;
+	width:253px;
+	height:0;
+	padding-top:88px;
+	position: absolute;
+	top:0px;
+}
+/*============================ MAIN CONTENT =========================*/
+
+p#breadcrumbs {
+	width:560px;
+	float:right;
+	text-align:right;
+}
+#cont-signup {
+	width:182px;
+	background:#D4E2CA url(../img/aboutpanel_br.gif) bottom right no-repeat;
+	padding-bottom:10px;
+	margin-bottom:20px;
+	float:right;
+	margin:10px 0 10px 10px
+}
+/*============================ SECTION PAGES =========================*/
+
+#intropanel {
+	overflow:hidden;
+}
+#sectionpanel {
+	border-top:1px solid #fff;
+	margin-top:0px;
+	padding-bottom:15px;
+	overflow:hidden;
+}
+#sectionpanel #sub-panel {
+	width:180px;
+	float:right;
+	margin:20px 0px 0 10px;
+	border-left:1px dotted #666;
+}
+.bottompanel {
+	width:180px;
+	float:left;
+	margin:10px 12px 0 0;
+}
+.last {
+	margin-right:0
+}
+/* What's on */
+#whats-on #sectionpanel #sub-panel {
+	width:276px;
+	margin:0;
+	border:0
+}
+#whats-on #sectionpanel {
+	padding-bottom:0;
+}

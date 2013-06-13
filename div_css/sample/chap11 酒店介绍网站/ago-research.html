@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>sousuo</title>
+<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<!-- styles -->
+<link rel="stylesheet" href="css/blue.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/images.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<!-- javascript -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/searchswap.js"></script>
+<script type="text/javascript" src="js/swapclass.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="js/jquery.easySlider.js"></script>
+<script type="text/javascript" src="#assets/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="js/switcher.js"></script>
+<script type="text/javascript" src="js/heroslideshow.js"></script>
+<!-- tooltip -->
+<script src="js/jquery.bgiframe.js" type="text/javascript"></script>
+<script src="js/jquery.dimensions.js" type="text/javascript"></script>
+<script src="js/jquery.tooltip.js" type="text/javascript"></script>
+<script type="text/javascript">
+      // jQuery.noConflict();
+jQuery(document).ready(function($){
+	$('.moreinfo ').tooltip();	
+	$('.slideinfo ').tooltip();
+	$(".thumbnail a").click(function(){ return false;});
+	
+	// toolbar
+	// $("#contactForm").hide();
+	$("#utilities p.link a").click(function(){
+		$("#utilities p.link").hide();
+		$("#contactForm").fadeIn(); 
+		return false; 
+		});
+	});
+        </script>
+<!-- PNG Fix -->
+<!--[if IE 6]>
+<script src="assets/js/DD_belatedPNG.js"></script>
+<script>
+  DD_belatedPNG.fix('.margin, .shading, .png_img, .black, .moreinfo');   /* string argument can be any CSS selector */
+</script>
+<![endif]-->
+<script type="text/javascript">var MODX_MEDIA_PATH = "media";</script>
+<style type="text/css">
+.errors {
+	color: #900;
+	background-color: #fbfbea;
+	padding: 1em;
+}
+.validationError {
+	color: #900;
+	background-color: #fbfbea;
+}
+input#email {
+	background-image: none;
+}
+input.error, textarea.error {
+	border: 1px solid red;
+}
+label.error {
+	padding-left: 16px;
+	margin-left: .3em;
+	color:red;
+}
+div#contactForm {
+	display: none;
+}
+</style>
+</head>
+<body>
+<div id="header" class="margin">
+  <div class="accessibility"><a href="index.html">首页</a></div>
+  <h1><a href="index.html"><span><img src="img/agologo.gif"/></span></a></h1>
+  <div id="largenav"> <a id='whatson' href='#' >关于我们</a> <span>|</span> <a id='visitorsguide' href='#' >酒店介绍</a> <span>|</span> <a id='collections' href='#'>酒店登入</a> <span>|</span> <a id='exhibits' href='#'>会员登录</a> <span>|</span> <a id="blog" href="#">酒店加盟</a>
+    <form id="searchForm" >
+       <fieldset>
+      <input type="text"  value="请输入" onfocus="this.value='';" />
+      <label for="submitsearch">点击搜索</label>
+      <input type="image" src="img/search-black.gif" value="GO" id="submitsearch"   />
+      <input type="hidden" name="cx" value="" />
+      </fieldset>
+    </form>
+  </div>
+  <ul id="smallnav">
+    <li id='home' ><a href="index.html">首页</a></li>
+    <li id='about'><a href='shop.html' >酒店介绍</a></li>
+    <li id='research' class='selected'><a href='ago-research.html' >寻找酒店</a></li>
+    <li id='education'><a href='shop.html' >加入会员</a></li>
+    <li id='membership'><a href='ago-research.html' >酒店常识</a></li>
+    <li id='support'><a href='#' >会员登录</a></li>
+    <li id='dine'><a href='#'>博客</a></li>
+    <li id='shop' ><a href='#' >加入网站</a></li>
+    <li id='contact'><a href='#' >联系我们</a></li>
+    <li id="tickets"><a href="#" >在线预订</a></li>
+  </ul>
+</div>
+<!-- End Margin / End Header -->
+<div id="main">
+  <div class="margin">
+    <!-- left navigation -->
+    <div id="leftnav">
+      <h2>特别推广酒店</h2>
+      <ul>
+        <li  class="swatch1" ><a  href="#">北京西苑饭店</a></li>
+        <li  class="swatch2" ><a  href="#">金茂北京威斯汀大饭店</a></li>
+        <li  class="swatch3" ><a  href="#" >金茂三亚希尔顿大酒店饭店</a></li>
+        <li  class="swatch4" ><a  href="#" >杭州马可波罗假日酒店</a></li>
+        <li  class="swatch5" ><a  href="#" >厦门美仑皓晖酒店</a></li>
+        <li  class="swatch6" ><a  href="#" >青岛海景花园大酒店</a></li>
+        <li  class="swatch7" ><a  href="#" >广州长隆酒店</a></li>
+        <li  class="swatch8" ><a  class="last" href="#">成都新东方千禧大酒店</a></li>
+      </ul>
+      <h2>特别策划</h2>
+      <ul>
+        <li class="swatch1" class="expanded">
+        	<a class="selected" href="#"> 上海5.1节放5天！去哪儿玩？</a></li>
+        <li  class="swatch2" ><a  href="#"> 世博倒计时，酒店抢先订 </a></li>
+        <li  class="swatch3" ><a  href="#"> 超值！5星酒店低至400元以下</a></li>
+        <li  class="swatch4" ><a  href="#"> 特惠热榜 酒店、机票、度假随心订 </a></li>
+        <li  class="swatch5" ><a  class="last" href="#"> 逛老北京，住特色胡同酒店 </a></li>
+      </ul>
+    </div>
+    <!-- content body -->
+    <div id="content" class="listing">
+      <h2>五星级酒店搜索结果</h2>
+      <div class="item swatch0">
+        <h3><a href="#">三亚凯宾斯基度假酒店</a></h3>
+        <p>   &nbsp;&nbsp;&nbsp;&nbsp; 三亚凯宾斯基度假酒店坐落在中国的最南端---海南三亚，是三亚湾唯一一家拥有私家沙滩的最新豪华五星级度假酒店，于2007年1月15日开始试营业。酒店占地50公顷，面朝湛蓝无边的大海，棕榈和椰林环绕四周、宁静而舒适，是您远离城市喧嚣和放松身心的最佳选择...</p>
+      </div>
+      <div class="item swatch1">
+        <h3><a href="#">上海新天哈瓦那大酒店</a></h3>
+        <p>  &nbsp;&nbsp;&nbsp;&nbsp; 上海新天哈瓦那大酒店是一家豪华型酒店，座落于闻名遐迩的浦东新区陆家嘴金融贸易中心，步行即可至上海东方明珠电视塔和上海海洋水族馆，酒店依傍风景秀丽的黄浦江畔、浦西全景尽收眼底...</p>
+      </div>
+      <div class="item swatch2">
+        <h3><a href="#">上海虹桥美爵酒店</a></h3>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;  上海虹桥美爵酒店座落于虹桥商务中心地区，毗邻虹桥国际机场和各大会展中心，亦可方便到达繁华的市中心。酒店是法国雅高酒店管理集团旗下以当地特色著称的美爵品牌，全球精选中一位风格非凡的酒店。上海虹桥美爵酒店宽敞舒适的公寓式客房配以便捷的客房设施，为商旅客人提供全方位的个性化服务...</p>
+      </div>
+      <div class="item swatch3">
+        <h3><a href="#">上海锦沧文华大酒店</a></h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;上海锦沧文华大酒店拥有豪华客房和套房，君华贵宾廊位于酒店二楼，氛围优雅，专为入住行政楼层的商务客人提供温馨服务。同一楼层的商务中心，设施一流。每一位商务人士的需求都能得到满足。提供安静的工作室、快捷的宽带上网、可供租用的手提电脑、国际直拨长途/ 国际订户拔号、旅行社服务等等...</p>
+      </div>
+      <div class="item swatch4">
+        <h3><a href="#">北京丽晶酒店</a></h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;北京丽晶酒店是由美国卡尔森酒店集团管理的涉外酒店，位于著名的北京王府井商业购物中心，毗邻王府井大街和故宫、天安门广场，交通十分便利。　　 北京丽晶酒店现代而经典的豪华客房及套房均配备了时尚的设施，提供免费高速宽带上网接入，大屏幕等离子液晶电视以及DVD播放机等...</p>
+      </div>
+      <div class="item swatch5">
+        <h3><a href="#">北京金域万豪酒店</a></h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;北京金域万豪酒店是按照万豪集团国际标准建造的酒店，由全球最大的酒店管理集团之一---万豪国际酒店集团管理。酒店位于北京城西海淀区，毗邻金融街、中关村高科技园区、北京展览馆、北京大学、清华大学等高等学府、钓鱼台国宾馆及国家政府机关... </p>
+      </div>
+      <div id="utilities">
+        <p class="link"><a href="">没有找到你满意的酒店？<br />
+          点击这里帮您找到满意的酒店</a></p>
+        <!-- contact form -->
+        <div id="contactForm">
+          <form id="feedbackForm" method="post" >
+            <h2>请填写表格</h2>
+            <fieldset>
+            <legend>你的邮箱</legend>
+            <div>
+              <label for="name" accesskey="n">你的名字</label>
+              <input class="required text" type="text" maxlength="255" size="40" name="name"  />
+            </div>
+            <div>
+              <label for="email" accesskey="e">你的邮箱地址</label>
+              <input class="required email text" type="text" maxlength="255" size="40" name="email"  />
+            </div>
+           
+            <div>
+              <label for="comments" accesskey="m">你的留言</label>
+              <textarea class="required text" name="comments" rows="10" cols="40" ></textarea>
+            </div>
+            <div>
+              <label accesskey="c" for="vericode">请输入验证码<br />
+              <img src="img/veriword.php~rand=1098606739.jpg"  border="1"/></label>
+              <input type="text" class="required text" name="vericode" size="20" />
+            </div>
+            <div>
+              <input type="submit" value="确认提交" name="submit"/>
+            </div>
+            <input type="hidden" name="formid" value="确认提交" />
+            </fieldset>
+          </form>
+        </div>
+        <!-- end contact form -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Margin / End Main -->
+<div class="margin">
+  <div id="footer">
+    <div class="info">
+     <p> 黄山溪谷山庄　经济型酒店旅馆 
+溪谷山庄位于闻名世界的黄山脚下，青山绿水，云雾缭绕之中，让您倍感舒适。酒店距黄山风景区换乘中心及合铜黄高速只有1公里，交通便捷。</p>
+    
+      <p> 黄山银都快捷酒店　经济型酒店旅馆 
+间　 黄山银都快捷酒店位于黄山市市区阜上路4号，距机场5公里，步行5分钟便是火车站，9路公交车十分钟可直达汽车站</p>
+    </div>
+    <div class="links"><a href="#">人才招聘</a> <span>|</span> <a href="#">我们团队</a> <span>|</span> <a href="#">&copy; 酒店网 保留一切权利</a> </div>
+
+  </div>
+</div>
+
+</body>
+</html>

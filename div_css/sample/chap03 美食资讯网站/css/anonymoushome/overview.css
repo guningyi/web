@@ -1,0 +1,415 @@
+#anonIntro {
+    height: 320px;
+    background: #04213C url("../../img/grad_02.jpg") left top repeat-x;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+#anonIntro .wrapper {
+    padding: 20px 30px;
+}
+
+/** Tag line */
+
+#anonIntro h2.tagline {
+    display: block;
+    font-size: 24px;
+    line-height: 1.166667em;
+    margin: 0 0 2em 0;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+/** Example */
+
+#anonIntro p.example {
+    padding: 0 0 1.5em 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.285714em;
+    font-weight: bold;
+}
+
+/** Search */
+
+#anonIntro div.search {
+    margin: 0;
+}
+
+#anonIntro div.search form label {
+    display: none;
+    margin-bottom: 9px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+#anonIntro div.search input.text {
+    position: relative;
+    float: left;
+    width: 250px;
+    border: 1px solid #000;
+    overflow: visible;
+    height: 30px;
+    margin: 0 5px 0 0;
+    padding: 11px 15px 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #696969;
+}
+
+#anonIntro div.search button.submit {
+    position: relative;
+    border: 0; 
+    padding: 0;
+    cursor: pointer;
+    overflow: visible; /* removes extra side padding in IE */
+    padding: 0 2px 0 0;
+    margin-top: -1px;
+    margin-right: 5px; 
+    height: 45px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; 
+    background: transparent url("../../img/submitbutton-right.2.png") no-repeat right top;
+}
+
+#anonIntro div.search button.submit::-moz-focus-inner {
+    border: none;
+}
+#anonIntro div.search button.submit span {
+    position: relative;
+    display: block; 
+    white-space: nowrap;
+    padding: 8px 11px 0 15px;
+    height: 37px; 
+    background: transparent url("../../img/submitbutton-left.2.png") no-repeat left top;
+    color:#fff;
+    text-shadow: #163551 0 -1px 1px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Safari and Google Chrome only - fix margins */
+    #anonIntro div.search button.submit span {
+        margin-top: -1px;
+    }
+}
+
+#anonIntro div.search button.submit:hover {
+    background: transparent url("../img/submitbutton-right.2.png") no-repeat right bottom;
+}
+
+#anonIntro div.search button.submit:hover span {
+    background: transparent url("../img/submitbutton-left.2.png") no-repeat left bottom;
+}
+
+
+#anonIntro p#searchSuggest {
+    margin: 0.5em 0 0 0;
+    clear: both;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.333333em;
+    color: #999;
+}
+
+
+/** Stationstarter */
+
+#stationStarter {
+    position: relative;
+    height: 320px;
+    background: #2b2b2b url("../../img/295-vert-0f0f0f-2b2b2b.png") repeat-x 0 0;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	margin-top:15px;
+}
+
+#stationStarter .indicator_new {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+}
+
+#stationStarter .wrapper {
+    padding: 20px 10px;
+}
+
+#stationStarter h3 {
+    font-size: 15px;
+    line-height: 1.266667em;
+    color: #fff;
+    font-weight: bold;
+}
+
+#stationStarter .subtitle {
+    font-size: 12px;
+    line-height: 1.25em;
+    color: #ccc;
+    font-weight: bold;
+}
+
+#stationStarter .screenshot {
+    margin: 10px 0 0 0;
+}
+
+#stationStarter .about {
+    position: relative;
+    margin: -20px 0 5px 0;
+    font-size: 12px;
+    line-height: 1.25em;
+    color: #fff;
+}
+
+a.bluebutton {
+    height: 26px;
+    display: -moz-inline-box;
+    display: inline-block;
+    padding: 0 4px 0 0;
+    background: url("../../img/bluebutton-right.2.png") no-repeat right top;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: #163551 0 -1px 1px;
+    overflow: hidden;
+}
+
+a.bluebutton span {
+    height: 22px;
+    padding: 2px 15px 2px 19px;
+    background: url("../../img/bluebutton-left.2.png") no-repeat left top;
+    display: -moz-inline-box;
+    display: inline-block;
+    line-height: 22px;
+    vertical-align: top;
+}
+
+a.bluebutton:hover {
+    background-position: right bottom;
+    color: #fff;
+    text-decoration: none;
+}
+
+a.bluebutton:hover span {
+    background-position: left bottom;
+}
+
+
+
+/** Tag Filtering */
+
+.filterTags {
+    clear: both;
+    margin: 10px 5px 0 15px;
+}
+
+.filterTags li {
+    float: left;
+}
+
+.filterTags li a {
+    display: block;
+
+    background: #FFF url(../../img/tag_left1.png) no-repeat left top;
+    font-size: 11px;
+    line-height: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+    padding: 0 0 0 3px;
+    color: #333;
+    cursor: pointer;
+    
+    width: 75px;
+}
+
+.filterTags li a span {
+    display: block;
+    line-height: 24px;
+    height: 24px;
+    background: #FFF url(../../img/tag_right.png) no-repeat right top;
+    text-align: center;
+    
+}
+
+.filterTags li a:hover,
+.filterTags li a.all:hover,
+.filterTags li a.selected:hover {
+    background-position: left -24px;
+}
+
+.filterTags li a:hover span,
+.filterTags li a.all:hover span,
+.filterTags li a.selected:hover span {
+    background-position: right -24px;
+}
+
+.filterTags li a:hover {
+    text-decoration: underline;
+}
+
+.filterTags li a.all {
+    background: url(../../img/tag-all_left.png) no-repeat left top;
+    font-weight: bold;
+    width: 72px;
+}
+
+.filterTags li a.all span {
+    background: url(../../img/tag-all_right.png) no-repeat right top;
+}
+
+.filterTags li a.selected {
+    background: url(../../img/tag-selected_left.png) no-repeat left top;
+    color: #FFF;
+}
+
+.filterTags li a.selected span {
+    background: url(../../img/tag-selected_right.png) no-repeat right top;
+    font-weight: bold;
+}
+
+
+/* Generic Module */
+
+.dashboardModule {
+    clear: both;
+    margin: 60px 0 0 0;
+}
+
+.dashboardModule .content {
+    clear: both;
+    padding: 10px;
+    background: #EDECEE url(../../img/grad2.png) repeat-x left bottom;
+    margin: 0 0 15px 0;
+}
+
+#page .dashboardModule h2 {
+    display: block;
+    clear: both;
+    border: 0;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+#page .dashboardModule strong.subtitle {
+    display: block;
+    margin: 0 0 10px 0;
+    color: #D51007;
+    font-size: 12px;
+    line-height: 1.3em;
+}
+
+#page .dashboardModule h2 a {
+    color: #D51007;
+}
+
+/* Events Module */
+
+div.withFeatured {
+    padding-left: 267px;
+}
+
+div.withFeatured div.featured {
+    border: 1px solid #ccc;
+    padding: 1px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    float: left;
+    width: 252px;
+    height: 189px;
+    margin-left: -267px;
+}
+
+div.withFeatured div.featured a {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 252px;
+    height: 189px;
+    background-color: #ccc;
+    background-repeat: none;
+}
+
+div.withFeatured div.featured a p.info {
+    position: absolute;
+    display: block;
+    width: 242px;
+    padding: 9px 5px;
+    left: 0px;
+    bottom: 0px;
+    background: #000;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.181818em;
+    opacity: 0.9;
+    -moz-opacity: 0.9;
+    filter:alpha(opacity=90);
+}
+
+div.withFeatured div.featured a p.info strong {
+    line-height: 1.181818em;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+    
+
+div.withFeatured div.featured a:hover {
+    text-decoration: none;
+}
+
+div.withFeatured div.featured a:hover p.info strong {
+    color: #0187c5;
+}
+
+#page div.withFeatured div.featuredEvent p.info {
+    width: 200px;
+    padding-left: 47px;
+}
+
+div.withFeatured div.featuredEvent p.info span.calSheet {
+    float: left;
+    margin-left: -37px;
+}
+
+/* Videos Module */
+
+.dashboardModule ul.videosMedium li.last {
+    margin-right: 0;
+}
+
+/* Radio */
+
+#page .radioModule h2 {
+    margin-bottom: .4em;
+}
+
+#page .radioModule #launcher {
+    width: 263px;
+}
+
+#page .radioModule ul.stationButtons li {
+    margin-bottom: 9px;
+}
+
+#page .radioModule ul.stationButtons li .stationbutton {
+    width: 232px;
+}
+
+/* Music Manager Module */
+
+#page .mmModule p {
+    margin-bottom: 1em;
+}
+
+/* MPU placement bottom margin */
+#LastAd_TopRight {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,614 @@
+/*--------- CONTAINERS AND HEADERS ----------*/
+/* 
+	fbHeadContainer and fbFootContainer repurpose the #fbContainer style
+	for any page that has a fluid grid in it. 
+*/
+
+.fbHeadContainer 
+{
+	margin: 0 33px 0 33px; 
+	min-width: 657px;	/* does not work on IE */
+}
+
+/* the result header used on search results only (contains searched terms, clarification, related terms link, and resultcount) */
+.fbSearchResultsHeader
+{
+	padding-bottom: 10px;
+	border-bottom: 1px solid;
+	border-color: #BBB;
+}
+
+/* Results feedback row containing "You searched for: [terms]" and "Ignored words: [unknown]" */
+.fbSearchHeaderTerms 
+{
+	padding-bottom: 10px;
+	font: 10px verdana, helvetica, arial, geneva, sans-serif;
+	color: #777;
+}
+
+.fbSearchHeaderTerms .fbOperator 
+{
+	font-weight: normal;
+}
+
+.fbSearchHeaderTerms .fbSku 
+{
+	font-weight: bold;
+}
+
+.fbSearchHeaderTerms .fbInactiveSku 
+{
+	font-weight: bold;
+	color: #C00;
+}
+
+.fbSearchHeaderTerms .fbParen
+{
+	font-weight: normal;
+}
+
+/* No results feedback header */
+.fbSearchNoResults
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #777;
+}
+
+.fbSearchFunctionLinks /* right floating "Save search" and "See related searches" links in search header */
+{
+	
+}
+
+/* search result count and category links */
+.fbSearchHeaderResultCount
+{
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 13px;
+	color: #777;	
+}
+
+/* the result header used on non-search result pages (cd detail, gallery, lightbox)
+   (must be contained within an fbHeadContainer div if you want to apply padding below; see cddetail, gallery, etc) */
+.fbResultsHeader 
+{
+	padding: 10px;	
+	margin-bottom: 10px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #BBB;
+	background: #EEE;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 13px;
+	color: #777;
+}
+
+.fbResultsHeader_left
+{
+	float: left;
+}
+
+.fbResultsHeader_right
+{
+	float: right;
+}
+
+/* 
+	fbSearchResultContainer sits in between the fbHeadContainer and fbFootContainer 
+	and contains the actual result grid (falls below paging, selectors, and flont)
+*/
+#search_column_right_content .fbSearchResultContainer 
+{
+	padding: 0;
+}
+.fbSearchResultContainer 
+{
+	
+	min-width: 657px;	/* does not work on IE, extra 10px takes into account rightmost image's margin */
+	 /* veer.results.js fix width for stink'n ie */
+	overflow: auto;
+	width:auto;
+	padding:0 33px;
+}
+
+/*
+	an additional class that sits within fbSearchResultContainer that handles stretchy margins for type results 
+	(keep it embedded for now, as some js looks specifically for fbSearchResultContainer)
+*/
+.fbTypeResultContainer
+{
+	margin-right: 0;
+	min-width: 710px;
+	
+	width:100%;
+}
+
+.fbFootContainer
+{
+	clear:both;
+	float:none;
+	margin:0 33px;
+	min-width:657px;
+}
+
+/*--------- CLARIFICATION----------*/
+
+/* the clarification header with show/hide option */
+.fbClarificationHeader
+{
+	padding: 10px;
+	background-color: #EEE;
+}
+
+/* The region that contains the clarification questions and terms. */
+.fbClarificationContainer 
+{
+	position: relative;
+	border-left: 5px solid #EEE;
+	border-right: 5px solid #EEE;
+	border-bottom: 5px solid #EEE;
+	padding: 10px 0 10px 10px;
+	color: #777;
+}
+
+/* container for each term row and its option row (also used for related terms) */
+.fbClarificationItem
+{
+	padding-bottom: 15px;
+	color: #777;
+}
+
+/* List containing the term's clarification options. */
+.fbClarificationItem ul
+{
+	margin: 5px 0 0 20px;
+	padding: 0;
+}
+
+/* 
+	Each clarification option (term + checkbox). 
+	Prevents text to the right of a checkbox from wrapping to next line 
+*/
+.fbClarificationItem li
+{
+	color: #777;
+	float: left; 
+	white-space: nowrap; 
+	margin-right: 6px;
+}
+
+.fbClarificationItem input
+{
+	vertical-align: middle;
+}
+
+/* The link to click to clarify a search. */
+.fbClarifyLink
+{
+	padding: 5px 0 0 0;
+}
+
+/*--------- RELATED TERMS ----------*/
+
+.fbRelatedTermsContainer 
+{
+	background-color: #F8F8F8;
+	left: 275px;
+	top:60px;
+	margin: 20px 0 0 0;
+	padding: 2px;
+	position: absolute;
+	width: 370px;
+	z-index: 9999;
+}
+
+.fbRelatedTermsContent
+{
+	border: 2px solid #B3B3B3; 
+	padding: 15px;
+}
+
+.fbRelatedTermTitle
+{
+	padding: 5px 0 10px 0;
+	height: auto;
+}
+
+.fbRelatedTermsButtons
+{
+	padding: 0;
+	text-align: right;
+}
+
+.fbRelatedTermItem
+{
+	clear: both;
+	color: #777;
+	height: auto;
+}
+
+.fbRelatedTermItem ul
+{
+	margin-top: 0;
+}
+
+.fbRelatedTermItem li
+{
+	color: #777;
+	float: left; 
+	margin-right: 5px;
+	white-space: nowrap; 
+}
+
+.fbRelatedTermItem input
+{
+	vertical-align: middle;
+}
+
+/*--------- SAVED SEARCH ----------*/
+
+.fbSavedSearchContainer 
+{
+	background-color: #F8F8F8;
+	left: 275px;
+	top:60px;
+	margin-top: 20px;
+	padding: 2px;
+	position: absolute;
+	width: 370px;
+	z-index: 9999;
+}
+
+.fbSavedSearchContent
+{
+	border: 2px solid #B3B3B3; 
+	padding: 15px;
+	color: #777;
+}
+
+.fbSavedSearchButtons
+{
+	clear: both;
+	padding: 0;
+	text-align: right;
+}
+
+
+/*----LIGHTBOX ON-PAGE POPUPS------*/
+.fbCreateLightboxContainer 
+{
+	background-color: #F8F8F8;
+	left: 293px;
+	margin-top: 3px;
+	padding: 2px;
+	position: absolute;
+	width: 370px;
+	z-index: 1;
+}
+
+.fbCreateLightboxContent
+{
+	border: 2px solid #B3B3B3; 
+	padding: 15px;
+	color: #777;
+}
+
+.fbCreateLightboxButtons
+{
+	clear: both;
+	padding: 0;
+	text-align: right;
+}
+
+/*------PAGING AND SELECTION CONTROLS-------*/
+/* lightbox and pager selection/actions sit in the same div, floating left and right respectively */
+.fbResultSelector /* left float is handled by a parent div so that lb and gallery selectors can be grouped together */
+{
+	margin-bottom: 10px;
+	text-align: left;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	color: #777;
+}
+
+.fbResultSelector input
+{
+	vertical-align: text-bottom;
+}
+
+.fbPager /* Style for the paging control */
+{
+	float: right;
+	margin-bottom: 10px;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	color: #777;
+}
+
+
+/*---------RESULTS FLONT---------*/
+
+#fbFlontBlockTypeDetail /* style for flont block on type detail page */
+{
+	position: relative;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 690px;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	border-bottom: 1px solid #CCC;
+}
+#fbFlontBlockTypeDetailTop
+{
+	width:100%;
+	height:10px;
+}
+
+#fbFlontBlockTypeDetailBottom
+{
+	width:100%;
+	height:10px;
+	border-bottom:1px #ccc dotted;
+	margin-bottom:10px;
+}
+
+#fbFlontBlock /* style for flont block on any page containing results */
+{
+	margin-bottom: 10px;
+	padding: 10px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #CCC;
+	background: #EEE;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	
+	color: #777;
+}
+
+#fbFlontBlockLeft
+{
+	float:left;
+	white-space: nowrap;
+}
+
+#fbFlontBlockRight
+{
+	float: right;
+	text-align: right;
+	
+	white-space: nowrap;
+}
+
+
+/*--------- THUMBS ----------*/
+
+/* set the style for thumbs within the fbSearchResultContainer */
+.fbResultItem 
+{
+	float: left; 
+	height: 255px; /* height must be large enough to encompass all content otherwise floating will go goofy */
+	width: 170px;  /* fits four images across for browsers obeying min-width */
+	margin-right: 8px;
+	text-align: left; 
+	padding: 5px 0;
+}
+
+/* sets the size of the area a thumb image will be positioned within - prevents visual jumping around of links as images load */
+.fbResultItemThumb
+{
+	position: relative;
+	width: 170px; 
+	height: 170px;
+	text-align: center;
+	border: solid 1px #DDD;
+}
+
+/* second div required inside fbResultItemThumb for vertically aligned thumbs w/o needing explicit padding */
+.fbThumbPositioner
+{
+	/* hide absolute positioning from IE5 Mac \*/
+	position: absolute;
+	width: 170px;
+	bottom: 0;
+	left: 0;
+	/* end hide */
+}
+/* sets the size of the area a thumb image will be positioned within - prevents visual jumping around of links as images load */
+.fbResultItemMore
+{
+	width: 170px; 
+	height: 170px;
+	text-align: center;
+	border: solid 1px #DDD;
+}
+
+/* container fot the 2 column result item info */
+.fbResultItemInfoContainer
+{
+	position: relative;
+	margin-top: 5px;
+}
+
+/* the result item checkbox container (1st column under thumb) */
+.fbResultItemCheck
+{
+	float: left; 
+	margin: -3px 5px 0 0 ;
+	text-align: left; 
+	height: 60px;
+}
+
+/* the result item info container for sku, name, links, etc (2nd column under thumb) */
+.fbResultItemInfo
+{
+	text-align: left; 
+}
+
+/* the product sku container has a specific height for consistency of sku/name region vs links */
+.fbResultItemSku
+{
+	height: auto; 
+	overflow: auto;
+
+}
+
+/* the product name container is limited to a single line of text; hidden by the server when there is no name */
+.fbResultItemName 
+{
+	margin: 0 0 1px 0; /* 1 extra px to match height of sku row above this row */
+	height: 14px; /* matches font size so that clipped name doesn't partially show next line */
+	overflow: hidden; /* ensures long descriptions (i.e. merch) do not bleed over action links */
+}
+
+/* the area containing hyperlinks has reduced text size */
+.fbResultItemLinks 
+{
+	font-size: 12px;
+	line-height: 13px;
+	overflow: visible; 
+}
+
+/* different font family and size for the rearrangers < and > */
+.fbResultItemRearrangeLinks
+{
+	font-family: 'Arial';
+	font-size: 18px;
+	letter-spacing: 3px;
+	vertical-align: -0.1em;
+}
+
+/*--------- TYPE SAMPLES ----------*/
+
+/* set the style for typesamples within the fbSearchResultContainer */
+.fbTypeResultItem 
+{
+}
+
+/* container for the flonted type result thumb */
+.fbTypeResultItemThumb
+{
+	padding: 10px 0 5px 0;
+}
+
+/* the type result item checkbox container (1st column under thumb) */
+.fbTypeResultItemCheck
+{
+	float: left; 
+	margin: 2px 5px 0 0;
+}
+
+/* the type result item info container for sku, name, rearranger (2nd column under thumb) */
+.fbTypeResultItemInfo
+{
+	float: left; 
+	margin-top: 5px;
+}
+
+/* the type result item links container for add to lb, etc (3rd column under thumb) */
+.fbTypeResultItemLinkContainer
+{
+	float: right; 
+	text-align: right; 
+	margin-top: 5px;
+}
+
+/* container for type result item seperator image, ensures preceeding floats are cleared */
+.fbTypeResultSeperator
+{
+	float: none; 
+	clear: both;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #DDD;
+	margin-bottom: 10px;
+}
+
+
+/*--------- LINKS ----------*/
+
+/*anchors for results-related blocks */
+.fbHeadContainer a, .fbSearchHeaderResultCount a, .fbFootContainer a, .fbSearchResultsHeader a, .fbResultsHeader a, .fbClarificationContainer a, .fbSearchResultContainer a
+{
+	background: transparent; 
+	text-decoration: none; 
+}
+
+.fbHeadContainer a:visited, .fbSearchHeaderResultCount a, .fbFootContainer a:visited, .fbSearchResultsHeader a:visited, .fbResultsHeader a:visited, .fbClarificationContainer a:visited, .fbSearchResultContainer a:visited
+{ 
+	color: #E60; 
+}
+
+.fbHeadContainer a:link, .fbFootContainer a:link, .fbSearchResultsHeader a:link, .fbResultsHeader a:link, .fbClarificationContainer a:link, .fbSearchResultContainer a:link
+{ 
+	color: #E60; 
+}
+
+.fbHeadContainer a:hover, .fbSearchHeaderResultCount a:hover, .fbFootContainer a:hover, .fbSearchResultsHeader a:hover, .fbResultsHeader a:hover, .fbClarificationContainer a:hover, .fbSearchResultContainer a:hover
+{ 
+	color: #777; 
+	text-decoration: underline; 
+}
+
+.fbHeadContainer a:active, .fbFootContainer a:active, .fbSearchResultsHeader a:active, .fbResultsHeader a:active, .fbClarificationContainer a:active, .fbSearchResultContainer a:active
+{ 
+	color: #777; 
+}
+
+
+/*----VENDOR BROWSE NAVIGATION---*/
+
+#fbTopBrowseNavContainer /* top browse nav */
+{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #BBB;
+	margin-bottom: 10px;
+}
+
+#fbBottomBrowseNavContainer /* non-type bottom browse nav */
+{
+	border-top: 1px solid #BBB;
+	padding-top: 10px;
+}
+
+#fbAnonBrowseNavContainer /* anon type browse does not need a border */
+{
+}
+
+.fbBrowseNavLeft
+{
+	float: left;
+}
+
+.fbBrowseNavRight
+{
+	float: right;
+}
+
+.fbBrowseAddChecked
+{
+	padding-top: 10px;
+	text-align: right;
+	font: 12px verdana, helvetica, arial, geneva, sans-serif;
+	line-height: 13px;
+}
+
+
+/*----VENDOR QUICK LIST---*/
+
+#fbQList 
+{
+	position: relative;
+	margin: 10px 0 20px 0;
+}
+
+.fbQL {
+	position: absolute;
+	left: 25px;
+	}
+	
+	
+/* UTILITY CLASSES --*/
+/* a class used to clear floats within a div, use <div class="clearfloat"></div> isntead of <br clear="all" /> */
+.clearfloat
+{
+	clear: both;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+}

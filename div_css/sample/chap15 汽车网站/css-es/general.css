@@ -1,0 +1,808 @@
+.clear {
+	clear:both;
+	list-style-type: none;
+	list-style-position: outside;
+}
+.justificado {
+	text-align: justify !important;
+	/*margin-bottom:17px;/*1.06em*17px*/
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 10px 0px;
+}
+.derecha {
+	text-align: right !important;
+	margin-bottom:17px;/*1.06em*17px*/
+}
+.izquierda {
+	text-align: left !important;
+	margin-bottom:17px;/*1.06em*17px*/
+}
+.centrado {
+	text-align: center !important;
+	margin-bottom:17px;/*1.06em*17px*/
+}
+.derechaIcono, .izquierdaIcono, .centradoIcono, .centradaIcono {
+	margin-top:-20px;
+}
+.color_volver {
+	color: #276015 !important;
+}
+.color_subir {
+	color: #276015 !important;
+}
+.mas_uno {
+	font-size: 1.1em;
+}
+.mas_dos {
+	font-size: 1.2em;
+}
+.mas_tres {
+	font-size: 1.3em;
+}
+.mas_cuatro {
+	font-size: 1.4em;
+}
+.menos_uno {
+	font-size: 0.9em;
+}
+.menos_dos {
+	font-size: 0.8em;
+}
+.menos_tres {
+	font-size: 0.7em;
+}
+.oculto {
+	display: none;
+}
+.negrita_texto {
+	color: #262626;
+}
+/*bullet*/
+ul.nivel1, ul.nivel2, ul.nivel3 {
+	font-family: Trebuchet MS;
+	font-weight: normal;
+	color:#707070;
+	text-align:left;
+}
+ul.nivel1 {
+	list-style-image: url(../img/bullet1.gif);
+	margin-left: 4px;/*0.25em*4px*/
+	padding-left: 14px;/*1.1em*14px 4 (q ocupa la imagen) + 10*/
+	top:2px;/*0.13em*2px*/
+}
+*:first-child+html ul.nivel1 {
+	list-style-image: url(../img/bullet1_ie.gif);
+}
+* html ul.nivel1 {
+	list-style-image: url(http://www.iberdrola.es/webibd/gc/prod/es/admin/img/bullet1_ie.gif);
+}
+li.bullet {
+	margin-top:-15px;
+}
+ul.nivel1_primero {
+	margin-top:-10px;
+	list-style-image: url(../img/bullet1.gif);
+	margin-left: 4px;/*0.25em*4px*/
+	padding-left: 14px;/*1.1em*14px 4 (q ocupa la imagen) + 10*/
+}
+*:first-child+html ul.nivel1_primero {
+	list-style-image: url(../img/bullet1_ie.gif);
+}
+* html ul.nivel1_primero {
+	list-style-image: url(../img/bullet1_ie.gif);
+}
+ul.nivel2 {
+	list-style-image: url(../img/bullet2.jpg);
+	margin-left: 7px;/*0.44em*7px*/
+	padding-left: 43px;/*2.69em*43px 29+7+7*/
+}
+ul.nivel3 {
+	list-style-image: url(../img/bullet3.jpg);
+	margin-left: 7px;/*0.44em*7px*/
+	padding-left:72px;/*4.50em*72px 58+7+7*/
+}
+.bannerImg {
+	width: 234px;/*14.63em*234px*/
+	height: 234px;/*14.63em*234px*/
+	border-color:transparent;
+}
+.cursiva {
+	font-style: italic;
+}
+/*sangrias*/
+p.sangria_1 {
+	margin-left: 14px;
+	text-align:justify;/*0.88em*14px*/
+}
+p.sangria_1l {
+	margin-left: 14px;
+	text-align:left;
+}
+p.sangria_1r {
+	margin-left: 14px;
+	text-align:right;
+}
+p.sangria_1c {
+	margin-left: 14px;
+	text-align:center;
+}
+p.sangria_2 {
+	margin-left: 28px;
+	text-align:justify;/*1.75em*28px*/
+}
+p.sangria_2l {
+	margin-left: 28px;
+	text-align:left;
+}
+p.sangria_2r {
+	margin-left: 28px;
+	text-align:right;
+}
+p.sangria_2c {
+	margin-left: 28px;
+	text-align:center;
+}
+p.sangria_3 {
+	margin-left: 42px;
+	text-align:justify;/*2.63em*42px*/
+}
+p.sangria_3l {
+	margin-left: 42px;
+	text-align:left;
+}
+p.sangria_3r {
+	margin-left: 42px;
+	text-align:right;
+}
+p.sangria_3c {
+	margin-left: 42px;
+	text-align:center;
+}
+p.sangria_4 {
+	margin-left: 56px;
+	text-align:justify/*3.50em*56px*/
+}
+p.sangria_4l {
+	margin-left: 56px;
+	text-align:left;
+}
+p.sangria_4r {
+	margin-left: 56px;
+	text-align:right;
+}
+p.sangria_4c {
+	margin-left: 56px;
+	text-align:center;
+}
+p.sangria_5 {
+	margin-left: 70px;
+	text-align:justify;
+}
+p.sangria_5l {
+	margin-left: 70px;
+	text-align:left;
+}
+p.sangria_5r {
+	margin-left: 70px;
+	text-align:right;
+}
+p.sangria_5c {
+	margin-left: 70px;
+	text-align:center;
+}
+.comunicacion_pdf {
+	color:#707070;
+	font-size:1.00em;
+	margin-left:30px;
+	border:#707070;
+	font-family: Trebuchet MS;
+}
+.car_comunicacion_pdf {
+	margin-left:100px;
+	color:#66ab05;
+	font-size: 1.0em;
+}
+/*Estilos que se usan en ExternalLinks.js*/
+#colizqContenidoW {
+	height: 1px;
+}/*input usados para asignar la anchura mediante scripts*/
+#colderContenidoW {
+	height: 1px;
+}
+/*SUBIR*/
+.subir345 {
+	text-align:right;
+}
+.subirb, .subirb:link {
+	border:none;
+	background-color:#FFFFFF;
+	font-family:trebuchet MS;
+	background:url(../img/subir.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	padding:0 18px 0 0;
+	color:#0765c5;
+	font-size:0.75em;
+	margin:0px;
+	width:6em;
+	height:1.4em;
+	text-decoration:none;
+	cursor:pointer;
+}
+.subirb:focus, .subirb:hover {
+	border:none;
+	background-color:#FFFFFF;
+	font-family:trebuchet MS;
+	background:url(../img/subir_rollover.png);
+	background-repeat:no-repeat;
+	text-decoration:underline;
+	background-position:right;
+	padding:0 18px 0 0;
+	color:#0765c5;
+	font-size:0.75em;
+	margin:0px;
+	width:6em;
+	height:1.4em;
+	cursor:pointer;
+}
+/*VOLVER*/
+#volver {
+	margin-top:5px;
+}
+#bvolver {
+	height:0px;
+	width:0px; /*visibility:hidden;*/
+}
+a#btnvolver {
+	height:18px;/* 1.13em*18px*/
+	width: 19px;/*1.13em18px*/
+	float:right;
+	background:url(../img/btn_volver.png) no-repeat;
+}
+a#btnvolver:link, a#btnvolver:visited {
+	background:url(../img/btn_volver.png) no-repeat;
+}
+a#btnvolver:focus {
+	background: url(../img/btn_volver_rollover.png) no-repeat;
+}
+a#btnvolver:hover, a#btnvolver:active {
+	background: url(../img/btn_volver_rollover.png) no-repeat;
+	cursor:pointer;
+}
+/*volver inferior*/
+#volver_small {
+	font-family: Trebuchet MS;
+	width:743px;
+	display:inline;
+	margin-top:30px;
+	margin-bottom:42px;
+}
+.textovolver, .imgvolver {
+	float:right;
+}
+.textovolver {
+	margin-right:10px;
+	font-family:trebuchet MS;
+	font-size:0.75em;
+	color:#0765C5;
+}
+.imgvolver {
+	margin-top:5px;
+}
+a#btnvolver_small span.textovolver {
+	text-decoration:none;
+	text-align:right;
+}
+a#btnvolver_small span.textovolver:link, a#btnvolver_small span.textovolver:visited {
+	text-decoration:none;
+}
+a#btnvolver_small span.textovolver:focus {
+	text-decoration:underline;
+}
+a#btnvolver_small span.textovolver:hover, a#btnvolver_small span.textovolver:active {
+	cursor:pointer;
+	text-decoration:underline;
+}
+/*IMAGEN*/
+a#btnvolver_small span.imgvolver {
+	width:13px;
+	height:13px;
+	background:url(../img/btn_volver_small.png) no-repeat;
+}
+a#btnvolver_small span.imgvolver:link, a#btnvolver_small span.imgvolver:visited {
+	background:url(../img/btn_volver_small.png) no-repeat;
+}
+a#btnvolver_small span.imgvolver:focus {
+	background: url(../img/btn_volver_small_rollover.png) no-repeat;
+}
+a#btnvolver_small span.imgvolver:hover, a#btnvolver_small span.imgvolver:active {
+	background: url(../img/btn_volver_small_rollover.png) no-repeat;
+	cursor:pointer;
+}
+/*botones rss e imprimir*/
+#botonera_sup {
+	height:18px;
+	width:99.8%;
+	padding-top: 3px;
+	text-align: right;
+}
+a#btnimprimir {
+	height:18px;
+	width: 18px;
+	float:right;
+	background:url(../img/btn_imprimir.png) no-repeat;
+}
+a#btnimprimir:link, a#btnimprimir:visited {
+	background:url(../img/btn_imprimir.png) no-repeat;
+}
+a#btnimprimir:focus {
+	background: url(../img/btn_imprimir_roll_over.png) no-repeat;
+}
+a#btnimprimir:hover, a#btnimprimir:active {
+	background: url(../img/btn_imprimir_roll_over.png) no-repeat;
+	cursor:pointer;
+}
+/*imagenes por si se desactivan las css aparezca el boton imprimir*/
+#imprimir {
+	height:0px;
+	width:0px;/*visibility:hidden;*/
+}
+#brss {
+	height:0px;
+	width:0px;/*visibility:hidden;*/
+}
+#btnrss {
+	padding-left:3px;/*0.19em*3px*/ /*valor que puede cambiar ya q esta sin definir*/
+}
+a#btnrss {
+	height: 18px;
+	width: 18px;
+	float:right;
+	background: url(../img/btn_rss_small.png) no-repeat;
+}
+a#btnrss:link, a#btnrss:visited {
+	background: url(../img/btn_rss_small.png) no-repeat;
+}
+a#btnrss:focus {
+	background: url(../img/btn_rss_small_rollover.png) no-repeat;
+}
+a#btnrss:hover, a#btnrss:active {
+	background: url(../img/btn_rss_small_rollover.png) no-repeat;
+}
+/*enlacesverdes*/
+a.verde:link {
+	color:#276015;
+	text-decoration:none;
+}
+a.verde:visited {
+	color:#123100;
+	text-decoration:none;
+}
+a.verde:focus, a.verde:hover, a.verde:active {
+	color: #276015 !important;
+	text-decoration:underline !important;
+}
+/*enlaces azules*/
+a.enlace_texto:link {
+	color: #0765c5;
+	text-decoration: none;
+}
+a.enlace_texto:visited {
+	color: #003174;
+	text-decoration: none;
+}
+a.enlace_texto:hover {
+	color: #0765c5;
+	text-decoration: underline;
+}
+a.enlace_texto:focus, a.enlace_texto:active {
+	color: #0765c5;
+	text-decoration: underline;
+}
+/*Menu encabezado-pie*/
+.menubasico {
+	color:#262626;
+	font-size:0.75em;/*12px*/
+	font-family:Trebuchet MS;
+	text-decoration:none;
+	display: inline;
+}
+a.menubasico:link {
+	text-decoration:none;
+	color:#262626;
+}
+a.menubasico:hover {
+	color: #66AB05;
+	text-decoration: underline;
+}
+a.menubasico:focus, a.menubasico:active {
+	color: #66AB05;
+	text-decoration: underline;
+}
+/*faldon enlace gris y verde solo estila el verde*/
+.verdemas {
+	border-left: thin solid #276015;
+	padding-left:5px;
+	font-weight:bold;
+}
+a.mas {
+	font-size: 0.75em;/*12px*/
+	font-family: Trebuchet MS;
+	color:#262626;
+	font-weight: normal;
+	text-decoration:none;
+}
+span.verdemas {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+	font-size: 1.1em;
+}
+a.mas:link span.verdemas {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.mas:visited span.verdemas {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.mas:hover span.verdemas {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+a.mas:focus span.verdemas {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+* html .verdemas:link {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+* html .verdemas:visited {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+* html .verdemas:hover {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+* html .verdemas:focus {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+/*Para listados imagenes auto*/
+a.maslisnp {
+	font-family: Trebuchet MS;
+	color:#707070;
+	font-weight: normal;
+	text-decoration:none;
+	display:inline;
+	line-height:1.063em;/*17px*/
+	vertical-align:middle;
+}
+.fechalisauto {
+	color:#276015;
+	font-size:1.25em;/*20px*/
+	text-decoration:none;
+	line-height:1.5em;/*25px*/
+	padding-right:30px;
+	width:14.375em;
+	z-index:40;
+}
+a.maslisnp:link span.fechalisauto {
+	position:relative;
+	line-height:1.5em;
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+a.maslisnp:hover span.fechalisauto {
+	position:relative;
+	line-height:1.5em;
+	background:url(../img/mas_info.png);/*25x28*/
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+a.maslisnp:focus span.fechalisauto {
+	position:relative;
+	line-height:1.5em;
+	background:url(../img/mas_info.png);/*25x28*/
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+span.verdemaslisauto {
+	border-left: thin solid #276015;
+	padding-left:5px;
+	font-weight:bold;
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+	font-size: 0.813em;/*13px*/
+}
+a.maslisnp:link span.verdemaslisauto {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.maslisnp:visited span.verdemaslisauto {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.maslisnp:hover span.verdemaslisauto {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+a.maslisnp:focus span.verdemaslisauto {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+* html .verdemaslisauto:link {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+	position:relative;
+	background:url(../img/mas_info.png);/*25x28*/
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+* html .verdemaslisauto:visited {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+* html .verdemaslisauto:hover, * html .verdemaslisauto:focus {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+	position:relative;
+	background:url(../img/mas_info.png);/*25x28*/
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+/*Para listados_bullets*/
+.verdemaslis {
+	border-left: thin solid #276015;
+	padding-left:5px;
+}
+a.maslis {
+	font-family: Trebuchet MS;
+	color:#707070;
+	font-weight: normal;
+	text-decoration:none;
+	font-size: 0.75em;/*13px*/
+	display:inline;
+}
+span.verdemaslis {
+	color:#276015;
+	text-decoration:none;
+}
+.fechalis {
+	color:#66ab05;
+	text-decoration:none;
+}
+a.maslis:link span.verdemaslis {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.maslis:visited span.verdemaslis {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.maslis:hover span.verdemaslis {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+a.maslis:focus span.verdemaslis {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+* html .verdemaslis:link {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+* html .verdemaslis:visited {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+* html .verdemaslis:hover {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+* html .verdemaslis:focus {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+/*Para la home*/
+.verdemashome {
+	border-left: thin solid #276015;
+	padding-left:5px;
+	text-decoration:none;
+}
+.mashome {
+	font-family: Trebuchet MS;
+	color:#707070;
+	text-decoration:none;
+	font-size:0.75em;
+	font-weight:normal;
+	display:inline;
+}
+.fechalis {
+	color:#66ab05;
+	text-decoration:none;
+}
+a.mashome:link span.verdemashome {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.mashome:visited span.verdemashome {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.mashome:hover span.verdemashome {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+a.mashome:focus span.verdemashome {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+* html .verdemashome:link {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+* html .verdemashome:visited {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+* html .verdemashome:hover {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+* html .verdemashome:focus {
+	color: #276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+/*Para listado de imagenes-->*/
+span.verdemaslisimg {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.mas:link span.verdemaslisimg {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.mas:visited span.verdemaslisimg {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.mas:hover span.verdemaslisimg {
+	color:#276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+a.mas:focus span.verdemaslisimg {
+	color:#276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+* html .verdemaslisimg:link {
+	color:#276015;
+	text-decoration:none;
+	font-weight:bold;
+}
+* html .verdemaslisimg:visited {
+	color:#123100;
+	text-decoration:none;
+	font-weight:bold;
+}
+* html .verdemaslisimg:hover {
+	color:#276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+* html .verdemaslisimg:focus {
+	color:#276015 !important;
+	text-decoration:underline !important;
+	font-weight:bold;
+}
+/*iconos ventanas emergentes*/
+#iconoventana, #iconoventanaPDF, .iconoventana {
+	width:13px;/*0.81em13px*/
+	height:12px;/*0.75em*12px*/
+	padding-left:4px;/*0.25em*4px*/
+	border:none;
+	border-color:transparent;
+}
+#iconoventanafoto, .iconoventanafoto, .iconoventanasubhome, .iconoventansubhome2, #iconoventanafotoPDF, .iconoventanafotoPDF, .iconoventanasubhomePDF, .iconoventansubhome2PDF {
+	width:21px;/*1.31em21px*/
+	height:21px;/*1.31em*21px*/
+	position:relative;
+	left:7px;
+	top:7px;
+	border:none;
+	border-color:transparent;
+	z-index:100;
+}
+.iconoventansubhome2, .iconoventansubhome2PDF {
+	top:28px;
+	left:7px;
+}
+#iconoventanafotoDerAbra, #iconoventanafotoDerAbraPDF {
+	width:21px;/*1.31em21px*/
+	height:21px;/*1.31em*21px*/
+	float:right;
+	right:21px;
+	top:5px;
+	border:none;
+	border-color:transparent;
+}
+.iconoventanasmall {
+	width:10px;/*0.81em13px*/
+	height:9px;/*0.75em*12px*/
+	padding-left:4px;/*0.25em*4px*/
+	border:none;
+	border-color:transparent;
+}
+.iconoventanafotocarrusel, .iconoventanafotocarruselPDF {
+	width:21px;/*1.31em21px*/
+	height:21px;/*1.31em*21px*/
+	position:relative;
+	left:205px;
+	top:14px;
+	border:none;
+	border-color:transparent;
+	z-index:100;
+}
+.iconogen, .iconogenPDF {
+	border:none;
+	border-color:transparent;
+}
+.iconotickersubhome {
+	border:none;
+	border-color:transparent;
+	width:13px;
+	height:12px;
+}
+/*Superindices y subindices*/
+.fondosup {
+	text-decoration:none;
+	font-size: 0.6em;
+	line-height: 45%;/*1.05em;*/
+	vertical-align: super;
+}
+.fondoinf {
+	text-decoration:none;
+	font-size: 0.6em;
+	line-height: 45%;/*1.05em;*/
+	vertical-align: sub;
+}
+/*Para que no se descuadre en listado_imagenes_auto, se ha annadido a maslisnp vertical-align:middle*/

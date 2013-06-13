@@ -1,0 +1,51 @@
+﻿body {
+	font-size: 11px;
+	letter-spacing:1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin:0px auto;
+	background: repeat-x top;
+}
+form{margin:0px;}
+input,select{color:#333333;letter-spacing:1px;}
+div, ul, li,dl, dt, form, span, td, th {margin: 0 auto;padding: 0 auto;}
+li {list-style-type: none;display: inline;}
+img{border:none;vertical-align:middle;}
+
+a{color: #444444;text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+#navi {
+	width:100%;
+	height: 21px;
+	text-align: center;
+	background: url(http://www.104case.com.tw/104toolbar/img/bg_navi.gif) repeat-x;
+}
+#navi dl {width: 760px;}
+#navi dt{/*padding-top:2px;*/float:left;vertical-align:middle;}
+
+#navi dt.104 {
+	list-style-type:none;
+	padding-left:42px;
+	padding-top:5px
+}
+#navi dt.s_bar{
+	padding-left:100px;
+	vertical-align: baseline;
+}
+#navi dt.s_bar select, #navi dt.s_bar input{height:19px;font-size: 11px;}
+
+#navi dt.login {
+	background: url(http://www.104case.com.tw/104toolbar/img/bg_login_navi.gif) no-repeat;
+	width: 70px;
+	padding-top:2px;
+	padding-right:4px;
+	float:right;
+}
+
+input.w70{
+background:transparent url(http://www.104case.com.tw/104toolbar/img/but_w70.gif) no-repeat;
+width:70px;
+border-style:none;
+padding-top:1px;
+padding-bottom:1px;
+}
